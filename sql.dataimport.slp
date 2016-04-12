@@ -1,0 +1,1218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<document created="20160411090511" version="4.0.359" date="20160411181604" scan="6" scanned="20160411181601">
+  <lang id="zh"/>
+  <lang id="ms"/>
+  <lang id="vi"/>
+  <source class="TDelphiSource" name="..\SQL.DataImport.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160411095726" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+    <resources>
+      <disabled id="16"/>
+    </resources>
+    <excludeddatatypes>
+      <class>TBinaryData</class>
+      <class>TCardinalData</class>
+      <class>TFontData</class>
+      <class>TPictureData</class>
+      <class>TColorData</class>
+      <class>TFontColorData</class>
+      <class>TFontNameData</class>
+      <class>TFontSizeData</class>
+      <class>TFontStyleData</class>
+      <class>TImeData</class>
+      <class>TReadingOrderData</class>
+    </excludeddatatypes>
+    <mappings>
+      <component name="TAction" class="TVisAction">
+        <property name="Category"/>
+        <property name="ShortCut"/>
+      </component>
+      <component name="TActionList" class="TVisHiddenComponent"/>
+      <component name="TButton" class="TVisButton"/>
+      <component name="TCheckBox" class="TVisCheckBox"/>
+      <component name="TEdit" class="TVisEdit">
+        <property name="PasswordChar"/>
+      </component>
+      <component name="TFlowPanel" class="TVisWrapPanel"/>
+      <component name="TImageList" class="TVisImageList"/>
+      <component name="TLabel" class="TVisLabel" updatebounds="1"/>
+      <component name="TListView" class="TVisListView"/>
+      <component name="TMemo" class="TVisEdit"/>
+      <component name="TOpenDialog" class="TVisHiddenComponent">
+        <property name="DefaultExt"/>
+        <property name="Filter"/>
+      </component>
+      <component name="TSpinEdit" class="TVisEdit"/>
+      <keyword name="RadioButton" class="TVisRadioButton"/>
+      <keyword name="SpeedButton" class="TVisSpeedButton"/>
+      <keyword name="ListBox" class="TVisListBox"/>
+      <keyword name="ComboBox" class="TVisComboBox"/>
+      <keyword name="CheckBox" class="TVisCheckBox"/>
+      <keyword name="GroupBox" class="TVisGroupBox"/>
+      <keyword name="Label" class="TVisLabel"/>
+      <keyword name="Edit" class="TVisEdit"/>
+      <keyword name="Memo" class="TVisEdit"/>
+      <keyword name="Button" class="TVisButton"/>
+      <keyword name="Panel" class="TVisPanel"/>
+      <keyword name="Grid" class="TVisGrid"/>
+      <keyword name="ImageList" class="TVisImageList"/>
+      <keyword name="Action" class="TVisAction"/>
+      <keyword name="MainMenu" class="TVisHiddenComponent"/>
+      <keyword name="PopupMenu" class="TVisHiddenComponent"/>
+      <keyword name="Field" class="TVisHiddenComponent"/>
+      <keyword name="UpdateSQL" class="TVisHiddenComponent"/>
+      <keyword name="DataSet" class="TVisHiddenComponent"/>
+      <keyword name="DataSource" class="TVisHiddenComponent"/>
+      <keyword name="Query" class="TVisHiddenComponent"/>
+      <keyword name="Table" class="TVisHiddenComponent"/>
+      <keyword name="Database" class="TVisHiddenComponent"/>
+      <property name="DataBinding.ValueType"/>
+      <property name="Functions.Strings"/>
+      <property name="HelpKeyword"/>
+    </mappings>
+    <node class="TVclFormFolder" name="Forms" created="20160411143854" resid="10">
+      <node class="TVclFormNode" name="TFMDATAIMPORT_EMASACCOUNT" resname="TFMDATAIMPORT_EMASACCOUNT">
+        <form class="TVclForm" name="fmDataImport_EMASAccount" type="TfmDataImport_EMASAccount" borderstyle="bsDialog" textheight="13">
+          <row id="Caption" state="0">EMAS Account</row>
+          <row id="ClientHeight">572</row>
+          <row id="ClientWidth">594</row>
+          <row id="Font.Color">clWindowText</row>
+          <row id="Font.Name">Tahoma</row>
+          <row id="Font.Size">8</row>
+          <row id="Font.Style">[]</row>
+          <row id="Left">0</row>
+          <row id="Top">0</row>
+          <component class="TVisLabel" name="Label5" type="TLabel">
+            <row id="Caption" state="0">Rec No. :</row>
+            <row id="Height">13</row>
+            <row id="Left">466</row>
+            <row id="Top">546</row>
+            <row id="Width">45</row>
+          </component>
+          <component class="TVisLabel" name="Label8" type="TLabel">
+            <row id="Caption" state="0">to</row>
+            <row id="Height">13</row>
+            <row id="Left">235</row>
+            <row id="Top">296</row>
+            <row id="Width">10</row>
+          </component>
+          <component class="TVisLabel" name="Label3" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Data Migration - EMAS Accounting System </row>
+            <row id="Font.Color">clBlack</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[fsBold,fsUnderline]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">8</row>
+            <row id="Width">279</row>
+          </component>
+          <component class="TVisLabel" name="Label9" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Step 1: Select folder containing files restored from EMAS Account database</row>
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">38</row>
+            <row id="Width">432</row>
+          </component>
+          <component class="TVisLabel" name="Label1" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Step 2: Select module(s) to import into SQL Accounting</row>
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">95</row>
+            <row id="Width">317</row>
+          </component>
+          <component class="TVisLabel" name="Label2" type="TLabel">
+            <row id="Caption" state="0">Start import from record no:</row>
+            <row id="Height">13</row>
+            <row id="Left">8</row>
+            <row id="Top">296</row>
+            <row id="Width">135</row>
+          </component>
+          <component class="TVisLabel" name="Label4" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Step 3: Press execute to start data import</row>
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">380</row>
+            <row id="Width">240</row>
+          </component>
+          <component class="TVisLabel" name="Label6" type="TLabel" parentcolor="0" parentfont="0">
+            <row id="Caption" state="0">(Click Save to set range)</row>
+            <row id="Font.Color">clRed</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">8</row>
+            <row id="Font.Style">[fsBold]</row>
+            <row id="Height">13</row>
+            <row id="Left">423</row>
+            <row id="Top">296</row>
+            <row id="Width">139</row>
+          </component>
+          <component class="TVisButton" name="btClipBrd" type="TButton" action="actCopyClipboard">
+            <row id="Height">25</row>
+            <row id="Left">466</row>
+            <row id="Top">481</row>
+            <row id="Width">120</row>
+          </component>
+          <component class="TVisButton" name="btExecute" type="TButton" action="actExecute">
+            <row id="Height">25</row>
+            <row id="Left">466</row>
+            <row id="Top">402</row>
+            <row id="Width">120</row>
+          </component>
+          <component class="TVisButton" name="btnCancel" type="TButton">
+            <row id="Caption" state="0">Exit</row>
+            <row id="Height">25</row>
+            <row id="Left">466</row>
+            <row id="Top">512</row>
+            <row id="Width">120</row>
+          </component>
+          <component class="TVisButton" name="btConnect" type="TButton" action="actConnect">
+            <row id="Height">21</row>
+            <row id="Left">506</row>
+            <row id="Top">60</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisButton" name="btBrowse" type="TButton" action="actBrowse">
+            <row id="Height">21</row>
+            <row id="Left">423</row>
+            <row id="Top">60</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisEdit" name="edDir" type="TEdit">
+            <row id="Height">21</row>
+            <row id="Left">8</row>
+            <row id="Top">60</row>
+            <row id="Width">412</row>
+          </component>
+          <component class="TVisEdit" name="mmCount" type="TMemo" enabled="0" readonly="1">
+            <row id="Height">21</row>
+            <row id="Left">517</row>
+            <row id="Top">543</row>
+            <row id="Width">69</row>
+          </component>
+          <component class="TVisEdit" name="mmStatus" type="TMemo" parentfont="0" readonly="1" scrollbars="ssBoth">
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Courier New</row>
+            <row id="Font.Size">8</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">162</row>
+            <row id="Left">8</row>
+            <row id="Top">402</row>
+            <row id="Width">452</row>
+          </component>
+          <component class="TVisListView" name="edModule" type="TListView" viewstyle="vsReport">
+            <row id="Height">170</row>
+            <row id="Left">8</row>
+            <row id="Top">117</row>
+            <row id="Width">578</row>
+            <column name="Columns[0]">
+              <row id="Caption" state="0">Description</row>
+              <row id="Width">295</row>
+            </column>
+            <column name="Columns[1]">
+              <row id="Caption" state="0">Start From Record No.</row>
+              <row id="Width">130</row>
+            </column>
+            <column name="Columns[2]">
+              <row id="Caption" state="0">Total Records</row>
+              <row id="Width">130</row>
+            </column>
+          </component>
+          <component class="TVisButton" name="btSave" type="TButton" action="actSave">
+            <row id="Height">22</row>
+            <row id="Left">337</row>
+            <row id="Top">293</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisEdit" name="edEndNo" type="TSpinEdit">
+            <row id="Height">22</row>
+            <row id="Left">251</row>
+            <row id="Top">293</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisEdit" name="edStartNo" type="TSpinEdit">
+            <row id="Height">22</row>
+            <row id="Left">149</row>
+            <row id="Top">293</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisCheckBox" name="cbOpnBalSummary" type="TCheckBox" enabled="0">
+            <row id="Caption" state="0">Import Opening Balance Summary</row>
+            <row id="Height">21</row>
+            <row id="Left">8</row>
+            <row id="Top">321</row>
+            <row id="Width">409</row>
+          </component>
+          <component class="TVisCheckBox" name="cbResetAccFormat" type="TCheckBox" enabled="0">
+            <row id="Caption" state="0">Reset Customer &amp;&amp; Supplier Account Formatting</row>
+            <row id="Height">21</row>
+            <row id="Left">8</row>
+            <row id="Top">345</row>
+            <row id="Width">409</row>
+          </component>
+          <component class="TVisHiddenComponent" name="ActionList1" type="TActionList">
+            <component class="TVisAction" name="actConnect" type="TAction">
+              <row id="Caption" state="0">Connect</row>
+            </component>
+            <component class="TVisAction" name="actBrowse" type="TAction">
+              <row id="Caption" state="0">Select Folder</row>
+            </component>
+            <component class="TVisAction" name="actClearList" type="TAction">
+              <row id="Caption" state="0">Clear</row>
+            </component>
+            <component class="TVisAction" name="actExecute" type="TAction">
+              <row id="Caption" state="0">Execute</row>
+            </component>
+            <component class="TVisAction" name="actCopyClipboard" type="TAction">
+              <row id="Caption" state="0">Copy log to clipboard</row>
+            </component>
+            <component class="TVisAction" name="actSave" type="TAction">
+              <row id="Caption" state="0">Save</row>
+            </component>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TFMDATAIMPORT_EMASSTOCK" resname="TFMDATAIMPORT_EMASSTOCK">
+        <form class="TVclForm" name="fmDataImport_EMASStock" type="TfmDataImport_EMASStock" borderstyle="bsDialog" textheight="13">
+          <row id="Caption" state="0">EMAS Stock</row>
+          <row id="ClientHeight">572</row>
+          <row id="ClientWidth">594</row>
+          <row id="Font.Color">clWindowText</row>
+          <row id="Font.Name">Tahoma</row>
+          <row id="Font.Size">8</row>
+          <row id="Font.Style">[]</row>
+          <row id="Left">0</row>
+          <row id="Top">0</row>
+          <component class="TVisLabel" name="Label5" type="TLabel">
+            <row id="Caption" state="0">Rec No. :</row>
+            <row id="Height">13</row>
+            <row id="Left">466</row>
+            <row id="Top">546</row>
+            <row id="Width">45</row>
+          </component>
+          <component class="TVisLabel" name="Label8" type="TLabel">
+            <row id="Caption" state="0">to</row>
+            <row id="Height">13</row>
+            <row id="Left">235</row>
+            <row id="Top">296</row>
+            <row id="Width">10</row>
+          </component>
+          <component class="TVisLabel" name="Label3" type="TLabel" parentcolor="0" parentfont="0">
+            <row id="Caption" state="0">Data Migration - EMAS Stock Control System </row>
+            <row id="Font.Color">clBlack</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[fsBold,fsUnderline]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">8</row>
+            <row id="Width">293</row>
+          </component>
+          <component class="TVisLabel" name="Label9" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Step 1: Select folder containing files restored from EMAS Stock database</row>
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">38</row>
+            <row id="Width">418</row>
+          </component>
+          <component class="TVisLabel" name="Label2" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Step 2: Select module(s) to import into SQL Accounting</row>
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">95</row>
+            <row id="Width">317</row>
+          </component>
+          <component class="TVisLabel" name="Label1" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Step 3: Press execute to start data import</row>
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">428</row>
+            <row id="Width">240</row>
+          </component>
+          <component class="TVisLabel" name="Label7" type="TLabel">
+            <row id="Caption" state="0">Start import from record no:</row>
+            <row id="Height">13</row>
+            <row id="Left">8</row>
+            <row id="Top">296</row>
+            <row id="Width">135</row>
+          </component>
+          <component class="TVisLabel" name="Label6" type="TLabel" parentcolor="0" parentfont="0">
+            <row id="Caption" state="0">(Click Save to set range)</row>
+            <row id="Font.Color">clRed</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">8</row>
+            <row id="Font.Style">[fsBold]</row>
+            <row id="Height">13</row>
+            <row id="Left">423</row>
+            <row id="Top">296</row>
+            <row id="Width">139</row>
+          </component>
+          <component class="TVisButton" name="btExecute" type="TButton" action="actExecute">
+            <row id="Height">25</row>
+            <row id="Left">466</row>
+            <row id="Top">450</row>
+            <row id="Width">120</row>
+          </component>
+          <component class="TVisButton" name="btnCancel" type="TButton">
+            <row id="Caption" state="0">Exit</row>
+            <row id="Height">25</row>
+            <row id="Left">466</row>
+            <row id="Top">512</row>
+            <row id="Width">120</row>
+          </component>
+          <component class="TVisButton" name="btClipBrd" type="TButton" action="actCopyClipboard">
+            <row id="Height">25</row>
+            <row id="Left">466</row>
+            <row id="Top">481</row>
+            <row id="Width">120</row>
+          </component>
+          <component class="TVisButton" name="btConnect" type="TButton" action="actConnect">
+            <row id="Height">21</row>
+            <row id="Left">506</row>
+            <row id="Top">60</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisEdit" name="mmCount" type="TMemo" enabled="0" readonly="1">
+            <row id="Height">21</row>
+            <row id="Left">517</row>
+            <row id="Top">543</row>
+            <row id="Width">69</row>
+          </component>
+          <component class="TVisEdit" name="mmStatus" type="TMemo" parentfont="0" readonly="1" scrollbars="ssBoth">
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Courier New</row>
+            <row id="Font.Size">8</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">114</row>
+            <row id="Left">8</row>
+            <row id="Top">450</row>
+            <row id="Width">452</row>
+          </component>
+          <component class="TVisEdit" name="edDir" type="TEdit">
+            <row id="Height">21</row>
+            <row id="Left">8</row>
+            <row id="Top">60</row>
+            <row id="Width">412</row>
+          </component>
+          <component class="TVisButton" name="btBrowse" type="TButton" action="actBrowse">
+            <row id="Height">21</row>
+            <row id="Left">423</row>
+            <row id="Top">60</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisListView" name="edModule" type="TListView" viewstyle="vsReport">
+            <row id="Height">170</row>
+            <row id="Left">8</row>
+            <row id="Top">117</row>
+            <row id="Width">578</row>
+            <column name="Columns[0]">
+              <row id="Caption" state="0">Description</row>
+              <row id="Width">295</row>
+            </column>
+            <column name="Columns[1]">
+              <row id="Caption" state="0">Start From Record No.</row>
+              <row id="Width">130</row>
+            </column>
+            <column name="Columns[2]">
+              <row id="Caption" state="0">Record Total</row>
+              <row id="Width">130</row>
+            </column>
+          </component>
+          <component class="TVisEdit" name="edStartNo" type="TSpinEdit">
+            <row id="Height">22</row>
+            <row id="Left">149</row>
+            <row id="Top">293</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisEdit" name="edEndNo" type="TSpinEdit">
+            <row id="Height">22</row>
+            <row id="Left">251</row>
+            <row id="Top">293</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisButton" name="btSave" type="TButton" action="actSave">
+            <row id="Height">22</row>
+            <row id="Left">337</row>
+            <row id="Top">293</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisCheckBox" name="cbAllowPrice" type="TCheckBox" enabled="0">
+            <row id="Caption" state="0">Import Stock Customer &amp;&amp; Supplier Price</row>
+            <row id="Height">21</row>
+            <row id="Left">8</row>
+            <row id="Top">369</row>
+            <row id="Width">409</row>
+          </component>
+          <component class="TVisCheckBox" name="cbAllowOpnBal" type="TCheckBox" enabled="0">
+            <row id="Caption" state="0">Import Stock Opening Balance</row>
+            <row id="Height">21</row>
+            <row id="Left">8</row>
+            <row id="Top">345</row>
+            <row id="Width">409</row>
+          </component>
+          <component class="TVisCheckBox" name="cbAllowUOM" type="TCheckBox" enabled="0">
+            <row id="Caption" state="0">Import Stock UOM With Rate &lt; 1</row>
+            <row id="Height">21</row>
+            <row id="Left">8</row>
+            <row id="Top">321</row>
+            <row id="Width">409</row>
+          </component>
+          <component class="TVisCheckBox" name="cbResetAccFormat" type="TCheckBox" enabled="0">
+            <row id="Caption" state="0">Reformat EMAS customer &amp;&amp; supplier account code to follow SQL Account</row>
+            <row id="Height">21</row>
+            <row id="Left">8</row>
+            <row id="Top">393</row>
+            <row id="Width">409</row>
+          </component>
+          <component class="TVisHiddenComponent" name="ActionList1" type="TActionList">
+            <component class="TVisAction" name="actConnect" type="TAction">
+              <row id="Caption" state="0">Connect</row>
+            </component>
+            <component class="TVisAction" name="actBrowse" type="TAction">
+              <row id="Caption" state="0">Select Folder</row>
+            </component>
+            <component class="TVisAction" name="actClearList" type="TAction">
+              <row id="Caption" state="0">Clear</row>
+            </component>
+            <component class="TVisAction" name="actExecute" type="TAction">
+              <row id="Caption" state="0">Execute</row>
+            </component>
+            <component class="TVisAction" name="actCopyClipboard" type="TAction">
+              <row id="Caption" state="0">Copy log to clipboard</row>
+            </component>
+            <component class="TVisAction" name="actSave" type="TAction">
+              <row id="Caption" state="0">Save</row>
+            </component>
+          </component>
+          <component class="TVisImageList" name="ImageList1" type="TImageList" imagewidth="1">
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TFMDATAIMPORT_MYOB" resname="TFMDATAIMPORT_MYOB">
+        <form class="TVclForm" name="fmDataImport_MYOB" type="TfmDataImport_MYOB" borderstyle="bsDialog" textheight="13">
+          <row id="Caption" state="0">MYOB</row>
+          <row id="ClientHeight">572</row>
+          <row id="ClientWidth">594</row>
+          <row id="Font.Color">clWindowText</row>
+          <row id="Font.Name">Tahoma</row>
+          <row id="Font.Size">8</row>
+          <row id="Font.Style">[]</row>
+          <row id="Left">0</row>
+          <row id="Top">0</row>
+          <component class="TVisLabel" name="Label3" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Data Migration - MYOB System </row>
+            <row id="Font.Color">clBlack</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[fsBold,fsUnderline]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">8</row>
+            <row id="Width">203</row>
+          </component>
+          <component class="TVisLabel" name="Label9" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Step 1: Download myData CLI tool</row>
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">38</row>
+            <row id="Width">196</row>
+          </component>
+          <component class="TVisLabel" name="Label1" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Step 2: Enter the full path to the mydatacli zip file</row>
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">74</row>
+            <row id="Width">284</row>
+          </component>
+          <component class="TVisLabel" name="Label5" type="TLabel">
+            <row id="Caption" state="0">Rec No. :</row>
+            <row id="Height">13</row>
+            <row id="Left">466</row>
+            <row id="Top">546</row>
+            <row id="Width">45</row>
+          </component>
+          <component class="TVisLabel" name="Label2" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Step 5: Press execute to start data import</row>
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">398</row>
+            <row id="Width">240</row>
+          </component>
+          <component class="TVisLabel" name="Label4" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Step 3: Enter the full path to the MYO database file</row>
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">133</row>
+            <row id="Width">292</row>
+          </component>
+          <component class="TVisLabel" name="Label6" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Step 4: Select module(s) to import into SQL Accounting</row>
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">192</row>
+            <row id="Width">317</row>
+          </component>
+          <component class="TVisButton" name="btDownload" type="TButton" action="actDownload">
+            <row id="Height">25</row>
+            <row id="Left">210</row>
+            <row id="Top">35</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisEdit" name="edDir_ZIP" type="TEdit">
+            <row id="Height">21</row>
+            <row id="Left">8</row>
+            <row id="Top">96</row>
+            <row id="Width">412</row>
+          </component>
+          <component class="TVisButton" name="btSelectEXE" type="TButton" action="actSelectFile_ZIP">
+            <row id="Height">25</row>
+            <row id="Left">423</row>
+            <row id="Top">94</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisButton" name="btClipBrd" type="TButton" action="actCopyToClipboard">
+            <row id="Height">25</row>
+            <row id="Left">466</row>
+            <row id="Top">480</row>
+            <row id="Width">120</row>
+          </component>
+          <component class="TVisButton" name="btExecute" type="TButton" action="actExecute">
+            <row id="Height">25</row>
+            <row id="Left">466</row>
+            <row id="Top">420</row>
+            <row id="Width">120</row>
+          </component>
+          <component class="TVisButton" name="btCancel" type="TButton">
+            <row id="Caption" state="0">Exit</row>
+            <row id="Height">25</row>
+            <row id="Left">466</row>
+            <row id="Top">511</row>
+            <row id="Width">120</row>
+          </component>
+          <component class="TVisEdit" name="mmCount" type="TMemo" enabled="0" readonly="1">
+            <row id="Height">21</row>
+            <row id="Left">517</row>
+            <row id="Top">543</row>
+            <row id="Width">69</row>
+          </component>
+          <component class="TVisEdit" name="mmStatus" type="TMemo" parentfont="0" readonly="1" scrollbars="ssBoth">
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Courier New</row>
+            <row id="Font.Size">8</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">144</row>
+            <row id="Left">8</row>
+            <row id="Top">420</row>
+            <row id="Width">452</row>
+          </component>
+          <component class="TVisEdit" name="edDir_DB" type="TEdit">
+            <row id="Height">21</row>
+            <row id="Left">8</row>
+            <row id="Top">155</row>
+            <row id="Width">412</row>
+          </component>
+          <component class="TVisButton" name="btSelectDB" type="TButton" action="actSelectFile_DB">
+            <row id="Height">25</row>
+            <row id="Left">423</row>
+            <row id="Top">153</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisListView" name="edModule" type="TListView" viewstyle="vsReport">
+            <row id="Height">170</row>
+            <row id="Left">8</row>
+            <row id="Top">214</row>
+            <row id="Width">578</row>
+            <column name="Columns[0]">
+              <row id="Caption" state="0">Description</row>
+              <row id="Width">295</row>
+            </column>
+          </component>
+          <component class="TVisButton" name="Button1" type="TButton" action="actConnect">
+            <row id="Height">25</row>
+            <row id="Left">506</row>
+            <row id="Top">153</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisHiddenComponent" name="ActionList1" type="TActionList">
+            <component class="TVisAction" name="actDownload" type="TAction">
+              <row id="Caption" state="0">Download</row>
+            </component>
+            <component class="TVisAction" name="actSelectFile_ZIP" type="TAction">
+              <row id="Caption" state="0">Select File</row>
+            </component>
+            <component class="TVisAction" name="actSelectFile_DB" type="TAction">
+              <row id="Caption" state="0">Select File</row>
+            </component>
+            <component class="TVisAction" name="actConnect" type="TAction">
+              <row id="Caption" state="0">Connect</row>
+            </component>
+            <component class="TVisAction" name="actExecute" type="TAction">
+              <row id="Caption" state="0">Execute</row>
+            </component>
+            <component class="TVisAction" name="actClearList" type="TAction">
+              <row id="Caption" state="0">actClearList</row>
+            </component>
+            <component class="TVisAction" name="actCopyToClipboard" type="TAction">
+              <row id="Caption" state="0">Copy log to clipboard</row>
+            </component>
+          </component>
+          <component class="TVisHiddenComponent" name="OpenDialog1" type="TOpenDialog">
+          </component>
+          <component class="TVisHiddenComponent" name="OpenDialog2" type="TOpenDialog">
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TFMDATAIMPORT_UBSACCOUNT" resname="TFMDATAIMPORT_UBSACCOUNT">
+        <form class="TVclForm" name="fmDataImport_UBSAccount" type="TfmDataImport_UBSAccount" borderstyle="bsDialog" textheight="13">
+          <row id="Caption" state="0">UBS Account</row>
+          <row id="ClientHeight">629</row>
+          <row id="ClientWidth">594</row>
+          <row id="Font.Color">clWindowText</row>
+          <row id="Font.Name">Tahoma</row>
+          <row id="Font.Size">8</row>
+          <row id="Font.Style">[]</row>
+          <row id="Left">0</row>
+          <row id="Top">0</row>
+          <component class="TVisLabel" name="Label1" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Step 3: Select module(s) to import into SQL Accounting</row>
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">152</row>
+            <row id="Width">317</row>
+          </component>
+          <component class="TVisLabel" name="Label3" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Data Migration - UBS Accounting System </row>
+            <row id="Font.Color">clBlack</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[fsBold,fsUnderline]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">8</row>
+            <row id="Width">267</row>
+          </component>
+          <component class="TVisLabel" name="Label5" type="TLabel">
+            <row id="Caption" state="0">Rec No. :</row>
+            <row id="Height">13</row>
+            <row id="Left">466</row>
+            <row id="Top">603</row>
+            <row id="Width">45</row>
+          </component>
+          <component class="TVisLabel" name="Label7" type="TLabel">
+            <row id="Caption" state="0">Start import from record no:</row>
+            <row id="Height">13</row>
+            <row id="Left">8</row>
+            <row id="Top">353</row>
+            <row id="Width">135</row>
+          </component>
+          <component class="TVisLabel" name="Label8" type="TLabel">
+            <row id="Caption" state="0">to</row>
+            <row id="Height">13</row>
+            <row id="Left">235</row>
+            <row id="Top">353</row>
+            <row id="Width">10</row>
+          </component>
+          <component class="TVisLabel" name="Label9" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Step 1: UBS Account DB folder</row>
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">38</row>
+            <row id="Width">174</row>
+          </component>
+          <component class="TVisLabel" name="Label2" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Step 4: Press execute to start data import</row>
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">437</row>
+            <row id="Width">240</row>
+          </component>
+          <component class="TVisLabel" name="Label6" type="TLabel" parentcolor="0" parentfont="0">
+            <row id="Caption" state="0">(Click Save to set range)</row>
+            <row id="Font.Color">clRed</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">8</row>
+            <row id="Font.Style">[fsBold]</row>
+            <row id="Height">13</row>
+            <row id="Left">423</row>
+            <row id="Top">353</row>
+            <row id="Width">139</row>
+          </component>
+          <component class="TVisLabel" name="Label4" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Step 2: UBS Stock DB folder (Leave blank to import current transaction from Sales/Purchase)</row>
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">95</row>
+            <row id="Width">532</row>
+          </component>
+          <component class="TVisButton" name="btClipBrd" type="TButton" action="actCopyClipboard">
+            <row id="Caption" state="0">Copy log to clipboard</row>
+            <row id="Height">25</row>
+            <row id="Left">466</row>
+            <row id="Top">535</row>
+            <row id="Width">120</row>
+          </component>
+          <component class="TVisButton" name="btExecute" type="TButton" action="actExecute">
+            <row id="Height">25</row>
+            <row id="Left">466</row>
+            <row id="Top">457</row>
+            <row id="Width">120</row>
+          </component>
+          <component class="TVisButton" name="btCancel" type="TButton">
+            <row id="Caption" state="0">Exit</row>
+            <row id="Height">25</row>
+            <row id="Left">466</row>
+            <row id="Top">566</row>
+            <row id="Width">120</row>
+          </component>
+          <component class="TVisButton" name="btConnect" type="TButton" action="actConnect">
+            <row id="Height">21</row>
+            <row id="Left">506</row>
+            <row id="Top">117</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisEdit" name="mmCount" type="TMemo" enabled="0" readonly="1">
+            <row id="Height">21</row>
+            <row id="Left">517</row>
+            <row id="Top">600</row>
+            <row id="Width">69</row>
+          </component>
+          <component class="TVisEdit" name="mmStatus" type="TMemo" parentfont="0" readonly="1" scrollbars="ssBoth">
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Courier New</row>
+            <row id="Font.Size">8</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">162</row>
+            <row id="Left">8</row>
+            <row id="Top">459</row>
+            <row id="Width">452</row>
+          </component>
+          <component class="TVisEdit" name="edDir" type="TEdit">
+            <row id="Height">21</row>
+            <row id="Left">8</row>
+            <row id="Top">60</row>
+            <row id="Width">412</row>
+          </component>
+          <component class="TVisButton" name="btBrowse" type="TButton" action="actBrowse">
+            <row id="Height">21</row>
+            <row id="Left">423</row>
+            <row id="Top">60</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisListView" name="edModule" type="TListView" viewstyle="vsReport">
+            <row id="Height">170</row>
+            <row id="Left">8</row>
+            <row id="Top">174</row>
+            <row id="Width">578</row>
+            <column name="Columns[0]">
+              <row id="Caption" state="0">Description</row>
+              <row id="Width">295</row>
+            </column>
+            <column name="Columns[1]">
+              <row id="Caption" state="0">Start From Record No.</row>
+              <row id="Width">130</row>
+            </column>
+            <column name="Columns[2]">
+              <row id="Caption" state="0">Total Records</row>
+              <row id="Width">130</row>
+            </column>
+          </component>
+          <component class="TVisEdit" name="edStartNo" type="TSpinEdit">
+            <row id="Height">22</row>
+            <row id="Left">149</row>
+            <row id="Top">350</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisEdit" name="edEndNo" type="TSpinEdit">
+            <row id="Height">22</row>
+            <row id="Left">251</row>
+            <row id="Top">350</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisButton" name="btSave" type="TButton" action="actSave">
+            <row id="Height">22</row>
+            <row id="Left">334</row>
+            <row id="Top">350</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisCheckBox" name="cbOpnBalSummary" type="TCheckBox" enabled="0">
+            <row id="Caption" state="0">Import opening balance summary (B/F amount only)</row>
+            <row id="Height">21</row>
+            <row id="Left">8</row>
+            <row id="Top">378</row>
+            <row id="Width">406</row>
+          </component>
+          <component class="TVisCheckBox" name="cbResetAccFormat" type="TCheckBox" enabled="0">
+            <row id="Caption" state="0">Reformat UBS customer &amp;&amp; supplier account code to follow SQL Account</row>
+            <row id="Height">21</row>
+            <row id="Left">8</row>
+            <row id="Top">402</row>
+            <row id="Width">406</row>
+          </component>
+          <component class="TVisEdit" name="edDir2" type="TEdit">
+            <row id="Height">21</row>
+            <row id="Left">8</row>
+            <row id="Top">117</row>
+            <row id="Width">412</row>
+          </component>
+          <component class="TVisButton" name="btBrowse2" type="TButton" action="actBrowse">
+            <row id="Height">21</row>
+            <row id="Left">423</row>
+            <row id="Top">117</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisHiddenComponent" name="ActionList1" type="TActionList">
+            <component class="TVisAction" name="actConnect" type="TAction">
+              <row id="Caption" state="0">Connect</row>
+            </component>
+            <component class="TVisAction" name="actBrowse" type="TAction">
+              <row id="Caption" state="0">Select Folder</row>
+            </component>
+            <component class="TVisAction" name="actClearList" type="TAction">
+              <row id="Caption" state="0">Clear</row>
+            </component>
+            <component class="TVisAction" name="actExecute" type="TAction">
+              <row id="Caption" state="0">Execute</row>
+            </component>
+            <component class="TVisAction" name="actCopyClipboard" type="TAction">
+              <row id="Caption" state="0">Copy to Clipboard</row>
+            </component>
+            <component class="TVisAction" name="actShowAllModules" type="TAction">
+              <row id="Caption" state="0">Show All Modules</row>
+              <row id="ShortCut" state="0">16460</row>
+            </component>
+            <component class="TVisAction" name="actSave" type="TAction">
+              <row id="Caption" state="0">Save</row>
+            </component>
+          </component>
+          <component class="TVisImageList" name="ImageList1" type="TImageList" imagewidth="1">
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TFMDATAIMPORT_UBSSTOCK" resname="TFMDATAIMPORT_UBSSTOCK">
+        <form class="TVclForm" name="fmDataImport_UBSStock" type="TfmDataImport_UBSStock" borderstyle="bsDialog" textheight="13">
+          <row id="Caption" state="0">UBS Stock</row>
+          <row id="ClientHeight">572</row>
+          <row id="ClientWidth">594</row>
+          <row id="Font.Color">clWindowText</row>
+          <row id="Font.Name">Tahoma</row>
+          <row id="Font.Size">8</row>
+          <row id="Font.Style">[]</row>
+          <row id="Left">0</row>
+          <row id="Top">0</row>
+          <component class="TVisLabel" name="Label3" type="TLabel" parentcolor="0" parentfont="0">
+            <row id="Caption" state="0">Data Migration - UBS Stock Control System </row>
+            <row id="Font.Color">clBlack</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[fsBold,fsUnderline]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">8</row>
+            <row id="Width">281</row>
+          </component>
+          <component class="TVisLabel" name="Label5" type="TLabel">
+            <row id="Caption" state="0">Rec No. :</row>
+            <row id="Height">13</row>
+            <row id="Left">466</row>
+            <row id="Top">546</row>
+            <row id="Width">45</row>
+          </component>
+          <component class="TVisLabel" name="Label7" type="TLabel">
+            <row id="Caption" state="0">Start import from record no:</row>
+            <row id="Height">13</row>
+            <row id="Left">8</row>
+            <row id="Top">296</row>
+            <row id="Width">135</row>
+          </component>
+          <component class="TVisLabel" name="Label8" type="TLabel">
+            <row id="Caption" state="0">to</row>
+            <row id="Height">13</row>
+            <row id="Left">235</row>
+            <row id="Top">296</row>
+            <row id="Width">10</row>
+          </component>
+          <component class="TVisLabel" name="Label9" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Step 1: Select folder containing files restored from UBS Stock database</row>
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">38</row>
+            <row id="Width">408</row>
+          </component>
+          <component class="TVisLabel" name="Label2" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Step 2: Select module(s) to import into SQL Accounting</row>
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">95</row>
+            <row id="Width">317</row>
+          </component>
+          <component class="TVisLabel" name="Label1" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Step 3: Press execute to start data import</row>
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">10</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">16</row>
+            <row id="Left">8</row>
+            <row id="Top">404</row>
+            <row id="Width">240</row>
+          </component>
+          <component class="TVisLabel" name="Label6" type="TLabel" parentcolor="0" parentfont="0">
+            <row id="Caption" state="0">(Click Save to set range)</row>
+            <row id="Font.Color">clRed</row>
+            <row id="Font.Name">Tahoma</row>
+            <row id="Font.Size">8</row>
+            <row id="Font.Style">[fsBold]</row>
+            <row id="Height">13</row>
+            <row id="Left">423</row>
+            <row id="Top">296</row>
+            <row id="Width">139</row>
+          </component>
+          <component class="TVisButton" name="btExecute" type="TButton" action="actExecute">
+            <row id="Height">25</row>
+            <row id="Left">466</row>
+            <row id="Top">426</row>
+            <row id="Width">120</row>
+          </component>
+          <component class="TVisButton" name="btCancel" type="TButton">
+            <row id="Caption" state="0">Exit</row>
+            <row id="Height">25</row>
+            <row id="Left">466</row>
+            <row id="Top">512</row>
+            <row id="Width">120</row>
+          </component>
+          <component class="TVisButton" name="btClipBrd" type="TButton" action="actCopyClipboard">
+            <row id="Height">25</row>
+            <row id="Left">466</row>
+            <row id="Top">481</row>
+            <row id="Width">120</row>
+          </component>
+          <component class="TVisButton" name="btConnect" type="TButton" action="actConnect">
+            <row id="Height">21</row>
+            <row id="Left">506</row>
+            <row id="Top">60</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisEdit" name="edDir" type="TEdit">
+            <row id="Height">21</row>
+            <row id="Left">8</row>
+            <row id="Top">60</row>
+            <row id="Width">412</row>
+          </component>
+          <component class="TVisButton" name="btBrowse" type="TButton" action="actBrowse">
+            <row id="Caption" state="0">Select Folder</row>
+            <row id="Height">21</row>
+            <row id="Left">423</row>
+            <row id="Top">60</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisEdit" name="mmCount" type="TMemo" enabled="0" readonly="1">
+            <row id="Height">21</row>
+            <row id="Left">517</row>
+            <row id="Top">543</row>
+            <row id="Width">69</row>
+          </component>
+          <component class="TVisEdit" name="mmStatus" type="TMemo" parentfont="0" readonly="1" scrollbars="ssBoth">
+            <row id="Font.Color">clWindowText</row>
+            <row id="Font.Name">Courier New</row>
+            <row id="Font.Size">8</row>
+            <row id="Font.Style">[]</row>
+            <row id="Height">138</row>
+            <row id="Left">8</row>
+            <row id="Top">426</row>
+            <row id="Width">452</row>
+          </component>
+          <component class="TVisListView" name="edModule" type="TListView" viewstyle="vsReport">
+            <row id="Height">170</row>
+            <row id="Left">8</row>
+            <row id="Top">117</row>
+            <row id="Width">578</row>
+            <column name="Columns[0]">
+              <row id="Caption" state="0">Description</row>
+              <row id="Width">295</row>
+            </column>
+            <column name="Columns[1]">
+              <row id="Caption" state="0">Start From Record No.</row>
+              <row id="Width">130</row>
+            </column>
+            <column name="Columns[2]">
+              <row id="Caption" state="0">Total Records</row>
+              <row id="Width">130</row>
+            </column>
+          </component>
+          <component class="TVisEdit" name="edStartNo" type="TSpinEdit">
+            <row id="Height">22</row>
+            <row id="Left">149</row>
+            <row id="Top">293</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisEdit" name="edEndNo" type="TSpinEdit">
+            <row id="Height">22</row>
+            <row id="Left">251</row>
+            <row id="Top">293</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisButton" name="btSave" type="TButton" action="actSave">
+            <row id="Height">22</row>
+            <row id="Left">337</row>
+            <row id="Top">293</row>
+            <row id="Width">80</row>
+          </component>
+          <component class="TVisCheckBox" name="cbAllowUOM" type="TCheckBox" enabled="0">
+            <row id="Caption" state="0">Import Stock UOM With Rate &lt; 1</row>
+            <row id="Height">21</row>
+            <row id="Left">8</row>
+            <row id="Top">321</row>
+            <row id="Width">286</row>
+          </component>
+          <component class="TVisCheckBox" name="cbAllowOpnBal" type="TCheckBox" enabled="0">
+            <row id="Caption" state="0">Import Stock Opening Balance</row>
+            <row id="Height">21</row>
+            <row id="Left">300</row>
+            <row id="Top">321</row>
+            <row id="Width">286</row>
+          </component>
+          <component class="TVisCheckBox" name="cbAllowPrice" type="TCheckBox" enabled="0">
+            <row id="Caption" state="0">Import Stock Customer &amp;&amp; Supplier Price</row>
+            <row id="Height">21</row>
+            <row id="Left">8</row>
+            <row id="Top">345</row>
+            <row id="Width">286</row>
+          </component>
+          <component class="TVisCheckBox" name="cbResetAccFormat" type="TCheckBox" enabled="0">
+            <row id="Caption" state="0">Reformat UBS customer &amp;&amp; supplier account code to follow SQL Account</row>
+            <row id="Height">21</row>
+            <row id="Left">8</row>
+            <row id="Top">369</row>
+            <row id="Width">578</row>
+          </component>
+          <component class="TVisCheckBox" name="cbAllowBOM" type="TCheckBox" enabled="0">
+            <row id="Caption" state="0">Import Stock BOM</row>
+            <row id="Height">21</row>
+            <row id="Left">300</row>
+            <row id="Top">345</row>
+            <row id="Width">286</row>
+          </component>
+          <component class="TVisHiddenComponent" name="ActionList1" type="TActionList">
+            <component class="TVisAction" name="actConnect" type="TAction">
+              <row id="Caption" state="0">Connect</row>
+            </component>
+            <component class="TVisAction" name="actBrowse" type="TAction">
+              <row id="Caption" state="0">...</row>
+            </component>
+            <component class="TVisAction" name="actClearList" type="TAction">
+              <row id="Caption" state="0">Clear</row>
+            </component>
+            <component class="TVisAction" name="actExecute" type="TAction">
+              <row id="Caption" state="0">Execute</row>
+            </component>
+            <component class="TVisAction" name="actCopyClipboard" type="TAction">
+              <row id="Caption" state="0">Copy log to clipboard</row>
+            </component>
+            <component class="TVisAction" name="actSave" type="TAction">
+              <row id="Caption" state="0">Save</row>
+            </component>
+          </component>
+          <component class="TVisImageList" name="ImageList1" type="TImageList" imagewidth="1">
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TFMSQLACCDATAIMPORT" resname="TFMSQLACCDATAIMPORT">
+        <form class="TVclForm" name="fmSQLAccDataImport" type="TfmSQLAccDataImport" borderstyle="bsDialog" textheight="13">
+          <row id="Caption" state="0">Data Import</row>
+          <row id="ClientHeight">251</row>
+          <row id="ClientWidth">403</row>
+          <row id="Font.Color">clWindowText</row>
+          <row id="Font.Name">Tahoma</row>
+          <row id="Font.Size">8</row>
+          <row id="Font.Style">[]</row>
+          <row id="Left">0</row>
+          <row id="Top">0</row>
+          <component class="TVisWrapPanel" name="FlowPanel1" type="TFlowPanel" align="alClient">
+            <row id="Height">251</row>
+            <row id="Left">0</row>
+            <row id="Top">0</row>
+            <row id="Width">403</row>
+          </component>
+        </form>
+      </node>
+    </node>
+    <node class="TWindowsStringFolder" name="Strings" created="20160411143854" resid="6">
+      <node class="TWindowsStringTableNode" name="StringTable" resname="StringTable">
+        <row id="Data import aborted." state="0">Data import aborted.</row>
+        <row id="Do you want to download Microsoft OLE DB Provider for Visual FoxPro 9.0?" state="0">Do you want to download Microsoft OLE DB Provider for Visual FoxPro 9.0?</row>
+        <row id="Error! Invalid UBS Database Folder." state="0">Error! Invalid UBS Database Folder.</row>
+        <row id="Reminder: Have you assign GL accounts for all Stock Group? Click YES if you already have and NO to abort." state="0">Reminder: Have you assign GL accounts for all Stock Group? Click YES if you already have and NO to abort.</row>
+        <row id="Reminder: Have you inserted the activation code? Click YES if you already have and NO to abort." state="0">Reminder: Have you inserted the activation code? Click YES if you already have and NO to abort.</row>
+        <row id="Reminder: Please check in GL | Maintain Account that all Special Type Account are assigned accordingly. E.g. Bank &amp; Cash Account. Click OK to proceed and Cancel to abort." state="0">Reminder: Please check in GL | Maintain Account that all Special Type Account are assigned accordingly. E.g. Bank &amp; Cash Account. Click OK to proceed and Cancel to abort.</row>
+        <row id="Reminder: Please go to GST | Start GST Now... if you are GST registered. Click OK to proceed and Cancel to abort." state="0">Reminder: Please go to GST | Start GST Now... if you are GST registered. Click OK to proceed and Cancel to abort.</row>
+        <row id="Select UBS Account directory" state="0">Select UBS Account directory</row>
+        <row id="Tips: Disable Unit Price message prompt by going to Tools | Options | Unit Price. For all tabs, under the Option column, change all to blank. Click OK to proceed and Cancel to abort." state="0">Tips: Disable Unit Price message prompt by going to Tools | Options | Unit Price. For all tabs, under the Option column, change all to blank. Click OK to proceed and Cancel to abort.</row>
+      </node>
+    </node>
+  </source>
+</document>

@@ -532,7 +532,7 @@
   <component name="TBindExpression" class="TVisHiddenComponent" excluded="1"/>
   <component name="TBindingsList" class="TVisHiddenComponent"/>
   <component name="TBindLink" class="TVisHiddenComponent" excluded="1"/>
-  <component name="TBindList" class="TVisHiddenComponent"/>
+  <component name="TBindList" class="TVisHiddenComponent" excluded="1"/>
   <component name="TBindNavigator" class="TVisBasicControl"/>
   <component name="TBindScope" class="TVisHiddenComponent" excluded="1"/>
   <component name="TBindSourceDB" class="TVisHiddenComponent"/>
@@ -678,7 +678,12 @@
   <component name="TcxButtonEdit" class="TVisEdit"/>
   <component name="TcxCalcEdit" class="TVisEdit"/>
   <component name="TcxCategoryRow" class="TVisHiddenComponent"/>
-  <component name="TcxCheckBox" class="TVisCheckBox"/>
+  <component name="TcxCheckBox" class="TVisCheckBox">
+    <property name="Properties.DisplayChecked"/>
+    <property name="Properties.DisplayUnchecked"/>
+    <property name="Properties.ValueChecked"/>
+    <property name="Properties.ValueUnchecked"/>
+  </component>
   <component name="TcxCheckComboBox" class="TVisComboBox"/>
   <component name="TcxCheckGroup" class="TVisGroupBox"/>
   <component name="TcxCheckListBox" class="TVisListBox"/>
@@ -698,6 +703,10 @@
   </component>
   <component name="TcxDBCheckBox" class="TVisCheckBox">
     <property name="DataBinding.DataField"/>
+    <property name="Properties.DisplayChecked"/>
+    <property name="Properties.DisplayUnchecked"/>
+    <property name="Properties.ValueChecked"/>
+    <property name="Properties.ValueUnchecked"/>
   </component>
   <component name="TcxDBCheckComboBox" class="TVisComboBox">
     <property name="DataBinding.DataField"/>
@@ -792,7 +801,12 @@
     <property name="DataBinding.DataField"/>
   </component>
   <component name="TcxDBTreeList" class="TVisTreeView"/>
-  <component name="TcxDBTreeListColumn" class="TVisHiddenComponent"/>
+  <component name="TcxDBTreeListColumn" class="TVisHiddenComponent">
+    <property name="Properties.DisplayChecked"/>
+    <property name="Properties.DisplayUnchecked"/>
+    <property name="Properties.ValueChecked"/>
+    <property name="Properties.ValueUnchecked"/>
+  </component>
   <component name="TcxDBVerticalGrid" class="TVisBasicControl"/>
   <component name="TcxDefaultEditStyleController" class="TVisHiddenComponent"/>
   <component name="TcxEditorRow" class="TVisHiddenComponent"/>
@@ -800,7 +814,12 @@
   <component name="TcxEditRepositoryBlobItem" class="TVisHiddenComponent"/>
   <component name="TcxEditRepositoryButtonItem" class="TVisHiddenComponent"/>
   <component name="TcxEditRepositoryCalcItem" class="TVisHiddenComponent"/>
-  <component name="TcxEditRepositoryCheckBoxItem" class="TVisHiddenComponent"/>
+  <component name="TcxEditRepositoryCheckBoxItem" class="TVisHiddenComponent">
+    <property name="Properties.DisplayUnchecked"/>
+    <property name="Properties.ValueChecked"/>
+    <property name="Properties.ValueUnchecked"/>
+    <property name="TcxEditRepositoryCheckBoxItem" default="Properties.DisplayChecked"/>
+  </component>
   <component name="TcxEditRepositoryCheckComboBox" class="TVisHiddenComponent"/>
   <component name="TcxEditRepositoryColorComboBox" class="TVisHiddenComponent"/>
   <component name="TcxEditRepositoryComboBoxItem" class="TVisHiddenComponent"/>
@@ -833,7 +852,13 @@
   <component name="TcxFilterControl" class="TVisBasicControl"/>
   <component name="TcxFontNameComboBox" class="TVisComboBox"/>
   <component name="TcxGrid" class="TVisBasicControl"/>
-  <component name="TcxGridBandedColumn" class="TVisHiddenComponent"/>
+  <component name="TcxGridBandedColumn" class="TVisHiddenComponent">
+    <property name="Properties.DisplayChecked"/>
+    <property name="Properties.DisplayUnchecked"/>
+    <property name="Properties.ValueChecked"/>
+    <property name="Properties.ValueUnchecked"/>
+    <property name="PropertiesClassName"/>
+  </component>
   <component name="TcxGridBandedTableView" class="TVisHiddenComponent"/>
   <component name="TcxGridBandedTableViewStyleSheet" class="TVisHiddenComponent"/>
   <component name="TcxGridCardView" class="TVisBasicControl"/>
@@ -841,11 +866,22 @@
   <component name="TcxGridCardViewStyleSheet" class="TVisHiddenComponent"/>
   <component name="TcxGridChartSeries" class="TVisHiddenComponent"/>
   <component name="TcxGridChartView" class="TVisHiddenComponent"/>
-  <component name="TcxGridColumn" class="TVisHiddenComponent"/>
+  <component name="TcxGridColumn" class="TVisHiddenComponent">
+    <property name="Properties.DisplayChecked"/>
+    <property name="Properties.DisplayUnchecked"/>
+    <property name="Properties.Items.Value"/>
+    <property name="Properties.ValueChecked"/>
+    <property name="Properties.ValueUnchecked"/>
+    <property name="PropertiesClassName"/>
+  </component>
   <component name="TcxGridDBBandedColumn" class="TVisHiddenComponent">
     <property name="DataBinding.FieldName"/>
+    <property name="Properties.DisplayChecked"/>
+    <property name="Properties.DisplayUnchecked"/>
     <property name="Properties.GraphicClassName"/>
     <property name="Properties.PictureGraphicClassName"/>
+    <property name="Properties.ValueChecked"/>
+    <property name="Properties.ValueUnchecked"/>
     <property name="PropertiesClassName"/>
   </component>
   <component name="TcxGridDBBandedTableView" class="TVisHiddenComponent">
@@ -875,10 +911,10 @@
   </component>
   <component name="TcxGridDBColumn" class="TVisHiddenComponent">
     <property name="DataBinding.FieldName"/>
-    <property name="Properties.GraphicClassName"/>
-    <property name="Properties.KeyFieldNames"/>
-    <property name="Properties.ListColumns.FieldName"/>
-    <property name="Properties.PictureGraphicClassName"/>
+    <property name="Properties.DisplayChecked"/>
+    <property name="Properties.DisplayUnchecked"/>
+    <property name="Properties.ValueChecked"/>
+    <property name="Properties.ValueUnchecked"/>
     <property name="PropertiesClassName"/>
   </component>
   <component name="TcxGridDBTableView" class="TVisHiddenComponent">
@@ -941,7 +977,7 @@
   <component name="TcxShellTreeView" class="TVisBasicControl"/>
   <component name="TcxSpinButton" class="TVisUpDown"/>
   <component name="TcxSpinEdit" class="TVisEdit"/>
-  <component name="TcxSplitter" class="TVisPanel"/>
+  <component name="TcxSplitter" class="TVisPanel" excluded="1"/>
   <component name="TcxSpreadSheet" class="TVisBasicControl"/>
   <component name="TcxSpreadSheetBook" class="TVisBasicControl"/>
   <component name="TcxSSColorComboBox" class="TVisComboBox"/>
@@ -1213,7 +1249,9 @@
   <component name="TDSServerClass" class="TVisHiddenComponent"/>
   <component name="TDSServerMetaDataProvider" class="TVisHiddenComponent"/>
   <component name="TDSTCPServerTransport" class="TVisHiddenComponent"/>
-  <component name="TdxBar" class="TVisHiddenComponent"/>
+  <component name="TdxBar" class="TVisHiddenComponent">
+    <property name="ItemLinks.ItemName"/>
+  </component>
   <component name="TdxBarButton" class="TVisHiddenComponent"/>
   <component name="TdxBarColorCombo" class="TVisHiddenComponent"/>
   <component name="TdxBarCombo" class="TVisHiddenComponent"/>
