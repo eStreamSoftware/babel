@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document created="20160411090511" version="4.0.359" date="20160411181513" scan="6" scanned="20160411181456">
+<document created="20160411090511" version="4.0.359" date="20160413170401" scan="6" scanned="20160411181456">
   <lang id="zh"/>
   <lang id="ms"/>
   <lang id="vi"/>
@@ -7,6 +7,7 @@
     <resources>
       <disabled id="16"/>
     </resources>
+    <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TCardinalData</class>

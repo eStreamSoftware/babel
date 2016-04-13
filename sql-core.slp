@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document created="20120911141512" version="4.0.359" date="20160413150257" scan="103" scanned="20160413150148">
+<document created="20120911141512" version="4.0.359" date="20160413165650" scan="109" scanned="20160413165600">
   <lang id="zh"/>
   <lang id="ms"/>
   <lang id="vi"/>
   <source class="TDelphiSource" name="..\SQL.app.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160413065944" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+    <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TCardinalData</class>
@@ -1529,6 +1530,7 @@
     </node>
   </source>
   <source class="TDelphiSource" name="..\SQL.diy.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160413065944" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+    <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TCardinalData</class>
@@ -2458,6 +2460,7 @@
     </node>
   </source>
   <source class="TDelphiSource" name="..\SQL.dunit.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160413065852" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+    <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TCardinalData</class>
@@ -2567,6 +2570,7 @@
     </node>
   </source>
   <source class="TDelphiSource" name="..\SQL.oocxgrid.layout.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160413065944" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+    <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TCardinalData</class>
@@ -2769,6 +2773,7 @@
     </node>
   </source>
   <source class="TDelphiSource" name="..\SQL.oodataimport.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160413065914" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+    <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TCardinalData</class>
@@ -3143,7 +3148,8 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.oodevex.skins.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160413065912" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.oodevex.skins.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160413082356" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+    <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TCardinalData</class>
@@ -3217,6 +3223,7 @@
     </node>
   </source>
   <source class="TDelphiSource" name="..\SQL.oodialog.win32.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160413065858" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+    <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TCardinalData</class>
@@ -3861,6 +3868,7 @@
     </node>
   </source>
   <source class="TDelphiSource" name="..\SQL.oomvplookup.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160413065928" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+    <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TCardinalData</class>
@@ -3991,6 +3999,7 @@
     </node>
   </source>
   <source class="TDelphiSource" name="..\SQL.oopersist.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160413065944" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+    <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TCardinalData</class>
@@ -4200,6 +4209,7 @@
     </node>
   </source>
   <source class="TDelphiSource" name="..\SQL.ooreport.FastReport.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160413065922" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+    <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TCardinalData</class>
@@ -4315,6 +4325,7 @@
     </node>
   </source>
   <source class="TDelphiSource" name="..\SQL.ooreport.ReportBuilder.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160413065922" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+    <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TCardinalData</class>
@@ -4387,6 +4398,7 @@
     </node>
   </source>
   <source class="TDelphiSource" name="..\SQL.ooreport.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160413065944" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+    <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TCardinalData</class>
@@ -6634,11 +6646,7 @@
     </node>
   </source>
   <source class="TDelphiSource" name="..\SQL.oovaluefunc.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160413065910" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
-    <resources>
-      <disabled name="TYPELIB"/>
-      <disabled id="1"/>
-      <disabled id="12"/>
-    </resources>
+    <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TCardinalData</class>
@@ -7328,11 +7336,7 @@
     </node>
   </source>
   <source class="TDelphiSource" name="..\SQL.oovclie.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160413065858" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
-    <resources>
-      <disabled name="TYPELIB"/>
-      <disabled id="1"/>
-      <disabled id="12"/>
-    </resources>
+    <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TCardinalData</class>
@@ -7417,6 +7421,7 @@
       <disabled name="DBX.DRIVER"/>
       <disabled name="DBX.DRIVER.DESCRIPTION"/>
     </resources>
+    <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TCardinalData</class>
@@ -12043,11 +12048,7 @@
     </node>
   </source>
   <source class="TDelphiSource" name="..\SQL.system.lookup.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160413065944" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
-    <resources>
-      <disabled name="TYPELIB"/>
-      <disabled id="1"/>
-      <disabled id="12"/>
-    </resources>
+    <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TCardinalData</class>

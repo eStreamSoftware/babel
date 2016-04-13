@@ -1,12 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document created="20160411090511" version="4.0.359" date="20160411104801" scan="3" scanned="20160411100909">
+<document created="20160411090511" version="4.0.359" date="20160413170330" scan="5" scanned="20160413170329">
   <lang id="zh"/>
   <lang id="ms"/>
   <lang id="vi"/>
-  <source class="TDelphiSource" name="..\rtl230.bpl" original="en-US" outputitems="[oiResource]" date="20151112235500" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
-    <resources>
-      <disabled id="16"/>
-    </resources>
+  <source class="TDelphiSource" name="..\rtl230.bpl" original="en-US" outputitems="[oiResource]" date="20151112235500" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+    <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TCardinalData</class>
@@ -5063,18 +5061,8 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\vcl230.bpl" original="en-US" encoding="" outputitems="[oiResource]" date="20151112235500" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
-    <resources>
-      <disabled name="AVI"/>
-      <disabled id="1"/>
-      <disabled id="2"/>
-      <disabled id="3"/>
-      <disabled id="5"/>
-      <disabled id="12"/>
-      <disabled id="14"/>
-      <disabled id="16"/>
-      <disabled id="24"/>
-    </resources>
+  <source class="TDelphiSource" name="..\vcl230.bpl" original="en-US" outputitems="[oiResource]" date="20151112235500" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+    <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TCardinalData</class>
