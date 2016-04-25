@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document created="20160411090511" version="4.0.359" date="20160413170401" scan="6" scanned="20160411181456">
+<document created="20160411090511" version="4.0.359" date="20160425163204" scan="8" scanned="20160425163201">
   <lang id="zh"/>
   <lang id="ms"/>
   <lang id="vi"/>
-  <source class="TDelphiSource" name="..\SQL.DataImport.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160411095726" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.Bank.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160425015740" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <resources>
-      <disabled id="16"/>
+      <disabled name="SQL_BANK"/>
     </resources>
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
@@ -22,26 +22,43 @@
       <class>TReadingOrderData</class>
     </excludeddatatypes>
     <mappings>
-      <component name="TAction" class="TVisAction">
+      <component name="TAction" class="TVisAction" inuse="0">
         <property name="Category"/>
         <property name="ShortCut"/>
       </component>
-      <component name="TActionList" class="TVisHiddenComponent"/>
+      <component name="TActionList" class="TVisHiddenComponent" inuse="0"/>
+      <component name="TBindExpression" class="TVisHiddenComponent" auto="1"/>
+      <component name="TBindingsList" class="TVisHiddenComponent"/>
       <component name="TButton" class="TVisButton"/>
-      <component name="TCheckBox" class="TVisCheckBox"/>
+      <component name="TCheckBox" class="TVisCheckBox" inuse="0"/>
+      <component name="TComboBox" class="TVisComboBox"/>
+      <component name="TcxCheckBox" class="TVisCheckBox"/>
+      <component name="TcxComboBox" class="TVisComboBox"/>
+      <component name="TcxDateEdit" class="TVisEdit"/>
+      <component name="TcxGrid" class="TVisBasicControl"/>
+      <component name="TcxGridColumn" class="TVisHiddenComponent"/>
+      <component name="TcxGridLevel" class="TVisHiddenComponent"/>
+      <component name="TcxGridTableView" class="TVisHiddenComponent"/>
+      <component name="TcxImageComboBox" class="TVisComboBox"/>
+      <component name="TcxLabel" class="TVisLabel"/>
+      <component name="TcxSpinEdit" class="TVisEdit"/>
+      <component name="TcxTextEdit" class="TVisEdit"/>
       <component name="TEdit" class="TVisEdit">
         <property name="PasswordChar"/>
       </component>
-      <component name="TFlowPanel" class="TVisWrapPanel"/>
-      <component name="TImageList" class="TVisImageList"/>
+      <component name="TFlowPanel" class="TVisWrapPanel" inuse="0"/>
+      <component name="TImageList" class="TVisImageList" inuse="0"/>
       <component name="TLabel" class="TVisLabel" updatebounds="1"/>
-      <component name="TListView" class="TVisListView"/>
-      <component name="TMemo" class="TVisEdit"/>
-      <component name="TOpenDialog" class="TVisHiddenComponent">
+      <component name="TListView" class="TVisListView" inuse="0"/>
+      <component name="TMemo" class="TVisEdit" inuse="0"/>
+      <component name="TOpenDialog" class="TVisHiddenComponent" inuse="0">
         <property name="DefaultExt"/>
         <property name="Filter"/>
       </component>
-      <component name="TSpinEdit" class="TVisEdit"/>
+      <component name="TPageControl" class="TVisPageControl"/>
+      <component name="TPanel" class="TVisPanel"/>
+      <component name="TSpinEdit" class="TVisEdit" inuse="0"/>
+      <component name="TTabSheet" class="TVisTabSheet"/>
       <keyword name="RadioButton" class="TVisRadioButton"/>
       <keyword name="SpeedButton" class="TVisSpeedButton"/>
       <keyword name="ListBox" class="TVisListBox"/>
@@ -70,1149 +87,2343 @@
       <property name="HelpKeyword"/>
     </mappings>
     <node class="TVclFormFolder" name="Forms" created="20160411143854" resid="10">
-      <node class="TVclFormNode" name="TFMDATAIMPORT_EMASACCOUNT" resname="TFMDATAIMPORT_EMASACCOUNT">
-        <form class="TVclForm" name="fmDataImport_EMASAccount" type="TfmDataImport_EMASAccount" borderstyle="bsDialog" textheight="13">
-          <row id="Caption" state="0">EMAS Account</row>
-          <row id="ClientHeight">572</row>
-          <row id="ClientWidth">594</row>
-          <row id="Font.Color">clWindowText</row>
-          <row id="Font.Name">Tahoma</row>
-          <row id="Font.Size">8</row>
-          <row id="Font.Style">[]</row>
-          <row id="Left">0</row>
-          <row id="Top">0</row>
-          <component class="TVisLabel" name="Label5" type="TLabel">
-            <row id="Caption" state="0">Rec No. :</row>
-            <row id="Height">13</row>
-            <row id="Left">466</row>
-            <row id="Top">546</row>
-            <row id="Width">45</row>
-          </component>
-          <component class="TVisLabel" name="Label8" type="TLabel">
-            <row id="Caption" state="0">to</row>
-            <row id="Height">13</row>
-            <row id="Left">235</row>
-            <row id="Top">296</row>
-            <row id="Width">10</row>
-          </component>
-          <component class="TVisLabel" name="Label3" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Data Migration - EMAS Accounting System </row>
-            <row id="Font.Color">clBlack</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[fsBold,fsUnderline]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">8</row>
-            <row id="Width">279</row>
-          </component>
-          <component class="TVisLabel" name="Label9" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 1: Select folder containing files restored from EMAS Account database</row>
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">38</row>
-            <row id="Width">432</row>
-          </component>
-          <component class="TVisLabel" name="Label1" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 2: Select module(s) to import into SQL Accounting</row>
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">95</row>
-            <row id="Width">317</row>
-          </component>
-          <component class="TVisLabel" name="Label2" type="TLabel">
-            <row id="Caption" state="0">Start import from record no:</row>
-            <row id="Height">13</row>
-            <row id="Left">8</row>
-            <row id="Top">296</row>
-            <row id="Width">135</row>
-          </component>
-          <component class="TVisLabel" name="Label4" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 3: Press execute to start data import</row>
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">380</row>
-            <row id="Width">240</row>
-          </component>
-          <component class="TVisLabel" name="Label6" type="TLabel" parentcolor="0" parentfont="0">
-            <row id="Caption" state="0">(Click Save to set range)</row>
-            <row id="Font.Color">clRed</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">8</row>
-            <row id="Font.Style">[fsBold]</row>
-            <row id="Height">13</row>
-            <row id="Left">423</row>
-            <row id="Top">296</row>
-            <row id="Width">139</row>
-          </component>
-          <component class="TVisButton" name="btClipBrd" type="TButton" action="actCopyClipboard">
-            <row id="Height">25</row>
-            <row id="Left">466</row>
-            <row id="Top">481</row>
-            <row id="Width">120</row>
-          </component>
-          <component class="TVisButton" name="btExecute" type="TButton" action="actExecute">
-            <row id="Height">25</row>
-            <row id="Left">466</row>
-            <row id="Top">402</row>
-            <row id="Width">120</row>
-          </component>
-          <component class="TVisButton" name="btnCancel" type="TButton">
-            <row id="Caption" state="0">Exit</row>
-            <row id="Height">25</row>
-            <row id="Left">466</row>
-            <row id="Top">512</row>
-            <row id="Width">120</row>
-          </component>
-          <component class="TVisButton" name="btConnect" type="TButton" action="actConnect">
-            <row id="Height">21</row>
-            <row id="Left">506</row>
-            <row id="Top">60</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisButton" name="btBrowse" type="TButton" action="actBrowse">
-            <row id="Height">21</row>
-            <row id="Left">423</row>
-            <row id="Top">60</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisEdit" name="edDir" type="TEdit">
-            <row id="Height">21</row>
-            <row id="Left">8</row>
-            <row id="Top">60</row>
-            <row id="Width">412</row>
-          </component>
-          <component class="TVisEdit" name="mmCount" type="TMemo" enabled="0" readonly="1">
-            <row id="Height">21</row>
-            <row id="Left">517</row>
-            <row id="Top">543</row>
-            <row id="Width">69</row>
-          </component>
-          <component class="TVisEdit" name="mmStatus" type="TMemo" parentfont="0" readonly="1" scrollbars="ssBoth">
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Courier New</row>
-            <row id="Font.Size">8</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">162</row>
-            <row id="Left">8</row>
-            <row id="Top">402</row>
-            <row id="Width">452</row>
-          </component>
-          <component class="TVisListView" name="edModule" type="TListView" viewstyle="vsReport">
-            <row id="Height">170</row>
-            <row id="Left">8</row>
-            <row id="Top">117</row>
-            <row id="Width">578</row>
-            <column name="Columns[0]">
-              <row id="Caption" state="0">Description</row>
-              <row id="Width">295</row>
-            </column>
-            <column name="Columns[1]">
-              <row id="Caption" state="0">Start From Record No.</row>
-              <row id="Width">130</row>
-            </column>
-            <column name="Columns[2]">
-              <row id="Caption" state="0">Total Records</row>
-              <row id="Width">130</row>
-            </column>
-          </component>
-          <component class="TVisButton" name="btSave" type="TButton" action="actSave">
-            <row id="Height">22</row>
-            <row id="Left">337</row>
-            <row id="Top">293</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisEdit" name="edEndNo" type="TSpinEdit">
-            <row id="Height">22</row>
-            <row id="Left">251</row>
-            <row id="Top">293</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisEdit" name="edStartNo" type="TSpinEdit">
-            <row id="Height">22</row>
-            <row id="Left">149</row>
-            <row id="Top">293</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisCheckBox" name="cbOpnBalSummary" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Import Opening Balance Summary</row>
-            <row id="Height">21</row>
-            <row id="Left">8</row>
-            <row id="Top">321</row>
-            <row id="Width">409</row>
-          </component>
-          <component class="TVisCheckBox" name="cbResetAccFormat" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Reset Customer &amp;&amp; Supplier Account Formatting</row>
-            <row id="Height">21</row>
-            <row id="Left">8</row>
-            <row id="Top">345</row>
-            <row id="Width">409</row>
-          </component>
-          <component class="TVisHiddenComponent" name="ActionList1" type="TActionList">
-            <component class="TVisAction" name="actConnect" type="TAction">
-              <row id="Caption" state="0">Connect</row>
+      <node class="TVclFormNode" name="TFMBANK" state="0" created="20160425163133" resname="TFMBANK">
+        <form class="TVclForm" name="fmBank" state="0" type="TfmBank" bordericons="[biSystemMenu]" textheight="13">
+          <row id="Caption" state="0">Select Bank</row>
+          <row id="ClientHeight" state="0">257</row>
+          <row id="ClientWidth" state="0">449</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisBasicControl" name="cxGrid1" state="0" type="TcxGrid">
+            <row id="Height" state="0">201</row>
+            <row id="Left" state="0">8</row>
+            <row id="Top" state="0">8</row>
+            <row id="Width" state="0">433</row>
+            <component class="TVisHiddenComponent" name="gvBank" state="0" type="TcxGridTableView">
+              <component class="TVisHiddenComponent" name="gvBankCode" state="0" type="TcxGridColumn">
+                <row id="Caption" state="0">Code</row>
+              </component>
+              <component class="TVisHiddenComponent" name="gvBankAlias" state="0" type="TcxGridColumn">
+                <row id="Caption" state="0">Alias</row>
+              </component>
+              <component class="TVisHiddenComponent" name="gvBankName" state="0" type="TcxGridColumn">
+                <row id="Caption" state="0">Name</row>
+              </component>
+              <component class="TVisHiddenComponent" name="gvBankCountry" state="0" type="TcxGridColumn">
+                <row id="Caption" state="0">Country</row>
+              </component>
             </component>
-            <component class="TVisAction" name="actBrowse" type="TAction">
-              <row id="Caption" state="0">Select Folder</row>
+            <component class="TVisHiddenComponent" name="cxGrid1Level1" state="0" type="TcxGridLevel">
             </component>
-            <component class="TVisAction" name="actClearList" type="TAction">
-              <row id="Caption" state="0">Clear</row>
+          </component>
+          <component class="TVisButton" name="btnOK" state="0" type="TButton">
+            <row id="Caption" state="0">OK</row>
+            <row id="Height" state="0">25</row>
+            <row id="Left" state="0">279</row>
+            <row id="Top" state="0">224</row>
+            <row id="Width" state="0">75</row>
+          </component>
+          <component class="TVisButton" name="btnCancel" state="0" type="TButton">
+            <row id="Caption" state="0">Cancel</row>
+            <row id="Height" state="0">25</row>
+            <row id="Left" state="0">366</row>
+            <row id="Top" state="0">224</row>
+            <row id="Width" state="0">75</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TLF_BANKID" state="0" created="20160425163133" resname="TLF_BANKID">
+        <form class="TVclForm" name="LF_BankID" state="0" type="TLF_BankID" textheight="13">
+          <row id="Caption" state="0">Bank</row>
+          <row id="ClientHeight" state="0">201</row>
+          <row id="ClientWidth" state="0">353</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisBasicControl" name="cxGrid1" state="0" type="TcxGrid" align="alClient">
+            <row id="Height" state="0">201</row>
+            <row id="Left" state="0">0</row>
+            <row id="Top" state="0">0</row>
+            <row id="Width" state="0">353</row>
+            <component class="TVisHiddenComponent" name="LookupGridView" state="0" type="TcxGridTableView">
+              <component class="TVisHiddenComponent" name="LookupGridViewCode" state="0" type="TcxGridColumn">
+                <row id="Caption" state="0">Code</row>
+              </component>
+              <component class="TVisHiddenComponent" name="LookupGridViewAlias" state="0" type="TcxGridColumn">
+                <row id="Caption" state="0">Alias</row>
+              </component>
+              <component class="TVisHiddenComponent" name="LookupGridViewName" state="0" type="TcxGridColumn">
+                <row id="Caption" state="0">Name</row>
+              </component>
+              <component class="TVisHiddenComponent" name="LookupGridViewCountry" state="0" type="TcxGridColumn">
+                <row id="Caption" state="0">Country</row>
+              </component>
             </component>
-            <component class="TVisAction" name="actExecute" type="TAction">
-              <row id="Caption" state="0">Execute</row>
-            </component>
-            <component class="TVisAction" name="actCopyClipboard" type="TAction">
-              <row id="Caption" state="0">Copy log to clipboard</row>
-            </component>
-            <component class="TVisAction" name="actSave" type="TAction">
-              <row id="Caption" state="0">Save</row>
+            <component class="TVisHiddenComponent" name="cxGrid1Level1" state="0" type="TcxGridLevel">
             </component>
           </component>
         </form>
       </node>
-      <node class="TVclFormNode" name="TFMDATAIMPORT_EMASSTOCK" resname="TFMDATAIMPORT_EMASSTOCK">
-        <form class="TVclForm" name="fmDataImport_EMASStock" type="TfmDataImport_EMASStock" borderstyle="bsDialog" textheight="13">
-          <row id="Caption" state="0">EMAS Stock</row>
-          <row id="ClientHeight">572</row>
-          <row id="ClientWidth">594</row>
-          <row id="Font.Color">clWindowText</row>
-          <row id="Font.Name">Tahoma</row>
-          <row id="Font.Size">8</row>
-          <row id="Font.Style">[]</row>
-          <row id="Left">0</row>
-          <row id="Top">0</row>
-          <component class="TVisLabel" name="Label5" type="TLabel">
-            <row id="Caption" state="0">Rec No. :</row>
-            <row id="Height">13</row>
-            <row id="Left">466</row>
-            <row id="Top">546</row>
-            <row id="Width">45</row>
-          </component>
-          <component class="TVisLabel" name="Label8" type="TLabel">
-            <row id="Caption" state="0">to</row>
-            <row id="Height">13</row>
-            <row id="Left">235</row>
-            <row id="Top">296</row>
-            <row id="Width">10</row>
-          </component>
-          <component class="TVisLabel" name="Label3" type="TLabel" parentcolor="0" parentfont="0">
-            <row id="Caption" state="0">Data Migration - EMAS Stock Control System </row>
-            <row id="Font.Color">clBlack</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[fsBold,fsUnderline]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">8</row>
-            <row id="Width">293</row>
-          </component>
-          <component class="TVisLabel" name="Label9" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 1: Select folder containing files restored from EMAS Stock database</row>
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">38</row>
-            <row id="Width">418</row>
-          </component>
-          <component class="TVisLabel" name="Label2" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 2: Select module(s) to import into SQL Accounting</row>
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">95</row>
-            <row id="Width">317</row>
-          </component>
-          <component class="TVisLabel" name="Label1" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 3: Press execute to start data import</row>
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">428</row>
-            <row id="Width">240</row>
-          </component>
-          <component class="TVisLabel" name="Label7" type="TLabel">
-            <row id="Caption" state="0">Start import from record no:</row>
-            <row id="Height">13</row>
-            <row id="Left">8</row>
-            <row id="Top">296</row>
-            <row id="Width">135</row>
-          </component>
-          <component class="TVisLabel" name="Label6" type="TLabel" parentcolor="0" parentfont="0">
-            <row id="Caption" state="0">(Click Save to set range)</row>
-            <row id="Font.Color">clRed</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">8</row>
-            <row id="Font.Style">[fsBold]</row>
-            <row id="Height">13</row>
-            <row id="Left">423</row>
-            <row id="Top">296</row>
-            <row id="Width">139</row>
-          </component>
-          <component class="TVisButton" name="btExecute" type="TButton" action="actExecute">
-            <row id="Height">25</row>
-            <row id="Left">466</row>
-            <row id="Top">450</row>
-            <row id="Width">120</row>
-          </component>
-          <component class="TVisButton" name="btnCancel" type="TButton">
-            <row id="Caption" state="0">Exit</row>
-            <row id="Height">25</row>
-            <row id="Left">466</row>
-            <row id="Top">512</row>
-            <row id="Width">120</row>
-          </component>
-          <component class="TVisButton" name="btClipBrd" type="TButton" action="actCopyClipboard">
-            <row id="Height">25</row>
-            <row id="Left">466</row>
-            <row id="Top">481</row>
-            <row id="Width">120</row>
-          </component>
-          <component class="TVisButton" name="btConnect" type="TButton" action="actConnect">
-            <row id="Height">21</row>
-            <row id="Left">506</row>
-            <row id="Top">60</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisEdit" name="mmCount" type="TMemo" enabled="0" readonly="1">
-            <row id="Height">21</row>
-            <row id="Left">517</row>
-            <row id="Top">543</row>
-            <row id="Width">69</row>
-          </component>
-          <component class="TVisEdit" name="mmStatus" type="TMemo" parentfont="0" readonly="1" scrollbars="ssBoth">
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Courier New</row>
-            <row id="Font.Size">8</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">114</row>
-            <row id="Left">8</row>
-            <row id="Top">450</row>
-            <row id="Width">452</row>
-          </component>
-          <component class="TVisEdit" name="edDir" type="TEdit">
-            <row id="Height">21</row>
-            <row id="Left">8</row>
-            <row id="Top">60</row>
-            <row id="Width">412</row>
-          </component>
-          <component class="TVisButton" name="btBrowse" type="TButton" action="actBrowse">
-            <row id="Height">21</row>
-            <row id="Left">423</row>
-            <row id="Top">60</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisListView" name="edModule" type="TListView" viewstyle="vsReport">
-            <row id="Height">170</row>
-            <row id="Left">8</row>
-            <row id="Top">117</row>
-            <row id="Width">578</row>
-            <column name="Columns[0]">
-              <row id="Caption" state="0">Description</row>
-              <row id="Width">295</row>
-            </column>
-            <column name="Columns[1]">
-              <row id="Caption" state="0">Start From Record No.</row>
-              <row id="Width">130</row>
-            </column>
-            <column name="Columns[2]">
-              <row id="Caption" state="0">Record Total</row>
-              <row id="Width">130</row>
-            </column>
-          </component>
-          <component class="TVisEdit" name="edStartNo" type="TSpinEdit">
-            <row id="Height">22</row>
-            <row id="Left">149</row>
-            <row id="Top">293</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisEdit" name="edEndNo" type="TSpinEdit">
-            <row id="Height">22</row>
-            <row id="Left">251</row>
-            <row id="Top">293</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisButton" name="btSave" type="TButton" action="actSave">
-            <row id="Height">22</row>
-            <row id="Left">337</row>
-            <row id="Top">293</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisCheckBox" name="cbAllowPrice" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Import Stock Customer &amp;&amp; Supplier Price</row>
-            <row id="Height">21</row>
-            <row id="Left">8</row>
-            <row id="Top">369</row>
-            <row id="Width">409</row>
-          </component>
-          <component class="TVisCheckBox" name="cbAllowOpnBal" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Import Stock Opening Balance</row>
-            <row id="Height">21</row>
-            <row id="Left">8</row>
-            <row id="Top">345</row>
-            <row id="Width">409</row>
-          </component>
-          <component class="TVisCheckBox" name="cbAllowUOM" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Import Stock UOM With Rate &lt; 1</row>
-            <row id="Height">21</row>
-            <row id="Left">8</row>
-            <row id="Top">321</row>
-            <row id="Width">409</row>
-          </component>
-          <component class="TVisCheckBox" name="cbResetAccFormat" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Reformat EMAS customer &amp;&amp; supplier account code to follow SQL Account</row>
-            <row id="Height">21</row>
-            <row id="Left">8</row>
-            <row id="Top">393</row>
-            <row id="Width">409</row>
-          </component>
-          <component class="TVisHiddenComponent" name="ActionList1" type="TActionList">
-            <component class="TVisAction" name="actConnect" type="TAction">
-              <row id="Caption" state="0">Connect</row>
+      <node class="TVclFormNode" name="TPF_BANK_GIRO" state="0" created="20160425163133" resname="TPF_BANK_GIRO">
+        <form class="TVclForm" name="PF_Bank_Giro" state="0" type="TPF_Bank_Giro" borderstyle="bsDialog" textheight="13">
+          <row id="Caption" state="0">Giro</row>
+          <row id="ClientHeight" state="0">291</row>
+          <row id="ClientWidth" state="0">594</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisPanel" name="pnlBottom" state="0" type="TPanel" align="alBottom" bevelouter="bvNone">
+            <row id="Height" state="0">75</row>
+            <row id="Left" state="0">0</row>
+            <row id="Top" state="0">216</row>
+            <row id="Width" state="0">594</row>
+            <component class="TVisLabel" name="lbSaveTo" state="0" type="TLabel">
+              <row id="Caption" state="0">Save To</row>
+              <row id="Height" state="0">13</row>
+              <row id="Left" state="0">16</row>
+              <row id="Top" state="0">11</row>
+              <row id="Width" state="0">39</row>
             </component>
-            <component class="TVisAction" name="actBrowse" type="TAction">
-              <row id="Caption" state="0">Select Folder</row>
+            <component class="TVisEdit" name="edDir" state="0" type="TEdit">
+              <row id="Height" state="0">21</row>
+              <row id="Left" state="0">64</row>
+              <row id="Text" state="0">C:\</row>
+              <row id="Top" state="0">8</row>
+              <row id="Width" state="0">488</row>
             </component>
-            <component class="TVisAction" name="actClearList" type="TAction">
-              <row id="Caption" state="0">Clear</row>
-            </component>
-            <component class="TVisAction" name="actExecute" type="TAction">
-              <row id="Caption" state="0">Execute</row>
-            </component>
-            <component class="TVisAction" name="actCopyClipboard" type="TAction">
-              <row id="Caption" state="0">Copy log to clipboard</row>
-            </component>
-            <component class="TVisAction" name="actSave" type="TAction">
-              <row id="Caption" state="0">Save</row>
-            </component>
-          </component>
-          <component class="TVisImageList" name="ImageList1" type="TImageList" imagewidth="1">
-          </component>
-        </form>
-      </node>
-      <node class="TVclFormNode" name="TFMDATAIMPORT_MYOB" resname="TFMDATAIMPORT_MYOB">
-        <form class="TVclForm" name="fmDataImport_MYOB" type="TfmDataImport_MYOB" borderstyle="bsDialog" textheight="13">
-          <row id="Caption" state="0">MYOB</row>
-          <row id="ClientHeight">572</row>
-          <row id="ClientWidth">594</row>
-          <row id="Font.Color">clWindowText</row>
-          <row id="Font.Name">Tahoma</row>
-          <row id="Font.Size">8</row>
-          <row id="Font.Style">[]</row>
-          <row id="Left">0</row>
-          <row id="Top">0</row>
-          <component class="TVisLabel" name="Label3" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Data Migration - MYOB System </row>
-            <row id="Font.Color">clBlack</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[fsBold,fsUnderline]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">8</row>
-            <row id="Width">203</row>
-          </component>
-          <component class="TVisLabel" name="Label9" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 1: Download myData CLI tool</row>
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">38</row>
-            <row id="Width">196</row>
-          </component>
-          <component class="TVisLabel" name="Label1" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 2: Enter the full path to the mydatacli zip file</row>
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">74</row>
-            <row id="Width">284</row>
-          </component>
-          <component class="TVisLabel" name="Label5" type="TLabel">
-            <row id="Caption" state="0">Rec No. :</row>
-            <row id="Height">13</row>
-            <row id="Left">466</row>
-            <row id="Top">546</row>
-            <row id="Width">45</row>
-          </component>
-          <component class="TVisLabel" name="Label2" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 5: Press execute to start data import</row>
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">398</row>
-            <row id="Width">240</row>
-          </component>
-          <component class="TVisLabel" name="Label4" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 3: Enter the full path to the MYO database file</row>
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">133</row>
-            <row id="Width">292</row>
-          </component>
-          <component class="TVisLabel" name="Label6" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 4: Select module(s) to import into SQL Accounting</row>
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">192</row>
-            <row id="Width">317</row>
-          </component>
-          <component class="TVisButton" name="btDownload" type="TButton" action="actDownload">
-            <row id="Height">25</row>
-            <row id="Left">210</row>
-            <row id="Top">35</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisEdit" name="edDir_ZIP" type="TEdit">
-            <row id="Height">21</row>
-            <row id="Left">8</row>
-            <row id="Top">96</row>
-            <row id="Width">412</row>
-          </component>
-          <component class="TVisButton" name="btSelectEXE" type="TButton" action="actSelectFile_ZIP">
-            <row id="Height">25</row>
-            <row id="Left">423</row>
-            <row id="Top">94</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisButton" name="btClipBrd" type="TButton" action="actCopyToClipboard">
-            <row id="Height">25</row>
-            <row id="Left">466</row>
-            <row id="Top">480</row>
-            <row id="Width">120</row>
-          </component>
-          <component class="TVisButton" name="btExecute" type="TButton" action="actExecute">
-            <row id="Height">25</row>
-            <row id="Left">466</row>
-            <row id="Top">420</row>
-            <row id="Width">120</row>
-          </component>
-          <component class="TVisButton" name="btCancel" type="TButton">
-            <row id="Caption" state="0">Exit</row>
-            <row id="Height">25</row>
-            <row id="Left">466</row>
-            <row id="Top">511</row>
-            <row id="Width">120</row>
-          </component>
-          <component class="TVisEdit" name="mmCount" type="TMemo" enabled="0" readonly="1">
-            <row id="Height">21</row>
-            <row id="Left">517</row>
-            <row id="Top">543</row>
-            <row id="Width">69</row>
-          </component>
-          <component class="TVisEdit" name="mmStatus" type="TMemo" parentfont="0" readonly="1" scrollbars="ssBoth">
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Courier New</row>
-            <row id="Font.Size">8</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">144</row>
-            <row id="Left">8</row>
-            <row id="Top">420</row>
-            <row id="Width">452</row>
-          </component>
-          <component class="TVisEdit" name="edDir_DB" type="TEdit">
-            <row id="Height">21</row>
-            <row id="Left">8</row>
-            <row id="Top">155</row>
-            <row id="Width">412</row>
-          </component>
-          <component class="TVisButton" name="btSelectDB" type="TButton" action="actSelectFile_DB">
-            <row id="Height">25</row>
-            <row id="Left">423</row>
-            <row id="Top">153</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisListView" name="edModule" type="TListView" viewstyle="vsReport">
-            <row id="Height">170</row>
-            <row id="Left">8</row>
-            <row id="Top">214</row>
-            <row id="Width">578</row>
-            <column name="Columns[0]">
-              <row id="Caption" state="0">Description</row>
-              <row id="Width">295</row>
-            </column>
-          </component>
-          <component class="TVisButton" name="Button1" type="TButton" action="actConnect">
-            <row id="Height">25</row>
-            <row id="Left">506</row>
-            <row id="Top">153</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisHiddenComponent" name="ActionList1" type="TActionList">
-            <component class="TVisAction" name="actDownload" type="TAction">
-              <row id="Caption" state="0">Download</row>
-            </component>
-            <component class="TVisAction" name="actSelectFile_ZIP" type="TAction">
-              <row id="Caption" state="0">Select File</row>
-            </component>
-            <component class="TVisAction" name="actSelectFile_DB" type="TAction">
-              <row id="Caption" state="0">Select File</row>
-            </component>
-            <component class="TVisAction" name="actConnect" type="TAction">
-              <row id="Caption" state="0">Connect</row>
-            </component>
-            <component class="TVisAction" name="actExecute" type="TAction">
-              <row id="Caption" state="0">Execute</row>
-            </component>
-            <component class="TVisAction" name="actClearList" type="TAction">
-              <row id="Caption" state="0">actClearList</row>
-            </component>
-            <component class="TVisAction" name="actCopyToClipboard" type="TAction">
-              <row id="Caption" state="0">Copy log to clipboard</row>
-            </component>
-          </component>
-          <component class="TVisHiddenComponent" name="OpenDialog1" type="TOpenDialog">
-          </component>
-          <component class="TVisHiddenComponent" name="OpenDialog2" type="TOpenDialog">
-          </component>
-        </form>
-      </node>
-      <node class="TVclFormNode" name="TFMDATAIMPORT_UBSACCOUNT" resname="TFMDATAIMPORT_UBSACCOUNT">
-        <form class="TVclForm" name="fmDataImport_UBSAccount" type="TfmDataImport_UBSAccount" borderstyle="bsDialog" textheight="13">
-          <row id="Caption" state="0">UBS Account</row>
-          <row id="ClientHeight">629</row>
-          <row id="ClientWidth">594</row>
-          <row id="Font.Color">clWindowText</row>
-          <row id="Font.Name">Tahoma</row>
-          <row id="Font.Size">8</row>
-          <row id="Font.Style">[]</row>
-          <row id="Left">0</row>
-          <row id="Top">0</row>
-          <component class="TVisLabel" name="Label1" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 3: Select module(s) to import into SQL Accounting</row>
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">152</row>
-            <row id="Width">317</row>
-          </component>
-          <component class="TVisLabel" name="Label3" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Data Migration - UBS Accounting System </row>
-            <row id="Font.Color">clBlack</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[fsBold,fsUnderline]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">8</row>
-            <row id="Width">267</row>
-          </component>
-          <component class="TVisLabel" name="Label5" type="TLabel">
-            <row id="Caption" state="0">Rec No. :</row>
-            <row id="Height">13</row>
-            <row id="Left">466</row>
-            <row id="Top">603</row>
-            <row id="Width">45</row>
-          </component>
-          <component class="TVisLabel" name="Label7" type="TLabel">
-            <row id="Caption" state="0">Start import from record no:</row>
-            <row id="Height">13</row>
-            <row id="Left">8</row>
-            <row id="Top">353</row>
-            <row id="Width">135</row>
-          </component>
-          <component class="TVisLabel" name="Label8" type="TLabel">
-            <row id="Caption" state="0">to</row>
-            <row id="Height">13</row>
-            <row id="Left">235</row>
-            <row id="Top">353</row>
-            <row id="Width">10</row>
-          </component>
-          <component class="TVisLabel" name="Label9" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 1: UBS Account DB folder</row>
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">38</row>
-            <row id="Width">174</row>
-          </component>
-          <component class="TVisLabel" name="Label2" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 4: Press execute to start data import</row>
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">437</row>
-            <row id="Width">240</row>
-          </component>
-          <component class="TVisLabel" name="Label6" type="TLabel" parentcolor="0" parentfont="0">
-            <row id="Caption" state="0">(Click Save to set range)</row>
-            <row id="Font.Color">clRed</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">8</row>
-            <row id="Font.Style">[fsBold]</row>
-            <row id="Height">13</row>
-            <row id="Left">423</row>
-            <row id="Top">353</row>
-            <row id="Width">139</row>
-          </component>
-          <component class="TVisLabel" name="Label4" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 2: UBS Stock DB folder (Leave blank to import current transaction from Sales/Purchase)</row>
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">95</row>
-            <row id="Width">532</row>
-          </component>
-          <component class="TVisButton" name="btClipBrd" type="TButton" action="actCopyClipboard">
-            <row id="Caption" state="0">Copy log to clipboard</row>
-            <row id="Height">25</row>
-            <row id="Left">466</row>
-            <row id="Top">535</row>
-            <row id="Width">120</row>
-          </component>
-          <component class="TVisButton" name="btExecute" type="TButton" action="actExecute">
-            <row id="Height">25</row>
-            <row id="Left">466</row>
-            <row id="Top">457</row>
-            <row id="Width">120</row>
-          </component>
-          <component class="TVisButton" name="btCancel" type="TButton">
-            <row id="Caption" state="0">Exit</row>
-            <row id="Height">25</row>
-            <row id="Left">466</row>
-            <row id="Top">566</row>
-            <row id="Width">120</row>
-          </component>
-          <component class="TVisButton" name="btConnect" type="TButton" action="actConnect">
-            <row id="Height">21</row>
-            <row id="Left">506</row>
-            <row id="Top">117</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisEdit" name="mmCount" type="TMemo" enabled="0" readonly="1">
-            <row id="Height">21</row>
-            <row id="Left">517</row>
-            <row id="Top">600</row>
-            <row id="Width">69</row>
-          </component>
-          <component class="TVisEdit" name="mmStatus" type="TMemo" parentfont="0" readonly="1" scrollbars="ssBoth">
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Courier New</row>
-            <row id="Font.Size">8</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">162</row>
-            <row id="Left">8</row>
-            <row id="Top">459</row>
-            <row id="Width">452</row>
-          </component>
-          <component class="TVisEdit" name="edDir" type="TEdit">
-            <row id="Height">21</row>
-            <row id="Left">8</row>
-            <row id="Top">60</row>
-            <row id="Width">412</row>
-          </component>
-          <component class="TVisButton" name="btBrowse" type="TButton" action="actBrowse">
-            <row id="Height">21</row>
-            <row id="Left">423</row>
-            <row id="Top">60</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisListView" name="edModule" type="TListView" viewstyle="vsReport">
-            <row id="Height">170</row>
-            <row id="Left">8</row>
-            <row id="Top">174</row>
-            <row id="Width">578</row>
-            <column name="Columns[0]">
-              <row id="Caption" state="0">Description</row>
-              <row id="Width">295</row>
-            </column>
-            <column name="Columns[1]">
-              <row id="Caption" state="0">Start From Record No.</row>
-              <row id="Width">130</row>
-            </column>
-            <column name="Columns[2]">
-              <row id="Caption" state="0">Total Records</row>
-              <row id="Width">130</row>
-            </column>
-          </component>
-          <component class="TVisEdit" name="edStartNo" type="TSpinEdit">
-            <row id="Height">22</row>
-            <row id="Left">149</row>
-            <row id="Top">350</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisEdit" name="edEndNo" type="TSpinEdit">
-            <row id="Height">22</row>
-            <row id="Left">251</row>
-            <row id="Top">350</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisButton" name="btSave" type="TButton" action="actSave">
-            <row id="Height">22</row>
-            <row id="Left">334</row>
-            <row id="Top">350</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisCheckBox" name="cbOpnBalSummary" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Import opening balance summary (B/F amount only)</row>
-            <row id="Height">21</row>
-            <row id="Left">8</row>
-            <row id="Top">378</row>
-            <row id="Width">406</row>
-          </component>
-          <component class="TVisCheckBox" name="cbResetAccFormat" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Reformat UBS customer &amp;&amp; supplier account code to follow SQL Account</row>
-            <row id="Height">21</row>
-            <row id="Left">8</row>
-            <row id="Top">402</row>
-            <row id="Width">406</row>
-          </component>
-          <component class="TVisEdit" name="edDir2" type="TEdit">
-            <row id="Height">21</row>
-            <row id="Left">8</row>
-            <row id="Top">117</row>
-            <row id="Width">412</row>
-          </component>
-          <component class="TVisButton" name="btBrowse2" type="TButton" action="actBrowse">
-            <row id="Height">21</row>
-            <row id="Left">423</row>
-            <row id="Top">117</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisHiddenComponent" name="ActionList1" type="TActionList">
-            <component class="TVisAction" name="actConnect" type="TAction">
-              <row id="Caption" state="0">Connect</row>
-            </component>
-            <component class="TVisAction" name="actBrowse" type="TAction">
-              <row id="Caption" state="0">Select Folder</row>
-            </component>
-            <component class="TVisAction" name="actClearList" type="TAction">
-              <row id="Caption" state="0">Clear</row>
-            </component>
-            <component class="TVisAction" name="actExecute" type="TAction">
-              <row id="Caption" state="0">Execute</row>
-            </component>
-            <component class="TVisAction" name="actCopyClipboard" type="TAction">
-              <row id="Caption" state="0">Copy to Clipboard</row>
-            </component>
-            <component class="TVisAction" name="actShowAllModules" type="TAction">
-              <row id="Caption" state="0">Show All Modules</row>
-              <row id="ShortCut">16460</row>
-            </component>
-            <component class="TVisAction" name="actSave" type="TAction">
-              <row id="Caption" state="0">Save</row>
-            </component>
-          </component>
-          <component class="TVisImageList" name="ImageList1" type="TImageList" imagewidth="1">
-          </component>
-        </form>
-      </node>
-      <node class="TVclFormNode" name="TFMDATAIMPORT_UBSSTOCK" resname="TFMDATAIMPORT_UBSSTOCK">
-        <form class="TVclForm" name="fmDataImport_UBSStock" type="TfmDataImport_UBSStock" borderstyle="bsDialog" textheight="13">
-          <row id="Caption" state="0">UBS Stock</row>
-          <row id="ClientHeight">572</row>
-          <row id="ClientWidth">594</row>
-          <row id="Font.Color">clWindowText</row>
-          <row id="Font.Name">Tahoma</row>
-          <row id="Font.Size">8</row>
-          <row id="Font.Style">[]</row>
-          <row id="Left">0</row>
-          <row id="Top">0</row>
-          <component class="TVisLabel" name="Label3" type="TLabel" parentcolor="0" parentfont="0">
-            <row id="Caption" state="0">Data Migration - UBS Stock Control System </row>
-            <row id="Font.Color">clBlack</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[fsBold,fsUnderline]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">8</row>
-            <row id="Width">281</row>
-          </component>
-          <component class="TVisLabel" name="Label5" type="TLabel">
-            <row id="Caption" state="0">Rec No. :</row>
-            <row id="Height">13</row>
-            <row id="Left">466</row>
-            <row id="Top">546</row>
-            <row id="Width">45</row>
-          </component>
-          <component class="TVisLabel" name="Label7" type="TLabel">
-            <row id="Caption" state="0">Start import from record no:</row>
-            <row id="Height">13</row>
-            <row id="Left">8</row>
-            <row id="Top">296</row>
-            <row id="Width">135</row>
-          </component>
-          <component class="TVisLabel" name="Label8" type="TLabel">
-            <row id="Caption" state="0">to</row>
-            <row id="Height">13</row>
-            <row id="Left">235</row>
-            <row id="Top">296</row>
-            <row id="Width">10</row>
-          </component>
-          <component class="TVisLabel" name="Label9" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 1: Select folder containing files restored from UBS Stock database</row>
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">38</row>
-            <row id="Width">408</row>
-          </component>
-          <component class="TVisLabel" name="Label2" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 2: Select module(s) to import into SQL Accounting</row>
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">95</row>
-            <row id="Width">317</row>
-          </component>
-          <component class="TVisLabel" name="Label1" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 3: Press execute to start data import</row>
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">10</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">16</row>
-            <row id="Left">8</row>
-            <row id="Top">404</row>
-            <row id="Width">240</row>
-          </component>
-          <component class="TVisLabel" name="Label6" type="TLabel" parentcolor="0" parentfont="0">
-            <row id="Caption" state="0">(Click Save to set range)</row>
-            <row id="Font.Color">clRed</row>
-            <row id="Font.Name">Tahoma</row>
-            <row id="Font.Size">8</row>
-            <row id="Font.Style">[fsBold]</row>
-            <row id="Height">13</row>
-            <row id="Left">423</row>
-            <row id="Top">296</row>
-            <row id="Width">139</row>
-          </component>
-          <component class="TVisButton" name="btExecute" type="TButton" action="actExecute">
-            <row id="Height">25</row>
-            <row id="Left">466</row>
-            <row id="Top">426</row>
-            <row id="Width">120</row>
-          </component>
-          <component class="TVisButton" name="btCancel" type="TButton">
-            <row id="Caption" state="0">Exit</row>
-            <row id="Height">25</row>
-            <row id="Left">466</row>
-            <row id="Top">512</row>
-            <row id="Width">120</row>
-          </component>
-          <component class="TVisButton" name="btClipBrd" type="TButton" action="actCopyClipboard">
-            <row id="Height">25</row>
-            <row id="Left">466</row>
-            <row id="Top">481</row>
-            <row id="Width">120</row>
-          </component>
-          <component class="TVisButton" name="btConnect" type="TButton" action="actConnect">
-            <row id="Height">21</row>
-            <row id="Left">506</row>
-            <row id="Top">60</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisEdit" name="edDir" type="TEdit">
-            <row id="Height">21</row>
-            <row id="Left">8</row>
-            <row id="Top">60</row>
-            <row id="Width">412</row>
-          </component>
-          <component class="TVisButton" name="btBrowse" type="TButton" action="actBrowse">
-            <row id="Caption" state="0">Select Folder</row>
-            <row id="Height">21</row>
-            <row id="Left">423</row>
-            <row id="Top">60</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisEdit" name="mmCount" type="TMemo" enabled="0" readonly="1">
-            <row id="Height">21</row>
-            <row id="Left">517</row>
-            <row id="Top">543</row>
-            <row id="Width">69</row>
-          </component>
-          <component class="TVisEdit" name="mmStatus" type="TMemo" parentfont="0" readonly="1" scrollbars="ssBoth">
-            <row id="Font.Color">clWindowText</row>
-            <row id="Font.Name">Courier New</row>
-            <row id="Font.Size">8</row>
-            <row id="Font.Style">[]</row>
-            <row id="Height">138</row>
-            <row id="Left">8</row>
-            <row id="Top">426</row>
-            <row id="Width">452</row>
-          </component>
-          <component class="TVisListView" name="edModule" type="TListView" viewstyle="vsReport">
-            <row id="Height">170</row>
-            <row id="Left">8</row>
-            <row id="Top">117</row>
-            <row id="Width">578</row>
-            <column name="Columns[0]">
-              <row id="Caption" state="0">Description</row>
-              <row id="Width">295</row>
-            </column>
-            <column name="Columns[1]">
-              <row id="Caption" state="0">Start From Record No.</row>
-              <row id="Width">130</row>
-            </column>
-            <column name="Columns[2]">
-              <row id="Caption" state="0">Total Records</row>
-              <row id="Width">130</row>
-            </column>
-          </component>
-          <component class="TVisEdit" name="edStartNo" type="TSpinEdit">
-            <row id="Height">22</row>
-            <row id="Left">149</row>
-            <row id="Top">293</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisEdit" name="edEndNo" type="TSpinEdit">
-            <row id="Height">22</row>
-            <row id="Left">251</row>
-            <row id="Top">293</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisButton" name="btSave" type="TButton" action="actSave">
-            <row id="Height">22</row>
-            <row id="Left">337</row>
-            <row id="Top">293</row>
-            <row id="Width">80</row>
-          </component>
-          <component class="TVisCheckBox" name="cbAllowUOM" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Import Stock UOM With Rate &lt; 1</row>
-            <row id="Height">21</row>
-            <row id="Left">8</row>
-            <row id="Top">321</row>
-            <row id="Width">286</row>
-          </component>
-          <component class="TVisCheckBox" name="cbAllowOpnBal" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Import Stock Opening Balance</row>
-            <row id="Height">21</row>
-            <row id="Left">300</row>
-            <row id="Top">321</row>
-            <row id="Width">286</row>
-          </component>
-          <component class="TVisCheckBox" name="cbAllowPrice" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Import Stock Customer &amp;&amp; Supplier Price</row>
-            <row id="Height">21</row>
-            <row id="Left">8</row>
-            <row id="Top">345</row>
-            <row id="Width">286</row>
-          </component>
-          <component class="TVisCheckBox" name="cbResetAccFormat" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Reformat UBS customer &amp;&amp; supplier account code to follow SQL Account</row>
-            <row id="Height">21</row>
-            <row id="Left">8</row>
-            <row id="Top">369</row>
-            <row id="Width">578</row>
-          </component>
-          <component class="TVisCheckBox" name="cbAllowBOM" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Import Stock BOM</row>
-            <row id="Height">21</row>
-            <row id="Left">300</row>
-            <row id="Top">345</row>
-            <row id="Width">286</row>
-          </component>
-          <component class="TVisHiddenComponent" name="ActionList1" type="TActionList">
-            <component class="TVisAction" name="actConnect" type="TAction">
-              <row id="Caption" state="0">Connect</row>
-            </component>
-            <component class="TVisAction" name="actBrowse" type="TAction">
+            <component class="TVisButton" name="btnSelectDir" state="0" type="TButton">
               <row id="Caption" state="0">...</row>
+              <row id="Height" state="0">21</row>
+              <row id="Left" state="0">558</row>
+              <row id="Top" state="0">8</row>
+              <row id="Width" state="0">21</row>
             </component>
-            <component class="TVisAction" name="actClearList" type="TAction">
-              <row id="Caption" state="0">Clear</row>
-            </component>
-            <component class="TVisAction" name="actExecute" type="TAction">
-              <row id="Caption" state="0">Execute</row>
-            </component>
-            <component class="TVisAction" name="actCopyClipboard" type="TAction">
-              <row id="Caption" state="0">Copy log to clipboard</row>
-            </component>
-            <component class="TVisAction" name="actSave" type="TAction">
+            <component class="TVisButton" name="btnSave" state="0" type="TButton">
               <row id="Caption" state="0">Save</row>
+              <row id="Height" state="0">25</row>
+              <row id="Left" state="0">416</row>
+              <row id="Top" state="0">42</row>
+              <row id="Width" state="0">75</row>
             </component>
-          </component>
-          <component class="TVisImageList" name="ImageList1" type="TImageList" imagewidth="1">
+            <component class="TVisButton" name="btnCancel" state="0" type="TButton">
+              <row id="Caption" state="0">Cancel</row>
+              <row id="Height" state="0">25</row>
+              <row id="Left" state="0">504</row>
+              <row id="Top" state="0">42</row>
+              <row id="Width" state="0">75</row>
+            </component>
           </component>
         </form>
       </node>
-      <node class="TVclFormNode" name="TFMSQLACCDATAIMPORT" resname="TFMSQLACCDATAIMPORT">
-        <form class="TVclForm" name="fmSQLAccDataImport" type="TfmSQLAccDataImport" borderstyle="bsDialog" textheight="13">
-          <row id="Caption" state="0">Data Import</row>
-          <row id="ClientHeight">251</row>
-          <row id="ClientWidth">403</row>
-          <row id="Font.Color">clWindowText</row>
-          <row id="Font.Name">Tahoma</row>
-          <row id="Font.Size">8</row>
-          <row id="Font.Style">[]</row>
-          <row id="Left">0</row>
-          <row id="Top">0</row>
-          <component class="TVisWrapPanel" name="FlowPanel1" type="TFlowPanel" align="alClient">
-            <row id="Height">251</row>
-            <row id="Left">0</row>
-            <row id="Top">0</row>
-            <row id="Width">403</row>
+      <node class="TVclFormNode" name="TPF_BANK_GIRO_ARBKMY" state="0" created="20160425163133" resname="TPF_BANK_GIRO_ARBKMY">
+        <form class="TVclForm" name="PF_Bank_Giro_ARBKMY" state="0" type="TPF_Bank_Giro_ARBKMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">AmBank</row>
+          <row id="ClientHeight" state="0">241</row>
+          <row id="ClientWidth" state="0">465</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbValueDate" state="0" type="TLabel">
+            <row id="Caption" state="0">Payment Value Date</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">97</row>
+          </component>
+          <component class="TVisEdit" name="edValueDate" state="0" type="TcxDateEdit">
+            <row id="Left" state="0">128</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">89</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TPF_BANK_GIRO_BOTKMY" state="0" created="20160425163133" resname="TPF_BANK_GIRO_BOTKMY">
+        <form class="TVclForm" name="PF_Bank_Giro_BOTKMY" state="0" type="TPF_Bank_Giro_BOTKMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">MUFG</row>
+          <row id="ClientHeight" state="0">241</row>
+          <row id="ClientWidth" state="0">465</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbValueDate" state="0" type="TLabel">
+            <row id="Caption" state="0">Value Date</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">52</row>
+          </component>
+          <component class="TVisEdit" name="edValueDate" state="0" type="TcxDateEdit">
+            <row id="Left" state="0">80</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">89</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TPF_BANK_GIRO_BSNAMY" state="0" created="20160425163133" resname="TPF_BANK_GIRO_BSNAMY">
+        <form class="TVclForm" name="PF_Bank_Giro_BSNAMY" state="0" type="TPF_Bank_Giro_BSNAMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">BSN</row>
+          <row id="ClientHeight" state="0">240</row>
+          <row id="ClientWidth" state="0">465</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbPaymentDate" state="0" type="TLabel">
+            <row id="Caption" state="0">Payment Date</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">68</row>
+          </component>
+          <component class="TVisEdit" name="edPaymentDate" state="0" type="TcxDateEdit">
+            <row id="Left" state="0">96</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">89</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TPF_BANK_GIRO_CIBBMY" state="0" created="20160425163133" resname="TPF_BANK_GIRO_CIBBMY">
+        <form class="TVclForm" name="PF_Bank_Giro_CIBBMY" state="0" type="TPF_Bank_Giro_CIBBMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">CIMB Bank</row>
+          <row id="ClientHeight" state="0">240</row>
+          <row id="ClientWidth" state="0">465</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbCreditingDate" state="0" type="TLabel">
+            <row id="Caption" state="0">Crediting Date</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">69</row>
+          </component>
+          <component class="TVisEdit" name="edCreditingDate" state="0" type="TcxDateEdit">
+            <row id="Left" state="0">104</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">89</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TPF_BANK_GIRO_CITIMY" state="0" created="20160425163133" resname="TPF_BANK_GIRO_CITIMY">
+        <form class="TVclForm" name="PF_Bank_Giro_CITIMY" state="0" type="TPF_Bank_Giro_CITIMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">Citibank</row>
+          <row id="ClientHeight" state="0">81</row>
+          <row id="ClientWidth" state="0">463</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbValueDate" state="0" type="TLabel">
+            <row id="Caption" state="0">Value Date</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">52</row>
+          </component>
+          <component class="TVisEdit" name="edValueDate" state="0" type="TcxDateEdit">
+            <row id="Left" state="0">80</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">89</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TPF_BANK_GIRO_CITISG" state="0" created="20160425163133" resname="TPF_BANK_GIRO_CITISG">
+        <form class="TVclForm" name="PF_Bank_Giro_CITISG" state="0" type="TPF_Bank_Giro_CITISG" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">Citibank Singapore</row>
+          <row id="ClientHeight" state="0">81</row>
+          <row id="ClientWidth" state="0">465</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbValueDate" state="0" type="TLabel">
+            <row id="Caption" state="0">Value Date</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">52</row>
+          </component>
+          <component class="TVisEdit" name="edValueDate" state="0" type="TcxDateEdit">
+            <row id="Left" state="0">80</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">89</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TPF_BANK_GIRO_HBMBMY_0" state="0" created="20160425163133" resname="TPF_BANK_GIRO_HBMBMY_0">
+        <form class="TVclForm" name="PF_Bank_Giro_HBMBMY_0" state="0" type="TPF_Bank_Giro_HBMBMY_0" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">HSBC</row>
+          <row id="ClientHeight" state="0">241</row>
+          <row id="ClientWidth" state="0">465</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbValueDate" state="0" type="TLabel">
+            <row id="Caption" state="0">Value Date</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">52</row>
+          </component>
+          <component class="TVisLabel" name="lbPaymentCode" state="0" type="TLabel">
+            <row id="Caption" state="0">Payment Code</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">46</row>
+            <row id="Width" state="0">70</row>
+          </component>
+          <component class="TVisLabel" name="lbRef1" state="0" type="TLabel">
+            <row id="Caption" state="0">Payment Reference</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">73</row>
+            <row id="Width" state="0">95</row>
+          </component>
+          <component class="TVisEdit" name="edValueDate" state="0" type="TcxDateEdit">
+            <row id="Left" state="0">128</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisEdit" name="edPaymentCode" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">128</row>
+            <row id="Top" state="0">43</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisEdit" name="edRef1" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">128</row>
+            <row id="Top" state="0">70</row>
+            <row id="Width" state="0">121</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TPF_BANK_GIRO_HBMBMY_1" state="0" created="20160425163133" resname="TPF_BANK_GIRO_HBMBMY_1">
+        <form class="TVclForm" name="PF_Bank_Giro_HBMBMY_1" state="0" type="TPF_Bank_Giro_HBMBMY_1" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">HSBC</row>
+          <row id="ClientHeight" state="0">242</row>
+          <row id="ClientWidth" state="0">465</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbValueDate" state="0" type="TLabel">
+            <row id="Caption" state="0">Value Date</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">52</row>
+          </component>
+          <component class="TVisEdit" name="edValueDate" state="0" type="TcxDateEdit">
+            <row id="Left" state="0">80</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">121</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TPF_BANK_GIRO_MBBEMY_0" state="0" created="20160425163133" resname="TPF_BANK_GIRO_MBBEMY_0">
+        <form class="TVclForm" name="PF_Bank_Giro_MBBEMY_0" state="0" type="TPF_Bank_Giro_MBBEMY_0" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">Maybank</row>
+          <row id="ClientHeight" state="0">137</row>
+          <row id="ClientWidth" state="0">474</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbPaymentDate" state="0" type="TLabel">
+            <row id="Caption" state="0">Payment Export Date</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">103</row>
+          </component>
+          <component class="TVisLabel" name="lbPaymentExportDateDesc" state="0" type="TLabel" parentfont="0" wordwrap="1">
+            <row id="Caption" state="0">Pymt Export Date via MAS Format</row>
+            <row id="Font.Color" state="0">clBlue</row>
+            <row id="Font.Name" state="0">Arial</row>
+            <row id="Font.Size" state="0">8</row>
+            <row id="Font.Style" state="0">[]</row>
+            <row id="Height" state="0">14</row>
+            <row id="Left" state="0">280</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">161</row>
+          </component>
+          <component class="TVisLabel" name="lbCreditingDateDesc" state="0" type="TLabel" parentfont="0" wordwrap="1">
+            <row id="Caption" state="0">Pymt Crediting Date</row>
+            <row id="Font.Color" state="0">clBlue</row>
+            <row id="Font.Name" state="0">Arial</row>
+            <row id="Font.Size" state="0">8</row>
+            <row id="Font.Style" state="0">[]</row>
+            <row id="Height" state="0">14</row>
+            <row id="Left" state="0">280</row>
+            <row id="Top" state="0">46</row>
+            <row id="Width" state="0">93</row>
+          </component>
+          <component class="TVisLabel" name="lbPaymentCreditingDate" state="0" type="TLabel">
+            <row id="Caption" state="0">Payment Crediting Date</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">46</row>
+            <row id="Width" state="0">114</row>
+          </component>
+          <component class="TVisLabel" name="lbTestingIndicator" state="0" type="TLabel">
+            <row id="Caption" state="0">Testing Indicator</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">74</row>
+            <row id="Width" state="0">81</row>
+          </component>
+          <component class="TVisEdit" name="edPaymentExportDate" state="0" type="TcxDateEdit">
+            <row id="Left" state="0">144</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisEdit" name="edPaymentCreditingDate" state="0" type="TcxDateEdit">
+            <row id="Left" state="0">144</row>
+            <row id="Top" state="0">43</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisComboBox" name="cbTestingIndicator" state="0" type="TcxImageComboBox">
+            <row id="EditValue" state="0">T</row>
+            <row id="Left" state="0">144</row>
+            <row id="Properties.Items[0].Description" state="0">Testing</row>
+            <row id="Properties.Items[0].Value" state="0">T</row>
+            <row id="Properties.Items[1].Description" state="0">Production</row>
+            <row id="Properties.Items[1].Value" state="0">P</row>
+            <row id="Top" state="0">70</row>
+            <row id="Width" state="0">121</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TPF_BANK_GIRO_MBBEMY_1" state="0" created="20160425163133" resname="TPF_BANK_GIRO_MBBEMY_1">
+        <form class="TVclForm" name="PF_Bank_Giro_MBBEMY_1" state="0" type="TPF_Bank_Giro_MBBEMY_1" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">Maybank</row>
+          <row id="ClientHeight" state="0">226</row>
+          <row id="ClientWidth" state="0">489</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbPaymentDate" state="0" type="TLabel">
+            <row id="Caption" state="0">Payment Date</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">68</row>
+          </component>
+          <component class="TVisLabel" name="lbPIRRefNo" state="0" type="TLabel">
+            <row id="Caption" state="0">PIR Reference No</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">46</row>
+            <row id="Width" state="0">86</row>
+          </component>
+          <component class="TVisLabel" name="lbDebitRef" state="0" type="TLabel">
+            <row id="Caption" state="0">Debit Reference</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">73</row>
+            <row id="Width" state="0">78</row>
+          </component>
+          <component class="TVisLabel" name="lbDebitDesc" state="0" type="TLabel">
+            <row id="Caption" state="0">Debit Description</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">100</row>
+            <row id="Width" state="0">81</row>
+          </component>
+          <component class="TVisLabel" name="lbTestingFile" state="0" type="TLabel">
+            <row id="Caption" state="0">Testing File</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">128</row>
+            <row id="Width" state="0">54</row>
+          </component>
+          <component class="TVisLabel" name="lbConfidentialFile" state="0" type="TLabel">
+            <row id="Caption" state="0">Confidential File</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">155</row>
+            <row id="Width" state="0">76</row>
+          </component>
+          <component class="TVisLabel" name="lbNonResident" state="0" type="TLabel">
+            <row id="Caption" state="0">Beneficiary Non-Resident</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">182</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisLabel" name="lbPIRRefNoDesc" state="0" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">File Reference No identified by you</row>
+            <row id="Font.Color" state="0">clBlue</row>
+            <row id="Font.Name" state="0">Tahoma</row>
+            <row id="Font.Size" state="0">8</row>
+            <row id="Font.Style" state="0">[]</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">289</row>
+            <row id="Top" state="0">46</row>
+            <row id="Width" state="0">168</row>
+          </component>
+          <component class="TVisEdit" name="edPaymentDate" state="0" type="TcxDateEdit">
+            <row id="Left" state="0">152</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisEdit" name="edPIRRefNo" state="0" type="TcxTextEdit">
+            <row id="Left" state="0">152</row>
+            <row id="Top" state="0">43</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisEdit" name="edDebitRef" state="0" type="TcxTextEdit">
+            <row id="Left" state="0">152</row>
+            <row id="Top" state="0">70</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisEdit" name="edDebitDesc" state="0" type="TcxTextEdit">
+            <row id="Left" state="0">152</row>
+            <row id="Top" state="0">97</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisComboBox" name="cbTestingFile" state="0" type="TcxImageComboBox">
+            <row id="EditValue" state="0">L</row>
+            <row id="Left" state="0">152</row>
+            <row id="Properties.Items[0].Description" state="0">Live</row>
+            <row id="Properties.Items[0].Value" state="0">L</row>
+            <row id="Properties.Items[1].Description" state="0">Format &amp; setup testing. No processing by bank's host</row>
+            <row id="Properties.Items[1].Value" state="0">F</row>
+            <row id="Properties.Items[2].Description" state="0">Account &amp; IC validation testing</row>
+            <row id="Properties.Items[2].Value" state="0">A</row>
+            <row id="Top" state="0">124</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisComboBox" name="cbConfidentialFile" state="0" type="TcxImageComboBox">
+            <row id="EditValue" state="0"> </row>
+            <row id="Left" state="0">152</row>
+            <row id="Properties.Items[0].Description" state="0">No</row>
+            <row id="Properties.Items[0].Value" state="0"> </row>
+            <row id="Properties.Items[1].Description" state="0">Yes</row>
+            <row id="Properties.Items[1].Value" state="0">C</row>
+            <row id="Top" state="0">151</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisComboBox" name="cbNonResident" state="0" type="TcxImageComboBox">
+            <row id="EditValue" state="0"> </row>
+            <row id="Left" state="0">152</row>
+            <row id="Properties.Items[0].Description" state="0">No</row>
+            <row id="Properties.Items[0].Value" state="0"> </row>
+            <row id="Properties.Items[1].Description" state="0">Yes</row>
+            <row id="Properties.Items[1].Value" state="0">Y</row>
+            <row id="Top" state="0">178</row>
+            <row id="Width" state="0">121</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TPF_BANK_GIRO_MBBEMY_2" state="0" created="20160425163133" resname="TPF_BANK_GIRO_MBBEMY_2">
+        <form class="TVclForm" name="PF_Bank_Giro_MBBEMY_2" state="0" type="TPF_Bank_Giro_MBBEMY_2" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">Maybank</row>
+          <row id="ClientHeight" state="0">217</row>
+          <row id="ClientWidth" state="0">497</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbClientBatchID" state="0" type="TLabel">
+            <row id="Caption" state="0">Client Batch ID</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">71</row>
+          </component>
+          <component class="TVisLabel" name="lbClientBatchID_Desc" state="0" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Client batch reference number identified by you.</row>
+            <row id="Font.Color" state="0">clBlue</row>
+            <row id="Font.Name" state="0">Arial</row>
+            <row id="Font.Size" state="0">8</row>
+            <row id="Font.Style" state="0">[]</row>
+            <row id="Height" state="0">14</row>
+            <row id="Left" state="0">248</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">231</row>
+          </component>
+          <component class="TVisLabel" name="lbValueDate" state="0" type="TLabel">
+            <row id="Caption" state="0">Value Date</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">46</row>
+            <row id="Width" state="0">52</row>
+          </component>
+          <component class="TVisLabel" name="lbDebitRef" state="0" type="TLabel">
+            <row id="Caption" state="0">Debit Reference</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">73</row>
+            <row id="Width" state="0">78</row>
+          </component>
+          <component class="TVisLabel" name="lbDebitDesc" state="0" type="TLabel">
+            <row id="Caption" state="0">Debit Description</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">100</row>
+            <row id="Width" state="0">81</row>
+          </component>
+          <component class="TVisEdit" name="edClientBatchID" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">112</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisEdit" name="edValueDate" state="0" type="TcxDateEdit">
+            <row id="Left" state="0">112</row>
+            <row id="Top" state="0">43</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisEdit" name="edDebitRef" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">112</row>
+            <row id="Top" state="0">70</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisEdit" name="edDebitDesc" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">112</row>
+            <row id="Top" state="0">97</row>
+            <row id="Width" state="0">121</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TPF_BANK_GIRO_MFBBMY" state="0" created="20160425163133" resname="TPF_BANK_GIRO_MFBBMY">
+        <form class="TVclForm" name="PF_Bank_Giro_MFBBMY" state="0" type="TPF_Bank_Giro_MFBBMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">Alliance Bank</row>
+          <row id="ClientHeight" state="0">154</row>
+          <row id="ClientWidth" state="0">465</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbGenericPaymentInfo" state="0" type="TLabel">
+            <row id="Caption" state="0">Generic Payment Information</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">140</row>
+          </component>
+          <component class="TVisEdit" name="edGenericPaymentInfo" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">168</row>
+            <row id="TextHint" state="0">Email subject in the payment notification</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">281</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TPF_BANK_GIRO_OCBCMY" state="0" created="20160425163133" resname="TPF_BANK_GIRO_OCBCMY">
+        <form class="TVclForm" name="PF_Bank_Giro_OCBCMY" state="0" type="TPF_Bank_Giro_OCBCMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">OCBC Bank</row>
+          <row id="ClientHeight" state="0">169</row>
+          <row id="ClientWidth" state="0">481</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbTapeId" state="0" type="TLabel">
+            <row id="Caption" state="0">Tape Id</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">37</row>
+          </component>
+          <component class="TVisLabel" name="lbTapeIdDesc" state="0" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Record Running sequence.</row>
+            <row id="Font.Color" state="0">clBlue</row>
+            <row id="Font.Name" state="0">Arial</row>
+            <row id="Font.Size" state="0">8</row>
+            <row id="Font.Style" state="0">[]</row>
+            <row id="Height" state="0">14</row>
+            <row id="Left" state="0">199</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">131</row>
+          </component>
+          <component class="TVisLabel" name="lbCreditingDate" state="0" type="TLabel">
+            <row id="Caption" state="0">Crediting Date</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">46</row>
+            <row id="Width" state="0">69</row>
+          </component>
+          <component class="TVisLabel" name="lbCustomerRef" state="0" type="TLabel">
+            <row id="Caption" state="0">Customer Ref</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">73</row>
+            <row id="Width" state="0">66</row>
+          </component>
+          <component class="TVisLabel" name="lbCustomerRefDesc" state="0" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Customer Ref No</row>
+            <row id="Font.Color" state="0">clBlue</row>
+            <row id="Font.Name" state="0">Arial</row>
+            <row id="Font.Size" state="0">8</row>
+            <row id="Font.Style" state="0">[]</row>
+            <row id="Height" state="0">14</row>
+            <row id="Left" state="0">199</row>
+            <row id="Top" state="0">73</row>
+            <row id="Width" state="0">82</row>
+          </component>
+          <component class="TVisEdit" name="edCreditingDate" state="0" type="TcxDateEdit">
+            <row id="Left" state="0">96</row>
+            <row id="Top" state="0">43</row>
+            <row id="Width" state="0">89</row>
+          </component>
+          <component class="TVisCheckBox" name="edRemoveIDCheckAndFiller" state="0" type="TcxCheckBox">
+            <row id="Caption" state="0">Remove ID checking and Filler for Details record.</row>
+            <row id="Left" state="0">92</row>
+            <row id="Top" state="0">120</row>
+            <row id="Width" state="0">261</row>
+          </component>
+          <component class="TVisEdit" name="edCustomerRef" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">96</row>
+            <row id="Top" state="0">70</row>
+            <row id="Width" state="0">89</row>
+          </component>
+          <component class="TVisCheckBox" name="edIDCheck" state="0" type="TcxCheckBox">
+            <row id="Caption" state="0">Required Bene Bank to check ID before crediting to account.</row>
+            <row id="Left" state="0">92</row>
+            <row id="Top" state="0">97</row>
+            <row id="Width" state="0">325</row>
+          </component>
+          <component class="TVisEdit" name="edTapeId" state="0" type="TcxSpinEdit">
+            <row id="Left" state="0">96</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">89</row>
+          </component>
+          <component class="TVisHiddenComponent" name="BindingsList1" state="0" type="TBindingsList">
+            <component class="TVisHiddenComponent" name="be_edIDChecking_Visible" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Visible</row>
+              <row id="SourceExpression" state="0">IDChecking_Visible</row>
+            </component>
+          </component>
+          <component class="TVisDefaultControl" name="BindScope1" state="0" type="TBindScope">
+            <row id="Left" state="0">416</row>
+            <row id="Top" state="0">16</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TPF_BANK_GIRO_PBBEMY" state="0" created="20160425163133" resname="TPF_BANK_GIRO_PBBEMY">
+        <form class="TVclForm" name="PF_Bank_Giro_PBBEMY" state="0" type="TPF_Bank_Giro_PBBEMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">Public Bank</row>
+          <row id="ClientHeight" state="0">122</row>
+          <row id="ClientWidth" state="0">498</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbSeqNo" state="0" type="TLabel">
+            <row id="Caption" state="0">Seq No</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">34</row>
+          </component>
+          <component class="TVisLabel" name="lbSeqNoDesc" state="0" type="TLabel" parentfont="0" wordwrap="1">
+            <row id="Caption" state="0">User can submit a total of up to 99 payment and collection instruction files per day.</row>
+            <row id="Font.Color" state="0">clBlue</row>
+            <row id="Font.Name" state="0">Arial</row>
+            <row id="Font.Size" state="0">8</row>
+            <row id="Font.Style" state="0">[]</row>
+            <row id="Height" state="0">28</row>
+            <row id="Left" state="0">200</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">281</row>
+          </component>
+          <component class="TVisLabel" name="lbPaymentDate" state="0" type="TLabel">
+            <row id="Caption" state="0">Payment Date</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">55</row>
+            <row id="Width" state="0">68</row>
+          </component>
+          <component class="TVisLabel" name="lbPaymentDateDesc" state="0" type="TLabel" parentfont="0" wordwrap="1">
+            <row id="Caption" state="0">The date when payments or collections are effected.</row>
+            <row id="Font.Color" state="0">clBlue</row>
+            <row id="Font.Name" state="0">Arial</row>
+            <row id="Font.Size" state="0">8</row>
+            <row id="Font.Style" state="0">[]</row>
+            <row id="Height" state="0">14</row>
+            <row id="Left" state="0">200</row>
+            <row id="Top" state="0">55</row>
+            <row id="Width" state="0">256</row>
+          </component>
+          <component class="TVisEdit" name="edSeqNo" state="0" type="TcxSpinEdit">
+            <row id="Left" state="0">96</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">41</row>
+          </component>
+          <component class="TVisEdit" name="edPaymentDate" state="0" type="TcxDateEdit">
+            <row id="Left" state="0">96</row>
+            <row id="Top" state="0">52</row>
+            <row id="Width" state="0">89</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TPF_BANK_GIRO_PHBMMY" state="0" created="20160425163133" resname="TPF_BANK_GIRO_PHBMMY">
+        <form class="TVclForm" name="PF_Bank_Giro_PHBMMy" state="0" type="TPF_Bank_Giro_PHBMMy" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">Affin Bank</row>
+          <row id="ClientHeight" state="0">240</row>
+          <row id="ClientWidth" state="0">465</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TPF_BANK_GIRO_RHBBMY_0" state="0" created="20160425163133" resname="TPF_BANK_GIRO_RHBBMY_0">
+        <form class="TVclForm" name="PF_Bank_Giro_RHBBMY_0" state="0" type="TPF_Bank_Giro_RHBBMY_0" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">RHB</row>
+          <row id="ClientHeight" state="0">241</row>
+          <row id="ClientWidth" state="0">465</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbBatchNo" state="0" type="TcxLabel">
+            <row id="Caption" state="0">Batch No</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">17</row>
+          </component>
+          <component class="TVisEdit" name="edBatchNo" state="0" type="TcxSpinEdit">
+            <row id="Left" state="0">104</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">49</row>
+          </component>
+          <component class="TVisLabel" name="lbCreditingDate" state="0" type="TcxLabel">
+            <row id="Caption" state="0">Crediting Date</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">44</row>
+          </component>
+          <component class="TVisEdit" name="edCreditingDate" state="0" type="TcxDateEdit">
+            <row id="Left" state="0">104</row>
+            <row id="Top" state="0">43</row>
+            <row id="Width" state="0">89</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TPF_BANK_GIRO_RHBBMY_1" state="0" created="20160425163133" resname="TPF_BANK_GIRO_RHBBMY_1">
+        <form class="TVclForm" name="PF_Bank_Giro_RHBBMY_1" state="0" type="TPF_Bank_Giro_RHBBMY_1" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">RHB</row>
+          <row id="ClientHeight" state="0">242</row>
+          <row id="ClientWidth" state="0">441</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TPF_BANK_GIRO_SCBLMY" state="0" created="20160425163133" resname="TPF_BANK_GIRO_SCBLMY">
+        <form class="TVclForm" name="PF_Bank_Giro_SCBLMY" state="0" type="TPF_Bank_Giro_SCBLMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">Standard Chartered Bank</row>
+          <row id="ClientHeight" state="0">241</row>
+          <row id="ClientWidth" state="0">465</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbValueDate" state="0" type="TLabel">
+            <row id="Caption" state="0">Value Date</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">52</row>
+          </component>
+          <component class="TVisEdit" name="edValueDate" state="0" type="TcxDateEdit">
+            <row id="Left" state="0">82</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">121</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TPF_BANK_GIRO_UOVBMY_0" state="0" created="20160425163133" resname="TPF_BANK_GIRO_UOVBMY_0">
+        <form class="TVclForm" name="PF_Bank_Giro_UOVBMY_0" state="0" type="TPF_Bank_Giro_UOVBMY_0" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">UOB Bank</row>
+          <row id="ClientHeight" state="0">121</row>
+          <row id="ClientWidth" state="0">481</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbSeqNo" state="0" type="TLabel">
+            <row id="Caption" state="0">Seq No</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">34</row>
+          </component>
+          <component class="TVisLabel" name="lbSeqNoDesc" state="0" type="TLabel" parentfont="0" wordwrap="1">
+            <row id="Caption" state="0">User can submit a total of up to 99 payment and collection instruction files per day.</row>
+            <row id="Font.Color" state="0">clBlue</row>
+            <row id="Font.Name" state="0">Arial</row>
+            <row id="Font.Size" state="0">8</row>
+            <row id="Font.Style" state="0">[]</row>
+            <row id="Height" state="0">28</row>
+            <row id="Left" state="0">184</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">281</row>
+          </component>
+          <component class="TVisLabel" name="lbValueDate" state="0" type="TLabel">
+            <row id="Caption" state="0">Value Date</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">55</row>
+            <row id="Width" state="0">52</row>
+          </component>
+          <component class="TVisLabel" name="lbValueDateDesc" state="0" type="TLabel" parentfont="0" wordwrap="1">
+            <row id="Caption" state="0">The date when payments or collections are effected.</row>
+            <row id="Font.Color" state="0">clBlue</row>
+            <row id="Font.Name" state="0">Arial</row>
+            <row id="Font.Size" state="0">8</row>
+            <row id="Font.Style" state="0">[]</row>
+            <row id="Height" state="0">14</row>
+            <row id="Left" state="0">184</row>
+            <row id="Top" state="0">55</row>
+            <row id="Width" state="0">256</row>
+          </component>
+          <component class="TVisEdit" name="edSeqNo" state="0" type="TcxSpinEdit">
+            <row id="Left" state="0">80</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">41</row>
+          </component>
+          <component class="TVisEdit" name="edValueDate" state="0" type="TcxDateEdit">
+            <row id="Left" state="0">80</row>
+            <row id="Top" state="0">52</row>
+            <row id="Width" state="0">89</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TPF_BANK_GIRO_UOVBMY_1" state="0" created="20160425163133" resname="TPF_BANK_GIRO_UOVBMY_1">
+        <form class="TVclForm" name="PF_Bank_Giro_UOVBMY_1" state="0" type="TPF_Bank_Giro_UOVBMY_1" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">UOB</row>
+          <row id="ClientHeight" state="0">73</row>
+          <row id="ClientWidth" state="0">465</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbValueDate" state="0" type="TLabel">
+            <row id="Caption" state="0">Value Date</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">52</row>
+          </component>
+          <component class="TVisLabel" name="lbValueDateDesc" state="0" type="TLabel" parentfont="0" wordwrap="1">
+            <row id="Caption" state="0">The date when payments or collections are effected.</row>
+            <row id="Font.Color" state="0">clBlue</row>
+            <row id="Font.Name" state="0">Arial</row>
+            <row id="Font.Size" state="0">8</row>
+            <row id="Font.Style" state="0">[]</row>
+            <row id="Height" state="0">14</row>
+            <row id="Left" state="0">184</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">256</row>
+          </component>
+          <component class="TVisEdit" name="edValueDate" state="0" type="TcxDateEdit">
+            <row id="Left" state="0">80</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">89</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TWF_BANK_INFO" state="0" created="20160425163133" resname="TWF_BANK_INFO">
+        <form class="TVclForm" name="WF_Bank_Info" state="0" type="TWF_Bank_Info" borderstyle="bsDialog" textheight="13">
+          <row id="Caption" state="0">Bank Information</row>
+          <row id="ClientHeight" state="0">371</row>
+          <row id="ClientWidth" state="0">594</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisPanel" name="pnlTop" state="0" type="TPanel" align="alTop" bevelouter="bvNone">
+            <row id="Height" state="0">41</row>
+            <row id="Left" state="0">0</row>
+            <row id="Top" state="0">0</row>
+            <row id="Width" state="0">594</row>
+            <component class="TVisLabel" name="lbBank" state="0" type="TLabel">
+              <row id="Caption" state="0">Bank</row>
+              <row id="Height" state="0">13</row>
+              <row id="Left" state="0">16</row>
+              <row id="Top" state="0">13</row>
+              <row id="Width" state="0">23</row>
+            </component>
+            <component class="TVisLabel" name="lbBankName" state="0" type="TLabel" autosize="0" parentfont="0">
+              <row id="Font.Color" state="0">clBlue</row>
+              <row id="Font.Name" state="0">Tahoma</row>
+              <row id="Font.Size" state="0">8</row>
+              <row id="Font.Style" state="0">[]</row>
+              <row id="Height" state="0">13</row>
+              <row id="Left" state="0">56</row>
+              <row id="Top" state="0">13</row>
+              <row id="Width" state="0">281</row>
+            </component>
+            <component class="TVisButton" name="btnSelectBank" state="0" type="TButton">
+              <row id="Caption" state="0">...</row>
+              <row id="Height" state="0">25</row>
+              <row id="Left" state="0">351</row>
+              <row id="Top" state="0">8</row>
+              <row id="Width" state="0">25</row>
+            </component>
+          </component>
+          <component class="TVisPanel" name="pnlBottom" state="0" type="TPanel" align="alBottom" bevelouter="bvNone">
+            <row id="Height" state="0">41</row>
+            <row id="Left" state="0">0</row>
+            <row id="Top" state="0">330</row>
+            <row id="Width" state="0">594</row>
+            <component class="TVisButton" name="btnOK" state="0" type="TButton">
+              <row id="Caption" state="0">OK</row>
+              <row id="Height" state="0">25</row>
+              <row id="Left" state="0">423</row>
+              <row id="Top" state="0">8</row>
+              <row id="Width" state="0">75</row>
+            </component>
+            <component class="TVisButton" name="btnCancel" state="0" type="TButton">
+              <row id="Caption" state="0">Cancel</row>
+              <row id="Height" state="0">25</row>
+              <row id="Left" state="0">511</row>
+              <row id="Top" state="0">8</row>
+              <row id="Width" state="0">75</row>
+            </component>
+          </component>
+          <component class="TVisHiddenComponent" name="BindingsList1" state="0" type="TBindingsList">
+            <component class="TVisHiddenComponent" name="be_btnOK_Enabled" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Enabled</row>
+              <row id="SourceExpression" state="0">CanModify</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_lbBankName_Caption" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Caption</row>
+              <row id="SourceExpression" state="0">BankName</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_btnChangeBank_Enabled" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Enabled</row>
+              <row id="SourceExpression" state="0">CanModify</row>
+            </component>
+          </component>
+          <component class="TVisDefaultControl" name="BindScope1" state="0" type="TBindScope">
+            <row id="Left" state="0">448</row>
+            <row id="Top" state="0">80</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TWF_BANK_INFO_ARBKMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_ARBKMY">
+        <form class="TVclForm" name="WF_Bank_Info_ARBKMY" state="0" type="TWF_Bank_Info_ARBKMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">AmBank</row>
+          <row id="ClientHeight" state="0">241</row>
+          <row id="ClientWidth" state="0">465</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbCustomerCode" state="0" type="TLabel">
+            <row id="Caption" state="0">Customer Code</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">74</row>
+          </component>
+          <component class="TVisLabel" name="lbCustomerCodeDesc" state="0" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Provided by bank.</row>
+            <row id="Font.Color" state="0">clBlue</row>
+            <row id="Font.Name" state="0">Arial</row>
+            <row id="Font.Size" state="0">8</row>
+            <row id="Font.Style" state="0">[]</row>
+            <row id="Height" state="0">14</row>
+            <row id="Left" state="0">239</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">86</row>
+          </component>
+          <component class="TVisLabel" name="lbAccNo" state="0" type="TLabel">
+            <row id="Caption" state="0">Account No.</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">46</row>
+            <row id="Width" state="0">59</row>
+          </component>
+          <component class="TVisEdit" name="edCustomerCode" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">104</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisEdit" name="edAccNo" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">104</row>
+            <row id="Top" state="0">43</row>
+            <row id="Width" state="0">121</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TWF_BANK_INFO_BOTKMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_BOTKMY">
+        <form class="TVclForm" name="WF_Bank_Info_BOTKMY" state="0" type="TWF_Bank_Info_BOTKMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">MUFG</row>
+          <row id="ClientHeight" state="0">241</row>
+          <row id="ClientWidth" state="0">465</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbAccNo" state="0" type="TLabel">
+            <row id="Caption" state="0">Account No.</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">59</row>
+          </component>
+          <component class="TVisLabel" name="lbAccName" state="0" type="TLabel">
+            <row id="Caption" state="0">Account Name</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">46</row>
+            <row id="Width" state="0">69</row>
+          </component>
+          <component class="TVisLabel" name="lbEmail" state="0" type="TLabel">
+            <row id="Caption" state="0">Email</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">73</row>
+            <row id="Width" state="0">24</row>
+          </component>
+          <component class="TVisEdit" name="edAccNo" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">96</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisEdit" name="edAccName" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">96</row>
+            <row id="Top" state="0">43</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisEdit" name="edEmail" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">96</row>
+            <row id="Top" state="0">70</row>
+            <row id="Width" state="0">121</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TWF_BANK_INFO_BSNAMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_BSNAMY">
+        <form class="TVclForm" name="WF_Bank_Info_BSNAMY" state="0" type="TWF_Bank_Info_BSNAMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">WF_Bank_Info_BSNAMY</row>
+          <row id="ClientHeight" state="0">242</row>
+          <row id="ClientWidth" state="0">433</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbCompanyCode" state="0" type="TLabel">
+            <row id="Caption" state="0">Company Code</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">73</row>
+          </component>
+          <component class="TVisLabel" name="lbCompanyCodeDesc" state="0" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Provided by bank.</row>
+            <row id="Font.Color" state="0">clBlue</row>
+            <row id="Font.Name" state="0">Arial</row>
+            <row id="Font.Size" state="0">8</row>
+            <row id="Font.Style" state="0">[]</row>
+            <row id="Height" state="0">14</row>
+            <row id="Left" state="0">240</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">86</row>
+          </component>
+          <component class="TVisEdit" name="edCompanyCode" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">104</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">121</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TWF_BANK_INFO_CIBBMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_CIBBMY">
+        <form class="TVclForm" name="WF_Bank_Info_CIBBMY" state="0" type="TWF_Bank_Info_CIBBMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">WF_Bank_Info_CIBBMY</row>
+          <row id="ClientHeight" state="0">242</row>
+          <row id="ClientWidth" state="0">433</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbOrganisationCode" state="0" type="TLabel">
+            <row id="Caption" state="0">Organisation Code</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">89</row>
+          </component>
+          <component class="TVisLabel" name="lbOrganisationCodeDesc" state="0" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Provided by bank.</row>
+            <row id="Font.Color" state="0">clBlue</row>
+            <row id="Font.Name" state="0">Arial</row>
+            <row id="Font.Size" state="0">8</row>
+            <row id="Font.Style" state="0">[]</row>
+            <row id="Height" state="0">14</row>
+            <row id="Left" state="0">255</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">86</row>
+          </component>
+          <component class="TVisEdit" name="edOrganisationCode" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">120</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">121</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TWF_BANK_INFO_CITIMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_CITIMY">
+        <form class="TVclForm" name="WF_Bank_Info_CITIMY" state="0" type="TWF_Bank_Info_CITIMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">WF_Bank_Info_CITIMY</row>
+          <row id="ClientHeight" state="0">81</row>
+          <row id="ClientWidth" state="0">463</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbAccNo" state="0" type="TLabel">
+            <row id="Caption" state="0">Debit Account Number</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">107</row>
+          </component>
+          <component class="TVisEdit" name="edAccNo" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">136</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">121</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TWF_BANK_INFO_CITISG" state="0" created="20160425163133" resname="TWF_BANK_INFO_CITISG">
+        <form class="TVclForm" name="WF_Bank_Info_CITISG" state="0" type="TWF_Bank_Info_CITISG" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">WF_Bank_Info_CITISG</row>
+          <row id="ClientHeight" state="0">81</row>
+          <row id="ClientWidth" state="0">465</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbAccNo" state="0" type="TLabel">
+            <row id="Caption" state="0">Debit Account Number</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">107</row>
+          </component>
+          <component class="TVisEdit" name="edAccNo" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">136</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">121</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TWF_BANK_INFO_HBMBMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_HBMBMY">
+        <form class="TVclForm" name="WF_Bank_Info_HBMBMY" state="0" type="TWF_Bank_Info_HBMBMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">HSBC</row>
+          <row id="ClientHeight" state="0">241</row>
+          <row id="ClientWidth" state="0">465</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisPanel" name="pnlTop" state="0" type="TPanel" align="alTop" bevelouter="bvNone">
+            <row id="Height" state="0">37</row>
+            <row id="Left" state="0">0</row>
+            <row id="Top" state="0">0</row>
+            <row id="Width" state="0">465</row>
+            <component class="TVisLabel" name="lbFileFormat" state="0" type="TLabel">
+              <row id="Caption" state="0">File Format</row>
+              <row id="Height" state="0">13</row>
+              <row id="Left" state="0">16</row>
+              <row id="Top" state="0">11</row>
+              <row id="Width" state="0">53</row>
+            </component>
+            <component class="TVisComboBox" name="edFileFormat" state="0" type="TComboBox" style="csDropDownList">
+              <row id="Height" state="0">21</row>
+              <row id="Items.Strings.HUB ACH" importid="0" state="0">HUB ACH</row>
+              <row id="Items.Strings.HVP" importid="1" state="0" order="1">HVP</row>
+              <row id="Left" state="0">88</row>
+              <row id="Text" state="0">HUB ACH</row>
+              <row id="Top" state="0">8</row>
+              <row id="Width" state="0">145</row>
+            </component>
+          </component>
+          <component class="TVisPageControl" name="PageControl1" state="0" type="TPageControl" align="alClient">
+            <row id="Height" state="0">204</row>
+            <row id="Left" state="0">0</row>
+            <row id="Top" state="0">37</row>
+            <row id="Width" state="0">465</row>
+            <component class="TVisTabSheet" name="TabSheet1" state="0" type="TTabSheet" tabvisible="0">
+              <row id="Caption" state="0">TabSheet1</row>
+              <component class="TVisLabel" name="lbConnectCustomerID" state="0" type="TLabel">
+                <row id="Caption" state="0">Connect Customer ID</row>
+                <row id="Height" state="0">13</row>
+                <row id="Left" state="0">12</row>
+                <row id="Top" state="0">11</row>
+                <row id="Width" state="0">103</row>
+              </component>
+              <component class="TVisLabel" name="lbConnectCustomerIDDesc" state="0" type="TLabel" parentfont="0">
+                <row id="Caption" state="0">Provided by bank.</row>
+                <row id="Font.Color" state="0">clBlue</row>
+                <row id="Font.Name" state="0">Arial</row>
+                <row id="Font.Size" state="0">8</row>
+                <row id="Font.Style" state="0">[]</row>
+                <row id="Height" state="0">14</row>
+                <row id="Left" state="0">267</row>
+                <row id="Top" state="0">11</row>
+                <row id="Width" state="0">86</row>
+              </component>
+              <component class="TVisLabel" name="Label1" state="0" type="TLabel">
+                <row id="Caption" state="0">HSBCnet ID</row>
+                <row id="Height" state="0">13</row>
+                <row id="Left" state="0">12</row>
+                <row id="Top" state="0">38</row>
+                <row id="Width" state="0">56</row>
+              </component>
+              <component class="TVisLabel" name="lbHSBCnetIDDesc" state="0" type="TLabel" parentfont="0">
+                <row id="Caption" state="0">Provided by bank.</row>
+                <row id="Font.Color" state="0">clBlue</row>
+                <row id="Font.Name" state="0">Arial</row>
+                <row id="Font.Size" state="0">8</row>
+                <row id="Font.Style" state="0">[]</row>
+                <row id="Height" state="0">14</row>
+                <row id="Left" state="0">267</row>
+                <row id="Top" state="0">38</row>
+                <row id="Width" state="0">86</row>
+              </component>
+              <component class="TVisLabel" name="lbAccNo" state="0" type="TLabel">
+                <row id="Caption" state="0">Account No.</row>
+                <row id="Height" state="0">13</row>
+                <row id="Left" state="0">12</row>
+                <row id="Top" state="0">65</row>
+                <row id="Width" state="0">59</row>
+              </component>
+              <component class="TVisLabel" name="lbAuthorizationType" state="0" type="TLabel">
+                <row id="Caption" state="0">Authorization Type</row>
+                <row id="Height" state="0">13</row>
+                <row id="Left" state="0">12</row>
+                <row id="Top" state="0">120</row>
+                <row id="Width" state="0">91</row>
+              </component>
+              <component class="TVisLabel" name="lbDetailOfCharge" state="0" type="TLabel">
+                <row id="Caption" state="0">Detail of Charge</row>
+                <row id="Height" state="0">13</row>
+                <row id="Left" state="0">12</row>
+                <row id="Top" state="0">147</row>
+                <row id="Width" state="0">78</row>
+              </component>
+              <component class="TVisLabel" name="lbAccName" state="0" type="TLabel">
+                <row id="Caption" state="0">Account Name</row>
+                <row id="Height" state="0">13</row>
+                <row id="Left" state="0">12</row>
+                <row id="Top" state="0">92</row>
+                <row id="Width" state="0">69</row>
+              </component>
+              <component class="TVisEdit" name="edConnectCustomerID" state="0" type="TEdit">
+                <row id="Height" state="0">21</row>
+                <row id="Left" state="0">129</row>
+                <row id="Top" state="0">8</row>
+                <row id="Width" state="0">121</row>
+              </component>
+              <component class="TVisEdit" name="edHSBCnetID" state="0" type="TEdit">
+                <row id="Height" state="0">21</row>
+                <row id="Left" state="0">129</row>
+                <row id="Top" state="0">35</row>
+                <row id="Width" state="0">121</row>
+              </component>
+              <component class="TVisEdit" name="edAccNo" state="0" type="TEdit">
+                <row id="Height" state="0">21</row>
+                <row id="Left" state="0">129</row>
+                <row id="Top" state="0">62</row>
+                <row id="Width" state="0">121</row>
+              </component>
+              <component class="TVisComboBox" name="edAuthorizationType" state="0" type="TcxImageComboBox">
+                <row id="EditValue" state="0">P</row>
+                <row id="Left" state="0">129</row>
+                <row id="Properties.Items[0].Description" state="0">Preauthorised</row>
+                <row id="Properties.Items[0].Value" state="0">A</row>
+                <row id="Properties.Items[1].Description" state="0">Instruction level authorisation</row>
+                <row id="Properties.Items[1].Value" state="0">P</row>
+                <row id="Properties.Items[2].Description" state="0">File level authorisation (Summary)</row>
+                <row id="Properties.Items[2].Value" state="0">F</row>
+                <row id="Properties.Items[3].Description" state="0">File level authorisation (Detail)</row>
+                <row id="Properties.Items[3].Value" state="0">V</row>
+                <row id="Top" state="0">116</row>
+                <row id="Width" state="0">121</row>
+              </component>
+              <component class="TVisComboBox" name="edDetailOfCharge" state="0" type="TcxImageComboBox">
+                <row id="EditValue" state="0">BEN</row>
+                <row id="Left" state="0">129</row>
+                <row id="Properties.Items[0].Description" state="0">Charge to beneficiary</row>
+                <row id="Properties.Items[0].Value" state="0">BEN</row>
+                <row id="Properties.Items[1].Description" state="0">Charge to debit account</row>
+                <row id="Properties.Items[1].Value" state="0">OUR</row>
+                <row id="Properties.Items[2].Description" state="0">Shared</row>
+                <row id="Properties.Items[2].Value" state="0">SHA</row>
+                <row id="Top" state="0">143</row>
+                <row id="Width" state="0">121</row>
+              </component>
+              <component class="TVisEdit" name="edAccName" state="0" type="TEdit">
+                <row id="Height" state="0">21</row>
+                <row id="Left" state="0">129</row>
+                <row id="Top" state="0">89</row>
+                <row id="Width" state="0">121</row>
+              </component>
+            </component>
+          </component>
+          <component class="TVisHiddenComponent" name="BindingsList1" state="0" type="TBindingsList">
+            <component class="TVisHiddenComponent" name="be_edFileFormat_ItemIndex" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">ItemIndex</row>
+              <row id="SourceExpression" state="0">ActiveFormat</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_lbDetailOfCharge_Visible" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Visible</row>
+              <row id="SourceExpression" state="0">IIf(ActiveFormat=1,True,False)</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edDetailOfCharge_Visible" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Visible</row>
+              <row id="SourceExpression" state="0">IIf(ActiveFormat=1,True,False)</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edAccNo_MaxLength" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">MaxLength</row>
+              <row id="SourceExpression" state="0">AccNo_MaxLength</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_lbAccName_Visible" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Visible</row>
+              <row id="SourceExpression" state="0">IIf(ActiveFormat=1,True,False)</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edAccName_Visible" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Visible</row>
+              <row id="SourceExpression" state="0">IIf(ActiveFormat=1,True,False)</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edConnectCustomerID_Text" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Text</row>
+              <row id="SourceExpression" state="0">Default_ConnectCustomerID_Text</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edHSBCnetID_Text" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Text</row>
+              <row id="SourceExpression" state="0">Default_HSBCnetID_Text</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edAccNo_Text" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Text</row>
+              <row id="SourceExpression" state="0">Default_AccNo_Text</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edAccName_Text" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Text</row>
+              <row id="SourceExpression" state="0">Default_AccName_Text</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edAuthorizationType_ItemIndex" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">ItemIndex</row>
+              <row id="SourceExpression" state="0">Default_AuthorizationType_ItemIndex</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edDetailOfCharge_ItemIndex" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">ItemIndex</row>
+              <row id="SourceExpression" state="0">Default_DetailOfCharge_ItemIndex</row>
+            </component>
+          </component>
+          <component class="TVisDefaultControl" name="BindScope1" state="0" type="TBindScope">
+            <row id="Left" state="0">296</row>
+            <row id="Top" state="0">160</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TWF_BANK_INFO_MBBEMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_MBBEMY">
+        <form class="TVclForm" name="WF_Bank_Info_MBBEMY" state="0" type="TWF_Bank_Info_MBBEMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">WF_Bank_Info_MBBEMYs</row>
+          <row id="ClientHeight" state="0">289</row>
+          <row id="ClientWidth" state="0">481</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisPageControl" name="PageControl1" state="0" type="TPageControl" align="alClient" multiline="1">
+            <row id="Height" state="0">252</row>
+            <row id="Left" state="0">0</row>
+            <row id="Top" state="0">37</row>
+            <row id="Width" state="0">481</row>
+            <component class="TVisTabSheet" name="tsAutocredit" state="0" type="TTabSheet" tabvisible="0">
+              <row id="Caption" state="0">tsAutocredit</row>
+              <component class="TVisLabel" name="lbCompanyID" state="0" type="TLabel">
+                <row id="Caption" state="0">Company ID</row>
+                <row id="Height" state="0">13</row>
+                <row id="Left" state="0">12</row>
+                <row id="Top" state="0">11</row>
+                <row id="Width" state="0">59</row>
+              </component>
+              <component class="TVisLabel" name="lbOriginatorID" state="0" type="TLabel">
+                <row id="Caption" state="0">Originator ID</row>
+                <row id="Height" state="0">13</row>
+                <row id="Left" state="0">12</row>
+                <row id="Top" state="0">38</row>
+                <row id="Width" state="0">62</row>
+              </component>
+              <component class="TVisLabel" name="lbOriginatorAccNo" state="0" type="TLabel">
+                <row id="Caption" state="0">Originator Account No.</row>
+                <row id="Height" state="0">13</row>
+                <row id="Left" state="0">12</row>
+                <row id="Top" state="0">92</row>
+                <row id="Width" state="0">110</row>
+              </component>
+              <component class="TVisLabel" name="lbShortName" state="0" type="TLabel">
+                <row id="Caption" state="0">Originator Short Name</row>
+                <row id="Height" state="0">13</row>
+                <row id="Left" state="0">12</row>
+                <row id="Top" state="0">65</row>
+                <row id="Width" state="0">107</row>
+              </component>
+              <component class="TVisLabel" name="lbCompanyIDDesc" state="0" type="TLabel" parentfont="0">
+                <row id="Caption" state="0">Company ID in MAS</row>
+                <row id="Font.Color" state="0">clBlue</row>
+                <row id="Font.Name" state="0">Arial</row>
+                <row id="Font.Size" state="0">8</row>
+                <row id="Font.Style" state="0">[]</row>
+                <row id="Height" state="0">14</row>
+                <row id="Left" state="0">271</row>
+                <row id="Top" state="0">11</row>
+                <row id="Width" state="0">94</row>
+              </component>
+              <component class="TVisLabel" name="lbOriginatorIDDesc" state="0" type="TLabel" parentfont="0">
+                <row id="Caption" state="0">Originator ID provided by Maybank</row>
+                <row id="Font.Color" state="0">clBlue</row>
+                <row id="Font.Name" state="0">Arial</row>
+                <row id="Font.Size" state="0">8</row>
+                <row id="Font.Style" state="0">[]</row>
+                <row id="Height" state="0">14</row>
+                <row id="Left" state="0">271</row>
+                <row id="Top" state="0">38</row>
+                <row id="Width" state="0">165</row>
+              </component>
+              <component class="TVisLabel" name="lbOriginatorAccNoDesc" state="0" type="TLabel" parentfont="0">
+                <row id="Caption" state="0">Originator's account for debit</row>
+                <row id="Font.Color" state="0">clBlue</row>
+                <row id="Font.Name" state="0">Arial</row>
+                <row id="Font.Size" state="0">8</row>
+                <row id="Font.Style" state="0">[]</row>
+                <row id="Height" state="0">14</row>
+                <row id="Left" state="0">271</row>
+                <row id="Top" state="0">92</row>
+                <row id="Width" state="0">140</row>
+              </component>
+              <component class="TVisEdit" name="edCompanyID" state="0" type="TEdit">
+                <row id="Height" state="0">21</row>
+                <row id="Left" state="0">136</row>
+                <row id="Top" state="0">8</row>
+                <row id="Width" state="0">121</row>
+              </component>
+              <component class="TVisEdit" name="edOriginatorID" state="0" type="TEdit">
+                <row id="Height" state="0">21</row>
+                <row id="Left" state="0">136</row>
+                <row id="Top" state="0">35</row>
+                <row id="Width" state="0">121</row>
+              </component>
+              <component class="TVisEdit" name="edOriginatorAccNo" state="0" type="TEdit">
+                <row id="Height" state="0">21</row>
+                <row id="Left" state="0">136</row>
+                <row id="Top" state="0">89</row>
+                <row id="Width" state="0">121</row>
+              </component>
+              <component class="TVisEdit" name="edShortName" state="0" type="TEdit">
+                <row id="Height" state="0">21</row>
+                <row id="Left" state="0">136</row>
+                <row id="Top" state="0">62</row>
+                <row id="Width" state="0">121</row>
+              </component>
+            </component>
+            <component class="TVisTabSheet" name="tsAncilliaryPay" state="0" type="TTabSheet" imageindex="1" tabvisible="0">
+              <row id="Caption" state="0">tsAncilliaryPay</row>
+              <component class="TVisLabel" name="lbClientCode" state="0" type="TLabel">
+                <row id="Caption" state="0">Client Code</row>
+                <row id="Height" state="0">13</row>
+                <row id="Left" state="0">12</row>
+                <row id="Top" state="0">11</row>
+                <row id="Width" state="0">55</row>
+              </component>
+              <component class="TVisLabel" name="lbClientCodeDesc" state="0" type="TLabel" parentfont="0">
+                <row id="Caption" state="0">Client ID given by the bank</row>
+                <row id="Font.Color" state="0">clBlue</row>
+                <row id="Font.Name" state="0">Arial</row>
+                <row id="Font.Size" state="0">8</row>
+                <row id="Font.Style" state="0">[]</row>
+                <row id="Height" state="0">14</row>
+                <row id="Left" state="0">253</row>
+                <row id="Top" state="0">11</row>
+                <row id="Width" state="0">126</row>
+              </component>
+              <component class="TVisLabel" name="lbDebitAccNo" state="0" type="TLabel">
+                <row id="Caption" state="0">Debit Account No.</row>
+                <row id="Height" state="0">13</row>
+                <row id="Left" state="0">12</row>
+                <row id="Top" state="0">38</row>
+                <row id="Width" state="0">87</row>
+              </component>
+              <component class="TVisLabel" name="lbDebitAccNoDesc" state="0" type="TLabel" parentfont="0">
+                <row id="Caption" state="0">The account to be debited</row>
+                <row id="Font.Color" state="0">clBlue</row>
+                <row id="Font.Name" state="0">Arial</row>
+                <row id="Font.Size" state="0">8</row>
+                <row id="Font.Style" state="0">[]</row>
+                <row id="Height" state="0">14</row>
+                <row id="Left" state="0">253</row>
+                <row id="Top" state="0">38</row>
+                <row id="Width" state="0">125</row>
+              </component>
+              <component class="TVisEdit" name="edClientCode" state="0" type="TEdit">
+                <row id="Height" state="0">21</row>
+                <row id="Left" state="0">118</row>
+                <row id="Top" state="0">8</row>
+                <row id="Width" state="0">121</row>
+              </component>
+              <component class="TVisEdit" name="edDebitAccNo" state="0" type="TEdit">
+                <row id="Height" state="0">21</row>
+                <row id="Left" state="0">118</row>
+                <row id="Top" state="0">35</row>
+                <row id="Width" state="0">121</row>
+              </component>
+            </component>
+            <component class="TVisTabSheet" name="tsUniversalPayment" state="0" type="TTabSheet" imageindex="2" tabvisible="0">
+              <row id="Caption" state="0">Universal Payment</row>
+              <component class="TVisLabel" name="lbUni_CorporateID" state="0" type="TLabel">
+                <row id="Caption" state="0">Corporate ID</row>
+                <row id="Height" state="0">13</row>
+                <row id="Left" state="0">12</row>
+                <row id="Top" state="0">11</row>
+                <row id="Width" state="0">63</row>
+              </component>
+              <component class="TVisLabel" name="lbUni_CorporateID_Desc" state="0" type="TLabel" parentfont="0">
+                <row id="Caption" state="0">Corporate ID given by bank</row>
+                <row id="Font.Color" state="0">clBlue</row>
+                <row id="Font.Name" state="0">Arial</row>
+                <row id="Font.Size" state="0">8</row>
+                <row id="Font.Style" state="0">[]</row>
+                <row id="Height" state="0">14</row>
+                <row id="Left" state="0">240</row>
+                <row id="Top" state="0">11</row>
+                <row id="Width" state="0">130</row>
+              </component>
+              <component class="TVisLabel" name="lbUni_AccNo" state="0" type="TLabel">
+                <row id="Caption" state="0">Account No.</row>
+                <row id="Height" state="0">13</row>
+                <row id="Left" state="0">12</row>
+                <row id="Top" state="0">38</row>
+                <row id="Width" state="0">59</row>
+              </component>
+              <component class="TVisLabel" name="lbUni_ChargesBorneBy" state="0" type="TLabel">
+                <row id="Caption" state="0">Charges Borne By</row>
+                <row id="Height" state="0">13</row>
+                <row id="Left" state="0">12</row>
+                <row id="Top" state="0">66</row>
+                <row id="Width" state="0">86</row>
+              </component>
+              <component class="TVisEdit" name="edUni_CorporateID" state="0" type="TEdit">
+                <row id="Height" state="0">21</row>
+                <row id="Left" state="0">108</row>
+                <row id="Top" state="0">8</row>
+                <row id="Width" state="0">121</row>
+              </component>
+              <component class="TVisEdit" name="edUni_AccNo" state="0" type="TEdit">
+                <row id="Height" state="0">21</row>
+                <row id="Left" state="0">108</row>
+                <row id="Top" state="0">35</row>
+                <row id="Width" state="0">121</row>
+              </component>
+              <component class="TVisComboBox" name="edUni_ChargesBorneBy" state="0" type="TcxImageComboBox">
+                <row id="Left" state="0">108</row>
+                <row id="Properties.Items[0].Description" state="0">Applicant</row>
+                <row id="Properties.Items[0].Value" state="0">01</row>
+                <row id="Properties.Items[1].Description" state="0">Beneficiary</row>
+                <row id="Properties.Items[1].Value" state="0">02</row>
+                <row id="Top" state="0">62</row>
+                <row id="Width" state="0">121</row>
+              </component>
+            </component>
+          </component>
+          <component class="TVisPanel" name="pnlTop" state="0" type="TPanel" align="alTop" bevelouter="bvNone">
+            <row id="Height" state="0">37</row>
+            <row id="Left" state="0">0</row>
+            <row id="Top" state="0">0</row>
+            <row id="Width" state="0">481</row>
+            <component class="TVisLabel" name="lbFileFormat" state="0" type="TLabel">
+              <row id="Caption" state="0">File Format</row>
+              <row id="Height" state="0">13</row>
+              <row id="Left" state="0">16</row>
+              <row id="Top" state="0">11</row>
+              <row id="Width" state="0">53</row>
+            </component>
+            <component class="TVisComboBox" name="cbFileFormat" state="0" type="TComboBox" style="csDropDownList">
+              <row id="Height" state="0">21</row>
+              <row id="Items.Strings.Ancillary System" importid="1" state="0" order="1">Ancillary System</row>
+              <row id="Items.Strings.Autocredit System" importid="0" state="0">Autocredit System</row>
+              <row id="Items.Strings.Universal Payment" importid="2" state="0" order="2">Universal Payment</row>
+              <row id="Left" state="0">88</row>
+              <row id="Text" state="0">Autocredit System</row>
+              <row id="Top" state="0">8</row>
+              <row id="Width" state="0">145</row>
+            </component>
+          </component>
+          <component class="TVisHiddenComponent" name="BindingsList1" state="0" type="TBindingsList">
+            <component class="TVisHiddenComponent" name="be_PageControl1_ActivePageIndex" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">ActivePageIndex</row>
+              <row id="SourceExpression" state="0">ActiveFormat</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_cbFileFormat_ItemIndex" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">ItemIndex</row>
+              <row id="SourceExpression" state="0">ActiveFormat</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edCompanyID_Text" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Text</row>
+              <row id="SourceExpression" state="0">Default_CompanyID_Text</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edOriginatorID_Text" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Text</row>
+              <row id="SourceExpression" state="0">Default_OriginatorID_Text</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edShortName_Text" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Text</row>
+              <row id="SourceExpression" state="0">Default_ShortName_Text</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edOriginatorAccNo_Text" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Text</row>
+              <row id="SourceExpression" state="0">Default_OriginatorAccNo_Text</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edClientCode_Text" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Text</row>
+              <row id="SourceExpression" state="0">Default_ClientCode_Text</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edDebitAccNo_Text" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Text</row>
+              <row id="SourceExpression" state="0">Default_DebitAccNo_Text</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edUni_CorporateID_Text" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Text</row>
+              <row id="SourceExpression" state="0">Default_Uni_CorporateID_Text</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edUni_AccNo_Text" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Text</row>
+              <row id="SourceExpression" state="0">Default_Uni_AccNo_Text</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edUni_ChargesBorneBy_ItemIndex" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">ItemIndex</row>
+              <row id="SourceExpression" state="0">Default_Uni_ChargesBorneBy_ItemIndex</row>
+            </component>
+          </component>
+          <component class="TVisDefaultControl" name="BindScope1" state="0" type="TBindScope">
+            <row id="Left" state="0">192</row>
+            <row id="Top" state="0">216</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TWF_BANK_INFO_MFBBMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_MFBBMY">
+        <form class="TVclForm" name="WF_Bank_Info_MFBBMY" state="0" type="TWF_Bank_Info_MFBBMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">WF_Bank_Info_MFBBMY</row>
+          <row id="ClientHeight" state="0">240</row>
+          <row id="ClientWidth" state="0">463</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TWF_BANK_INFO_OCBCMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_OCBCMY">
+        <form class="TVclForm" name="WF_Bank_Info_OCBCMY" state="0" type="TWF_Bank_Info_OCBCMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">WF_Bank_Info_OCBCMY</row>
+          <row id="ClientHeight" state="0">240</row>
+          <row id="ClientWidth" state="0">458</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbBranch" state="0" type="TLabel">
+            <row id="Caption" state="0">Branch</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">33</row>
+          </component>
+          <component class="TVisLabel" name="lbBranchDesc" state="0" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Branch of account.</row>
+            <row id="Font.Color" state="0">clBlue</row>
+            <row id="Font.Name" state="0">Arial</row>
+            <row id="Font.Size" state="0">8</row>
+            <row id="Font.Style" state="0">[]</row>
+            <row id="Height" state="0">14</row>
+            <row id="Left" state="0">240</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">93</row>
+          </component>
+          <component class="TVisLabel" name="lbCompanyCIF" state="0" type="TLabel">
+            <row id="Caption" state="0">Company CIF##</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">46</row>
+            <row id="Width" state="0">73</row>
+          </component>
+          <component class="TVisLabel" name="lbAccNo" state="0" type="TLabel">
+            <row id="Caption" state="0">Account No.</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">73</row>
+            <row id="Width" state="0">59</row>
+          </component>
+          <component class="TVisLabel" name="lbCompanyCIFDesc" state="0" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Provided by bank.</row>
+            <row id="Font.Color" state="0">clBlue</row>
+            <row id="Font.Name" state="0">Arial</row>
+            <row id="Font.Size" state="0">8</row>
+            <row id="Font.Style" state="0">[]</row>
+            <row id="Height" state="0">14</row>
+            <row id="Left" state="0">240</row>
+            <row id="Top" state="0">46</row>
+            <row id="Width" state="0">86</row>
+          </component>
+          <component class="TVisEdit" name="edBranch" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">104</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisEdit" name="edCompanyCIF" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">104</row>
+            <row id="Top" state="0">43</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisEdit" name="edAccNo" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">104</row>
+            <row id="Top" state="0">70</row>
+            <row id="Width" state="0">121</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TWF_BANK_INFO_PBBEMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_PBBEMY">
+        <form class="TVclForm" name="WF_Bank_Info_PBBEMY" state="0" type="TWF_Bank_Info_PBBEMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">Public Bank</row>
+          <row id="ClientHeight" state="0">240</row>
+          <row id="ClientWidth" state="0">505</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbCorpCode" state="0" type="TLabel">
+            <row id="Caption" state="0">Corporate Code</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">46</row>
+            <row id="Width" state="0">77</row>
+          </component>
+          <component class="TVisLabel" name="lbAccNo" state="0" type="TLabel">
+            <row id="Caption" state="0">Account No.</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">73</row>
+            <row id="Width" state="0">59</row>
+          </component>
+          <component class="TVisLabel" name="lbCorpCodeDesc" state="0" type="TLabel" parentfont="0">
+            <row id="Caption" state="0">Provided by bank.</row>
+            <row id="Font.Color" state="0">clBlue</row>
+            <row id="Font.Name" state="0">Arial</row>
+            <row id="Font.Size" state="0">8</row>
+            <row id="Font.Style" state="0">[]</row>
+            <row id="Height" state="0">14</row>
+            <row id="Left" state="0">247</row>
+            <row id="Top" state="0">46</row>
+            <row id="Width" state="0">86</row>
+          </component>
+          <component class="TVisLabel" name="lbFileFormat" state="0" type="TLabel">
+            <row id="Caption" state="0">File Format</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">20</row>
+            <row id="Width" state="0">53</row>
+          </component>
+          <component class="TVisEdit" name="edCorporateCode" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">112</row>
+            <row id="Top" state="0">43</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisEdit" name="edAccNo" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">112</row>
+            <row id="Top" state="0">70</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisComboBox" name="edFileFormat" state="0" type="TcxComboBox">
+            <row id="Left" state="0">112</row>
+            <row id="Properties.Items.Strings.ECP" state="0">ECP</row>
+            <row id="Properties.Items.Strings.ECP (Excel)" state="0">ECP (Excel)</row>
+            <row id="Text" state="0">ECP</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">121</row>
+          </component>
+          <component class="TVisHiddenComponent" name="BindingsList1" state="0" type="TBindingsList">
+            <component class="TVisHiddenComponent" name="be_edFileFormat_ItemIndex" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">ItemIndex</row>
+              <row id="SourceExpression" state="0">ActiveFormat</row>
+            </component>
+          </component>
+          <component class="TVisDefaultControl" name="BindScope1" state="0" type="TBindScope">
+            <row id="Left" state="0">376</row>
+            <row id="Top" state="0">112</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TWF_BANK_INFO_PHBMMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_PHBMMY">
+        <form class="TVclForm" name="WF_Bank_Info_PHBMMY" state="0" type="TWF_Bank_Info_PHBMMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">WF_Bank_Info_PHBMMY</row>
+          <row id="ClientHeight" state="0">81</row>
+          <row id="ClientWidth" state="0">465</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TWF_BANK_INFO_RHBBMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_RHBBMY">
+        <form class="TVclForm" name="WF_Bank_Info_RHBBMY" state="0" type="TWF_Bank_Info_RHBBMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">RHB</row>
+          <row id="ClientHeight" state="0">241</row>
+          <row id="ClientWidth" state="0">465</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisPageControl" name="PageControl1" state="0" type="TPageControl" align="alClient" multiline="1">
+            <row id="Height" state="0">204</row>
+            <row id="Left" state="0">0</row>
+            <row id="Top" state="0">37</row>
+            <row id="Width" state="0">465</row>
+            <component class="TVisTabSheet" name="tsAutocredit" state="0" type="TTabSheet" tabvisible="0">
+              <row id="Caption" state="0">tsAutocredit</row>
+              <component class="TVisLabel" name="lbBranchCode" state="0" type="TLabel">
+                <row id="Caption" state="0">Branch Code</row>
+                <row id="Height" state="0">13</row>
+                <row id="Left" state="0">12</row>
+                <row id="Top" state="0">19</row>
+                <row id="Width" state="0">61</row>
+              </component>
+              <component class="TVisLabel" name="lbCustomerID" state="0" type="TLabel">
+                <row id="Caption" state="0">Customer ID</row>
+                <row id="Height" state="0">13</row>
+                <row id="Left" state="0">12</row>
+                <row id="Top" state="0">46</row>
+                <row id="Width" state="0">60</row>
+              </component>
+              <component class="TVisLabel" name="lbBranchCodeDesc" state="0" type="TLabel" parentfont="0">
+                <row id="Caption" state="0">Provided by bank.</row>
+                <row id="Font.Color" state="0">clBlue</row>
+                <row id="Font.Name" state="0">Arial</row>
+                <row id="Font.Size" state="0">8</row>
+                <row id="Font.Style" state="0">[]</row>
+                <row id="Height" state="0">14</row>
+                <row id="Left" state="0">223</row>
+                <row id="Top" state="0">19</row>
+                <row id="Width" state="0">86</row>
+              </component>
+              <component class="TVisLabel" name="lbCustomerIDDesc" state="0" type="TLabel" parentfont="0">
+                <row id="Caption" state="0">Provided by bank.</row>
+                <row id="Font.Color" state="0">clBlue</row>
+                <row id="Font.Name" state="0">Arial</row>
+                <row id="Font.Size" state="0">8</row>
+                <row id="Font.Style" state="0">[]</row>
+                <row id="Height" state="0">14</row>
+                <row id="Left" state="0">223</row>
+                <row id="Top" state="0">46</row>
+                <row id="Width" state="0">86</row>
+              </component>
+              <component class="TVisEdit" name="edBranch" state="0" type="TEdit">
+                <row id="Height" state="0">21</row>
+                <row id="Left" state="0">84</row>
+                <row id="Top" state="0">16</row>
+                <row id="Width" state="0">121</row>
+              </component>
+              <component class="TVisEdit" name="edCustomerID" state="0" type="TEdit">
+                <row id="Height" state="0">21</row>
+                <row id="Left" state="0">84</row>
+                <row id="Top" state="0">43</row>
+                <row id="Width" state="0">121</row>
+              </component>
+            </component>
+            <component class="TVisTabSheet" name="tsReflex" state="0" type="TTabSheet" imageindex="2" tabvisible="0">
+              <row id="Caption" state="0">tsReflex</row>
+            </component>
+          </component>
+          <component class="TVisPanel" name="pnlTop" state="0" type="TPanel" align="alTop" bevelouter="bvNone">
+            <row id="Height" state="0">37</row>
+            <row id="Left" state="0">0</row>
+            <row id="Top" state="0">0</row>
+            <row id="Width" state="0">465</row>
+            <component class="TVisLabel" name="lbFileFormat" state="0" type="TLabel">
+              <row id="Caption" state="0">File Format</row>
+              <row id="Height" state="0">13</row>
+              <row id="Left" state="0">16</row>
+              <row id="Top" state="0">11</row>
+              <row id="Width" state="0">53</row>
+            </component>
+            <component class="TVisComboBox" name="cbFileFormat" state="0" type="TComboBox" style="csDropDownList">
+              <row id="Height" state="0">21</row>
+              <row id="Items.Strings.Autocredit System" importid="0" state="0">Autocredit System</row>
+              <row id="Items.Strings.Reflex (Excel)" importid="1" state="0" order="1">Reflex (Excel)</row>
+              <row id="Left" state="0">88</row>
+              <row id="Text" state="0">Autocredit System</row>
+              <row id="Top" state="0">8</row>
+              <row id="Width" state="0">145</row>
+            </component>
+          </component>
+          <component class="TVisDefaultControl" name="BindScope1" state="0" type="TBindScope">
+            <row id="Left" state="0">224</row>
+            <row id="Top" state="0">176</row>
+          </component>
+          <component class="TVisHiddenComponent" name="BindingsList1" state="0" type="TBindingsList">
+            <component class="TVisHiddenComponent" name="be_PageControl1_ActivePageIndex" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">ActivePageIndex</row>
+              <row id="SourceExpression" state="0">ActiveFormat</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_cbFileFormat_ItemIndex" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">ItemIndex</row>
+              <row id="SourceExpression" state="0">ActiveFormat</row>
+            </component>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TWF_BANK_INFO_SCBLMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_SCBLMY">
+        <form class="TVclForm" name="WF_Bank_Info_SCBLMY" state="0" type="TWF_Bank_Info_SCBLMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">Standard Chartered Bank</row>
+          <row id="ClientHeight" state="0">241</row>
+          <row id="ClientWidth" state="0">465</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisLabel" name="lbAccNo" state="0" type="TLabel">
+            <row id="Caption" state="0">Account No.</row>
+            <row id="Height" state="0">13</row>
+            <row id="Left" state="0">16</row>
+            <row id="Top" state="0">19</row>
+            <row id="Width" state="0">59</row>
+          </component>
+          <component class="TVisEdit" name="edAccNo" state="0" type="TEdit">
+            <row id="Height" state="0">21</row>
+            <row id="Left" state="0">89</row>
+            <row id="Top" state="0">16</row>
+            <row id="Width" state="0">121</row>
+          </component>
+        </form>
+      </node>
+      <node class="TVclFormNode" name="TWF_BANK_INFO_UOVBMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_UOVBMY">
+        <form class="TVclForm" name="WF_Bank_Info_UOVBMY" state="0" type="TWF_Bank_Info_UOVBMY" borderstyle="bsNone" textheight="13">
+          <row id="Caption" state="0">WF_Bank_Info_UOVBMY</row>
+          <row id="ClientHeight" state="0">240</row>
+          <row id="ClientWidth" state="0">505</row>
+          <row id="Font.Color" state="0">clWindowText</row>
+          <row id="Font.Name" state="0">Tahoma</row>
+          <row id="Font.Size" state="0">8</row>
+          <row id="Font.Style" state="0">[]</row>
+          <row id="Left" state="0">0</row>
+          <row id="Top" state="0">0</row>
+          <component class="TVisPanel" name="pnlTop" state="0" type="TPanel" align="alTop" bevelouter="bvNone">
+            <row id="Height" state="0">37</row>
+            <row id="Left" state="0">0</row>
+            <row id="Top" state="0">0</row>
+            <row id="Width" state="0">505</row>
+            <component class="TVisLabel" name="lbFileFormat" state="0" type="TLabel">
+              <row id="Caption" state="0">File Format</row>
+              <row id="Height" state="0">13</row>
+              <row id="Left" state="0">16</row>
+              <row id="Top" state="0">11</row>
+              <row id="Width" state="0">53</row>
+            </component>
+            <component class="TVisComboBox" name="cbFileFormat" state="0" type="TComboBox" style="csDropDownList">
+              <row id="Height" state="0">21</row>
+              <row id="Items.Strings.IBG Bulk Payment" importid="0" state="0">IBG Bulk Payment</row>
+              <row id="Items.Strings.IBG Notification" importid="1" state="0" order="1">IBG Notification</row>
+              <row id="Left" state="0">88</row>
+              <row id="Text" state="0">IBG Bulk Payment</row>
+              <row id="Top" state="0">8</row>
+              <row id="Width" state="0">145</row>
+            </component>
+          </component>
+          <component class="TVisPageControl" name="PageControl1" state="0" type="TPageControl" align="alClient">
+            <row id="Height" state="0">203</row>
+            <row id="Left" state="0">0</row>
+            <row id="Top" state="0">37</row>
+            <row id="Width" state="0">505</row>
+            <component class="TVisTabSheet" name="TabSheet1" state="0" type="TTabSheet" tabvisible="0">
+              <row id="Caption" state="0">TabSheet1</row>
+              <component class="TVisLabel" name="lbAccNameDesc" state="0" type="TLabel" parentfont="0" wordwrap="1">
+                <row id="Caption" state="0">This corporation name is printed in the UOB group receiving A/C's bank's statement.</row>
+                <row id="Font.Color" state="0">clBlue</row>
+                <row id="Font.Name" state="0">Arial</row>
+                <row id="Font.Size" state="0">8</row>
+                <row id="Font.Style" state="0">[]</row>
+                <row id="Height" state="0">28</row>
+                <row id="Left" state="0">243</row>
+                <row id="Top" state="0">65</row>
+                <row id="Width" state="0">239</row>
+              </component>
+              <component class="TVisLabel" name="lbCompanyIDDesc" state="0" type="TLabel" parentfont="0">
+                <row id="Caption" state="0">Provided by bank.</row>
+                <row id="Font.Color" state="0">clBlue</row>
+                <row id="Font.Name" state="0">Arial</row>
+                <row id="Font.Size" state="0">8</row>
+                <row id="Font.Style" state="0">[]</row>
+                <row id="Height" state="0">14</row>
+                <row id="Left" state="0">243</row>
+                <row id="Top" state="0">11</row>
+                <row id="Width" state="0">86</row>
+              </component>
+              <component class="TVisLabel" name="lbTransCode" state="0" type="TLabel">
+                <row id="Caption" state="0">Transaction Code</row>
+                <row id="Height" state="0">13</row>
+                <row id="Left" state="0">12</row>
+                <row id="Top" state="0">101</row>
+                <row id="Width" state="0">84</row>
+              </component>
+              <component class="TVisLabel" name="lbAccName" state="0" type="TLabel">
+                <row id="Caption" state="0">Account Name</row>
+                <row id="Height" state="0">13</row>
+                <row id="Left" state="0">12</row>
+                <row id="Top" state="0">65</row>
+                <row id="Width" state="0">69</row>
+              </component>
+              <component class="TVisLabel" name="lbAccNo" state="0" type="TLabel">
+                <row id="Caption" state="0">Account No.</row>
+                <row id="Height" state="0">13</row>
+                <row id="Left" state="0">12</row>
+                <row id="Top" state="0">38</row>
+                <row id="Width" state="0">59</row>
+              </component>
+              <component class="TVisLabel" name="lbCompanyID" state="0" type="TLabel">
+                <row id="Caption" state="0">Company ID</row>
+                <row id="Height" state="0">13</row>
+                <row id="Left" state="0">12</row>
+                <row id="Top" state="0">11</row>
+                <row id="Width" state="0">59</row>
+              </component>
+              <component class="TVisEdit" name="edCompanyID" state="0" type="TEdit">
+                <row id="Height" state="0">21</row>
+                <row id="Left" state="0">108</row>
+                <row id="Top" state="0">8</row>
+                <row id="Width" state="0">121</row>
+              </component>
+              <component class="TVisComboBox" name="edTransCode" state="0" type="TcxImageComboBox">
+                <row id="EditValue" state="0">24</row>
+                <row id="Left" state="0">107</row>
+                <row id="Properties.Items[0].Description" state="0">Salary Credit</row>
+                <row id="Properties.Items[0].Value" state="0">22</row>
+                <row id="Properties.Items[1].Description" state="0">Remittance Credit</row>
+                <row id="Properties.Items[1].Value" state="0">24</row>
+                <row id="Top" state="0">97</row>
+                <row id="Width" state="0">122</row>
+              </component>
+              <component class="TVisEdit" name="edAccName" state="0" type="TEdit">
+                <row id="Height" state="0">21</row>
+                <row id="Left" state="0">108</row>
+                <row id="Top" state="0">62</row>
+                <row id="Width" state="0">121</row>
+              </component>
+              <component class="TVisEdit" name="edAccNo" state="0" type="TEdit">
+                <row id="Height" state="0">21</row>
+                <row id="Left" state="0">108</row>
+                <row id="Top" state="0">35</row>
+                <row id="Width" state="0">121</row>
+              </component>
+            </component>
+          </component>
+          <component class="TVisHiddenComponent" name="BindingsList1" state="0" type="TBindingsList">
+            <component class="TVisHiddenComponent" name="be_cbFileFormat_ItemIndex" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">ItemIndex</row>
+              <row id="SourceExpression" state="0">ActiveFormat</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edCompanyID_Text" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Text</row>
+              <row id="SourceExpression" state="0">Default_CompanyID_Text</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edAccNo_Text" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Text</row>
+              <row id="SourceExpression" state="0">Default_AccNo_Text</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edAccName_Text" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">Text</row>
+              <row id="SourceExpression" state="0">Default_AccName_Text</row>
+            </component>
+            <component class="TVisHiddenComponent" name="be_edTransCode_ItemIndex" state="0" type="TBindExpression">
+              <row id="Category" state="0">Binding Expressions</row>
+              <row id="ControlExpression" state="0">ItemIndex</row>
+              <row id="SourceExpression" state="0">Default_TransCode_ItemIndex</row>
+            </component>
+          </component>
+          <component class="TVisDefaultControl" name="BindScope1" state="0" type="TBindScope">
+            <row id="Left" state="0">312</row>
+            <row id="Top" state="0">184</row>
           </component>
         </form>
       </node>
     </node>
     <node class="TWindowsStringFolder" name="Strings" created="20160411143854" resid="6">
       <node class="TWindowsStringTableNode" name="StringTable" resname="StringTable">
-        <row id="Data import aborted." state="0">Data import aborted.</row>
-        <row id="Do you want to download Microsoft OLE DB Provider for Visual FoxPro 9.0?" state="0">Do you want to download Microsoft OLE DB Provider for Visual FoxPro 9.0?</row>
-        <row id="Error! Invalid UBS Database Folder." state="0">Error! Invalid UBS Database Folder.</row>
-        <row id="Reminder: Have you assign GL accounts for all Stock Group? Click YES if you already have and NO to abort." state="0">Reminder: Have you assign GL accounts for all Stock Group? Click YES if you already have and NO to abort.</row>
-        <row id="Reminder: Have you inserted the activation code? Click YES if you already have and NO to abort." state="0">Reminder: Have you inserted the activation code? Click YES if you already have and NO to abort.</row>
-        <row id="Reminder: Please check in GL | Maintain Account that all Special Type Account are assigned accordingly. E.g. Bank &amp; Cash Account. Click OK to proceed and Cancel to abort." state="0">Reminder: Please check in GL | Maintain Account that all Special Type Account are assigned accordingly. E.g. Bank &amp; Cash Account. Click OK to proceed and Cancel to abort.</row>
-        <row id="Reminder: Please go to GST | Start GST Now... if you are GST registered. Click OK to proceed and Cancel to abort." state="0">Reminder: Please go to GST | Start GST Now... if you are GST registered. Click OK to proceed and Cancel to abort.</row>
-        <row id="Select UBS Account directory" state="0">Select UBS Account directory</row>
-        <row id="Tips: Disable Unit Price message prompt by going to Tools | Options | Unit Price. For all tabs, under the Option column, change all to blank. Click OK to proceed and Cancel to abort." state="0">Tips: Disable Unit Price message prompt by going to Tools | Options | Unit Price. For all tabs, under the Option column, change all to blank. Click OK to proceed and Cancel to abort.</row>
+        <row id="Account Name cannot leave blank" state="0" created="20160425163133">Account Name cannot leave blank</row>
+        <row id="Account No. cannot leave blank" state="0" created="20160425163133">Account No. cannot leave blank</row>
+        <row id="Branch code cannot leave blank" state="0" created="20160425163133">Branch code cannot leave blank</row>
+        <row id="Branch of account cannot leave blank" state="0" created="20160425163133">Branch of account cannot leave blank</row>
+        <row id="Client Code cannot leave blank" state="0" created="20160425163133">Client Code cannot leave blank</row>
+        <row id="Company CIF cannot leave blank" state="0" created="20160425163133">Company CIF cannot leave blank</row>
+        <row id="Company Code cannot leave blank" state="0" created="20160425163133">Company Code cannot leave blank</row>
+        <row id="Company ID cannot leave blank" state="0" created="20160425163133">Company ID cannot leave blank</row>
+        <row id="Connect Customer ID cannot leave blank" state="0" created="20160425163133">Connect Customer ID cannot leave blank</row>
+        <row id="Corporate Code cannot leave blank" state="0" created="20160425163133">Corporate Code cannot leave blank</row>
+        <row id="Corporate ID cannot leave blank" state="0" created="20160425163133">Corporate ID cannot leave blank</row>
+        <row id="Create Bank Instruction File" state="0" created="20160425163133">Create Bank Instruction File</row>
+        <row id="Customer Code cannot leave blank" state="0" created="20160425163133">Customer Code cannot leave blank</row>
+        <row id="Customer ID cannot leave blank" state="0" created="20160425163133">Customer ID cannot leave blank</row>
+        <row id="Debit Account Number cannot leave blank" state="0" created="20160425163133">Debit Account Number cannot leave blank</row>
+        <row id="Existing bank information will be overwritten.#c#lAre you sure want to proceed?" state="0" created="20160425163133">Existing bank information will be overwritten.#c#lAre you sure want to proceed?</row>
+        <row id="Export BIF class (%s) not found" state="0" created="20160425163133">Export BIF class (%s) not found</row>
+        <row id="File %s already exists.#c#lDo you want to overwrite it?" state="0" created="20160425163133">File %s already exists.#c#lDo you want to overwrite it?</row>
+        <row id="File saved successfully" state="0" created="20160425163133">File saved successfully</row>
+        <row id="HSBCnet ID cannot leave blank" state="0" created="20160425163133">HSBCnet ID cannot leave blank</row>
+        <row id="Organisation Code cannot leave blank" state="0" created="20160425163133">Organisation Code cannot leave blank</row>
+        <row id="Originator Account cannot leave blank" state="0" created="20160425163133">Originator Account cannot leave blank</row>
+        <row id="Originator ID cannot leave blank" state="0" created="20160425163133">Originator ID cannot leave blank</row>
+        <row id="Please choose a bank" state="0" created="20160425163133">Please choose a bank</row>
+        <row id="Please contact %s (%s)#c#lfor add-on module - InterBank GIRO" state="0" created="20160425163133">Please contact %s (%s)#c#lfor add-on module - InterBank GIRO</row>
+        <row id="Select Bank" state="0" created="20160425163133">Select Bank</row>
+        <row id="Total records: %d#c#lFailed records: %d" state="0" created="20160425163133">Total records: %d#c#lFailed records: %d</row>
+        <row id="[%s] - OK" state="0" created="20160425163133">[%s] - OK</row>
+        <row id="[%s]: Failed (Currency code not found)" state="0" created="20160425163133">[%s]: Failed (Currency code not found)</row>
+        <row id="[%s]: Failed (IBG bank code not found)" state="0" created="20160425163133">[%s]: Failed (IBG bank code not found)</row>
+        <row id="[%s]: Failed (Internal fund transfer only)" state="0" created="20160425163133">[%s]: Failed (Internal fund transfer only)</row>
+        <row id="[%s]: Failed (Payment currency must be MYR)" state="0" created="20160425163133">[%s]: Failed (Payment currency must be MYR)</row>
+        <row id="[%s]: Failed (Payment currency must be SGD)" state="0" created="20160425163133">[%s]: Failed (Payment currency must be SGD)</row>
+        <row id="[%s]: Failed (Rentas bank code not found)" state="0" created="20160425163133">[%s]: Failed (Rentas bank code not found)</row>
       </node>
     </node>
   </source>
