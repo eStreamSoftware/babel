@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document created="20160411090511" version="4.0.359" date="20160425163204" scan="8" scanned="20160425163201">
+<document created="20160411090511" version="4.0.359" date="20160426164151" scan="30" scanned="20160426164032">
   <lang id="zh"/>
   <lang id="ms"/>
   <lang id="vi"/>
-  <source class="TDelphiSource" name="..\SQL.Bank.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160425015740" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.Bank.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160426012002" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <resources>
       <disabled name="SQL_BANK"/>
     </resources>
@@ -22,21 +22,28 @@
       <class>TReadingOrderData</class>
     </excludeddatatypes>
     <mappings>
-      <component name="TAction" class="TVisAction" inuse="0">
-        <property name="Category"/>
-        <property name="ShortCut"/>
-      </component>
-      <component name="TActionList" class="TVisHiddenComponent" inuse="0"/>
-      <component name="TBindExpression" class="TVisHiddenComponent" auto="1"/>
+      <component name="TBindExpression" class="TVisHiddenComponent" excluded="1"/>
       <component name="TBindingsList" class="TVisHiddenComponent"/>
+      <component name="TBindScope" class="TVisHiddenComponent" excluded="1"/>
       <component name="TButton" class="TVisButton"/>
-      <component name="TCheckBox" class="TVisCheckBox" inuse="0"/>
       <component name="TComboBox" class="TVisComboBox"/>
-      <component name="TcxCheckBox" class="TVisCheckBox"/>
+      <component name="TcxCheckBox" class="TVisCheckBox">
+        <property name="Properties.DisplayChecked"/>
+        <property name="Properties.DisplayUnchecked"/>
+        <property name="Properties.ValueChecked"/>
+        <property name="Properties.ValueUnchecked"/>
+      </component>
       <component name="TcxComboBox" class="TVisComboBox"/>
       <component name="TcxDateEdit" class="TVisEdit"/>
       <component name="TcxGrid" class="TVisBasicControl"/>
-      <component name="TcxGridColumn" class="TVisHiddenComponent"/>
+      <component name="TcxGridColumn" class="TVisHiddenComponent">
+        <property name="Properties.DisplayChecked"/>
+        <property name="Properties.DisplayUnchecked"/>
+        <property name="Properties.Items.Value"/>
+        <property name="Properties.ValueChecked"/>
+        <property name="Properties.ValueUnchecked"/>
+        <property name="PropertiesClassName"/>
+      </component>
       <component name="TcxGridLevel" class="TVisHiddenComponent"/>
       <component name="TcxGridTableView" class="TVisHiddenComponent"/>
       <component name="TcxImageComboBox" class="TVisComboBox"/>
@@ -46,18 +53,9 @@
       <component name="TEdit" class="TVisEdit">
         <property name="PasswordChar"/>
       </component>
-      <component name="TFlowPanel" class="TVisWrapPanel" inuse="0"/>
-      <component name="TImageList" class="TVisImageList" inuse="0"/>
       <component name="TLabel" class="TVisLabel" updatebounds="1"/>
-      <component name="TListView" class="TVisListView" inuse="0"/>
-      <component name="TMemo" class="TVisEdit" inuse="0"/>
-      <component name="TOpenDialog" class="TVisHiddenComponent" inuse="0">
-        <property name="DefaultExt"/>
-        <property name="Filter"/>
-      </component>
       <component name="TPageControl" class="TVisPageControl"/>
       <component name="TPanel" class="TVisPanel"/>
-      <component name="TSpinEdit" class="TVisEdit" inuse="0"/>
       <component name="TTabSheet" class="TVisTabSheet"/>
       <keyword name="RadioButton" class="TVisRadioButton"/>
       <keyword name="SpeedButton" class="TVisSpeedButton"/>
@@ -516,12 +514,12 @@
             <row id="Width" state="0">121</row>
           </component>
           <component class="TVisComboBox" name="cbTestingIndicator" state="0" type="TcxImageComboBox">
-            <row id="EditValue" state="0">T</row>
+            <row id="EditValue" locked="1" state="0">T</row>
             <row id="Left" state="0">144</row>
             <row id="Properties.Items[0].Description" state="0">Testing</row>
-            <row id="Properties.Items[0].Value" state="0">T</row>
+            <row id="Properties.Items[0].Value" locked="1" state="0">T</row>
             <row id="Properties.Items[1].Description" state="0">Production</row>
-            <row id="Properties.Items[1].Value" state="0">P</row>
+            <row id="Properties.Items[1].Value" locked="1" state="0">P</row>
             <row id="Top" state="0">70</row>
             <row id="Width" state="0">121</row>
           </component>
@@ -619,34 +617,34 @@
             <row id="Width" state="0">121</row>
           </component>
           <component class="TVisComboBox" name="cbTestingFile" state="0" type="TcxImageComboBox">
-            <row id="EditValue" state="0">L</row>
+            <row id="EditValue" locked="1" state="0">L</row>
             <row id="Left" state="0">152</row>
             <row id="Properties.Items[0].Description" state="0">Live</row>
-            <row id="Properties.Items[0].Value" state="0">L</row>
+            <row id="Properties.Items[0].Value" locked="1" state="0">L</row>
             <row id="Properties.Items[1].Description" state="0">Format &amp; setup testing. No processing by bank's host</row>
-            <row id="Properties.Items[1].Value" state="0">F</row>
+            <row id="Properties.Items[1].Value" locked="1" state="0">F</row>
             <row id="Properties.Items[2].Description" state="0">Account &amp; IC validation testing</row>
-            <row id="Properties.Items[2].Value" state="0">A</row>
+            <row id="Properties.Items[2].Value" locked="1" state="0">A</row>
             <row id="Top" state="0">124</row>
             <row id="Width" state="0">121</row>
           </component>
           <component class="TVisComboBox" name="cbConfidentialFile" state="0" type="TcxImageComboBox">
-            <row id="EditValue" state="0"> </row>
+            <row id="EditValue" locked="1" state="0"> </row>
             <row id="Left" state="0">152</row>
             <row id="Properties.Items[0].Description" state="0">No</row>
-            <row id="Properties.Items[0].Value" state="0"> </row>
+            <row id="Properties.Items[0].Value" locked="1" state="0"> </row>
             <row id="Properties.Items[1].Description" state="0">Yes</row>
-            <row id="Properties.Items[1].Value" state="0">C</row>
+            <row id="Properties.Items[1].Value" locked="1" state="0">C</row>
             <row id="Top" state="0">151</row>
             <row id="Width" state="0">121</row>
           </component>
           <component class="TVisComboBox" name="cbNonResident" state="0" type="TcxImageComboBox">
-            <row id="EditValue" state="0"> </row>
+            <row id="EditValue" locked="1" state="0"> </row>
             <row id="Left" state="0">152</row>
             <row id="Properties.Items[0].Description" state="0">No</row>
-            <row id="Properties.Items[0].Value" state="0"> </row>
+            <row id="Properties.Items[0].Value" locked="1" state="0"> </row>
             <row id="Properties.Items[1].Description" state="0">Yes</row>
-            <row id="Properties.Items[1].Value" state="0">Y</row>
+            <row id="Properties.Items[1].Value" locked="1" state="0">Y</row>
             <row id="Top" state="0">178</row>
             <row id="Width" state="0">121</row>
           </component>
@@ -837,15 +835,10 @@
             <row id="Width" state="0">89</row>
           </component>
           <component class="TVisHiddenComponent" name="BindingsList1" state="0" type="TBindingsList">
-            <component class="TVisHiddenComponent" name="be_edIDChecking_Visible" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Visible</row>
-              <row id="SourceExpression" state="0">IDChecking_Visible</row>
+            <component class="TVisHiddenComponent" name="be_edIDChecking_Visible" state="0" type="TBindExpression" excluded="1">
             </component>
           </component>
-          <component class="TVisDefaultControl" name="BindScope1" state="0" type="TBindScope">
-            <row id="Left" state="0">416</row>
-            <row id="Top" state="0">16</row>
+          <component class="TVisHiddenComponent" name="BindScope1" state="0" created="20160426121816" type="TBindScope" excluded="1">
           </component>
         </form>
       </node>
@@ -1149,25 +1142,14 @@
             </component>
           </component>
           <component class="TVisHiddenComponent" name="BindingsList1" state="0" type="TBindingsList">
-            <component class="TVisHiddenComponent" name="be_btnOK_Enabled" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Enabled</row>
-              <row id="SourceExpression" state="0">CanModify</row>
+            <component class="TVisHiddenComponent" name="be_btnOK_Enabled" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_lbBankName_Caption" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Caption</row>
-              <row id="SourceExpression" state="0">BankName</row>
+            <component class="TVisHiddenComponent" name="be_lbBankName_Caption" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_btnChangeBank_Enabled" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Enabled</row>
-              <row id="SourceExpression" state="0">CanModify</row>
+            <component class="TVisHiddenComponent" name="be_btnChangeBank_Enabled" state="0" type="TBindExpression" excluded="1">
             </component>
           </component>
-          <component class="TVisDefaultControl" name="BindScope1" state="0" type="TBindScope">
-            <row id="Left" state="0">448</row>
-            <row id="Top" state="0">80</row>
+          <component class="TVisHiddenComponent" name="BindScope1" state="0" created="20160426121816" type="TBindScope" excluded="1">
           </component>
         </form>
       </node>
@@ -1522,28 +1504,28 @@
                 <row id="Width" state="0">121</row>
               </component>
               <component class="TVisComboBox" name="edAuthorizationType" state="0" type="TcxImageComboBox">
-                <row id="EditValue" state="0">P</row>
+                <row id="EditValue" locked="1" state="0">P</row>
                 <row id="Left" state="0">129</row>
                 <row id="Properties.Items[0].Description" state="0">Preauthorised</row>
-                <row id="Properties.Items[0].Value" state="0">A</row>
+                <row id="Properties.Items[0].Value" locked="1" state="0">A</row>
                 <row id="Properties.Items[1].Description" state="0">Instruction level authorisation</row>
-                <row id="Properties.Items[1].Value" state="0">P</row>
+                <row id="Properties.Items[1].Value" locked="1" state="0">P</row>
                 <row id="Properties.Items[2].Description" state="0">File level authorisation (Summary)</row>
-                <row id="Properties.Items[2].Value" state="0">F</row>
+                <row id="Properties.Items[2].Value" locked="1" state="0">F</row>
                 <row id="Properties.Items[3].Description" state="0">File level authorisation (Detail)</row>
-                <row id="Properties.Items[3].Value" state="0">V</row>
+                <row id="Properties.Items[3].Value" locked="1" state="0">V</row>
                 <row id="Top" state="0">116</row>
                 <row id="Width" state="0">121</row>
               </component>
               <component class="TVisComboBox" name="edDetailOfCharge" state="0" type="TcxImageComboBox">
-                <row id="EditValue" state="0">BEN</row>
+                <row id="EditValue" locked="1" state="0">BEN</row>
                 <row id="Left" state="0">129</row>
                 <row id="Properties.Items[0].Description" state="0">Charge to beneficiary</row>
-                <row id="Properties.Items[0].Value" state="0">BEN</row>
+                <row id="Properties.Items[0].Value" locked="1" state="0">BEN</row>
                 <row id="Properties.Items[1].Description" state="0">Charge to debit account</row>
-                <row id="Properties.Items[1].Value" state="0">OUR</row>
+                <row id="Properties.Items[1].Value" locked="1" state="0">OUR</row>
                 <row id="Properties.Items[2].Description" state="0">Shared</row>
-                <row id="Properties.Items[2].Value" state="0">SHA</row>
+                <row id="Properties.Items[2].Value" locked="1" state="0">SHA</row>
                 <row id="Top" state="0">143</row>
                 <row id="Width" state="0">121</row>
               </component>
@@ -1556,70 +1538,32 @@
             </component>
           </component>
           <component class="TVisHiddenComponent" name="BindingsList1" state="0" type="TBindingsList">
-            <component class="TVisHiddenComponent" name="be_edFileFormat_ItemIndex" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">ItemIndex</row>
-              <row id="SourceExpression" state="0">ActiveFormat</row>
+            <component class="TVisHiddenComponent" name="be_edFileFormat_ItemIndex" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_lbDetailOfCharge_Visible" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Visible</row>
-              <row id="SourceExpression" state="0">IIf(ActiveFormat=1,True,False)</row>
+            <component class="TVisHiddenComponent" name="be_lbDetailOfCharge_Visible" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edDetailOfCharge_Visible" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Visible</row>
-              <row id="SourceExpression" state="0">IIf(ActiveFormat=1,True,False)</row>
+            <component class="TVisHiddenComponent" name="be_edDetailOfCharge_Visible" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edAccNo_MaxLength" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">MaxLength</row>
-              <row id="SourceExpression" state="0">AccNo_MaxLength</row>
+            <component class="TVisHiddenComponent" name="be_edAccNo_MaxLength" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_lbAccName_Visible" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Visible</row>
-              <row id="SourceExpression" state="0">IIf(ActiveFormat=1,True,False)</row>
+            <component class="TVisHiddenComponent" name="be_lbAccName_Visible" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edAccName_Visible" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Visible</row>
-              <row id="SourceExpression" state="0">IIf(ActiveFormat=1,True,False)</row>
+            <component class="TVisHiddenComponent" name="be_edAccName_Visible" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edConnectCustomerID_Text" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Text</row>
-              <row id="SourceExpression" state="0">Default_ConnectCustomerID_Text</row>
+            <component class="TVisHiddenComponent" name="be_edConnectCustomerID_Text" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edHSBCnetID_Text" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Text</row>
-              <row id="SourceExpression" state="0">Default_HSBCnetID_Text</row>
+            <component class="TVisHiddenComponent" name="be_edHSBCnetID_Text" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edAccNo_Text" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Text</row>
-              <row id="SourceExpression" state="0">Default_AccNo_Text</row>
+            <component class="TVisHiddenComponent" name="be_edAccNo_Text" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edAccName_Text" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Text</row>
-              <row id="SourceExpression" state="0">Default_AccName_Text</row>
+            <component class="TVisHiddenComponent" name="be_edAccName_Text" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edAuthorizationType_ItemIndex" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">ItemIndex</row>
-              <row id="SourceExpression" state="0">Default_AuthorizationType_ItemIndex</row>
+            <component class="TVisHiddenComponent" name="be_edAuthorizationType_ItemIndex" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edDetailOfCharge_ItemIndex" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">ItemIndex</row>
-              <row id="SourceExpression" state="0">Default_DetailOfCharge_ItemIndex</row>
+            <component class="TVisHiddenComponent" name="be_edDetailOfCharge_ItemIndex" state="0" type="TBindExpression" excluded="1">
             </component>
           </component>
-          <component class="TVisDefaultControl" name="BindScope1" state="0" type="TBindScope">
-            <row id="Left" state="0">296</row>
-            <row id="Top" state="0">160</row>
+          <component class="TVisHiddenComponent" name="BindScope1" state="0" created="20160426121816" type="TBindScope" excluded="1">
           </component>
         </form>
       </node>
@@ -1827,9 +1771,9 @@
               <component class="TVisComboBox" name="edUni_ChargesBorneBy" state="0" type="TcxImageComboBox">
                 <row id="Left" state="0">108</row>
                 <row id="Properties.Items[0].Description" state="0">Applicant</row>
-                <row id="Properties.Items[0].Value" state="0">01</row>
+                <row id="Properties.Items[0].Value" locked="1" state="0">01</row>
                 <row id="Properties.Items[1].Description" state="0">Beneficiary</row>
-                <row id="Properties.Items[1].Value" state="0">02</row>
+                <row id="Properties.Items[1].Value" locked="1" state="0">02</row>
                 <row id="Top" state="0">62</row>
                 <row id="Width" state="0">121</row>
               </component>
@@ -1859,65 +1803,30 @@
             </component>
           </component>
           <component class="TVisHiddenComponent" name="BindingsList1" state="0" type="TBindingsList">
-            <component class="TVisHiddenComponent" name="be_PageControl1_ActivePageIndex" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">ActivePageIndex</row>
-              <row id="SourceExpression" state="0">ActiveFormat</row>
+            <component class="TVisHiddenComponent" name="be_PageControl1_ActivePageIndex" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_cbFileFormat_ItemIndex" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">ItemIndex</row>
-              <row id="SourceExpression" state="0">ActiveFormat</row>
+            <component class="TVisHiddenComponent" name="be_cbFileFormat_ItemIndex" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edCompanyID_Text" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Text</row>
-              <row id="SourceExpression" state="0">Default_CompanyID_Text</row>
+            <component class="TVisHiddenComponent" name="be_edCompanyID_Text" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edOriginatorID_Text" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Text</row>
-              <row id="SourceExpression" state="0">Default_OriginatorID_Text</row>
+            <component class="TVisHiddenComponent" name="be_edOriginatorID_Text" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edShortName_Text" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Text</row>
-              <row id="SourceExpression" state="0">Default_ShortName_Text</row>
+            <component class="TVisHiddenComponent" name="be_edShortName_Text" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edOriginatorAccNo_Text" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Text</row>
-              <row id="SourceExpression" state="0">Default_OriginatorAccNo_Text</row>
+            <component class="TVisHiddenComponent" name="be_edOriginatorAccNo_Text" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edClientCode_Text" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Text</row>
-              <row id="SourceExpression" state="0">Default_ClientCode_Text</row>
+            <component class="TVisHiddenComponent" name="be_edClientCode_Text" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edDebitAccNo_Text" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Text</row>
-              <row id="SourceExpression" state="0">Default_DebitAccNo_Text</row>
+            <component class="TVisHiddenComponent" name="be_edDebitAccNo_Text" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edUni_CorporateID_Text" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Text</row>
-              <row id="SourceExpression" state="0">Default_Uni_CorporateID_Text</row>
+            <component class="TVisHiddenComponent" name="be_edUni_CorporateID_Text" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edUni_AccNo_Text" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Text</row>
-              <row id="SourceExpression" state="0">Default_Uni_AccNo_Text</row>
+            <component class="TVisHiddenComponent" name="be_edUni_AccNo_Text" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edUni_ChargesBorneBy_ItemIndex" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">ItemIndex</row>
-              <row id="SourceExpression" state="0">Default_Uni_ChargesBorneBy_ItemIndex</row>
+            <component class="TVisHiddenComponent" name="be_edUni_ChargesBorneBy_ItemIndex" state="0" type="TBindExpression" excluded="1">
             </component>
           </component>
-          <component class="TVisDefaultControl" name="BindScope1" state="0" type="TBindScope">
-            <row id="Left" state="0">192</row>
-            <row id="Top" state="0">216</row>
+          <component class="TVisHiddenComponent" name="BindScope1" state="0" created="20160426121816" type="TBindScope" excluded="1">
           </component>
         </form>
       </node>
@@ -2072,15 +1981,10 @@
             <row id="Width" state="0">121</row>
           </component>
           <component class="TVisHiddenComponent" name="BindingsList1" state="0" type="TBindingsList">
-            <component class="TVisHiddenComponent" name="be_edFileFormat_ItemIndex" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">ItemIndex</row>
-              <row id="SourceExpression" state="0">ActiveFormat</row>
+            <component class="TVisHiddenComponent" name="be_edFileFormat_ItemIndex" state="0" type="TBindExpression" excluded="1">
             </component>
           </component>
-          <component class="TVisDefaultControl" name="BindScope1" state="0" type="TBindScope">
-            <row id="Left" state="0">376</row>
-            <row id="Top" state="0">112</row>
+          <component class="TVisHiddenComponent" name="BindScope1" state="0" created="20160426121816" type="TBindScope" excluded="1">
           </component>
         </form>
       </node>
@@ -2190,20 +2094,12 @@
               <row id="Width" state="0">145</row>
             </component>
           </component>
-          <component class="TVisDefaultControl" name="BindScope1" state="0" type="TBindScope">
-            <row id="Left" state="0">224</row>
-            <row id="Top" state="0">176</row>
+          <component class="TVisHiddenComponent" name="BindScope1" state="0" created="20160426121816" type="TBindScope" excluded="1">
           </component>
           <component class="TVisHiddenComponent" name="BindingsList1" state="0" type="TBindingsList">
-            <component class="TVisHiddenComponent" name="be_PageControl1_ActivePageIndex" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">ActivePageIndex</row>
-              <row id="SourceExpression" state="0">ActiveFormat</row>
+            <component class="TVisHiddenComponent" name="be_PageControl1_ActivePageIndex" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_cbFileFormat_ItemIndex" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">ItemIndex</row>
-              <row id="SourceExpression" state="0">ActiveFormat</row>
+            <component class="TVisHiddenComponent" name="be_cbFileFormat_ItemIndex" state="0" type="TBindExpression" excluded="1">
             </component>
           </component>
         </form>
@@ -2331,12 +2227,12 @@
                 <row id="Width" state="0">121</row>
               </component>
               <component class="TVisComboBox" name="edTransCode" state="0" type="TcxImageComboBox">
-                <row id="EditValue" state="0">24</row>
+                <row id="EditValue" locked="1" state="0">24</row>
                 <row id="Left" state="0">107</row>
                 <row id="Properties.Items[0].Description" state="0">Salary Credit</row>
-                <row id="Properties.Items[0].Value" state="0">22</row>
+                <row id="Properties.Items[0].Value" locked="1" state="0">22</row>
                 <row id="Properties.Items[1].Description" state="0">Remittance Credit</row>
-                <row id="Properties.Items[1].Value" state="0">24</row>
+                <row id="Properties.Items[1].Value" locked="1" state="0">24</row>
                 <row id="Top" state="0">97</row>
                 <row id="Width" state="0">122</row>
               </component>
@@ -2355,35 +2251,18 @@
             </component>
           </component>
           <component class="TVisHiddenComponent" name="BindingsList1" state="0" type="TBindingsList">
-            <component class="TVisHiddenComponent" name="be_cbFileFormat_ItemIndex" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">ItemIndex</row>
-              <row id="SourceExpression" state="0">ActiveFormat</row>
+            <component class="TVisHiddenComponent" name="be_cbFileFormat_ItemIndex" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edCompanyID_Text" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Text</row>
-              <row id="SourceExpression" state="0">Default_CompanyID_Text</row>
+            <component class="TVisHiddenComponent" name="be_edCompanyID_Text" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edAccNo_Text" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Text</row>
-              <row id="SourceExpression" state="0">Default_AccNo_Text</row>
+            <component class="TVisHiddenComponent" name="be_edAccNo_Text" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edAccName_Text" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">Text</row>
-              <row id="SourceExpression" state="0">Default_AccName_Text</row>
+            <component class="TVisHiddenComponent" name="be_edAccName_Text" state="0" type="TBindExpression" excluded="1">
             </component>
-            <component class="TVisHiddenComponent" name="be_edTransCode_ItemIndex" state="0" type="TBindExpression">
-              <row id="Category" state="0">Binding Expressions</row>
-              <row id="ControlExpression" state="0">ItemIndex</row>
-              <row id="SourceExpression" state="0">Default_TransCode_ItemIndex</row>
+            <component class="TVisHiddenComponent" name="be_edTransCode_ItemIndex" state="0" type="TBindExpression" excluded="1">
             </component>
           </component>
-          <component class="TVisDefaultControl" name="BindScope1" state="0" type="TBindScope">
-            <row id="Left" state="0">312</row>
-            <row id="Top" state="0">184</row>
+          <component class="TVisHiddenComponent" name="BindScope1" state="0" created="20160426121816" type="TBindScope" excluded="1">
           </component>
         </form>
       </node>
