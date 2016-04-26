@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document created="20160411090511" version="4.0.359" date="20160413170344" scan="6" scanned="20160411181601">
+<document created="20160411090511" version="4.0.359" date="20160426163534" scan="6" scanned="20160411181601">
   <lang id="zh"/>
   <lang id="ms"/>
   <lang id="vi"/>
@@ -72,7 +72,11 @@
     <node class="TVclFormFolder" name="Forms" created="20160411143854" resid="10">
       <node class="TVclFormNode" name="TFMDATAIMPORT_EMASACCOUNT" resname="TFMDATAIMPORT_EMASACCOUNT">
         <form class="TVclForm" name="fmDataImport_EMASAccount" type="TfmDataImport_EMASAccount" borderstyle="bsDialog" textheight="13">
-          <row id="Caption" state="0">EMAS Account</row>
+          <row id="Caption">
+            <native>EMAS Account</native>
+            <lang id="zh">EMAS 帐户</lang>
+            <lang id="ms">Akaun EMAS</lang>
+          </row>
           <row id="ClientHeight">572</row>
           <row id="ClientWidth">594</row>
           <row id="Font.Color">clWindowText</row>
@@ -82,21 +86,33 @@
           <row id="Left">0</row>
           <row id="Top">0</row>
           <component class="TVisLabel" name="Label5" type="TLabel">
-            <row id="Caption" state="0">Rec No. :</row>
+            <row id="Caption">
+              <native>Rec No. :</native>
+              <lang id="zh">记录编号:</lang>
+              <lang id="ms">Rec No.:</lang>
+            </row>
             <row id="Height">13</row>
             <row id="Left">466</row>
             <row id="Top">546</row>
             <row id="Width">45</row>
           </component>
           <component class="TVisLabel" name="Label8" type="TLabel">
-            <row id="Caption" state="0">to</row>
+            <row id="Caption">
+              <native>to</native>
+              <lang id="zh">至</lang>
+              <lang id="ms">hingga</lang>
+            </row>
             <row id="Height">13</row>
             <row id="Left">235</row>
             <row id="Top">296</row>
             <row id="Width">10</row>
           </component>
           <component class="TVisLabel" name="Label3" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Data Migration - EMAS Accounting System </row>
+            <row id="Caption">
+              <native>Data Migration - EMAS Accounting System </native>
+              <lang id="zh">数据迁移-EMAS 会计系统 </lang>
+              <lang id="ms">Pemindahan data - sistem perakaunan EMAS </lang>
+            </row>
             <row id="Font.Color">clBlack</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -107,7 +123,11 @@
             <row id="Width">279</row>
           </component>
           <component class="TVisLabel" name="Label9" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 1: Select folder containing files restored from EMAS Account database</row>
+            <row id="Caption">
+              <native>Step 1: Select folder containing files restored from EMAS Account database</native>
+              <lang id="zh">步骤 1 ︰ 从EMAS 帐户数据库中选择包含还原文件的文件夹</lang>
+              <lang id="ms">Langkah 1: Pilih folder yang mengandungi fail-fail yang dibaik pulih daripada pangkalan data akaun EMAS</lang>
+            </row>
             <row id="Font.Color">clWindowText</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -118,7 +138,11 @@
             <row id="Width">432</row>
           </component>
           <component class="TVisLabel" name="Label1" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 2: Select module(s) to import into SQL Accounting</row>
+            <row id="Caption">
+              <native>Step 2: Select module(s) to import into SQL Accounting</native>
+              <lang id="zh">步骤 2 ︰ 选择模块以导入到 SQL 会计</lang>
+              <lang id="ms">Langkah 2: Pilih module(s) untuk mengimport ke dalam perakaunan SQL</lang>
+            </row>
             <row id="Font.Color">clWindowText</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -129,14 +153,22 @@
             <row id="Width">317</row>
           </component>
           <component class="TVisLabel" name="Label2" type="TLabel">
-            <row id="Caption" state="0">Start import from record no:</row>
+            <row id="Caption">
+              <native>Start import from record no:</native>
+              <lang id="zh">从记录编号开始导入:</lang>
+              <lang id="ms">Mula import dari rekod No:</lang>
+            </row>
             <row id="Height">13</row>
             <row id="Left">8</row>
             <row id="Top">296</row>
             <row id="Width">135</row>
           </component>
           <component class="TVisLabel" name="Label4" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 3: Press execute to start data import</row>
+            <row id="Caption">
+              <native>Step 3: Press execute to start data import</native>
+              <lang id="zh">步骤 3 ︰ 按执行开始导入数据</lang>
+              <lang id="ms">Langkah 3: Tekan melaksanakan untuk memulakan data import</lang>
+            </row>
             <row id="Font.Color">clWindowText</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -147,7 +179,11 @@
             <row id="Width">240</row>
           </component>
           <component class="TVisLabel" name="Label6" type="TLabel" parentcolor="0" parentfont="0">
-            <row id="Caption" state="0">(Click Save to set range)</row>
+            <row id="Caption">
+              <native>(Click Save to set range)</native>
+              <lang id="zh">（单击保存设定范围)</lang>
+              <lang id="ms">Klik Simpan untuk mengeset julat</lang>
+            </row>
             <row id="Font.Color">clRed</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">8</row>
@@ -170,7 +206,11 @@
             <row id="Width">120</row>
           </component>
           <component class="TVisButton" name="btnCancel" type="TButton">
-            <row id="Caption" state="0">Exit</row>
+            <row id="Caption">
+              <native>Exit</native>
+              <lang id="zh">退出</lang>
+              <lang id="ms">Keluar</lang>
+            </row>
             <row id="Height">25</row>
             <row id="Left">466</row>
             <row id="Top">512</row>
@@ -216,15 +256,27 @@
             <row id="Top">117</row>
             <row id="Width">578</row>
             <column name="Columns[0]">
-              <row id="Caption" state="0">Description</row>
+              <row id="Caption">
+                <native>Description</native>
+                <lang id="zh">描述</lang>
+                <lang id="ms">Penerangan</lang>
+              </row>
               <row id="Width">295</row>
             </column>
             <column name="Columns[1]">
-              <row id="Caption" state="0">Start From Record No.</row>
+              <row id="Caption">
+                <native>Start From Record No.</native>
+                <lang id="zh">从记录编号开始。</lang>
+                <lang id="ms">Bermula dari rekod No.</lang>
+              </row>
               <row id="Width">130</row>
             </column>
             <column name="Columns[2]">
-              <row id="Caption" state="0">Total Records</row>
+              <row id="Caption">
+                <native>Total Records</native>
+                <lang id="zh">总记录</lang>
+                <lang id="ms">Jumlah rekod</lang>
+              </row>
               <row id="Width">130</row>
             </column>
           </component>
@@ -247,14 +299,22 @@
             <row id="Width">80</row>
           </component>
           <component class="TVisCheckBox" name="cbOpnBalSummary" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Import Opening Balance Summary</row>
+            <row id="Caption">
+              <native>Import Opening Balance Summary</native>
+              <lang id="zh">导入初始平衡汇总</lang>
+              <lang id="ms">Import Ringkasan baki pembukaan</lang>
+            </row>
             <row id="Height">21</row>
             <row id="Left">8</row>
             <row id="Top">321</row>
             <row id="Width">409</row>
           </component>
           <component class="TVisCheckBox" name="cbResetAccFormat" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Reset Customer &amp;&amp; Supplier Account Formatting</row>
+            <row id="Caption">
+              <native>Reset Customer &amp;&amp; Supplier Account Formatting</native>
+              <lang id="zh">重置客户及供应商账户格式</lang>
+              <lang id="ms">Set semula pelanggan &amp;&amp; format akaun pembekal</lang>
+            </row>
             <row id="Height">21</row>
             <row id="Left">8</row>
             <row id="Top">345</row>
@@ -262,29 +322,57 @@
           </component>
           <component class="TVisHiddenComponent" name="ActionList1" type="TActionList">
             <component class="TVisAction" name="actConnect" type="TAction">
-              <row id="Caption" state="0">Connect</row>
+              <row id="Caption">
+                <native>Connect</native>
+                <lang id="zh">连接</lang>
+                <lang id="ms">Sambung</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actBrowse" type="TAction">
-              <row id="Caption" state="0">Select Folder</row>
+              <row id="Caption">
+                <native>Select Folder</native>
+                <lang id="zh">选择文件夹</lang>
+                <lang id="ms">Pilih Folder</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actClearList" type="TAction">
-              <row id="Caption" state="0">Clear</row>
+              <row id="Caption">
+                <native>Clear</native>
+                <lang id="zh">消除</lang>
+                <lang id="ms">Padam</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actExecute" type="TAction">
-              <row id="Caption" state="0">Execute</row>
+              <row id="Caption">
+                <native>Execute</native>
+                <lang id="zh">执行</lang>
+                <lang id="ms">Melaksanakan</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actCopyClipboard" type="TAction">
-              <row id="Caption" state="0">Copy log to clipboard</row>
+              <row id="Caption">
+                <native>Copy log to clipboard</native>
+                <lang id="zh">复制日志到剪贴板</lang>
+                <lang id="ms">Salin Log ke papan Keratan</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actSave" type="TAction">
-              <row id="Caption" state="0">Save</row>
+              <row id="Caption">
+                <native>Save</native>
+                <lang id="zh">保存</lang>
+                <lang id="ms">Simpan</lang>
+              </row>
             </component>
           </component>
         </form>
       </node>
       <node class="TVclFormNode" name="TFMDATAIMPORT_EMASSTOCK" resname="TFMDATAIMPORT_EMASSTOCK">
         <form class="TVclForm" name="fmDataImport_EMASStock" type="TfmDataImport_EMASStock" borderstyle="bsDialog" textheight="13">
-          <row id="Caption" state="0">EMAS Stock</row>
+          <row id="Caption">
+            <native>EMAS Stock</native>
+            <lang id="zh">EMAS 库存</lang>
+            <lang id="ms">Stok EMAS</lang>
+          </row>
           <row id="ClientHeight">572</row>
           <row id="ClientWidth">594</row>
           <row id="Font.Color">clWindowText</row>
@@ -294,21 +382,33 @@
           <row id="Left">0</row>
           <row id="Top">0</row>
           <component class="TVisLabel" name="Label5" type="TLabel">
-            <row id="Caption" state="0">Rec No. :</row>
+            <row id="Caption">
+              <native>Rec No. :</native>
+              <lang id="zh">记录编号:</lang>
+              <lang id="ms">Rec No.:</lang>
+            </row>
             <row id="Height">13</row>
             <row id="Left">466</row>
             <row id="Top">546</row>
             <row id="Width">45</row>
           </component>
           <component class="TVisLabel" name="Label8" type="TLabel">
-            <row id="Caption" state="0">to</row>
+            <row id="Caption">
+              <native>to</native>
+              <lang id="zh">至</lang>
+              <lang id="ms">hingga</lang>
+            </row>
             <row id="Height">13</row>
             <row id="Left">235</row>
             <row id="Top">296</row>
             <row id="Width">10</row>
           </component>
           <component class="TVisLabel" name="Label3" type="TLabel" parentcolor="0" parentfont="0">
-            <row id="Caption" state="0">Data Migration - EMAS Stock Control System </row>
+            <row id="Caption">
+              <native>Data Migration - EMAS Stock Control System </native>
+              <lang id="zh">数据迁移-EMAS 的库存控制系统 </lang>
+              <lang id="ms">Pemindahan data - sistem kawalan stok EMAS </lang>
+            </row>
             <row id="Font.Color">clBlack</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -319,7 +419,11 @@
             <row id="Width">293</row>
           </component>
           <component class="TVisLabel" name="Label9" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 1: Select folder containing files restored from EMAS Stock database</row>
+            <row id="Caption">
+              <native>Step 1: Select folder containing files restored from EMAS Stock database</native>
+              <lang id="zh">步骤 1 ︰从 EMAS 库存数据库中选择包含还原的文件的文件夹</lang>
+              <lang id="ms">Langkah 1: Pilih folder yang mengandungi fail-fail yang dibaik pulih daripada pangkalan data saham EMAS</lang>
+            </row>
             <row id="Font.Color">clWindowText</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -330,7 +434,11 @@
             <row id="Width">418</row>
           </component>
           <component class="TVisLabel" name="Label2" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 2: Select module(s) to import into SQL Accounting</row>
+            <row id="Caption">
+              <native>Step 2: Select module(s) to import into SQL Accounting</native>
+              <lang id="zh">步骤 2 ︰ 选择模块以导入到 SQL 会计</lang>
+              <lang id="ms">Langkah 2: Pilih module(s) untuk mengimport ke dalam perakaunan SQL</lang>
+            </row>
             <row id="Font.Color">clWindowText</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -341,7 +449,11 @@
             <row id="Width">317</row>
           </component>
           <component class="TVisLabel" name="Label1" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 3: Press execute to start data import</row>
+            <row id="Caption">
+              <native>Step 3: Press execute to start data import</native>
+              <lang id="zh">步骤 3 ︰ 按执行开始导入数据</lang>
+              <lang id="ms">Langkah 3: Tekan melaksanakan untuk memulakan data import</lang>
+            </row>
             <row id="Font.Color">clWindowText</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -352,14 +464,22 @@
             <row id="Width">240</row>
           </component>
           <component class="TVisLabel" name="Label7" type="TLabel">
-            <row id="Caption" state="0">Start import from record no:</row>
+            <row id="Caption">
+              <native>Start import from record no:</native>
+              <lang id="zh">从记录编号开始导入:</lang>
+              <lang id="ms">Mula import dari rekod No:</lang>
+            </row>
             <row id="Height">13</row>
             <row id="Left">8</row>
             <row id="Top">296</row>
             <row id="Width">135</row>
           </component>
           <component class="TVisLabel" name="Label6" type="TLabel" parentcolor="0" parentfont="0">
-            <row id="Caption" state="0">(Click Save to set range)</row>
+            <row id="Caption">
+              <native>(Click Save to set range)</native>
+              <lang id="zh">（单击保存设定范围)</lang>
+              <lang id="ms">Klik Simpan untuk mengeset julat</lang>
+            </row>
             <row id="Font.Color">clRed</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">8</row>
@@ -376,7 +496,11 @@
             <row id="Width">120</row>
           </component>
           <component class="TVisButton" name="btnCancel" type="TButton">
-            <row id="Caption" state="0">Exit</row>
+            <row id="Caption">
+              <native>Exit</native>
+              <lang id="zh">退出</lang>
+              <lang id="ms">Keluar</lang>
+            </row>
             <row id="Height">25</row>
             <row id="Left">466</row>
             <row id="Top">512</row>
@@ -428,15 +552,27 @@
             <row id="Top">117</row>
             <row id="Width">578</row>
             <column name="Columns[0]">
-              <row id="Caption" state="0">Description</row>
+              <row id="Caption">
+                <native>Description</native>
+                <lang id="zh">描述</lang>
+                <lang id="ms">Penerangan</lang>
+              </row>
               <row id="Width">295</row>
             </column>
             <column name="Columns[1]">
-              <row id="Caption" state="0">Start From Record No.</row>
+              <row id="Caption">
+                <native>Start From Record No.</native>
+                <lang id="zh">从记录编号开始。</lang>
+                <lang id="ms">Bermula dari rekod No.</lang>
+              </row>
               <row id="Width">130</row>
             </column>
             <column name="Columns[2]">
-              <row id="Caption" state="0">Record Total</row>
+              <row id="Caption">
+                <native>Record Total</native>
+                <lang id="zh">记录总数</lang>
+                <lang id="ms">Jumlah rekod</lang>
+              </row>
               <row id="Width">130</row>
             </column>
           </component>
@@ -459,28 +595,44 @@
             <row id="Width">80</row>
           </component>
           <component class="TVisCheckBox" name="cbAllowPrice" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Import Stock Customer &amp;&amp; Supplier Price</row>
+            <row id="Caption">
+              <native>Import Stock Customer &amp;&amp; Supplier Price</native>
+              <lang id="zh">导入客户库存及供应商价格</lang>
+              <lang id="ms">Import stok pelanggan &amp;&amp; harga pembekal</lang>
+            </row>
             <row id="Height">21</row>
             <row id="Left">8</row>
             <row id="Top">369</row>
             <row id="Width">409</row>
           </component>
           <component class="TVisCheckBox" name="cbAllowOpnBal" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Import Stock Opening Balance</row>
+            <row id="Caption">
+              <native>Import Stock Opening Balance</native>
+              <lang id="zh">导入库存初始余额</lang>
+              <lang id="ms">Mengimport baki stok</lang>
+            </row>
             <row id="Height">21</row>
             <row id="Left">8</row>
             <row id="Top">345</row>
             <row id="Width">409</row>
           </component>
           <component class="TVisCheckBox" name="cbAllowUOM" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Import Stock UOM With Rate &lt; 1</row>
+            <row id="Caption">
+              <native>Import Stock UOM With Rate &lt; 1</native>
+              <lang id="zh">导入&lt; 1 的 UOM 库存率</lang>
+              <lang id="ms">Mengimport UOM saham dengan kadar &lt; 1</lang>
+            </row>
             <row id="Height">21</row>
             <row id="Left">8</row>
             <row id="Top">321</row>
             <row id="Width">409</row>
           </component>
           <component class="TVisCheckBox" name="cbResetAccFormat" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Reformat EMAS customer &amp;&amp; supplier account code to follow SQL Account</row>
+            <row id="Caption">
+              <native>Reformat EMAS customer &amp;&amp; supplier account code to follow SQL Account</native>
+              <lang id="zh">重新格式 EMAS 客户及供应商帐户代码，以按照 SQL 帐户</lang>
+              <lang id="ms">Format semula pelanggan EMAS &amp;&amp; pembekal kod akaun untuk mengikuti akaun SQL</lang>
+            </row>
             <row id="Height">21</row>
             <row id="Left">8</row>
             <row id="Top">393</row>
@@ -488,22 +640,46 @@
           </component>
           <component class="TVisHiddenComponent" name="ActionList1" type="TActionList">
             <component class="TVisAction" name="actConnect" type="TAction">
-              <row id="Caption" state="0">Connect</row>
+              <row id="Caption">
+                <native>Connect</native>
+                <lang id="zh">连接</lang>
+                <lang id="ms">Sambung</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actBrowse" type="TAction">
-              <row id="Caption" state="0">Select Folder</row>
+              <row id="Caption">
+                <native>Select Folder</native>
+                <lang id="zh">选择文件夹</lang>
+                <lang id="ms">Pilih Folder</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actClearList" type="TAction">
-              <row id="Caption" state="0">Clear</row>
+              <row id="Caption">
+                <native>Clear</native>
+                <lang id="zh">消除</lang>
+                <lang id="ms">Padam</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actExecute" type="TAction">
-              <row id="Caption" state="0">Execute</row>
+              <row id="Caption">
+                <native>Execute</native>
+                <lang id="zh">执行</lang>
+                <lang id="ms">Melaksanakan</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actCopyClipboard" type="TAction">
-              <row id="Caption" state="0">Copy log to clipboard</row>
+              <row id="Caption">
+                <native>Copy log to clipboard</native>
+                <lang id="zh">复制日志到剪贴板</lang>
+                <lang id="ms">Salin Log ke papan Keratan</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actSave" type="TAction">
-              <row id="Caption" state="0">Save</row>
+              <row id="Caption">
+                <native>Save</native>
+                <lang id="zh">保存</lang>
+                <lang id="ms">Simpan</lang>
+              </row>
             </component>
           </component>
           <component class="TVisImageList" name="ImageList1" type="TImageList" imagewidth="1">
@@ -512,7 +688,11 @@
       </node>
       <node class="TVclFormNode" name="TFMDATAIMPORT_MYOB" resname="TFMDATAIMPORT_MYOB">
         <form class="TVclForm" name="fmDataImport_MYOB" type="TfmDataImport_MYOB" borderstyle="bsDialog" textheight="13">
-          <row id="Caption" state="0">MYOB</row>
+          <row id="Caption">
+            <native>MYOB</native>
+            <lang id="zh">MYOB</lang>
+            <lang id="ms">MYOB</lang>
+          </row>
           <row id="ClientHeight">572</row>
           <row id="ClientWidth">594</row>
           <row id="Font.Color">clWindowText</row>
@@ -522,7 +702,11 @@
           <row id="Left">0</row>
           <row id="Top">0</row>
           <component class="TVisLabel" name="Label3" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Data Migration - MYOB System </row>
+            <row id="Caption">
+              <native>Data Migration - MYOB System </native>
+              <lang id="zh">数据迁移-MYOB系统 </lang>
+              <lang id="ms">Pemindahan data - MYOB sistem </lang>
+            </row>
             <row id="Font.Color">clBlack</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -533,7 +717,11 @@
             <row id="Width">203</row>
           </component>
           <component class="TVisLabel" name="Label9" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 1: Download myData CLI tool</row>
+            <row id="Caption">
+              <native>Step 1: Download myData CLI tool</native>
+              <lang id="zh">步骤 1 ︰ 下载 myData CLI 工具</lang>
+              <lang id="ms">Langkah 1: Muat turun alat myData CLI</lang>
+            </row>
             <row id="Font.Color">clWindowText</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -544,7 +732,11 @@
             <row id="Width">196</row>
           </component>
           <component class="TVisLabel" name="Label1" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 2: Enter the full path to the mydatacli zip file</row>
+            <row id="Caption">
+              <native>Step 2: Enter the full path to the mydatacli zip file</native>
+              <lang id="zh">步骤 2 ︰ 输入 mydatacli zip 文件的完整路径</lang>
+              <lang id="ms">Langkah 2: Masukkan laluan penuh ke fail zip mydatacli</lang>
+            </row>
             <row id="Font.Color">clWindowText</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -555,14 +747,22 @@
             <row id="Width">284</row>
           </component>
           <component class="TVisLabel" name="Label5" type="TLabel">
-            <row id="Caption" state="0">Rec No. :</row>
+            <row id="Caption">
+              <native>Rec No. :</native>
+              <lang id="zh">记录编号:</lang>
+              <lang id="ms">Rec No.:</lang>
+            </row>
             <row id="Height">13</row>
             <row id="Left">466</row>
             <row id="Top">546</row>
             <row id="Width">45</row>
           </component>
           <component class="TVisLabel" name="Label2" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 5: Press execute to start data import</row>
+            <row id="Caption">
+              <native>Step 5: Press execute to start data import</native>
+              <lang id="zh">步骤 5 ︰ 按执行开始导入数据</lang>
+              <lang id="ms">Langkah 5: Tekan melaksanakan untuk memulakan data import</lang>
+            </row>
             <row id="Font.Color">clWindowText</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -573,7 +773,11 @@
             <row id="Width">240</row>
           </component>
           <component class="TVisLabel" name="Label4" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 3: Enter the full path to the MYO database file</row>
+            <row id="Caption">
+              <native>Step 3: Enter the full path to the MYO database file</native>
+              <lang id="zh">步骤 3 ︰ 输入 MYO 数据库文件的完整路径</lang>
+              <lang id="ms">Langkah 3: Masukkan laluan penuh fail pangkalan data MYO</lang>
+            </row>
             <row id="Font.Color">clWindowText</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -584,7 +788,11 @@
             <row id="Width">292</row>
           </component>
           <component class="TVisLabel" name="Label6" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 4: Select module(s) to import into SQL Accounting</row>
+            <row id="Caption">
+              <native>Step 4: Select module(s) to import into SQL Accounting</native>
+              <lang id="zh">步骤 4 ︰ 选择模块以导入到 SQL 会计</lang>
+              <lang id="ms">Langkah 4: Pilih module(s) untuk mengimport ke dalam perakaunan SQL</lang>
+            </row>
             <row id="Font.Color">clWindowText</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -625,7 +833,11 @@
             <row id="Width">120</row>
           </component>
           <component class="TVisButton" name="btCancel" type="TButton">
-            <row id="Caption" state="0">Exit</row>
+            <row id="Caption">
+              <native>Exit</native>
+              <lang id="zh">退出</lang>
+              <lang id="ms">Keluar</lang>
+            </row>
             <row id="Height">25</row>
             <row id="Left">466</row>
             <row id="Top">511</row>
@@ -665,7 +877,11 @@
             <row id="Top">214</row>
             <row id="Width">578</row>
             <column name="Columns[0]">
-              <row id="Caption" state="0">Description</row>
+              <row id="Caption">
+                <native>Description</native>
+                <lang id="zh">描述</lang>
+                <lang id="ms">Penerangan</lang>
+              </row>
               <row id="Width">295</row>
             </column>
           </component>
@@ -677,25 +893,53 @@
           </component>
           <component class="TVisHiddenComponent" name="ActionList1" type="TActionList">
             <component class="TVisAction" name="actDownload" type="TAction">
-              <row id="Caption" state="0">Download</row>
+              <row id="Caption">
+                <native>Download</native>
+                <lang id="zh">下载</lang>
+                <lang id="ms">Muat turun</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actSelectFile_ZIP" type="TAction">
-              <row id="Caption" state="0">Select File</row>
+              <row id="Caption">
+                <native>Select File</native>
+                <lang id="zh">选择文件</lang>
+                <lang id="ms">Pilih fail</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actSelectFile_DB" type="TAction">
-              <row id="Caption" state="0">Select File</row>
+              <row id="Caption">
+                <native>Select File</native>
+                <lang id="zh">选择文件</lang>
+                <lang id="ms">Pilih fail</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actConnect" type="TAction">
-              <row id="Caption" state="0">Connect</row>
+              <row id="Caption">
+                <native>Connect</native>
+                <lang id="zh">连接</lang>
+                <lang id="ms">Sambung</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actExecute" type="TAction">
-              <row id="Caption" state="0">Execute</row>
+              <row id="Caption">
+                <native>Execute</native>
+                <lang id="zh">执行</lang>
+                <lang id="ms">Melaksanakan</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actClearList" type="TAction">
-              <row id="Caption" state="0">actClearList</row>
+              <row id="Caption">
+                <native>actClearList</native>
+                <lang id="zh">actClearList</lang>
+                <lang id="ms">actClearList</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actCopyToClipboard" type="TAction">
-              <row id="Caption" state="0">Copy log to clipboard</row>
+              <row id="Caption">
+                <native>Copy log to clipboard</native>
+                <lang id="zh">复制日志到剪贴板</lang>
+                <lang id="ms">Salin Log ke papan Keratan</lang>
+              </row>
             </component>
           </component>
           <component class="TVisHiddenComponent" name="OpenDialog1" type="TOpenDialog">
@@ -706,7 +950,11 @@
       </node>
       <node class="TVclFormNode" name="TFMDATAIMPORT_UBSACCOUNT" resname="TFMDATAIMPORT_UBSACCOUNT">
         <form class="TVclForm" name="fmDataImport_UBSAccount" type="TfmDataImport_UBSAccount" borderstyle="bsDialog" textheight="13">
-          <row id="Caption" state="0">UBS Account</row>
+          <row id="Caption">
+            <native>UBS Account</native>
+            <lang id="zh">UBS帐户</lang>
+            <lang id="ms">UBS akaun</lang>
+          </row>
           <row id="ClientHeight">629</row>
           <row id="ClientWidth">594</row>
           <row id="Font.Color">clWindowText</row>
@@ -716,7 +964,11 @@
           <row id="Left">0</row>
           <row id="Top">0</row>
           <component class="TVisLabel" name="Label1" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 3: Select module(s) to import into SQL Accounting</row>
+            <row id="Caption">
+              <native>Step 3: Select module(s) to import into SQL Accounting</native>
+              <lang id="zh">步骤 3 ︰ 选择模块以导入到 SQL 会计</lang>
+              <lang id="ms">Langkah 3: Pilih module(s) untuk mengimport ke dalam perakaunan SQL</lang>
+            </row>
             <row id="Font.Color">clWindowText</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -727,7 +979,11 @@
             <row id="Width">317</row>
           </component>
           <component class="TVisLabel" name="Label3" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Data Migration - UBS Accounting System </row>
+            <row id="Caption">
+              <native>Data Migration - UBS Accounting System </native>
+              <lang id="zh">数据迁移-UBS会计系统 </lang>
+              <lang id="ms">Pemindahan data - sistem perakaunan UBS </lang>
+            </row>
             <row id="Font.Color">clBlack</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -738,28 +994,44 @@
             <row id="Width">267</row>
           </component>
           <component class="TVisLabel" name="Label5" type="TLabel">
-            <row id="Caption" state="0">Rec No. :</row>
+            <row id="Caption">
+              <native>Rec No. :</native>
+              <lang id="zh">记录编号:</lang>
+              <lang id="ms">Rec No.:</lang>
+            </row>
             <row id="Height">13</row>
             <row id="Left">466</row>
             <row id="Top">603</row>
             <row id="Width">45</row>
           </component>
           <component class="TVisLabel" name="Label7" type="TLabel">
-            <row id="Caption" state="0">Start import from record no:</row>
+            <row id="Caption">
+              <native>Start import from record no:</native>
+              <lang id="zh">从记录编号开始导入:</lang>
+              <lang id="ms">Mula import dari rekod No:</lang>
+            </row>
             <row id="Height">13</row>
             <row id="Left">8</row>
             <row id="Top">353</row>
             <row id="Width">135</row>
           </component>
           <component class="TVisLabel" name="Label8" type="TLabel">
-            <row id="Caption" state="0">to</row>
+            <row id="Caption">
+              <native>to</native>
+              <lang id="zh">至</lang>
+              <lang id="ms">hingga</lang>
+            </row>
             <row id="Height">13</row>
             <row id="Left">235</row>
             <row id="Top">353</row>
             <row id="Width">10</row>
           </component>
           <component class="TVisLabel" name="Label9" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 1: UBS Account DB folder</row>
+            <row id="Caption">
+              <native>Step 1: UBS Account DB folder</native>
+              <lang id="zh">步骤 1 ︰ UBS 帐户 DB 文件夹</lang>
+              <lang id="ms">Langkah 1: UBS akaun DB folder</lang>
+            </row>
             <row id="Font.Color">clWindowText</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -770,7 +1042,11 @@
             <row id="Width">174</row>
           </component>
           <component class="TVisLabel" name="Label2" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 4: Press execute to start data import</row>
+            <row id="Caption">
+              <native>Step 4: Press execute to start data import</native>
+              <lang id="zh">步骤 4 ︰ 按执行开始导入数据</lang>
+              <lang id="ms">Langkah 4: Pilih melaksanakan untuk memulakan data import</lang>
+            </row>
             <row id="Font.Color">clWindowText</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -781,7 +1057,11 @@
             <row id="Width">240</row>
           </component>
           <component class="TVisLabel" name="Label6" type="TLabel" parentcolor="0" parentfont="0">
-            <row id="Caption" state="0">(Click Save to set range)</row>
+            <row id="Caption">
+              <native>(Click Save to set range)</native>
+              <lang id="zh">（单击保存设定范围)</lang>
+              <lang id="ms">Klik Simpan untuk mengeset julat</lang>
+            </row>
             <row id="Font.Color">clRed</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">8</row>
@@ -792,7 +1072,11 @@
             <row id="Width">139</row>
           </component>
           <component class="TVisLabel" name="Label4" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 2: UBS Stock DB folder (Leave blank to import current transaction from Sales/Purchase)</row>
+            <row id="Caption">
+              <native>Step 2: UBS Stock DB folder (Leave blank to import current transaction from Sales/Purchase)</native>
+              <lang id="zh">步骤 2︰UBS 库存 DB 文件夹 （请保留空白以从销售/采购导入当前交易记录）</lang>
+              <lang id="ms">Langkah 2: UBS stok DB folder (tinggalkan kosong untuk mengimport transaksi semasa dari jualan/belian)</lang>
+            </row>
             <row id="Font.Color">clWindowText</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -803,7 +1087,11 @@
             <row id="Width">532</row>
           </component>
           <component class="TVisButton" name="btClipBrd" type="TButton" action="actCopyClipboard">
-            <row id="Caption" state="0">Copy log to clipboard</row>
+            <row id="Caption">
+              <native>Copy log to clipboard</native>
+              <lang id="zh">复制日志到剪贴板</lang>
+              <lang id="ms">Salin Log ke papan Keratan</lang>
+            </row>
             <row id="Height">25</row>
             <row id="Left">466</row>
             <row id="Top">535</row>
@@ -816,7 +1104,11 @@
             <row id="Width">120</row>
           </component>
           <component class="TVisButton" name="btCancel" type="TButton">
-            <row id="Caption" state="0">Exit</row>
+            <row id="Caption">
+              <native>Exit</native>
+              <lang id="zh">退出</lang>
+              <lang id="ms">Keluar</lang>
+            </row>
             <row id="Height">25</row>
             <row id="Left">466</row>
             <row id="Top">566</row>
@@ -862,15 +1154,27 @@
             <row id="Top">174</row>
             <row id="Width">578</row>
             <column name="Columns[0]">
-              <row id="Caption" state="0">Description</row>
+              <row id="Caption">
+                <native>Description</native>
+                <lang id="zh">描述</lang>
+                <lang id="ms">Penerangan</lang>
+              </row>
               <row id="Width">295</row>
             </column>
             <column name="Columns[1]">
-              <row id="Caption" state="0">Start From Record No.</row>
+              <row id="Caption">
+                <native>Start From Record No.</native>
+                <lang id="zh">从记录编号开始。</lang>
+                <lang id="ms">Bermula dari rekod No.</lang>
+              </row>
               <row id="Width">130</row>
             </column>
             <column name="Columns[2]">
-              <row id="Caption" state="0">Total Records</row>
+              <row id="Caption">
+                <native>Total Records</native>
+                <lang id="zh">总记录</lang>
+                <lang id="ms">Jumlah rekod</lang>
+              </row>
               <row id="Width">130</row>
             </column>
           </component>
@@ -893,14 +1197,22 @@
             <row id="Width">80</row>
           </component>
           <component class="TVisCheckBox" name="cbOpnBalSummary" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Import opening balance summary (B/F amount only)</row>
+            <row id="Caption">
+              <native>Import opening balance summary (B/F amount only)</native>
+              <lang id="zh">导入初始余额汇总 （仅适用于 B/F 金额）</lang>
+              <lang id="ms">Import baki ringkasan (B/F amaun sahaja)</lang>
+            </row>
             <row id="Height">21</row>
             <row id="Left">8</row>
             <row id="Top">378</row>
             <row id="Width">406</row>
           </component>
           <component class="TVisCheckBox" name="cbResetAccFormat" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Reformat UBS customer &amp;&amp; supplier account code to follow SQL Account</row>
+            <row id="Caption">
+              <native>Reformat UBS customer &amp;&amp; supplier account code to follow SQL Account</native>
+              <lang id="zh">重新格式 UBS 客户与供应商帐户代码，以按照 SQL 帐户</lang>
+              <lang id="ms">Format semula pelanggan UBS &amp;&amp; pembekal kod akaun untuk mengikuti akaun SQL</lang>
+            </row>
             <row id="Height">21</row>
             <row id="Left">8</row>
             <row id="Top">402</row>
@@ -920,26 +1232,54 @@
           </component>
           <component class="TVisHiddenComponent" name="ActionList1" type="TActionList">
             <component class="TVisAction" name="actConnect" type="TAction">
-              <row id="Caption" state="0">Connect</row>
+              <row id="Caption">
+                <native>Connect</native>
+                <lang id="zh">连接</lang>
+                <lang id="ms">Sambung</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actBrowse" type="TAction">
-              <row id="Caption" state="0">Select Folder</row>
+              <row id="Caption">
+                <native>Select Folder</native>
+                <lang id="zh">选择文件夹</lang>
+                <lang id="ms">Pilih Folder</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actClearList" type="TAction">
-              <row id="Caption" state="0">Clear</row>
+              <row id="Caption">
+                <native>Clear</native>
+                <lang id="zh">消除</lang>
+                <lang id="ms">Padam</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actExecute" type="TAction">
-              <row id="Caption" state="0">Execute</row>
+              <row id="Caption">
+                <native>Execute</native>
+                <lang id="zh">执行</lang>
+                <lang id="ms">Melaksanakan</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actCopyClipboard" type="TAction">
-              <row id="Caption" state="0">Copy to Clipboard</row>
+              <row id="Caption">
+                <native>Copy to Clipboard</native>
+                <lang id="zh">复制到剪贴板</lang>
+                <lang id="ms">Salin ke papan Keratan</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actShowAllModules" type="TAction">
-              <row id="Caption" state="0">Show All Modules</row>
+              <row id="Caption">
+                <native>Show All Modules</native>
+                <lang id="zh">显示所有模块</lang>
+                <lang id="ms">Tunjukkan semua modul</lang>
+              </row>
               <row id="ShortCut" state="0">16460</row>
             </component>
             <component class="TVisAction" name="actSave" type="TAction">
-              <row id="Caption" state="0">Save</row>
+              <row id="Caption">
+                <native>Save</native>
+                <lang id="zh">保存</lang>
+                <lang id="ms">Simpan</lang>
+              </row>
             </component>
           </component>
           <component class="TVisImageList" name="ImageList1" type="TImageList" imagewidth="1">
@@ -948,7 +1288,11 @@
       </node>
       <node class="TVclFormNode" name="TFMDATAIMPORT_UBSSTOCK" resname="TFMDATAIMPORT_UBSSTOCK">
         <form class="TVclForm" name="fmDataImport_UBSStock" type="TfmDataImport_UBSStock" borderstyle="bsDialog" textheight="13">
-          <row id="Caption" state="0">UBS Stock</row>
+          <row id="Caption">
+            <native>UBS Stock</native>
+            <lang id="zh">UBS库存</lang>
+            <lang id="ms">Stok UBS</lang>
+          </row>
           <row id="ClientHeight">572</row>
           <row id="ClientWidth">594</row>
           <row id="Font.Color">clWindowText</row>
@@ -958,7 +1302,11 @@
           <row id="Left">0</row>
           <row id="Top">0</row>
           <component class="TVisLabel" name="Label3" type="TLabel" parentcolor="0" parentfont="0">
-            <row id="Caption" state="0">Data Migration - UBS Stock Control System </row>
+            <row id="Caption">
+              <native>Data Migration - UBS Stock Control System </native>
+              <lang id="zh">数据迁移-UBS的库存控制系统 </lang>
+              <lang id="ms">Pemindahan data - sistem kawalan stok UBS </lang>
+            </row>
             <row id="Font.Color">clBlack</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -969,28 +1317,44 @@
             <row id="Width">281</row>
           </component>
           <component class="TVisLabel" name="Label5" type="TLabel">
-            <row id="Caption" state="0">Rec No. :</row>
+            <row id="Caption">
+              <native>Rec No. :</native>
+              <lang id="zh">记录编号:</lang>
+              <lang id="ms">Rec No.:</lang>
+            </row>
             <row id="Height">13</row>
             <row id="Left">466</row>
             <row id="Top">546</row>
             <row id="Width">45</row>
           </component>
           <component class="TVisLabel" name="Label7" type="TLabel">
-            <row id="Caption" state="0">Start import from record no:</row>
+            <row id="Caption">
+              <native>Start import from record no:</native>
+              <lang id="zh">从记录编号开始导入:</lang>
+              <lang id="ms">Mula import dari rekod No:</lang>
+            </row>
             <row id="Height">13</row>
             <row id="Left">8</row>
             <row id="Top">296</row>
             <row id="Width">135</row>
           </component>
           <component class="TVisLabel" name="Label8" type="TLabel">
-            <row id="Caption" state="0">to</row>
+            <row id="Caption">
+              <native>to</native>
+              <lang id="zh">至</lang>
+              <lang id="ms">hingga</lang>
+            </row>
             <row id="Height">13</row>
             <row id="Left">235</row>
             <row id="Top">296</row>
             <row id="Width">10</row>
           </component>
           <component class="TVisLabel" name="Label9" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 1: Select folder containing files restored from UBS Stock database</row>
+            <row id="Caption">
+              <native>Step 1: Select folder containing files restored from UBS Stock database</native>
+              <lang id="zh">步骤 1 ︰从UBS股票数据库中选择包含还原的文件的文件夹</lang>
+              <lang id="ms">Langkah 1: Pilih folder yang mengandungi fail-fail yang dibaik pulih  daripada pangkalan data stok UBS</lang>
+            </row>
             <row id="Font.Color">clWindowText</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -1001,7 +1365,11 @@
             <row id="Width">408</row>
           </component>
           <component class="TVisLabel" name="Label2" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 2: Select module(s) to import into SQL Accounting</row>
+            <row id="Caption">
+              <native>Step 2: Select module(s) to import into SQL Accounting</native>
+              <lang id="zh">步骤 2 ︰ 选择模块以导入到 SQL 会计</lang>
+              <lang id="ms">Langkah 2: Pilih module(s) untuk mengimport ke dalam perakaunan SQL</lang>
+            </row>
             <row id="Font.Color">clWindowText</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -1012,7 +1380,11 @@
             <row id="Width">317</row>
           </component>
           <component class="TVisLabel" name="Label1" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Step 3: Press execute to start data import</row>
+            <row id="Caption">
+              <native>Step 3: Press execute to start data import</native>
+              <lang id="zh">步骤 3 ︰ 按执行开始导入数据</lang>
+              <lang id="ms">Langkah 3: Tekan melaksanakan untuk memulakan data import</lang>
+            </row>
             <row id="Font.Color">clWindowText</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">10</row>
@@ -1023,7 +1395,11 @@
             <row id="Width">240</row>
           </component>
           <component class="TVisLabel" name="Label6" type="TLabel" parentcolor="0" parentfont="0">
-            <row id="Caption" state="0">(Click Save to set range)</row>
+            <row id="Caption">
+              <native>(Click Save to set range)</native>
+              <lang id="zh">（单击保存设定范围)</lang>
+              <lang id="ms">Klik Simpan untuk mengeset julat</lang>
+            </row>
             <row id="Font.Color">clRed</row>
             <row id="Font.Name">Tahoma</row>
             <row id="Font.Size">8</row>
@@ -1040,7 +1416,11 @@
             <row id="Width">120</row>
           </component>
           <component class="TVisButton" name="btCancel" type="TButton">
-            <row id="Caption" state="0">Exit</row>
+            <row id="Caption">
+              <native>Exit</native>
+              <lang id="zh">退出</lang>
+              <lang id="ms">Keluar</lang>
+            </row>
             <row id="Height">25</row>
             <row id="Left">466</row>
             <row id="Top">512</row>
@@ -1065,7 +1445,11 @@
             <row id="Width">412</row>
           </component>
           <component class="TVisButton" name="btBrowse" type="TButton" action="actBrowse">
-            <row id="Caption" state="0">Select Folder</row>
+            <row id="Caption">
+              <native>Select Folder</native>
+              <lang id="zh">选择文件夹</lang>
+              <lang id="ms">Pilih Folder</lang>
+            </row>
             <row id="Height">21</row>
             <row id="Left">423</row>
             <row id="Top">60</row>
@@ -1093,15 +1477,27 @@
             <row id="Top">117</row>
             <row id="Width">578</row>
             <column name="Columns[0]">
-              <row id="Caption" state="0">Description</row>
+              <row id="Caption">
+                <native>Description</native>
+                <lang id="zh">描述</lang>
+                <lang id="ms">Penerangan</lang>
+              </row>
               <row id="Width">295</row>
             </column>
             <column name="Columns[1]">
-              <row id="Caption" state="0">Start From Record No.</row>
+              <row id="Caption">
+                <native>Start From Record No.</native>
+                <lang id="zh">从记录编号开始。</lang>
+                <lang id="ms">Bermula dari rekod No.</lang>
+              </row>
               <row id="Width">130</row>
             </column>
             <column name="Columns[2]">
-              <row id="Caption" state="0">Total Records</row>
+              <row id="Caption">
+                <native>Total Records</native>
+                <lang id="zh">总记录</lang>
+                <lang id="ms">Jumlah rekod</lang>
+              </row>
               <row id="Width">130</row>
             </column>
           </component>
@@ -1124,35 +1520,55 @@
             <row id="Width">80</row>
           </component>
           <component class="TVisCheckBox" name="cbAllowUOM" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Import Stock UOM With Rate &lt; 1</row>
+            <row id="Caption">
+              <native>Import Stock UOM With Rate &lt; 1</native>
+              <lang id="zh">导入&lt; 1 的 UOM 库存率</lang>
+              <lang id="ms">Mengimport UOM saham dengan kadar &lt; 1</lang>
+            </row>
             <row id="Height">21</row>
             <row id="Left">8</row>
             <row id="Top">321</row>
             <row id="Width">286</row>
           </component>
           <component class="TVisCheckBox" name="cbAllowOpnBal" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Import Stock Opening Balance</row>
+            <row id="Caption">
+              <native>Import Stock Opening Balance</native>
+              <lang id="zh">导入库存初始余额</lang>
+              <lang id="ms">Mengimport baki stok</lang>
+            </row>
             <row id="Height">21</row>
             <row id="Left">300</row>
             <row id="Top">321</row>
             <row id="Width">286</row>
           </component>
           <component class="TVisCheckBox" name="cbAllowPrice" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Import Stock Customer &amp;&amp; Supplier Price</row>
+            <row id="Caption">
+              <native>Import Stock Customer &amp;&amp; Supplier Price</native>
+              <lang id="zh">导入客户库存及供应商价格</lang>
+              <lang id="ms">Import stok pelanggan &amp;&amp; harga pembekal</lang>
+            </row>
             <row id="Height">21</row>
             <row id="Left">8</row>
             <row id="Top">345</row>
             <row id="Width">286</row>
           </component>
           <component class="TVisCheckBox" name="cbResetAccFormat" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Reformat UBS customer &amp;&amp; supplier account code to follow SQL Account</row>
+            <row id="Caption">
+              <native>Reformat UBS customer &amp;&amp; supplier account code to follow SQL Account</native>
+              <lang id="zh">重新格式 UBS 客户与供应商帐户代码，以按照 SQL 帐户</lang>
+              <lang id="ms">Format semula pelanggan UBS &amp;&amp; pembekal kod akaun untuk mengikuti akaun SQL</lang>
+            </row>
             <row id="Height">21</row>
             <row id="Left">8</row>
             <row id="Top">369</row>
             <row id="Width">578</row>
           </component>
           <component class="TVisCheckBox" name="cbAllowBOM" type="TCheckBox" enabled="0">
-            <row id="Caption" state="0">Import Stock BOM</row>
+            <row id="Caption">
+              <native>Import Stock BOM</native>
+              <lang id="zh">导入BOM库存</lang>
+              <lang id="ms">Mengimport stok BOM</lang>
+            </row>
             <row id="Height">21</row>
             <row id="Left">300</row>
             <row id="Top">345</row>
@@ -1160,22 +1576,42 @@
           </component>
           <component class="TVisHiddenComponent" name="ActionList1" type="TActionList">
             <component class="TVisAction" name="actConnect" type="TAction">
-              <row id="Caption" state="0">Connect</row>
+              <row id="Caption">
+                <native>Connect</native>
+                <lang id="zh">连接</lang>
+                <lang id="ms">Sambung</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actBrowse" type="TAction">
-              <row id="Caption" state="0">...</row>
+              <row id="Caption">...</row>
             </component>
             <component class="TVisAction" name="actClearList" type="TAction">
-              <row id="Caption" state="0">Clear</row>
+              <row id="Caption">
+                <native>Clear</native>
+                <lang id="zh">消除</lang>
+                <lang id="ms">Padam</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actExecute" type="TAction">
-              <row id="Caption" state="0">Execute</row>
+              <row id="Caption">
+                <native>Execute</native>
+                <lang id="zh">执行</lang>
+                <lang id="ms">Melaksanakan</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actCopyClipboard" type="TAction">
-              <row id="Caption" state="0">Copy log to clipboard</row>
+              <row id="Caption">
+                <native>Copy log to clipboard</native>
+                <lang id="zh">复制日志到剪贴板</lang>
+                <lang id="ms">Salin Log ke papan Keratan</lang>
+              </row>
             </component>
             <component class="TVisAction" name="actSave" type="TAction">
-              <row id="Caption" state="0">Save</row>
+              <row id="Caption">
+                <native>Save</native>
+                <lang id="zh">保存</lang>
+                <lang id="ms">Simpan</lang>
+              </row>
             </component>
           </component>
           <component class="TVisImageList" name="ImageList1" type="TImageList" imagewidth="1">
@@ -1184,7 +1620,11 @@
       </node>
       <node class="TVclFormNode" name="TFMSQLACCDATAIMPORT" resname="TFMSQLACCDATAIMPORT">
         <form class="TVclForm" name="fmSQLAccDataImport" type="TfmSQLAccDataImport" borderstyle="bsDialog" textheight="13">
-          <row id="Caption" state="0">Data Import</row>
+          <row id="Caption">
+            <native>Data Import</native>
+            <lang id="zh">数据导入</lang>
+            <lang id="ms">Data Import</lang>
+          </row>
           <row id="ClientHeight">251</row>
           <row id="ClientWidth">403</row>
           <row id="Font.Color">clWindowText</row>
@@ -1204,15 +1644,51 @@
     </node>
     <node class="TWindowsStringFolder" name="Strings" created="20160411143854" resid="6">
       <node class="TWindowsStringTableNode" name="StringTable" resname="StringTable">
-        <row id="Data import aborted." state="0">Data import aborted.</row>
-        <row id="Do you want to download Microsoft OLE DB Provider for Visual FoxPro 9.0?" state="0">Do you want to download Microsoft OLE DB Provider for Visual FoxPro 9.0?</row>
-        <row id="Error! Invalid UBS Database Folder." state="0">Error! Invalid UBS Database Folder.</row>
-        <row id="Reminder: Have you assign GL accounts for all Stock Group? Click YES if you already have and NO to abort." state="0">Reminder: Have you assign GL accounts for all Stock Group? Click YES if you already have and NO to abort.</row>
-        <row id="Reminder: Have you inserted the activation code? Click YES if you already have and NO to abort." state="0">Reminder: Have you inserted the activation code? Click YES if you already have and NO to abort.</row>
-        <row id="Reminder: Please check in GL | Maintain Account that all Special Type Account are assigned accordingly. E.g. Bank &amp; Cash Account. Click OK to proceed and Cancel to abort." state="0">Reminder: Please check in GL | Maintain Account that all Special Type Account are assigned accordingly. E.g. Bank &amp; Cash Account. Click OK to proceed and Cancel to abort.</row>
-        <row id="Reminder: Please go to GST | Start GST Now... if you are GST registered. Click OK to proceed and Cancel to abort." state="0">Reminder: Please go to GST | Start GST Now... if you are GST registered. Click OK to proceed and Cancel to abort.</row>
-        <row id="Select UBS Account directory" state="0">Select UBS Account directory</row>
-        <row id="Tips: Disable Unit Price message prompt by going to Tools | Options | Unit Price. For all tabs, under the Option column, change all to blank. Click OK to proceed and Cancel to abort." state="0">Tips: Disable Unit Price message prompt by going to Tools | Options | Unit Price. For all tabs, under the Option column, change all to blank. Click OK to proceed and Cancel to abort.</row>
+        <row id="Data import aborted.">
+          <native>Data import aborted.</native>
+          <lang id="zh">输入数据中止。</lang>
+          <lang id="ms">Import data digugur.</lang>
+        </row>
+        <row id="Do you want to download Microsoft OLE DB Provider for Visual FoxPro 9.0?">
+          <native>Do you want to download Microsoft OLE DB Provider for Visual FoxPro 9.0?</native>
+          <lang id="zh">您想要为 Visual FoxPro 9.0 下载微软 OLE DB 提供程序吗?</lang>
+          <lang id="ms">Adakah anda mahu muat turun Microsoft OLE DB pembekal untuk Visual FoxPro 9.0?</lang>
+        </row>
+        <row id="Error! Invalid UBS Database Folder.">
+          <native>Error! Invalid UBS Database Folder.</native>
+          <lang id="zh">错误！UBS数据库文件夹无效。</lang>
+          <lang id="ms">Ralat! Folder UBS pangkalan data tidak sah.</lang>
+        </row>
+        <row id="Reminder: Have you assign GL accounts for all Stock Group? Click YES if you already have and NO to abort.">
+          <native>Reminder: Have you assign GL accounts for all Stock Group? Click YES if you already have and NO to abort.</native>
+          <lang id="zh">提醒 ︰ 你们已为总账帐户分配至全部库存组别吗？如果是请单击是，如不是请单击不是。</lang>
+          <lang id="ms">Peringatan: Pernahkah anda memperuntukkan akaun GL untuk semua kumpulan stok? Klik YA jika anda sudah mempunyai dan TIDAK untuk menggugurkan.</lang>
+        </row>
+        <row id="Reminder: Have you inserted the activation code? Click YES if you already have and NO to abort.">
+          <native>Reminder: Have you inserted the activation code? Click YES if you already have and NO to abort.</native>
+          <lang id="zh">提醒 ︰ 您已输入激活码？如果是请单击是，如不是请单击不是。</lang>
+          <lang id="ms">Peringatan: Adakah anda telah memasukkan kod pengaktifan? Klik YA jika anda sudah mempunyai dan TIDAK untuk menggugurkan.</lang>
+        </row>
+        <row id="Reminder: Please check in GL | Maintain Account that all Special Type Account are assigned accordingly. E.g. Bank &amp; Cash Account. Click OK to proceed and Cancel to abort.">
+          <native>Reminder: Please check in GL | Maintain Account that all Special Type Account are assigned accordingly. E.g. Bank &amp; Cash Account. Click OK to proceed and Cancel to abort.</native>
+          <lang id="zh">提醒 ︰ 请检查在 总账 |保持所有特殊类型的帐户分配相应的帐户。例如银行与现金账户。单击确定，然后单击取消中止(&amp; )。</lang>
+          <lang id="ms">Peringatan:&amp; Sila semak di GL | Mengekalkan akaun yang semua jenis akaun khas diperuntukkan dengan sewajarnya. Cth: Bank akaun Tunai. Klik OK untuk teruskan dan Batal untuk menggugurkan.</lang>
+        </row>
+        <row id="Reminder: Please go to GST | Start GST Now... if you are GST registered. Click OK to proceed and Cancel to abort.">
+          <native>Reminder: Please go to GST | Start GST Now... if you are GST registered. Click OK to proceed and Cancel to abort.</native>
+          <lang id="zh">提醒 ︰如果你已注册 消费税... 请去 GST |启动 消费税 现在。单击确定，然后单击取消中止。</lang>
+          <lang id="ms">Peringatan: Sila pergi ke GST | Memulakan GST sekarang... Jika anda sudah mendaftar GST, Klik OK untuk teruskan dan Batal untuk menggugurkan.</lang>
+        </row>
+        <row id="Select UBS Account directory">
+          <native>Select UBS Account directory</native>
+          <lang id="zh">选择UBS帐户目录</lang>
+          <lang id="ms">Pilih direktori UBS akaun</lang>
+        </row>
+        <row id="Tips: Disable Unit Price message prompt by going to Tools | Options | Unit Price. For all tabs, under the Option column, change all to blank. Click OK to proceed and Cancel to abort.">
+          <native>Tips: Disable Unit Price message prompt by going to Tools | Options | Unit Price. For all tabs, under the Option column, change all to blank. Click OK to proceed and Cancel to abort.</native>
+          <lang id="zh">提示:提示截止单价信息当通过工具|选项|单价。对于所有的选项卡，在选项列中下, 更改所有为空白。单击确定，然后单击取消中止。</lang>
+          <lang id="ms">Tips: Mematikan prompt mesej Harga Unit dengan pergi ke Alat | Pilihan | Harga unit. Untuk semua tab di bawah lajur Pilihan, menukar semua kepada kosong. Klik OK untuk teruskan dan Batal untuk menggugurkan.</lang>
+        </row>
       </node>
     </node>
   </source>
