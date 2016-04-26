@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document created="20160411090511" version="4.0.359" date="20160426164151" scan="30" scanned="20160426164032">
+<document created="20160411090511" version="4.0.359" date="20160426170256" scan="10" scanned="20160426164817">
   <lang id="zh"/>
   <lang id="ms"/>
   <lang id="vi"/>
-  <source class="TDelphiSource" name="..\SQL.Bank.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160426012002" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.Bank.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160425015740" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <resources>
       <disabled name="SQL_BANK"/>
     </resources>
@@ -87,7 +87,11 @@
     <node class="TVclFormFolder" name="Forms" created="20160411143854" resid="10">
       <node class="TVclFormNode" name="TFMBANK" state="0" created="20160425163133" resname="TFMBANK">
         <form class="TVclForm" name="fmBank" state="0" type="TfmBank" bordericons="[biSystemMenu]" textheight="13">
-          <row id="Caption" state="0">Select Bank</row>
+          <row id="Caption">
+            <native>Select Bank</native>
+            <lang id="zh">选择银行</lang>
+            <lang id="ms">Pilih Bank</lang>
+          </row>
           <row id="ClientHeight" state="0">257</row>
           <row id="ClientWidth" state="0">449</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -103,30 +107,54 @@
             <row id="Width" state="0">433</row>
             <component class="TVisHiddenComponent" name="gvBank" state="0" type="TcxGridTableView">
               <component class="TVisHiddenComponent" name="gvBankCode" state="0" type="TcxGridColumn">
-                <row id="Caption" state="0">Code</row>
+                <row id="Caption">
+                  <native>Code</native>
+                  <lang id="zh">编号</lang>
+                  <lang id="ms">Kod</lang>
+                </row>
               </component>
               <component class="TVisHiddenComponent" name="gvBankAlias" state="0" type="TcxGridColumn">
-                <row id="Caption" state="0">Alias</row>
+                <row id="Caption">
+                  <native>Alias</native>
+                  <lang id="zh">别名</lang>
+                  <lang id="ms">Alias</lang>
+                </row>
               </component>
               <component class="TVisHiddenComponent" name="gvBankName" state="0" type="TcxGridColumn">
-                <row id="Caption" state="0">Name</row>
+                <row id="Caption">
+                  <native>Name</native>
+                  <lang id="zh">名称</lang>
+                  <lang id="ms">Nama</lang>
+                </row>
               </component>
               <component class="TVisHiddenComponent" name="gvBankCountry" state="0" type="TcxGridColumn">
-                <row id="Caption" state="0">Country</row>
+                <row id="Caption">
+                  <native>Country</native>
+                  <lang id="zh">国家</lang>
+                  <lang id="ms">Negara</lang>
+                </row>
               </component>
             </component>
             <component class="TVisHiddenComponent" name="cxGrid1Level1" state="0" type="TcxGridLevel">
             </component>
           </component>
           <component class="TVisButton" name="btnOK" state="0" type="TButton">
-            <row id="Caption" state="0">OK</row>
+            <row id="Caption">
+              <native>OK</native>
+              <lang id="zh">确定</lang>
+              <lang id="ms">OK</lang>
+            </row>
             <row id="Height" state="0">25</row>
             <row id="Left" state="0">279</row>
             <row id="Top" state="0">224</row>
             <row id="Width" state="0">75</row>
           </component>
           <component class="TVisButton" name="btnCancel" state="0" type="TButton">
-            <row id="Caption" state="0">Cancel</row>
+            <row id="Caption">
+              <native>Cancel</native>
+              <lang id="zh">取消</lang>
+              <lang id="ms">Batal</lang>
+            </row>
             <row id="Height" state="0">25</row>
             <row id="Left" state="0">366</row>
             <row id="Top" state="0">224</row>
@@ -136,7 +164,11 @@
       </node>
       <node class="TVclFormNode" name="TLF_BANKID" state="0" created="20160425163133" resname="TLF_BANKID">
         <form class="TVclForm" name="LF_BankID" state="0" type="TLF_BankID" textheight="13">
-          <row id="Caption" state="0">Bank</row>
+          <row id="Caption">
+            <native>Bank</native>
+            <lang id="zh">银行</lang>
+            <lang id="ms">Bank</lang>
+          </row>
           <row id="ClientHeight" state="0">201</row>
           <row id="ClientWidth" state="0">353</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -152,16 +184,32 @@
             <row id="Width" state="0">353</row>
             <component class="TVisHiddenComponent" name="LookupGridView" state="0" type="TcxGridTableView">
               <component class="TVisHiddenComponent" name="LookupGridViewCode" state="0" type="TcxGridColumn">
-                <row id="Caption" state="0">Code</row>
+                <row id="Caption">
+                  <native>Code</native>
+                  <lang id="zh">编号</lang>
+                  <lang id="ms">Kod</lang>
+                </row>
               </component>
               <component class="TVisHiddenComponent" name="LookupGridViewAlias" state="0" type="TcxGridColumn">
-                <row id="Caption" state="0">Alias</row>
+                <row id="Caption">
+                  <native>Alias</native>
+                  <lang id="zh">别名</lang>
+                  <lang id="ms">Alias</lang>
+                </row>
               </component>
               <component class="TVisHiddenComponent" name="LookupGridViewName" state="0" type="TcxGridColumn">
-                <row id="Caption" state="0">Name</row>
+                <row id="Caption">
+                  <native>Name</native>
+                  <lang id="zh">名称</lang>
+                  <lang id="ms">Nama</lang>
+                </row>
               </component>
               <component class="TVisHiddenComponent" name="LookupGridViewCountry" state="0" type="TcxGridColumn">
-                <row id="Caption" state="0">Country</row>
+                <row id="Caption">
+                  <native>Country</native>
+                  <lang id="zh">国家</lang>
+                  <lang id="ms">Negara</lang>
+                </row>
               </component>
             </component>
             <component class="TVisHiddenComponent" name="cxGrid1Level1" state="0" type="TcxGridLevel">
@@ -171,7 +219,11 @@
       </node>
       <node class="TVclFormNode" name="TPF_BANK_GIRO" state="0" created="20160425163133" resname="TPF_BANK_GIRO">
         <form class="TVclForm" name="PF_Bank_Giro" state="0" type="TPF_Bank_Giro" borderstyle="bsDialog" textheight="13">
-          <row id="Caption" state="0">Giro</row>
+          <row id="Caption">
+            <native>Giro</native>
+            <lang id="zh">自动旋翼机</lang>
+            <lang id="ms">GIRO</lang>
+          </row>
           <row id="ClientHeight" state="0">291</row>
           <row id="ClientWidth" state="0">594</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -186,7 +238,11 @@
             <row id="Top" state="0">216</row>
             <row id="Width" state="0">594</row>
             <component class="TVisLabel" name="lbSaveTo" state="0" type="TLabel">
-              <row id="Caption" state="0">Save To</row>
+              <row id="Caption">
+                <native>Save To</native>
+                <lang id="zh">保存至</lang>
+                <lang id="ms">Simpan ke</lang>
+              </row>
               <row id="Height" state="0">13</row>
               <row id="Left" state="0">16</row>
               <row id="Top" state="0">11</row>
@@ -195,26 +251,38 @@
             <component class="TVisEdit" name="edDir" state="0" type="TEdit">
               <row id="Height" state="0">21</row>
               <row id="Left" state="0">64</row>
-              <row id="Text" state="0">C:\</row>
+              <row id="Text" locked="1">C:\</row>
               <row id="Top" state="0">8</row>
               <row id="Width" state="0">488</row>
             </component>
             <component class="TVisButton" name="btnSelectDir" state="0" type="TButton">
-              <row id="Caption" state="0">...</row>
+              <row id="Caption">
+                <native>...</native>
+                <lang id="zh" date="20160426164948">...</lang>
+                <lang id="ms" date="20160426170157">...</lang>
+              </row>
               <row id="Height" state="0">21</row>
               <row id="Left" state="0">558</row>
               <row id="Top" state="0">8</row>
               <row id="Width" state="0">21</row>
             </component>
             <component class="TVisButton" name="btnSave" state="0" type="TButton">
-              <row id="Caption" state="0">Save</row>
+              <row id="Caption">
+                <native>Save</native>
+                <lang id="zh">保存</lang>
+                <lang id="ms">Simpan</lang>
+              </row>
               <row id="Height" state="0">25</row>
               <row id="Left" state="0">416</row>
               <row id="Top" state="0">42</row>
               <row id="Width" state="0">75</row>
             </component>
             <component class="TVisButton" name="btnCancel" state="0" type="TButton">
-              <row id="Caption" state="0">Cancel</row>
+              <row id="Caption">
+                <native>Cancel</native>
+                <lang id="zh">取消</lang>
+                <lang id="ms">Batal</lang>
+              </row>
               <row id="Height" state="0">25</row>
               <row id="Left" state="0">504</row>
               <row id="Top" state="0">42</row>
@@ -225,7 +293,7 @@
       </node>
       <node class="TVclFormNode" name="TPF_BANK_GIRO_ARBKMY" state="0" created="20160425163133" resname="TPF_BANK_GIRO_ARBKMY">
         <form class="TVclForm" name="PF_Bank_Giro_ARBKMY" state="0" type="TPF_Bank_Giro_ARBKMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">AmBank</row>
+          <row id="Caption" locked="1">AmBank</row>
           <row id="ClientHeight" state="0">241</row>
           <row id="ClientWidth" state="0">465</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -235,7 +303,11 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbValueDate" state="0" type="TLabel">
-            <row id="Caption" state="0">Payment Value Date</row>
+            <row id="Caption">
+              <native>Payment Value Date</native>
+              <lang id="zh">支付起息日</lang>
+              <lang id="ms">Tarikh pembayaran nilai</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
@@ -250,7 +322,7 @@
       </node>
       <node class="TVclFormNode" name="TPF_BANK_GIRO_BOTKMY" state="0" created="20160425163133" resname="TPF_BANK_GIRO_BOTKMY">
         <form class="TVclForm" name="PF_Bank_Giro_BOTKMY" state="0" type="TPF_Bank_Giro_BOTKMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">MUFG</row>
+          <row id="Caption" locked="1">MUFG</row>
           <row id="ClientHeight" state="0">241</row>
           <row id="ClientWidth" state="0">465</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -260,7 +332,11 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbValueDate" state="0" type="TLabel">
-            <row id="Caption" state="0">Value Date</row>
+            <row id="Caption">
+              <native>Value Date</native>
+              <lang id="zh">起息日</lang>
+              <lang id="ms">Nilai tarikh</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
@@ -275,7 +351,7 @@
       </node>
       <node class="TVclFormNode" name="TPF_BANK_GIRO_BSNAMY" state="0" created="20160425163133" resname="TPF_BANK_GIRO_BSNAMY">
         <form class="TVclForm" name="PF_Bank_Giro_BSNAMY" state="0" type="TPF_Bank_Giro_BSNAMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">BSN</row>
+          <row id="Caption" locked="1">BSN</row>
           <row id="ClientHeight" state="0">240</row>
           <row id="ClientWidth" state="0">465</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -285,7 +361,11 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbPaymentDate" state="0" type="TLabel">
-            <row id="Caption" state="0">Payment Date</row>
+            <row id="Caption">
+              <native>Payment Date</native>
+              <lang id="zh">付款 日期</lang>
+              <lang id="ms">Tarikh Pembayaran</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
@@ -300,7 +380,7 @@
       </node>
       <node class="TVclFormNode" name="TPF_BANK_GIRO_CIBBMY" state="0" created="20160425163133" resname="TPF_BANK_GIRO_CIBBMY">
         <form class="TVclForm" name="PF_Bank_Giro_CIBBMY" state="0" type="TPF_Bank_Giro_CIBBMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">CIMB Bank</row>
+          <row id="Caption" locked="1">CIMB Bank</row>
           <row id="ClientHeight" state="0">240</row>
           <row id="ClientWidth" state="0">465</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -310,7 +390,11 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbCreditingDate" state="0" type="TLabel">
-            <row id="Caption" state="0">Crediting Date</row>
+            <row id="Caption">
+              <native>Crediting Date</native>
+              <lang id="zh">计入日期</lang>
+              <lang id="ms">Tarikh pengkreditan</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
@@ -325,7 +409,7 @@
       </node>
       <node class="TVclFormNode" name="TPF_BANK_GIRO_CITIMY" state="0" created="20160425163133" resname="TPF_BANK_GIRO_CITIMY">
         <form class="TVclForm" name="PF_Bank_Giro_CITIMY" state="0" type="TPF_Bank_Giro_CITIMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">Citibank</row>
+          <row id="Caption" locked="1">Citibank</row>
           <row id="ClientHeight" state="0">81</row>
           <row id="ClientWidth" state="0">463</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -335,7 +419,11 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbValueDate" state="0" type="TLabel">
-            <row id="Caption" state="0">Value Date</row>
+            <row id="Caption">
+              <native>Value Date</native>
+              <lang id="zh">起息日</lang>
+              <lang id="ms">Nilai tarikh</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
@@ -350,7 +438,7 @@
       </node>
       <node class="TVclFormNode" name="TPF_BANK_GIRO_CITISG" state="0" created="20160425163133" resname="TPF_BANK_GIRO_CITISG">
         <form class="TVclForm" name="PF_Bank_Giro_CITISG" state="0" type="TPF_Bank_Giro_CITISG" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">Citibank Singapore</row>
+          <row id="Caption" locked="1">Citibank Singapore</row>
           <row id="ClientHeight" state="0">81</row>
           <row id="ClientWidth" state="0">465</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -360,7 +448,11 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbValueDate" state="0" type="TLabel">
-            <row id="Caption" state="0">Value Date</row>
+            <row id="Caption">
+              <native>Value Date</native>
+              <lang id="zh">起息日</lang>
+              <lang id="ms">Nilai tarikh</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
@@ -375,7 +467,11 @@
       </node>
       <node class="TVclFormNode" name="TPF_BANK_GIRO_HBMBMY_0" state="0" created="20160425163133" resname="TPF_BANK_GIRO_HBMBMY_0">
         <form class="TVclForm" name="PF_Bank_Giro_HBMBMY_0" state="0" type="TPF_Bank_Giro_HBMBMY_0" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">HSBC</row>
+          <row id="Caption">
+            <native>HSBC</native>
+            <lang id="zh">HSBC</lang>
+            <lang id="ms">HSBC</lang>
+          </row>
           <row id="ClientHeight" state="0">241</row>
           <row id="ClientWidth" state="0">465</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -385,21 +481,33 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbValueDate" state="0" type="TLabel">
-            <row id="Caption" state="0">Value Date</row>
+            <row id="Caption">
+              <native>Value Date</native>
+              <lang id="zh">起息日</lang>
+              <lang id="ms">Nilai tarikh</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
             <row id="Width" state="0">52</row>
           </component>
           <component class="TVisLabel" name="lbPaymentCode" state="0" type="TLabel">
-            <row id="Caption" state="0">Payment Code</row>
+            <row id="Caption">
+              <native>Payment Code</native>
+              <lang id="zh">支付码</lang>
+              <lang id="ms">Kod bayaran</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">46</row>
             <row id="Width" state="0">70</row>
           </component>
           <component class="TVisLabel" name="lbRef1" state="0" type="TLabel">
-            <row id="Caption" state="0">Payment Reference</row>
+            <row id="Caption">
+              <native>Payment Reference</native>
+              <lang id="zh">付款凭据</lang>
+              <lang id="ms">Rujukan bayaran</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">73</row>
@@ -426,7 +534,11 @@
       </node>
       <node class="TVclFormNode" name="TPF_BANK_GIRO_HBMBMY_1" state="0" created="20160425163133" resname="TPF_BANK_GIRO_HBMBMY_1">
         <form class="TVclForm" name="PF_Bank_Giro_HBMBMY_1" state="0" type="TPF_Bank_Giro_HBMBMY_1" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">HSBC</row>
+          <row id="Caption">
+            <native>HSBC</native>
+            <lang id="zh">HSBC</lang>
+            <lang id="ms">HSBC</lang>
+          </row>
           <row id="ClientHeight" state="0">242</row>
           <row id="ClientWidth" state="0">465</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -436,7 +548,11 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbValueDate" state="0" type="TLabel">
-            <row id="Caption" state="0">Value Date</row>
+            <row id="Caption">
+              <native>Value Date</native>
+              <lang id="zh">起息日</lang>
+              <lang id="ms">Nilai tarikh</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
@@ -451,7 +567,11 @@
       </node>
       <node class="TVclFormNode" name="TPF_BANK_GIRO_MBBEMY_0" state="0" created="20160425163133" resname="TPF_BANK_GIRO_MBBEMY_0">
         <form class="TVclForm" name="PF_Bank_Giro_MBBEMY_0" state="0" type="TPF_Bank_Giro_MBBEMY_0" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">Maybank</row>
+          <row id="Caption">
+            <native>Maybank</native>
+            <lang id="zh">马来西亚银行</lang>
+            <lang id="ms">Maybank</lang>
+          </row>
           <row id="ClientHeight" state="0">137</row>
           <row id="ClientWidth" state="0">474</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -461,14 +581,22 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbPaymentDate" state="0" type="TLabel">
-            <row id="Caption" state="0">Payment Export Date</row>
+            <row id="Caption">
+              <native>Payment Export Date</native>
+              <lang id="zh">支付出口日期</lang>
+              <lang id="ms">Tarikh eksport pembayaran</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
             <row id="Width" state="0">103</row>
           </component>
           <component class="TVisLabel" name="lbPaymentExportDateDesc" state="0" type="TLabel" parentfont="0" wordwrap="1">
-            <row id="Caption" state="0">Pymt Export Date via MAS Format</row>
+            <row id="Caption">
+              <native>Pymt Export Date via MAS Format</native>
+              <lang id="zh">通过MAS格式付款出口日期</lang>
+              <lang id="ms">Tarikh eksport Pymt melalui MAS Format</lang>
+            </row>
             <row id="Font.Color" state="0">clBlue</row>
             <row id="Font.Name" state="0">Arial</row>
             <row id="Font.Size" state="0">8</row>
@@ -479,7 +607,11 @@
             <row id="Width" state="0">161</row>
           </component>
           <component class="TVisLabel" name="lbCreditingDateDesc" state="0" type="TLabel" parentfont="0" wordwrap="1">
-            <row id="Caption" state="0">Pymt Crediting Date</row>
+            <row id="Caption">
+              <native>Pymt Crediting Date</native>
+              <lang id="zh">支付计入日期</lang>
+              <lang id="ms">Tarikh pengkreditan Pymt</lang>
+            </row>
             <row id="Font.Color" state="0">clBlue</row>
             <row id="Font.Name" state="0">Arial</row>
             <row id="Font.Size" state="0">8</row>
@@ -490,14 +622,22 @@
             <row id="Width" state="0">93</row>
           </component>
           <component class="TVisLabel" name="lbPaymentCreditingDate" state="0" type="TLabel">
-            <row id="Caption" state="0">Payment Crediting Date</row>
+            <row id="Caption">
+              <native>Payment Crediting Date</native>
+              <lang id="zh">支付计入日期</lang>
+              <lang id="ms">Pembayaran pengkreditan tarikh</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">46</row>
             <row id="Width" state="0">114</row>
           </component>
           <component class="TVisLabel" name="lbTestingIndicator" state="0" type="TLabel">
-            <row id="Caption" state="0">Testing Indicator</row>
+            <row id="Caption">
+              <native>Testing Indicator</native>
+              <lang id="zh">测试指标</lang>
+              <lang id="ms">Ujian penunjuk</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">74</row>
@@ -514,12 +654,20 @@
             <row id="Width" state="0">121</row>
           </component>
           <component class="TVisComboBox" name="cbTestingIndicator" state="0" type="TcxImageComboBox">
-            <row id="EditValue" locked="1" state="0">T</row>
+            <row id="EditValue" locked="1">T</row>
             <row id="Left" state="0">144</row>
-            <row id="Properties.Items[0].Description" state="0">Testing</row>
-            <row id="Properties.Items[0].Value" locked="1" state="0">T</row>
-            <row id="Properties.Items[1].Description" state="0">Production</row>
-            <row id="Properties.Items[1].Value" locked="1" state="0">P</row>
+            <row id="Properties.Items[0].Description">
+              <native>Testing</native>
+              <lang id="zh">测试</lang>
+              <lang id="ms">Ujian</lang>
+            </row>
+            <row id="Properties.Items[0].Value" locked="1">T</row>
+            <row id="Properties.Items[1].Description">
+              <native>Production</native>
+              <lang id="zh">生产</lang>
+              <lang id="ms">Pengeluaran</lang>
+            </row>
+            <row id="Properties.Items[1].Value" locked="1">P</row>
             <row id="Top" state="0">70</row>
             <row id="Width" state="0">121</row>
           </component>
@@ -527,7 +675,11 @@
       </node>
       <node class="TVclFormNode" name="TPF_BANK_GIRO_MBBEMY_1" state="0" created="20160425163133" resname="TPF_BANK_GIRO_MBBEMY_1">
         <form class="TVclForm" name="PF_Bank_Giro_MBBEMY_1" state="0" type="TPF_Bank_Giro_MBBEMY_1" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">Maybank</row>
+          <row id="Caption">
+            <native>Maybank</native>
+            <lang id="zh">马来西亚银行</lang>
+            <lang id="ms">Maybank</lang>
+          </row>
           <row id="ClientHeight" state="0">226</row>
           <row id="ClientWidth" state="0">489</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -537,56 +689,88 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbPaymentDate" state="0" type="TLabel">
-            <row id="Caption" state="0">Payment Date</row>
+            <row id="Caption">
+              <native>Payment Date</native>
+              <lang id="zh">付款 日期</lang>
+              <lang id="ms">Tarikh Pembayaran</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
             <row id="Width" state="0">68</row>
           </component>
           <component class="TVisLabel" name="lbPIRRefNo" state="0" type="TLabel">
-            <row id="Caption" state="0">PIR Reference No</row>
+            <row id="Caption">
+              <native>PIR Reference No</native>
+              <lang id="zh">PIR 参考编号</lang>
+              <lang id="ms">No rujukan PIR</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">46</row>
             <row id="Width" state="0">86</row>
           </component>
           <component class="TVisLabel" name="lbDebitRef" state="0" type="TLabel">
-            <row id="Caption" state="0">Debit Reference</row>
+            <row id="Caption">
+              <native>Debit Reference</native>
+              <lang id="zh">借记参考</lang>
+              <lang id="ms">Rujukan Debit</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">73</row>
             <row id="Width" state="0">78</row>
           </component>
           <component class="TVisLabel" name="lbDebitDesc" state="0" type="TLabel">
-            <row id="Caption" state="0">Debit Description</row>
+            <row id="Caption">
+              <native>Debit Description</native>
+              <lang id="zh">借记描述</lang>
+              <lang id="ms">Description Debit</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">100</row>
             <row id="Width" state="0">81</row>
           </component>
           <component class="TVisLabel" name="lbTestingFile" state="0" type="TLabel">
-            <row id="Caption" state="0">Testing File</row>
+            <row id="Caption">
+              <native>Testing File</native>
+              <lang id="zh">测试文件</lang>
+              <lang id="ms">Ujian fail</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">128</row>
             <row id="Width" state="0">54</row>
           </component>
           <component class="TVisLabel" name="lbConfidentialFile" state="0" type="TLabel">
-            <row id="Caption" state="0">Confidential File</row>
+            <row id="Caption">
+              <native>Confidential File</native>
+              <lang id="zh">机密文件</lang>
+              <lang id="ms">Fail sulit</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">155</row>
             <row id="Width" state="0">76</row>
           </component>
           <component class="TVisLabel" name="lbNonResident" state="0" type="TLabel">
-            <row id="Caption" state="0">Beneficiary Non-Resident</row>
+            <row id="Caption">
+              <native>Beneficiary Non-Resident</native>
+              <lang id="zh">非居民受益人</lang>
+              <lang id="ms">Pewaris bukan pemastautin</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">182</row>
             <row id="Width" state="0">121</row>
           </component>
           <component class="TVisLabel" name="lbPIRRefNoDesc" state="0" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">File Reference No identified by you</row>
+            <row id="Caption">
+              <native>File Reference No identified by you</native>
+              <lang id="zh">您所确定档案编号</lang>
+              <lang id="ms">No rujukan fail yang telah dikenalpasti oleh anda</lang>
+            </row>
             <row id="Font.Color" state="0">clBlue</row>
             <row id="Font.Name" state="0">Tahoma</row>
             <row id="Font.Size" state="0">8</row>
@@ -617,34 +801,58 @@
             <row id="Width" state="0">121</row>
           </component>
           <component class="TVisComboBox" name="cbTestingFile" state="0" type="TcxImageComboBox">
-            <row id="EditValue" locked="1" state="0">L</row>
+            <row id="EditValue" locked="1">L</row>
             <row id="Left" state="0">152</row>
-            <row id="Properties.Items[0].Description" state="0">Live</row>
-            <row id="Properties.Items[0].Value" locked="1" state="0">L</row>
-            <row id="Properties.Items[1].Description" state="0">Format &amp; setup testing. No processing by bank's host</row>
-            <row id="Properties.Items[1].Value" locked="1" state="0">F</row>
-            <row id="Properties.Items[2].Description" state="0">Account &amp; IC validation testing</row>
-            <row id="Properties.Items[2].Value" locked="1" state="0">A</row>
+            <row id="Properties.Items[0].Description" locked="1">Live</row>
+            <row id="Properties.Items[0].Value" locked="1">L</row>
+            <row id="Properties.Items[1].Description">
+              <native>Format &amp; setup testing. No processing by bank's host</native>
+              <lang id="zh">格式与安装测试. 没有通过银行主机处理(&amp; )</lang>
+              <lang id="ms">Format&amp; ujian persediaan. Tidak ada Pemprosesan oleh bank host</lang>
+            </row>
+            <row id="Properties.Items[1].Value" locked="1">F</row>
+            <row id="Properties.Items[2].Description">
+              <native>Account &amp; IC validation testing</native>
+              <lang id="zh">账户与身份证鉴定测试(&amp; )</lang>
+              <lang id="ms">Ujian&amp; pengesahan akaun IC</lang>
+            </row>
+            <row id="Properties.Items[2].Value" locked="1">A</row>
             <row id="Top" state="0">124</row>
             <row id="Width" state="0">121</row>
           </component>
           <component class="TVisComboBox" name="cbConfidentialFile" state="0" type="TcxImageComboBox">
-            <row id="EditValue" locked="1" state="0"> </row>
+            <row id="EditValue" locked="1"> </row>
             <row id="Left" state="0">152</row>
-            <row id="Properties.Items[0].Description" state="0">No</row>
-            <row id="Properties.Items[0].Value" locked="1" state="0"> </row>
-            <row id="Properties.Items[1].Description" state="0">Yes</row>
-            <row id="Properties.Items[1].Value" locked="1" state="0">C</row>
+            <row id="Properties.Items[0].Description">
+              <native>No</native>
+              <lang id="zh">编号</lang>
+              <lang id="ms">Tidak</lang>
+            </row>
+            <row id="Properties.Items[0].Value" locked="1"> </row>
+            <row id="Properties.Items[1].Description">
+              <native>Yes</native>
+              <lang id="zh">是</lang>
+              <lang id="ms">Ya</lang>
+            </row>
+            <row id="Properties.Items[1].Value" locked="1">C</row>
             <row id="Top" state="0">151</row>
             <row id="Width" state="0">121</row>
           </component>
           <component class="TVisComboBox" name="cbNonResident" state="0" type="TcxImageComboBox">
-            <row id="EditValue" locked="1" state="0"> </row>
+            <row id="EditValue" locked="1"> </row>
             <row id="Left" state="0">152</row>
-            <row id="Properties.Items[0].Description" state="0">No</row>
-            <row id="Properties.Items[0].Value" locked="1" state="0"> </row>
-            <row id="Properties.Items[1].Description" state="0">Yes</row>
-            <row id="Properties.Items[1].Value" locked="1" state="0">Y</row>
+            <row id="Properties.Items[0].Description">
+              <native>No</native>
+              <lang id="zh">编号</lang>
+              <lang id="ms">Tidak</lang>
+            </row>
+            <row id="Properties.Items[0].Value" locked="1"> </row>
+            <row id="Properties.Items[1].Description">
+              <native>Yes</native>
+              <lang id="zh">是</lang>
+              <lang id="ms">Ya</lang>
+            </row>
+            <row id="Properties.Items[1].Value" locked="1">Y</row>
             <row id="Top" state="0">178</row>
             <row id="Width" state="0">121</row>
           </component>
@@ -652,7 +860,11 @@
       </node>
       <node class="TVclFormNode" name="TPF_BANK_GIRO_MBBEMY_2" state="0" created="20160425163133" resname="TPF_BANK_GIRO_MBBEMY_2">
         <form class="TVclForm" name="PF_Bank_Giro_MBBEMY_2" state="0" type="TPF_Bank_Giro_MBBEMY_2" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">Maybank</row>
+          <row id="Caption">
+            <native>Maybank</native>
+            <lang id="zh">马来西亚银行</lang>
+            <lang id="ms">Maybank</lang>
+          </row>
           <row id="ClientHeight" state="0">217</row>
           <row id="ClientWidth" state="0">497</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -662,14 +874,22 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbClientBatchID" state="0" type="TLabel">
-            <row id="Caption" state="0">Client Batch ID</row>
+            <row id="Caption">
+              <native>Client Batch ID</native>
+              <lang id="zh">客户端批次ID</lang>
+              <lang id="ms">ID Kumpulan pelanggan</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
             <row id="Width" state="0">71</row>
           </component>
           <component class="TVisLabel" name="lbClientBatchID_Desc" state="0" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Client batch reference number identified by you.</row>
+            <row id="Caption">
+              <native>Client batch reference number identified by you.</native>
+              <lang id="zh">您所确定的客户端批次参考号码。</lang>
+              <lang id="ms">Nombor rujukan kelompok pelanggan dikenal pasti oleh anda.</lang>
+            </row>
             <row id="Font.Color" state="0">clBlue</row>
             <row id="Font.Name" state="0">Arial</row>
             <row id="Font.Size" state="0">8</row>
@@ -680,21 +900,33 @@
             <row id="Width" state="0">231</row>
           </component>
           <component class="TVisLabel" name="lbValueDate" state="0" type="TLabel">
-            <row id="Caption" state="0">Value Date</row>
+            <row id="Caption">
+              <native>Value Date</native>
+              <lang id="zh">起息日</lang>
+              <lang id="ms">Nilai tarikh</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">46</row>
             <row id="Width" state="0">52</row>
           </component>
           <component class="TVisLabel" name="lbDebitRef" state="0" type="TLabel">
-            <row id="Caption" state="0">Debit Reference</row>
+            <row id="Caption">
+              <native>Debit Reference</native>
+              <lang id="zh">借记参考</lang>
+              <lang id="ms">Rujukan Debit</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">73</row>
             <row id="Width" state="0">78</row>
           </component>
           <component class="TVisLabel" name="lbDebitDesc" state="0" type="TLabel">
-            <row id="Caption" state="0">Debit Description</row>
+            <row id="Caption">
+              <native>Debit Description</native>
+              <lang id="zh">借记描述</lang>
+              <lang id="ms">Description Debit</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">100</row>
@@ -727,7 +959,7 @@
       </node>
       <node class="TVclFormNode" name="TPF_BANK_GIRO_MFBBMY" state="0" created="20160425163133" resname="TPF_BANK_GIRO_MFBBMY">
         <form class="TVclForm" name="PF_Bank_Giro_MFBBMY" state="0" type="TPF_Bank_Giro_MFBBMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">Alliance Bank</row>
+          <row id="Caption" locked="1">Alliance Bank</row>
           <row id="ClientHeight" state="0">154</row>
           <row id="ClientWidth" state="0">465</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -737,7 +969,11 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbGenericPaymentInfo" state="0" type="TLabel">
-            <row id="Caption" state="0">Generic Payment Information</row>
+            <row id="Caption">
+              <native>Generic Payment Information</native>
+              <lang id="zh">通用的付款信息</lang>
+              <lang id="ms">Maklumat pembayaran generik</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
@@ -746,7 +982,11 @@
           <component class="TVisEdit" name="edGenericPaymentInfo" state="0" type="TEdit">
             <row id="Height" state="0">21</row>
             <row id="Left" state="0">168</row>
-            <row id="TextHint" state="0">Email subject in the payment notification</row>
+            <row id="TextHint">
+              <native>Email subject in the payment notification</native>
+              <lang id="zh">付款通知的电子邮件主题</lang>
+              <lang id="ms">Subjek emel dalam Pemberitahuan pembayaran</lang>
+            </row>
             <row id="Top" state="0">16</row>
             <row id="Width" state="0">281</row>
           </component>
@@ -754,7 +994,11 @@
       </node>
       <node class="TVclFormNode" name="TPF_BANK_GIRO_OCBCMY" state="0" created="20160425163133" resname="TPF_BANK_GIRO_OCBCMY">
         <form class="TVclForm" name="PF_Bank_Giro_OCBCMY" state="0" type="TPF_Bank_Giro_OCBCMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">OCBC Bank</row>
+          <row id="Caption">
+            <native>OCBC Bank</native>
+            <lang id="zh">OCBC 银行</lang>
+            <lang id="ms">OCBC Bank</lang>
+          </row>
           <row id="ClientHeight" state="0">169</row>
           <row id="ClientWidth" state="0">481</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -764,14 +1008,22 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbTapeId" state="0" type="TLabel">
-            <row id="Caption" state="0">Tape Id</row>
+            <row id="Caption">
+              <native>Tape Id</native>
+              <lang id="zh">磁带ID</lang>
+              <lang id="ms">Id pita</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
             <row id="Width" state="0">37</row>
           </component>
           <component class="TVisLabel" name="lbTapeIdDesc" state="0" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Record Running sequence.</row>
+            <row id="Caption">
+              <native>Record Running sequence.</native>
+              <lang id="zh">记录运行序列。</lang>
+              <lang id="ms">Rekod Menjalankan Jujukan.</lang>
+            </row>
             <row id="Font.Color" state="0">clBlue</row>
             <row id="Font.Name" state="0">Arial</row>
             <row id="Font.Size" state="0">8</row>
@@ -782,21 +1034,33 @@
             <row id="Width" state="0">131</row>
           </component>
           <component class="TVisLabel" name="lbCreditingDate" state="0" type="TLabel">
-            <row id="Caption" state="0">Crediting Date</row>
+            <row id="Caption">
+              <native>Crediting Date</native>
+              <lang id="zh">计入日期</lang>
+              <lang id="ms">Tarikh pengkreditan</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">46</row>
             <row id="Width" state="0">69</row>
           </component>
           <component class="TVisLabel" name="lbCustomerRef" state="0" type="TLabel">
-            <row id="Caption" state="0">Customer Ref</row>
+            <row id="Caption">
+              <native>Customer Ref</native>
+              <lang id="zh">客户参考</lang>
+              <lang id="ms">Ref Pelanggan</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">73</row>
             <row id="Width" state="0">66</row>
           </component>
           <component class="TVisLabel" name="lbCustomerRefDesc" state="0" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Customer Ref No</row>
+            <row id="Caption">
+              <native>Customer Ref No</native>
+              <lang id="zh">客户参考号码</lang>
+              <lang id="ms">Ref No Pelanggan</lang>
+            </row>
             <row id="Font.Color" state="0">clBlue</row>
             <row id="Font.Name" state="0">Arial</row>
             <row id="Font.Size" state="0">8</row>
@@ -812,7 +1076,11 @@
             <row id="Width" state="0">89</row>
           </component>
           <component class="TVisCheckBox" name="edRemoveIDCheckAndFiller" state="0" type="TcxCheckBox">
-            <row id="Caption" state="0">Remove ID checking and Filler for Details record.</row>
+            <row id="Caption">
+              <native>Remove ID checking and Filler for Details record.</native>
+              <lang id="zh">取消ID检查和填充细节记录。</lang>
+              <lang id="ms">Singkir ID menyemak dan pengisi untuk rekod butir-butir.</lang>
+            </row>
             <row id="Left" state="0">92</row>
             <row id="Top" state="0">120</row>
             <row id="Width" state="0">261</row>
@@ -824,7 +1092,11 @@
             <row id="Width" state="0">89</row>
           </component>
           <component class="TVisCheckBox" name="edIDCheck" state="0" type="TcxCheckBox">
-            <row id="Caption" state="0">Required Bene Bank to check ID before crediting to account.</row>
+            <row id="Caption">
+              <native>Required Bene Bank to check ID before crediting to account.</native>
+              <lang id="zh">所需留心银行贷记到账户前检查ID。</lang>
+              <lang id="ms">Bank Bene diperlukan untuk menyemak ID sebelum mengkreditkan ke akaun.</lang>
+            </row>
             <row id="Left" state="0">92</row>
             <row id="Top" state="0">97</row>
             <row id="Width" state="0">325</row>
@@ -844,7 +1116,11 @@
       </node>
       <node class="TVclFormNode" name="TPF_BANK_GIRO_PBBEMY" state="0" created="20160425163133" resname="TPF_BANK_GIRO_PBBEMY">
         <form class="TVclForm" name="PF_Bank_Giro_PBBEMY" state="0" type="TPF_Bank_Giro_PBBEMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">Public Bank</row>
+          <row id="Caption">
+            <native>Public Bank</native>
+            <lang id="zh">大众银行</lang>
+            <lang id="ms">Public Bank</lang>
+          </row>
           <row id="ClientHeight" state="0">122</row>
           <row id="ClientWidth" state="0">498</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -854,14 +1130,22 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbSeqNo" state="0" type="TLabel">
-            <row id="Caption" state="0">Seq No</row>
+            <row id="Caption">
+              <native>Seq No</native>
+              <lang id="zh">序列号</lang>
+              <lang id="ms">Seq No</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
             <row id="Width" state="0">34</row>
           </component>
           <component class="TVisLabel" name="lbSeqNoDesc" state="0" type="TLabel" parentfont="0" wordwrap="1">
-            <row id="Caption" state="0">User can submit a total of up to 99 payment and collection instruction files per day.</row>
+            <row id="Caption">
+              <native>User can submit a total of up to 99 payment and collection instruction files per day.</native>
+              <lang id="zh">用户每日可提交总计高达99收付款指令文件。</lang>
+              <lang id="ms">Pengguna boleh menghantar sejumlah sehingga 99 pembayaran dan pengambilan arahan fail setiap hari.</lang>
+            </row>
             <row id="Font.Color" state="0">clBlue</row>
             <row id="Font.Name" state="0">Arial</row>
             <row id="Font.Size" state="0">8</row>
@@ -872,14 +1156,22 @@
             <row id="Width" state="0">281</row>
           </component>
           <component class="TVisLabel" name="lbPaymentDate" state="0" type="TLabel">
-            <row id="Caption" state="0">Payment Date</row>
+            <row id="Caption">
+              <native>Payment Date</native>
+              <lang id="zh">付款 日期</lang>
+              <lang id="ms">Tarikh Pembayaran</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">55</row>
             <row id="Width" state="0">68</row>
           </component>
           <component class="TVisLabel" name="lbPaymentDateDesc" state="0" type="TLabel" parentfont="0" wordwrap="1">
-            <row id="Caption" state="0">The date when payments or collections are effected.</row>
+            <row id="Caption">
+              <native>The date when payments or collections are effected.</native>
+              <lang id="zh">付款或集合生效日期。</lang>
+              <lang id="ms">Tarikh Apabila pembayaran atau koleksi dilaksanakan.</lang>
+            </row>
             <row id="Font.Color" state="0">clBlue</row>
             <row id="Font.Name" state="0">Arial</row>
             <row id="Font.Size" state="0">8</row>
@@ -903,7 +1195,7 @@
       </node>
       <node class="TVclFormNode" name="TPF_BANK_GIRO_PHBMMY" state="0" created="20160425163133" resname="TPF_BANK_GIRO_PHBMMY">
         <form class="TVclForm" name="PF_Bank_Giro_PHBMMy" state="0" type="TPF_Bank_Giro_PHBMMy" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">Affin Bank</row>
+          <row id="Caption" locked="1">Affin Bank</row>
           <row id="ClientHeight" state="0">240</row>
           <row id="ClientWidth" state="0">465</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -916,7 +1208,11 @@
       </node>
       <node class="TVclFormNode" name="TPF_BANK_GIRO_RHBBMY_0" state="0" created="20160425163133" resname="TPF_BANK_GIRO_RHBBMY_0">
         <form class="TVclForm" name="PF_Bank_Giro_RHBBMY_0" state="0" type="TPF_Bank_Giro_RHBBMY_0" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">RHB</row>
+          <row id="Caption">
+            <native>RHB</native>
+            <lang id="zh">RHB</lang>
+            <lang id="ms">RHB</lang>
+          </row>
           <row id="ClientHeight" state="0">241</row>
           <row id="ClientWidth" state="0">465</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -926,7 +1222,11 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbBatchNo" state="0" type="TcxLabel">
-            <row id="Caption" state="0">Batch No</row>
+            <row id="Caption">
+              <native>Batch No</native>
+              <lang id="zh">批号</lang>
+              <lang id="ms">Kumpulan No</lang>
+            </row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">17</row>
           </component>
@@ -936,7 +1236,11 @@
             <row id="Width" state="0">49</row>
           </component>
           <component class="TVisLabel" name="lbCreditingDate" state="0" type="TcxLabel">
-            <row id="Caption" state="0">Crediting Date</row>
+            <row id="Caption">
+              <native>Crediting Date</native>
+              <lang id="zh">计入日期</lang>
+              <lang id="ms">Tarikh pengkreditan</lang>
+            </row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">44</row>
           </component>
@@ -949,7 +1253,11 @@
       </node>
       <node class="TVclFormNode" name="TPF_BANK_GIRO_RHBBMY_1" state="0" created="20160425163133" resname="TPF_BANK_GIRO_RHBBMY_1">
         <form class="TVclForm" name="PF_Bank_Giro_RHBBMY_1" state="0" type="TPF_Bank_Giro_RHBBMY_1" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">RHB</row>
+          <row id="Caption">
+            <native>RHB</native>
+            <lang id="zh">RHB</lang>
+            <lang id="ms">RHB</lang>
+          </row>
           <row id="ClientHeight" state="0">242</row>
           <row id="ClientWidth" state="0">441</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -962,7 +1270,11 @@
       </node>
       <node class="TVclFormNode" name="TPF_BANK_GIRO_SCBLMY" state="0" created="20160425163133" resname="TPF_BANK_GIRO_SCBLMY">
         <form class="TVclForm" name="PF_Bank_Giro_SCBLMY" state="0" type="TPF_Bank_Giro_SCBLMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">Standard Chartered Bank</row>
+          <row id="Caption">
+            <native>Standard Chartered Bank</native>
+            <lang id="zh">Standard Chartered 银行</lang>
+            <lang id="ms">Standard Chartered Bank</lang>
+          </row>
           <row id="ClientHeight" state="0">241</row>
           <row id="ClientWidth" state="0">465</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -972,7 +1284,11 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbValueDate" state="0" type="TLabel">
-            <row id="Caption" state="0">Value Date</row>
+            <row id="Caption">
+              <native>Value Date</native>
+              <lang id="zh">起息日</lang>
+              <lang id="ms">Nilai tarikh</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
@@ -987,7 +1303,11 @@
       </node>
       <node class="TVclFormNode" name="TPF_BANK_GIRO_UOVBMY_0" state="0" created="20160425163133" resname="TPF_BANK_GIRO_UOVBMY_0">
         <form class="TVclForm" name="PF_Bank_Giro_UOVBMY_0" state="0" type="TPF_Bank_Giro_UOVBMY_0" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">UOB Bank</row>
+          <row id="Caption">
+            <native>UOB Bank</native>
+            <lang id="zh">UOB银行</lang>
+            <lang id="ms">UOB Bank</lang>
+          </row>
           <row id="ClientHeight" state="0">121</row>
           <row id="ClientWidth" state="0">481</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -997,14 +1317,22 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbSeqNo" state="0" type="TLabel">
-            <row id="Caption" state="0">Seq No</row>
+            <row id="Caption">
+              <native>Seq No</native>
+              <lang id="zh">序列号</lang>
+              <lang id="ms">Seq No</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
             <row id="Width" state="0">34</row>
           </component>
           <component class="TVisLabel" name="lbSeqNoDesc" state="0" type="TLabel" parentfont="0" wordwrap="1">
-            <row id="Caption" state="0">User can submit a total of up to 99 payment and collection instruction files per day.</row>
+            <row id="Caption">
+              <native>User can submit a total of up to 99 payment and collection instruction files per day.</native>
+              <lang id="zh">用户每日可提交总计高达99收付款指令文件。</lang>
+              <lang id="ms">Pengguna boleh menghantar sejumlah sehingga 99 pembayaran dan pengambilan arahan fail setiap hari.</lang>
+            </row>
             <row id="Font.Color" state="0">clBlue</row>
             <row id="Font.Name" state="0">Arial</row>
             <row id="Font.Size" state="0">8</row>
@@ -1015,14 +1343,22 @@
             <row id="Width" state="0">281</row>
           </component>
           <component class="TVisLabel" name="lbValueDate" state="0" type="TLabel">
-            <row id="Caption" state="0">Value Date</row>
+            <row id="Caption">
+              <native>Value Date</native>
+              <lang id="zh">起息日</lang>
+              <lang id="ms">Nilai tarikh</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">55</row>
             <row id="Width" state="0">52</row>
           </component>
           <component class="TVisLabel" name="lbValueDateDesc" state="0" type="TLabel" parentfont="0" wordwrap="1">
-            <row id="Caption" state="0">The date when payments or collections are effected.</row>
+            <row id="Caption">
+              <native>The date when payments or collections are effected.</native>
+              <lang id="zh">付款或集合生效日期。</lang>
+              <lang id="ms">Tarikh Apabila pembayaran atau koleksi dilaksanakan.</lang>
+            </row>
             <row id="Font.Color" state="0">clBlue</row>
             <row id="Font.Name" state="0">Arial</row>
             <row id="Font.Size" state="0">8</row>
@@ -1046,7 +1382,11 @@
       </node>
       <node class="TVclFormNode" name="TPF_BANK_GIRO_UOVBMY_1" state="0" created="20160425163133" resname="TPF_BANK_GIRO_UOVBMY_1">
         <form class="TVclForm" name="PF_Bank_Giro_UOVBMY_1" state="0" type="TPF_Bank_Giro_UOVBMY_1" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">UOB</row>
+          <row id="Caption">
+            <native>UOB</native>
+            <lang id="zh">UOB</lang>
+            <lang id="ms">UOB</lang>
+          </row>
           <row id="ClientHeight" state="0">73</row>
           <row id="ClientWidth" state="0">465</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -1056,14 +1396,22 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbValueDate" state="0" type="TLabel">
-            <row id="Caption" state="0">Value Date</row>
+            <row id="Caption">
+              <native>Value Date</native>
+              <lang id="zh">起息日</lang>
+              <lang id="ms">Nilai tarikh</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
             <row id="Width" state="0">52</row>
           </component>
           <component class="TVisLabel" name="lbValueDateDesc" state="0" type="TLabel" parentfont="0" wordwrap="1">
-            <row id="Caption" state="0">The date when payments or collections are effected.</row>
+            <row id="Caption">
+              <native>The date when payments or collections are effected.</native>
+              <lang id="zh">付款或集合生效日期。</lang>
+              <lang id="ms">Tarikh Apabila pembayaran atau koleksi dilaksanakan.</lang>
+            </row>
             <row id="Font.Color" state="0">clBlue</row>
             <row id="Font.Name" state="0">Arial</row>
             <row id="Font.Size" state="0">8</row>
@@ -1082,7 +1430,11 @@
       </node>
       <node class="TVclFormNode" name="TWF_BANK_INFO" state="0" created="20160425163133" resname="TWF_BANK_INFO">
         <form class="TVclForm" name="WF_Bank_Info" state="0" type="TWF_Bank_Info" borderstyle="bsDialog" textheight="13">
-          <row id="Caption" state="0">Bank Information</row>
+          <row id="Caption">
+            <native>Bank Information</native>
+            <lang id="zh">银行信息</lang>
+            <lang id="ms">Maklumat Bank</lang>
+          </row>
           <row id="ClientHeight" state="0">371</row>
           <row id="ClientWidth" state="0">594</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -1097,7 +1449,11 @@
             <row id="Top" state="0">0</row>
             <row id="Width" state="0">594</row>
             <component class="TVisLabel" name="lbBank" state="0" type="TLabel">
-              <row id="Caption" state="0">Bank</row>
+              <row id="Caption">
+                <native>Bank</native>
+                <lang id="zh">银行</lang>
+                <lang id="ms">Bank</lang>
+              </row>
               <row id="Height" state="0">13</row>
               <row id="Left" state="0">16</row>
               <row id="Top" state="0">13</row>
@@ -1114,7 +1470,11 @@
               <row id="Width" state="0">281</row>
             </component>
             <component class="TVisButton" name="btnSelectBank" state="0" type="TButton">
-              <row id="Caption" state="0">...</row>
+              <row id="Caption">
+                <native>...</native>
+                <lang id="zh" date="20160426164948">...</lang>
+                <lang id="ms" date="20160426170157">...</lang>
+              </row>
               <row id="Height" state="0">25</row>
               <row id="Left" state="0">351</row>
               <row id="Top" state="0">8</row>
@@ -1127,14 +1487,22 @@
             <row id="Top" state="0">330</row>
             <row id="Width" state="0">594</row>
             <component class="TVisButton" name="btnOK" state="0" type="TButton">
-              <row id="Caption" state="0">OK</row>
+              <row id="Caption">
+                <native>OK</native>
+                <lang id="zh">确定</lang>
+                <lang id="ms">OK</lang>
+              </row>
               <row id="Height" state="0">25</row>
               <row id="Left" state="0">423</row>
               <row id="Top" state="0">8</row>
               <row id="Width" state="0">75</row>
             </component>
             <component class="TVisButton" name="btnCancel" state="0" type="TButton">
-              <row id="Caption" state="0">Cancel</row>
+              <row id="Caption">
+                <native>Cancel</native>
+                <lang id="zh">取消</lang>
+                <lang id="ms">Batal</lang>
+              </row>
               <row id="Height" state="0">25</row>
               <row id="Left" state="0">511</row>
               <row id="Top" state="0">8</row>
@@ -1155,7 +1523,7 @@
       </node>
       <node class="TVclFormNode" name="TWF_BANK_INFO_ARBKMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_ARBKMY">
         <form class="TVclForm" name="WF_Bank_Info_ARBKMY" state="0" type="TWF_Bank_Info_ARBKMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">AmBank</row>
+          <row id="Caption" locked="1">AmBank</row>
           <row id="ClientHeight" state="0">241</row>
           <row id="ClientWidth" state="0">465</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -1165,14 +1533,22 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbCustomerCode" state="0" type="TLabel">
-            <row id="Caption" state="0">Customer Code</row>
+            <row id="Caption">
+              <native>Customer Code</native>
+              <lang id="zh">客户代码</lang>
+              <lang id="ms">Kod Pelanggan</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
             <row id="Width" state="0">74</row>
           </component>
           <component class="TVisLabel" name="lbCustomerCodeDesc" state="0" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Provided by bank.</row>
+            <row id="Caption">
+              <native>Provided by bank.</native>
+              <lang id="zh">由银行提供。</lang>
+              <lang id="ms">Disediakan oleh bank.</lang>
+            </row>
             <row id="Font.Color" state="0">clBlue</row>
             <row id="Font.Name" state="0">Arial</row>
             <row id="Font.Size" state="0">8</row>
@@ -1183,7 +1559,11 @@
             <row id="Width" state="0">86</row>
           </component>
           <component class="TVisLabel" name="lbAccNo" state="0" type="TLabel">
-            <row id="Caption" state="0">Account No.</row>
+            <row id="Caption">
+              <native>Account No.</native>
+              <lang id="zh">账户编号。</lang>
+              <lang id="ms">No Akaun.</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">46</row>
@@ -1205,7 +1585,7 @@
       </node>
       <node class="TVclFormNode" name="TWF_BANK_INFO_BOTKMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_BOTKMY">
         <form class="TVclForm" name="WF_Bank_Info_BOTKMY" state="0" type="TWF_Bank_Info_BOTKMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">MUFG</row>
+          <row id="Caption" locked="1">MUFG</row>
           <row id="ClientHeight" state="0">241</row>
           <row id="ClientWidth" state="0">465</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -1215,21 +1595,33 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbAccNo" state="0" type="TLabel">
-            <row id="Caption" state="0">Account No.</row>
+            <row id="Caption">
+              <native>Account No.</native>
+              <lang id="zh">账户编号。</lang>
+              <lang id="ms">No Akaun.</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
             <row id="Width" state="0">59</row>
           </component>
           <component class="TVisLabel" name="lbAccName" state="0" type="TLabel">
-            <row id="Caption" state="0">Account Name</row>
+            <row id="Caption">
+              <native>Account Name</native>
+              <lang id="zh">账户名称</lang>
+              <lang id="ms">Nama Akaun</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">46</row>
             <row id="Width" state="0">69</row>
           </component>
           <component class="TVisLabel" name="lbEmail" state="0" type="TLabel">
-            <row id="Caption" state="0">Email</row>
+            <row id="Caption">
+              <native>Email</native>
+              <lang id="zh">电邮</lang>
+              <lang id="ms">E-mel</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">73</row>
@@ -1257,7 +1649,7 @@
       </node>
       <node class="TVclFormNode" name="TWF_BANK_INFO_BSNAMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_BSNAMY">
         <form class="TVclForm" name="WF_Bank_Info_BSNAMY" state="0" type="TWF_Bank_Info_BSNAMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">WF_Bank_Info_BSNAMY</row>
+          <row id="Caption" locked="1">WF_Bank_Info_BSNAMY</row>
           <row id="ClientHeight" state="0">242</row>
           <row id="ClientWidth" state="0">433</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -1267,14 +1659,22 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbCompanyCode" state="0" type="TLabel">
-            <row id="Caption" state="0">Company Code</row>
+            <row id="Caption">
+              <native>Company Code</native>
+              <lang id="zh">公司代码</lang>
+              <lang id="ms">Kod Syarikat</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
             <row id="Width" state="0">73</row>
           </component>
           <component class="TVisLabel" name="lbCompanyCodeDesc" state="0" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Provided by bank.</row>
+            <row id="Caption">
+              <native>Provided by bank.</native>
+              <lang id="zh">由银行提供。</lang>
+              <lang id="ms">Disediakan oleh bank.</lang>
+            </row>
             <row id="Font.Color" state="0">clBlue</row>
             <row id="Font.Name" state="0">Arial</row>
             <row id="Font.Size" state="0">8</row>
@@ -1294,7 +1694,7 @@
       </node>
       <node class="TVclFormNode" name="TWF_BANK_INFO_CIBBMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_CIBBMY">
         <form class="TVclForm" name="WF_Bank_Info_CIBBMY" state="0" type="TWF_Bank_Info_CIBBMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">WF_Bank_Info_CIBBMY</row>
+          <row id="Caption" locked="1">WF_Bank_Info_CIBBMY</row>
           <row id="ClientHeight" state="0">242</row>
           <row id="ClientWidth" state="0">433</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -1304,14 +1704,22 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbOrganisationCode" state="0" type="TLabel">
-            <row id="Caption" state="0">Organisation Code</row>
+            <row id="Caption">
+              <native>Organisation Code</native>
+              <lang id="zh">组织机构代码</lang>
+              <lang id="ms">Kod organisasi</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
             <row id="Width" state="0">89</row>
           </component>
           <component class="TVisLabel" name="lbOrganisationCodeDesc" state="0" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Provided by bank.</row>
+            <row id="Caption">
+              <native>Provided by bank.</native>
+              <lang id="zh">由银行提供。</lang>
+              <lang id="ms">Disediakan oleh bank.</lang>
+            </row>
             <row id="Font.Color" state="0">clBlue</row>
             <row id="Font.Name" state="0">Arial</row>
             <row id="Font.Size" state="0">8</row>
@@ -1331,7 +1739,7 @@
       </node>
       <node class="TVclFormNode" name="TWF_BANK_INFO_CITIMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_CITIMY">
         <form class="TVclForm" name="WF_Bank_Info_CITIMY" state="0" type="TWF_Bank_Info_CITIMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">WF_Bank_Info_CITIMY</row>
+          <row id="Caption" locked="1">WF_Bank_Info_CITIMY</row>
           <row id="ClientHeight" state="0">81</row>
           <row id="ClientWidth" state="0">463</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -1341,7 +1749,11 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbAccNo" state="0" type="TLabel">
-            <row id="Caption" state="0">Debit Account Number</row>
+            <row id="Caption">
+              <native>Debit Account Number</native>
+              <lang id="zh">借记账号</lang>
+              <lang id="ms">Nombor akaun debit</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
@@ -1357,7 +1769,7 @@
       </node>
       <node class="TVclFormNode" name="TWF_BANK_INFO_CITISG" state="0" created="20160425163133" resname="TWF_BANK_INFO_CITISG">
         <form class="TVclForm" name="WF_Bank_Info_CITISG" state="0" type="TWF_Bank_Info_CITISG" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">WF_Bank_Info_CITISG</row>
+          <row id="Caption" locked="1">WF_Bank_Info_CITISG</row>
           <row id="ClientHeight" state="0">81</row>
           <row id="ClientWidth" state="0">465</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -1367,7 +1779,11 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbAccNo" state="0" type="TLabel">
-            <row id="Caption" state="0">Debit Account Number</row>
+            <row id="Caption">
+              <native>Debit Account Number</native>
+              <lang id="zh">借记账号</lang>
+              <lang id="ms">Nombor akaun debit</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
@@ -1383,7 +1799,11 @@
       </node>
       <node class="TVclFormNode" name="TWF_BANK_INFO_HBMBMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_HBMBMY">
         <form class="TVclForm" name="WF_Bank_Info_HBMBMY" state="0" type="TWF_Bank_Info_HBMBMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">HSBC</row>
+          <row id="Caption">
+            <native>HSBC</native>
+            <lang id="zh">HSBC</lang>
+            <lang id="ms">HSBC</lang>
+          </row>
           <row id="ClientHeight" state="0">241</row>
           <row id="ClientWidth" state="0">465</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -1398,7 +1818,11 @@
             <row id="Top" state="0">0</row>
             <row id="Width" state="0">465</row>
             <component class="TVisLabel" name="lbFileFormat" state="0" type="TLabel">
-              <row id="Caption" state="0">File Format</row>
+              <row id="Caption">
+                <native>File Format</native>
+                <lang id="zh">文件格式</lang>
+                <lang id="ms">Format fail</lang>
+              </row>
               <row id="Height" state="0">13</row>
               <row id="Left" state="0">16</row>
               <row id="Top" state="0">11</row>
@@ -1406,10 +1830,10 @@
             </component>
             <component class="TVisComboBox" name="edFileFormat" state="0" type="TComboBox" style="csDropDownList">
               <row id="Height" state="0">21</row>
-              <row id="Items.Strings.HUB ACH" importid="0" state="0">HUB ACH</row>
-              <row id="Items.Strings.HVP" importid="1" state="0" order="1">HVP</row>
+              <row id="Items.Strings.HUB ACH" importid="0" locked="1">HUB ACH</row>
+              <row id="Items.Strings.HVP" importid="1" locked="1" order="1">HVP</row>
               <row id="Left" state="0">88</row>
-              <row id="Text" state="0">HUB ACH</row>
+              <row id="Text" locked="1">HUB ACH</row>
               <row id="Top" state="0">8</row>
               <row id="Width" state="0">145</row>
             </component>
@@ -1420,16 +1844,28 @@
             <row id="Top" state="0">37</row>
             <row id="Width" state="0">465</row>
             <component class="TVisTabSheet" name="TabSheet1" state="0" type="TTabSheet" tabvisible="0">
-              <row id="Caption" state="0">TabSheet1</row>
+              <row id="Caption">
+                <native>TabSheet1</native>
+                <lang id="zh">标签页1</lang>
+                <lang id="ms">TabSheet1</lang>
+              </row>
               <component class="TVisLabel" name="lbConnectCustomerID" state="0" type="TLabel">
-                <row id="Caption" state="0">Connect Customer ID</row>
+                <row id="Caption">
+                  <native>Connect Customer ID</native>
+                  <lang id="zh">链接客户ID</lang>
+                  <lang id="ms">Sambung ID pelanggan</lang>
+                </row>
                 <row id="Height" state="0">13</row>
                 <row id="Left" state="0">12</row>
                 <row id="Top" state="0">11</row>
                 <row id="Width" state="0">103</row>
               </component>
               <component class="TVisLabel" name="lbConnectCustomerIDDesc" state="0" type="TLabel" parentfont="0">
-                <row id="Caption" state="0">Provided by bank.</row>
+                <row id="Caption">
+                  <native>Provided by bank.</native>
+                  <lang id="zh">由银行提供。</lang>
+                  <lang id="ms">Disediakan oleh bank.</lang>
+                </row>
                 <row id="Font.Color" state="0">clBlue</row>
                 <row id="Font.Name" state="0">Arial</row>
                 <row id="Font.Size" state="0">8</row>
@@ -1440,14 +1876,22 @@
                 <row id="Width" state="0">86</row>
               </component>
               <component class="TVisLabel" name="Label1" state="0" type="TLabel">
-                <row id="Caption" state="0">HSBCnet ID</row>
+                <row id="Caption">
+                  <native>HSBCnet ID</native>
+                  <lang id="zh">HSBCnet ID</lang>
+                  <lang id="ms">HSBCnet ID</lang>
+                </row>
                 <row id="Height" state="0">13</row>
                 <row id="Left" state="0">12</row>
                 <row id="Top" state="0">38</row>
                 <row id="Width" state="0">56</row>
               </component>
               <component class="TVisLabel" name="lbHSBCnetIDDesc" state="0" type="TLabel" parentfont="0">
-                <row id="Caption" state="0">Provided by bank.</row>
+                <row id="Caption">
+                  <native>Provided by bank.</native>
+                  <lang id="zh">由银行提供。</lang>
+                  <lang id="ms">Disediakan oleh bank.</lang>
+                </row>
                 <row id="Font.Color" state="0">clBlue</row>
                 <row id="Font.Name" state="0">Arial</row>
                 <row id="Font.Size" state="0">8</row>
@@ -1458,28 +1902,44 @@
                 <row id="Width" state="0">86</row>
               </component>
               <component class="TVisLabel" name="lbAccNo" state="0" type="TLabel">
-                <row id="Caption" state="0">Account No.</row>
+                <row id="Caption">
+                  <native>Account No.</native>
+                  <lang id="zh">账户编号。</lang>
+                  <lang id="ms">No Akaun.</lang>
+                </row>
                 <row id="Height" state="0">13</row>
                 <row id="Left" state="0">12</row>
                 <row id="Top" state="0">65</row>
                 <row id="Width" state="0">59</row>
               </component>
               <component class="TVisLabel" name="lbAuthorizationType" state="0" type="TLabel">
-                <row id="Caption" state="0">Authorization Type</row>
+                <row id="Caption">
+                  <native>Authorization Type</native>
+                  <lang id="zh">授权类型</lang>
+                  <lang id="ms">Jenis kebenaran</lang>
+                </row>
                 <row id="Height" state="0">13</row>
                 <row id="Left" state="0">12</row>
                 <row id="Top" state="0">120</row>
                 <row id="Width" state="0">91</row>
               </component>
               <component class="TVisLabel" name="lbDetailOfCharge" state="0" type="TLabel">
-                <row id="Caption" state="0">Detail of Charge</row>
+                <row id="Caption">
+                  <native>Detail of Charge</native>
+                  <lang id="zh">收费细节</lang>
+                  <lang id="ms">Butiran caj</lang>
+                </row>
                 <row id="Height" state="0">13</row>
                 <row id="Left" state="0">12</row>
                 <row id="Top" state="0">147</row>
                 <row id="Width" state="0">78</row>
               </component>
               <component class="TVisLabel" name="lbAccName" state="0" type="TLabel">
-                <row id="Caption" state="0">Account Name</row>
+                <row id="Caption">
+                  <native>Account Name</native>
+                  <lang id="zh">账户名称</lang>
+                  <lang id="ms">Nama Akaun</lang>
+                </row>
                 <row id="Height" state="0">13</row>
                 <row id="Left" state="0">12</row>
                 <row id="Top" state="0">92</row>
@@ -1504,28 +1964,56 @@
                 <row id="Width" state="0">121</row>
               </component>
               <component class="TVisComboBox" name="edAuthorizationType" state="0" type="TcxImageComboBox">
-                <row id="EditValue" locked="1" state="0">P</row>
+                <row id="EditValue" locked="1">P</row>
                 <row id="Left" state="0">129</row>
-                <row id="Properties.Items[0].Description" state="0">Preauthorised</row>
-                <row id="Properties.Items[0].Value" locked="1" state="0">A</row>
-                <row id="Properties.Items[1].Description" state="0">Instruction level authorisation</row>
-                <row id="Properties.Items[1].Value" locked="1" state="0">P</row>
-                <row id="Properties.Items[2].Description" state="0">File level authorisation (Summary)</row>
-                <row id="Properties.Items[2].Value" locked="1" state="0">F</row>
-                <row id="Properties.Items[3].Description" state="0">File level authorisation (Detail)</row>
-                <row id="Properties.Items[3].Value" locked="1" state="0">V</row>
+                <row id="Properties.Items[0].Description">
+                  <native>Preauthorised</native>
+                  <lang id="zh">预授权</lang>
+                  <lang id="ms">Pra</lang>
+                </row>
+                <row id="Properties.Items[0].Value" locked="1">A</row>
+                <row id="Properties.Items[1].Description">
+                  <native>Instruction level authorisation</native>
+                  <lang id="zh">指令级授权</lang>
+                  <lang id="ms">Kebenaran Peringkat Arahan</lang>
+                </row>
+                <row id="Properties.Items[1].Value" locked="1">P</row>
+                <row id="Properties.Items[2].Description">
+                  <native>File level authorisation (Summary)</native>
+                  <lang id="zh">文件级授权(统计)</lang>
+                  <lang id="ms">Kebenaran tahap Fail (ringkasan)</lang>
+                </row>
+                <row id="Properties.Items[2].Value" locked="1">F</row>
+                <row id="Properties.Items[3].Description">
+                  <native>File level authorisation (Detail)</native>
+                  <lang id="zh">文件级授权（详情）</lang>
+                  <lang id="ms">Kebenaran tahap Fail (Detail)</lang>
+                </row>
+                <row id="Properties.Items[3].Value" locked="1">V</row>
                 <row id="Top" state="0">116</row>
                 <row id="Width" state="0">121</row>
               </component>
               <component class="TVisComboBox" name="edDetailOfCharge" state="0" type="TcxImageComboBox">
-                <row id="EditValue" locked="1" state="0">BEN</row>
+                <row id="EditValue" locked="1">BEN</row>
                 <row id="Left" state="0">129</row>
-                <row id="Properties.Items[0].Description" state="0">Charge to beneficiary</row>
-                <row id="Properties.Items[0].Value" locked="1" state="0">BEN</row>
-                <row id="Properties.Items[1].Description" state="0">Charge to debit account</row>
-                <row id="Properties.Items[1].Value" locked="1" state="0">OUR</row>
-                <row id="Properties.Items[2].Description" state="0">Shared</row>
-                <row id="Properties.Items[2].Value" locked="1" state="0">SHA</row>
+                <row id="Properties.Items[0].Description">
+                  <native>Charge to beneficiary</native>
+                  <lang id="zh">受益人收费</lang>
+                  <lang id="ms">Mengenakan bayaran kepada pewaris</lang>
+                </row>
+                <row id="Properties.Items[0].Value" locked="1">BEN</row>
+                <row id="Properties.Items[1].Description">
+                  <native>Charge to debit account</native>
+                  <lang id="zh">借记账户收费</lang>
+                  <lang id="ms">Caj untuk mendebitkan akaun</lang>
+                </row>
+                <row id="Properties.Items[1].Value" locked="1">OUR</row>
+                <row id="Properties.Items[2].Description">
+                  <native>Shared</native>
+                  <lang id="zh">共享</lang>
+                  <lang id="ms">Berkongsi</lang>
+                </row>
+                <row id="Properties.Items[2].Value" locked="1">SHA</row>
                 <row id="Top" state="0">143</row>
                 <row id="Width" state="0">121</row>
               </component>
@@ -1569,7 +2057,7 @@
       </node>
       <node class="TVclFormNode" name="TWF_BANK_INFO_MBBEMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_MBBEMY">
         <form class="TVclForm" name="WF_Bank_Info_MBBEMY" state="0" type="TWF_Bank_Info_MBBEMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">WF_Bank_Info_MBBEMYs</row>
+          <row id="Caption" locked="1">WF_Bank_Info_MBBEMYs</row>
           <row id="ClientHeight" state="0">289</row>
           <row id="ClientWidth" state="0">481</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -1584,37 +2072,57 @@
             <row id="Top" state="0">37</row>
             <row id="Width" state="0">481</row>
             <component class="TVisTabSheet" name="tsAutocredit" state="0" type="TTabSheet" tabvisible="0">
-              <row id="Caption" state="0">tsAutocredit</row>
+              <row id="Caption" locked="1">tsAutocredit</row>
               <component class="TVisLabel" name="lbCompanyID" state="0" type="TLabel">
-                <row id="Caption" state="0">Company ID</row>
+                <row id="Caption">
+                  <native>Company ID</native>
+                  <lang id="zh">公司ID</lang>
+                  <lang id="ms">ID Syarikat</lang>
+                </row>
                 <row id="Height" state="0">13</row>
                 <row id="Left" state="0">12</row>
                 <row id="Top" state="0">11</row>
                 <row id="Width" state="0">59</row>
               </component>
               <component class="TVisLabel" name="lbOriginatorID" state="0" type="TLabel">
-                <row id="Caption" state="0">Originator ID</row>
+                <row id="Caption">
+                  <native>Originator ID</native>
+                  <lang id="zh">发送者ID</lang>
+                  <lang id="ms">ID pemilik asal</lang>
+                </row>
                 <row id="Height" state="0">13</row>
                 <row id="Left" state="0">12</row>
                 <row id="Top" state="0">38</row>
                 <row id="Width" state="0">62</row>
               </component>
               <component class="TVisLabel" name="lbOriginatorAccNo" state="0" type="TLabel">
-                <row id="Caption" state="0">Originator Account No.</row>
+                <row id="Caption">
+                  <native>Originator Account No.</native>
+                  <lang id="zh">发送者账号。</lang>
+                  <lang id="ms">No akaun pemilik asal.</lang>
+                </row>
                 <row id="Height" state="0">13</row>
                 <row id="Left" state="0">12</row>
                 <row id="Top" state="0">92</row>
                 <row id="Width" state="0">110</row>
               </component>
               <component class="TVisLabel" name="lbShortName" state="0" type="TLabel">
-                <row id="Caption" state="0">Originator Short Name</row>
+                <row id="Caption">
+                  <native>Originator Short Name</native>
+                  <lang id="zh">发送者短名称</lang>
+                  <lang id="ms">Pereka Cipta nama singkat</lang>
+                </row>
                 <row id="Height" state="0">13</row>
                 <row id="Left" state="0">12</row>
                 <row id="Top" state="0">65</row>
                 <row id="Width" state="0">107</row>
               </component>
               <component class="TVisLabel" name="lbCompanyIDDesc" state="0" type="TLabel" parentfont="0">
-                <row id="Caption" state="0">Company ID in MAS</row>
+                <row id="Caption">
+                  <native>Company ID in MAS</native>
+                  <lang id="zh">MAS 中的公司ID</lang>
+                  <lang id="ms">ID Syarikat dalam MAS</lang>
+                </row>
                 <row id="Font.Color" state="0">clBlue</row>
                 <row id="Font.Name" state="0">Arial</row>
                 <row id="Font.Size" state="0">8</row>
@@ -1625,7 +2133,11 @@
                 <row id="Width" state="0">94</row>
               </component>
               <component class="TVisLabel" name="lbOriginatorIDDesc" state="0" type="TLabel" parentfont="0">
-                <row id="Caption" state="0">Originator ID provided by Maybank</row>
+                <row id="Caption">
+                  <native>Originator ID provided by Maybank</native>
+                  <lang id="zh">Maybank银行提供的发送者ID</lang>
+                  <lang id="ms">ID pemilik asal yang disediakan oleh Maybank</lang>
+                </row>
                 <row id="Font.Color" state="0">clBlue</row>
                 <row id="Font.Name" state="0">Arial</row>
                 <row id="Font.Size" state="0">8</row>
@@ -1636,7 +2148,11 @@
                 <row id="Width" state="0">165</row>
               </component>
               <component class="TVisLabel" name="lbOriginatorAccNoDesc" state="0" type="TLabel" parentfont="0">
-                <row id="Caption" state="0">Originator's account for debit</row>
+                <row id="Caption">
+                  <native>Originator's account for debit</native>
+                  <lang id="zh">发送者的账户借记卡</lang>
+                  <lang id="ms">Dan pereka cipta akaun debit</lang>
+                </row>
                 <row id="Font.Color" state="0">clBlue</row>
                 <row id="Font.Name" state="0">Arial</row>
                 <row id="Font.Size" state="0">8</row>
@@ -1672,16 +2188,24 @@
               </component>
             </component>
             <component class="TVisTabSheet" name="tsAncilliaryPay" state="0" type="TTabSheet" imageindex="1" tabvisible="0">
-              <row id="Caption" state="0">tsAncilliaryPay</row>
+              <row id="Caption" locked="1">tsAncilliaryPay</row>
               <component class="TVisLabel" name="lbClientCode" state="0" type="TLabel">
-                <row id="Caption" state="0">Client Code</row>
+                <row id="Caption">
+                  <native>Client Code</native>
+                  <lang id="zh">客户代码</lang>
+                  <lang id="ms">Kod Pelanggan</lang>
+                </row>
                 <row id="Height" state="0">13</row>
                 <row id="Left" state="0">12</row>
                 <row id="Top" state="0">11</row>
                 <row id="Width" state="0">55</row>
               </component>
               <component class="TVisLabel" name="lbClientCodeDesc" state="0" type="TLabel" parentfont="0">
-                <row id="Caption" state="0">Client ID given by the bank</row>
+                <row id="Caption">
+                  <native>Client ID given by the bank</native>
+                  <lang id="zh">银行提供的客户ID</lang>
+                  <lang id="ms">ID pelanggan yang diberikan oleh bank</lang>
+                </row>
                 <row id="Font.Color" state="0">clBlue</row>
                 <row id="Font.Name" state="0">Arial</row>
                 <row id="Font.Size" state="0">8</row>
@@ -1692,14 +2216,22 @@
                 <row id="Width" state="0">126</row>
               </component>
               <component class="TVisLabel" name="lbDebitAccNo" state="0" type="TLabel">
-                <row id="Caption" state="0">Debit Account No.</row>
+                <row id="Caption">
+                  <native>Debit Account No.</native>
+                  <lang id="zh">借记账号。</lang>
+                  <lang id="ms">No akaun debit.</lang>
+                </row>
                 <row id="Height" state="0">13</row>
                 <row id="Left" state="0">12</row>
                 <row id="Top" state="0">38</row>
                 <row id="Width" state="0">87</row>
               </component>
               <component class="TVisLabel" name="lbDebitAccNoDesc" state="0" type="TLabel" parentfont="0">
-                <row id="Caption" state="0">The account to be debited</row>
+                <row id="Caption">
+                  <native>The account to be debited</native>
+                  <lang id="zh">该支帐的账户</lang>
+                  <lang id="ms">Akaun akan didebitkan</lang>
+                </row>
                 <row id="Font.Color" state="0">clBlue</row>
                 <row id="Font.Name" state="0">Arial</row>
                 <row id="Font.Size" state="0">8</row>
@@ -1723,16 +2255,28 @@
               </component>
             </component>
             <component class="TVisTabSheet" name="tsUniversalPayment" state="0" type="TTabSheet" imageindex="2" tabvisible="0">
-              <row id="Caption" state="0">Universal Payment</row>
+              <row id="Caption">
+                <native>Universal Payment</native>
+                <lang id="zh">通用支付</lang>
+                <lang id="ms">Pembayaran sejagat</lang>
+              </row>
               <component class="TVisLabel" name="lbUni_CorporateID" state="0" type="TLabel">
-                <row id="Caption" state="0">Corporate ID</row>
+                <row id="Caption">
+                  <native>Corporate ID</native>
+                  <lang id="zh">企业ID</lang>
+                  <lang id="ms">ID Syarikat</lang>
+                </row>
                 <row id="Height" state="0">13</row>
                 <row id="Left" state="0">12</row>
                 <row id="Top" state="0">11</row>
                 <row id="Width" state="0">63</row>
               </component>
               <component class="TVisLabel" name="lbUni_CorporateID_Desc" state="0" type="TLabel" parentfont="0">
-                <row id="Caption" state="0">Corporate ID given by bank</row>
+                <row id="Caption">
+                  <native>Corporate ID given by bank</native>
+                  <lang id="zh">银行提供的企业ID</lang>
+                  <lang id="ms">ID korporat yang diberi oleh bank</lang>
+                </row>
                 <row id="Font.Color" state="0">clBlue</row>
                 <row id="Font.Name" state="0">Arial</row>
                 <row id="Font.Size" state="0">8</row>
@@ -1743,14 +2287,22 @@
                 <row id="Width" state="0">130</row>
               </component>
               <component class="TVisLabel" name="lbUni_AccNo" state="0" type="TLabel">
-                <row id="Caption" state="0">Account No.</row>
+                <row id="Caption">
+                  <native>Account No.</native>
+                  <lang id="zh">账户编号。</lang>
+                  <lang id="ms">No Akaun.</lang>
+                </row>
                 <row id="Height" state="0">13</row>
                 <row id="Left" state="0">12</row>
                 <row id="Top" state="0">38</row>
                 <row id="Width" state="0">59</row>
               </component>
               <component class="TVisLabel" name="lbUni_ChargesBorneBy" state="0" type="TLabel">
-                <row id="Caption" state="0">Charges Borne By</row>
+                <row id="Caption">
+                  <native>Charges Borne By</native>
+                  <lang id="zh">收费承担</lang>
+                  <lang id="ms">Caj-caj yang ditanggung oleh</lang>
+                </row>
                 <row id="Height" state="0">13</row>
                 <row id="Left" state="0">12</row>
                 <row id="Top" state="0">66</row>
@@ -1770,10 +2322,18 @@
               </component>
               <component class="TVisComboBox" name="edUni_ChargesBorneBy" state="0" type="TcxImageComboBox">
                 <row id="Left" state="0">108</row>
-                <row id="Properties.Items[0].Description" state="0">Applicant</row>
-                <row id="Properties.Items[0].Value" locked="1" state="0">01</row>
-                <row id="Properties.Items[1].Description" state="0">Beneficiary</row>
-                <row id="Properties.Items[1].Value" locked="1" state="0">02</row>
+                <row id="Properties.Items[0].Description">
+                  <native>Applicant</native>
+                  <lang id="zh">申请人</lang>
+                  <lang id="ms">Pemohon</lang>
+                </row>
+                <row id="Properties.Items[0].Value" locked="1">01</row>
+                <row id="Properties.Items[1].Description">
+                  <native>Beneficiary</native>
+                  <lang id="zh">受益人</lang>
+                  <lang id="ms">Pewaris</lang>
+                </row>
+                <row id="Properties.Items[1].Value" locked="1">02</row>
                 <row id="Top" state="0">62</row>
                 <row id="Width" state="0">121</row>
               </component>
@@ -1785,7 +2345,11 @@
             <row id="Top" state="0">0</row>
             <row id="Width" state="0">481</row>
             <component class="TVisLabel" name="lbFileFormat" state="0" type="TLabel">
-              <row id="Caption" state="0">File Format</row>
+              <row id="Caption">
+                <native>File Format</native>
+                <lang id="zh">文件格式</lang>
+                <lang id="ms">Format fail</lang>
+              </row>
               <row id="Height" state="0">13</row>
               <row id="Left" state="0">16</row>
               <row id="Top" state="0">11</row>
@@ -1793,11 +2357,27 @@
             </component>
             <component class="TVisComboBox" name="cbFileFormat" state="0" type="TComboBox" style="csDropDownList">
               <row id="Height" state="0">21</row>
-              <row id="Items.Strings.Ancillary System" importid="1" state="0" order="1">Ancillary System</row>
-              <row id="Items.Strings.Autocredit System" importid="0" state="0">Autocredit System</row>
-              <row id="Items.Strings.Universal Payment" importid="2" state="0" order="2">Universal Payment</row>
+              <row id="Items.Strings.Ancillary System" importid="1" order="1">
+                <native>Ancillary System</native>
+                <lang id="zh">辅助系统</lang>
+                <lang id="ms">Sistem sampingan</lang>
+              </row>
+              <row id="Items.Strings.Autocredit System" importid="0">
+                <native>Autocredit System</native>
+                <lang id="zh">自动贷出系统</lang>
+                <lang id="ms">Sistem Autocredit</lang>
+              </row>
+              <row id="Items.Strings.Universal Payment" importid="2" order="2">
+                <native>Universal Payment</native>
+                <lang id="zh">通用支付</lang>
+                <lang id="ms">Pembayaran sejagat</lang>
+              </row>
               <row id="Left" state="0">88</row>
-              <row id="Text" state="0">Autocredit System</row>
+              <row id="Text">
+                <native>Autocredit System</native>
+                <lang id="zh">自动贷出系统</lang>
+                <lang id="ms">Sistem Autocredit</lang>
+              </row>
               <row id="Top" state="0">8</row>
               <row id="Width" state="0">145</row>
             </component>
@@ -1832,7 +2412,7 @@
       </node>
       <node class="TVclFormNode" name="TWF_BANK_INFO_MFBBMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_MFBBMY">
         <form class="TVclForm" name="WF_Bank_Info_MFBBMY" state="0" type="TWF_Bank_Info_MFBBMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">WF_Bank_Info_MFBBMY</row>
+          <row id="Caption" locked="1">WF_Bank_Info_MFBBMY</row>
           <row id="ClientHeight" state="0">240</row>
           <row id="ClientWidth" state="0">463</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -1845,7 +2425,7 @@
       </node>
       <node class="TVclFormNode" name="TWF_BANK_INFO_OCBCMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_OCBCMY">
         <form class="TVclForm" name="WF_Bank_Info_OCBCMY" state="0" type="TWF_Bank_Info_OCBCMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">WF_Bank_Info_OCBCMY</row>
+          <row id="Caption" locked="1">WF_Bank_Info_OCBCMY</row>
           <row id="ClientHeight" state="0">240</row>
           <row id="ClientWidth" state="0">458</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -1855,14 +2435,22 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbBranch" state="0" type="TLabel">
-            <row id="Caption" state="0">Branch</row>
+            <row id="Caption">
+              <native>Branch</native>
+              <lang id="zh">分行</lang>
+              <lang id="ms">Cawangan</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
             <row id="Width" state="0">33</row>
           </component>
           <component class="TVisLabel" name="lbBranchDesc" state="0" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Branch of account.</row>
+            <row id="Caption">
+              <native>Branch of account.</native>
+              <lang id="zh">分支账户。</lang>
+              <lang id="ms">Cawangan akaun.</lang>
+            </row>
             <row id="Font.Color" state="0">clBlue</row>
             <row id="Font.Name" state="0">Arial</row>
             <row id="Font.Size" state="0">8</row>
@@ -1873,21 +2461,33 @@
             <row id="Width" state="0">93</row>
           </component>
           <component class="TVisLabel" name="lbCompanyCIF" state="0" type="TLabel">
-            <row id="Caption" state="0">Company CIF##</row>
+            <row id="Caption">
+              <native>Company CIF##</native>
+              <lang id="zh">公司CIF##</lang>
+              <lang id="ms">Syarikat CIF ##</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">46</row>
             <row id="Width" state="0">73</row>
           </component>
           <component class="TVisLabel" name="lbAccNo" state="0" type="TLabel">
-            <row id="Caption" state="0">Account No.</row>
+            <row id="Caption">
+              <native>Account No.</native>
+              <lang id="zh">账户编号。</lang>
+              <lang id="ms">No Akaun.</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">73</row>
             <row id="Width" state="0">59</row>
           </component>
           <component class="TVisLabel" name="lbCompanyCIFDesc" state="0" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Provided by bank.</row>
+            <row id="Caption">
+              <native>Provided by bank.</native>
+              <lang id="zh">由银行提供。</lang>
+              <lang id="ms">Disediakan oleh bank.</lang>
+            </row>
             <row id="Font.Color" state="0">clBlue</row>
             <row id="Font.Name" state="0">Arial</row>
             <row id="Font.Size" state="0">8</row>
@@ -1919,7 +2519,11 @@
       </node>
       <node class="TVclFormNode" name="TWF_BANK_INFO_PBBEMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_PBBEMY">
         <form class="TVclForm" name="WF_Bank_Info_PBBEMY" state="0" type="TWF_Bank_Info_PBBEMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">Public Bank</row>
+          <row id="Caption">
+            <native>Public Bank</native>
+            <lang id="zh">大众银行</lang>
+            <lang id="ms">Public Bank</lang>
+          </row>
           <row id="ClientHeight" state="0">240</row>
           <row id="ClientWidth" state="0">505</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -1929,21 +2533,33 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbCorpCode" state="0" type="TLabel">
-            <row id="Caption" state="0">Corporate Code</row>
+            <row id="Caption">
+              <native>Corporate Code</native>
+              <lang id="zh">企业代码</lang>
+              <lang id="ms">Kod korporat</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">46</row>
             <row id="Width" state="0">77</row>
           </component>
           <component class="TVisLabel" name="lbAccNo" state="0" type="TLabel">
-            <row id="Caption" state="0">Account No.</row>
+            <row id="Caption">
+              <native>Account No.</native>
+              <lang id="zh">账户编号。</lang>
+              <lang id="ms">No Akaun.</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">73</row>
             <row id="Width" state="0">59</row>
           </component>
           <component class="TVisLabel" name="lbCorpCodeDesc" state="0" type="TLabel" parentfont="0">
-            <row id="Caption" state="0">Provided by bank.</row>
+            <row id="Caption">
+              <native>Provided by bank.</native>
+              <lang id="zh">由银行提供。</lang>
+              <lang id="ms">Disediakan oleh bank.</lang>
+            </row>
             <row id="Font.Color" state="0">clBlue</row>
             <row id="Font.Name" state="0">Arial</row>
             <row id="Font.Size" state="0">8</row>
@@ -1954,7 +2570,11 @@
             <row id="Width" state="0">86</row>
           </component>
           <component class="TVisLabel" name="lbFileFormat" state="0" type="TLabel">
-            <row id="Caption" state="0">File Format</row>
+            <row id="Caption">
+              <native>File Format</native>
+              <lang id="zh">文件格式</lang>
+              <lang id="ms">Format fail</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">20</row>
@@ -1974,9 +2594,9 @@
           </component>
           <component class="TVisComboBox" name="edFileFormat" state="0" type="TcxComboBox">
             <row id="Left" state="0">112</row>
-            <row id="Properties.Items.Strings.ECP" state="0">ECP</row>
-            <row id="Properties.Items.Strings.ECP (Excel)" state="0">ECP (Excel)</row>
-            <row id="Text" state="0">ECP</row>
+            <row id="Properties.Items.Strings.ECP" locked="1">ECP</row>
+            <row id="Properties.Items.Strings.ECP (Excel)" locked="1">ECP (Excel)</row>
+            <row id="Text" locked="1">ECP</row>
             <row id="Top" state="0">16</row>
             <row id="Width" state="0">121</row>
           </component>
@@ -1990,7 +2610,7 @@
       </node>
       <node class="TVclFormNode" name="TWF_BANK_INFO_PHBMMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_PHBMMY">
         <form class="TVclForm" name="WF_Bank_Info_PHBMMY" state="0" type="TWF_Bank_Info_PHBMMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">WF_Bank_Info_PHBMMY</row>
+          <row id="Caption" locked="1">WF_Bank_Info_PHBMMY</row>
           <row id="ClientHeight" state="0">81</row>
           <row id="ClientWidth" state="0">465</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -2003,7 +2623,11 @@
       </node>
       <node class="TVclFormNode" name="TWF_BANK_INFO_RHBBMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_RHBBMY">
         <form class="TVclForm" name="WF_Bank_Info_RHBBMY" state="0" type="TWF_Bank_Info_RHBBMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">RHB</row>
+          <row id="Caption">
+            <native>RHB</native>
+            <lang id="zh">RHB</lang>
+            <lang id="ms">RHB</lang>
+          </row>
           <row id="ClientHeight" state="0">241</row>
           <row id="ClientWidth" state="0">465</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -2018,23 +2642,35 @@
             <row id="Top" state="0">37</row>
             <row id="Width" state="0">465</row>
             <component class="TVisTabSheet" name="tsAutocredit" state="0" type="TTabSheet" tabvisible="0">
-              <row id="Caption" state="0">tsAutocredit</row>
+              <row id="Caption" locked="1">tsAutocredit</row>
               <component class="TVisLabel" name="lbBranchCode" state="0" type="TLabel">
-                <row id="Caption" state="0">Branch Code</row>
+                <row id="Caption">
+                  <native>Branch Code</native>
+                  <lang id="zh">分行代码</lang>
+                  <lang id="ms">Kod cawangan</lang>
+                </row>
                 <row id="Height" state="0">13</row>
                 <row id="Left" state="0">12</row>
                 <row id="Top" state="0">19</row>
                 <row id="Width" state="0">61</row>
               </component>
               <component class="TVisLabel" name="lbCustomerID" state="0" type="TLabel">
-                <row id="Caption" state="0">Customer ID</row>
+                <row id="Caption">
+                  <native>Customer ID</native>
+                  <lang id="zh">客户ID</lang>
+                  <lang id="ms">ID pelanggan</lang>
+                </row>
                 <row id="Height" state="0">13</row>
                 <row id="Left" state="0">12</row>
                 <row id="Top" state="0">46</row>
                 <row id="Width" state="0">60</row>
               </component>
               <component class="TVisLabel" name="lbBranchCodeDesc" state="0" type="TLabel" parentfont="0">
-                <row id="Caption" state="0">Provided by bank.</row>
+                <row id="Caption">
+                  <native>Provided by bank.</native>
+                  <lang id="zh">由银行提供。</lang>
+                  <lang id="ms">Disediakan oleh bank.</lang>
+                </row>
                 <row id="Font.Color" state="0">clBlue</row>
                 <row id="Font.Name" state="0">Arial</row>
                 <row id="Font.Size" state="0">8</row>
@@ -2045,7 +2681,11 @@
                 <row id="Width" state="0">86</row>
               </component>
               <component class="TVisLabel" name="lbCustomerIDDesc" state="0" type="TLabel" parentfont="0">
-                <row id="Caption" state="0">Provided by bank.</row>
+                <row id="Caption">
+                  <native>Provided by bank.</native>
+                  <lang id="zh">由银行提供。</lang>
+                  <lang id="ms">Disediakan oleh bank.</lang>
+                </row>
                 <row id="Font.Color" state="0">clBlue</row>
                 <row id="Font.Name" state="0">Arial</row>
                 <row id="Font.Size" state="0">8</row>
@@ -2069,7 +2709,7 @@
               </component>
             </component>
             <component class="TVisTabSheet" name="tsReflex" state="0" type="TTabSheet" imageindex="2" tabvisible="0">
-              <row id="Caption" state="0">tsReflex</row>
+              <row id="Caption" locked="1">tsReflex</row>
             </component>
           </component>
           <component class="TVisPanel" name="pnlTop" state="0" type="TPanel" align="alTop" bevelouter="bvNone">
@@ -2078,7 +2718,11 @@
             <row id="Top" state="0">0</row>
             <row id="Width" state="0">465</row>
             <component class="TVisLabel" name="lbFileFormat" state="0" type="TLabel">
-              <row id="Caption" state="0">File Format</row>
+              <row id="Caption">
+                <native>File Format</native>
+                <lang id="zh">文件格式</lang>
+                <lang id="ms">Format fail</lang>
+              </row>
               <row id="Height" state="0">13</row>
               <row id="Left" state="0">16</row>
               <row id="Top" state="0">11</row>
@@ -2086,10 +2730,22 @@
             </component>
             <component class="TVisComboBox" name="cbFileFormat" state="0" type="TComboBox" style="csDropDownList">
               <row id="Height" state="0">21</row>
-              <row id="Items.Strings.Autocredit System" importid="0" state="0">Autocredit System</row>
-              <row id="Items.Strings.Reflex (Excel)" importid="1" state="0" order="1">Reflex (Excel)</row>
+              <row id="Items.Strings.Autocredit System" importid="0">
+                <native>Autocredit System</native>
+                <lang id="zh">自动贷出系统</lang>
+                <lang id="ms">Sistem Autocredit</lang>
+              </row>
+              <row id="Items.Strings.Reflex (Excel)" importid="1" order="1">
+                <native>Reflex (Excel)</native>
+                <lang id="zh">反映 （Excel）</lang>
+                <lang id="ms">Refleks (Excel)</lang>
+              </row>
               <row id="Left" state="0">88</row>
-              <row id="Text" state="0">Autocredit System</row>
+              <row id="Text">
+                <native>Autocredit System</native>
+                <lang id="zh">自动贷出系统</lang>
+                <lang id="ms">Sistem Autocredit</lang>
+              </row>
               <row id="Top" state="0">8</row>
               <row id="Width" state="0">145</row>
             </component>
@@ -2106,7 +2762,11 @@
       </node>
       <node class="TVclFormNode" name="TWF_BANK_INFO_SCBLMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_SCBLMY">
         <form class="TVclForm" name="WF_Bank_Info_SCBLMY" state="0" type="TWF_Bank_Info_SCBLMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">Standard Chartered Bank</row>
+          <row id="Caption">
+            <native>Standard Chartered Bank</native>
+            <lang id="zh">Standard Chartered 银行</lang>
+            <lang id="ms">Standard Chartered Bank</lang>
+          </row>
           <row id="ClientHeight" state="0">241</row>
           <row id="ClientWidth" state="0">465</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -2116,7 +2776,11 @@
           <row id="Left" state="0">0</row>
           <row id="Top" state="0">0</row>
           <component class="TVisLabel" name="lbAccNo" state="0" type="TLabel">
-            <row id="Caption" state="0">Account No.</row>
+            <row id="Caption">
+              <native>Account No.</native>
+              <lang id="zh">账户编号。</lang>
+              <lang id="ms">No Akaun.</lang>
+            </row>
             <row id="Height" state="0">13</row>
             <row id="Left" state="0">16</row>
             <row id="Top" state="0">19</row>
@@ -2132,7 +2796,7 @@
       </node>
       <node class="TVclFormNode" name="TWF_BANK_INFO_UOVBMY" state="0" created="20160425163133" resname="TWF_BANK_INFO_UOVBMY">
         <form class="TVclForm" name="WF_Bank_Info_UOVBMY" state="0" type="TWF_Bank_Info_UOVBMY" borderstyle="bsNone" textheight="13">
-          <row id="Caption" state="0">WF_Bank_Info_UOVBMY</row>
+          <row id="Caption" locked="1">WF_Bank_Info_UOVBMY</row>
           <row id="ClientHeight" state="0">240</row>
           <row id="ClientWidth" state="0">505</row>
           <row id="Font.Color" state="0">clWindowText</row>
@@ -2147,7 +2811,11 @@
             <row id="Top" state="0">0</row>
             <row id="Width" state="0">505</row>
             <component class="TVisLabel" name="lbFileFormat" state="0" type="TLabel">
-              <row id="Caption" state="0">File Format</row>
+              <row id="Caption">
+                <native>File Format</native>
+                <lang id="zh">文件格式</lang>
+                <lang id="ms">Format fail</lang>
+              </row>
               <row id="Height" state="0">13</row>
               <row id="Left" state="0">16</row>
               <row id="Top" state="0">11</row>
@@ -2155,10 +2823,22 @@
             </component>
             <component class="TVisComboBox" name="cbFileFormat" state="0" type="TComboBox" style="csDropDownList">
               <row id="Height" state="0">21</row>
-              <row id="Items.Strings.IBG Bulk Payment" importid="0" state="0">IBG Bulk Payment</row>
-              <row id="Items.Strings.IBG Notification" importid="1" state="0" order="1">IBG Notification</row>
+              <row id="Items.Strings.IBG Bulk Payment" importid="0">
+                <native>IBG Bulk Payment</native>
+                <lang id="zh">IBG 批量付款</lang>
+                <lang id="ms">Pembayaran Bulk IBG</lang>
+              </row>
+              <row id="Items.Strings.IBG Notification" importid="1" order="1">
+                <native>IBG Notification</native>
+                <lang id="zh">IBG通知</lang>
+                <lang id="ms">Pemberitahuan IBG</lang>
+              </row>
               <row id="Left" state="0">88</row>
-              <row id="Text" state="0">IBG Bulk Payment</row>
+              <row id="Text">
+                <native>IBG Bulk Payment</native>
+                <lang id="zh">IBG 批量付款</lang>
+                <lang id="ms">Pembayaran Bulk IBG</lang>
+              </row>
               <row id="Top" state="0">8</row>
               <row id="Width" state="0">145</row>
             </component>
@@ -2169,9 +2849,17 @@
             <row id="Top" state="0">37</row>
             <row id="Width" state="0">505</row>
             <component class="TVisTabSheet" name="TabSheet1" state="0" type="TTabSheet" tabvisible="0">
-              <row id="Caption" state="0">TabSheet1</row>
+              <row id="Caption">
+                <native>TabSheet1</native>
+                <lang id="zh">标签页1</lang>
+                <lang id="ms">TabSheet1</lang>
+              </row>
               <component class="TVisLabel" name="lbAccNameDesc" state="0" type="TLabel" parentfont="0" wordwrap="1">
-                <row id="Caption" state="0">This corporation name is printed in the UOB group receiving A/C's bank's statement.</row>
+                <row id="Caption">
+                  <native>This corporation name is printed in the UOB group receiving A/C's bank's statement.</native>
+                  <lang id="zh">该公司名称已印在UOB集团的银行收款账户声明。</lang>
+                  <lang id="ms">Nama Perbadanan ini dicetak dalam penerimaan Kumpulan UOB A/C dan penyata bank.</lang>
+                </row>
                 <row id="Font.Color" state="0">clBlue</row>
                 <row id="Font.Name" state="0">Arial</row>
                 <row id="Font.Size" state="0">8</row>
@@ -2182,7 +2870,11 @@
                 <row id="Width" state="0">239</row>
               </component>
               <component class="TVisLabel" name="lbCompanyIDDesc" state="0" type="TLabel" parentfont="0">
-                <row id="Caption" state="0">Provided by bank.</row>
+                <row id="Caption">
+                  <native>Provided by bank.</native>
+                  <lang id="zh">由银行提供。</lang>
+                  <lang id="ms">Disediakan oleh bank.</lang>
+                </row>
                 <row id="Font.Color" state="0">clBlue</row>
                 <row id="Font.Name" state="0">Arial</row>
                 <row id="Font.Size" state="0">8</row>
@@ -2193,28 +2885,44 @@
                 <row id="Width" state="0">86</row>
               </component>
               <component class="TVisLabel" name="lbTransCode" state="0" type="TLabel">
-                <row id="Caption" state="0">Transaction Code</row>
+                <row id="Caption">
+                  <native>Transaction Code</native>
+                  <lang id="zh">交易代码</lang>
+                  <lang id="ms">Kod urusniaga</lang>
+                </row>
                 <row id="Height" state="0">13</row>
                 <row id="Left" state="0">12</row>
                 <row id="Top" state="0">101</row>
                 <row id="Width" state="0">84</row>
               </component>
               <component class="TVisLabel" name="lbAccName" state="0" type="TLabel">
-                <row id="Caption" state="0">Account Name</row>
+                <row id="Caption">
+                  <native>Account Name</native>
+                  <lang id="zh">账户名称</lang>
+                  <lang id="ms">Nama Akaun</lang>
+                </row>
                 <row id="Height" state="0">13</row>
                 <row id="Left" state="0">12</row>
                 <row id="Top" state="0">65</row>
                 <row id="Width" state="0">69</row>
               </component>
               <component class="TVisLabel" name="lbAccNo" state="0" type="TLabel">
-                <row id="Caption" state="0">Account No.</row>
+                <row id="Caption">
+                  <native>Account No.</native>
+                  <lang id="zh">账户编号。</lang>
+                  <lang id="ms">No Akaun.</lang>
+                </row>
                 <row id="Height" state="0">13</row>
                 <row id="Left" state="0">12</row>
                 <row id="Top" state="0">38</row>
                 <row id="Width" state="0">59</row>
               </component>
               <component class="TVisLabel" name="lbCompanyID" state="0" type="TLabel">
-                <row id="Caption" state="0">Company ID</row>
+                <row id="Caption">
+                  <native>Company ID</native>
+                  <lang id="zh">公司ID</lang>
+                  <lang id="ms">ID Syarikat</lang>
+                </row>
                 <row id="Height" state="0">13</row>
                 <row id="Left" state="0">12</row>
                 <row id="Top" state="0">11</row>
@@ -2227,12 +2935,20 @@
                 <row id="Width" state="0">121</row>
               </component>
               <component class="TVisComboBox" name="edTransCode" state="0" type="TcxImageComboBox">
-                <row id="EditValue" locked="1" state="0">24</row>
+                <row id="EditValue" locked="1">24</row>
                 <row id="Left" state="0">107</row>
-                <row id="Properties.Items[0].Description" state="0">Salary Credit</row>
-                <row id="Properties.Items[0].Value" locked="1" state="0">22</row>
-                <row id="Properties.Items[1].Description" state="0">Remittance Credit</row>
-                <row id="Properties.Items[1].Value" locked="1" state="0">24</row>
+                <row id="Properties.Items[0].Description">
+                  <native>Salary Credit</native>
+                  <lang id="zh">薪水信贷</lang>
+                  <lang id="ms">Kredit gaji</lang>
+                </row>
+                <row id="Properties.Items[0].Value" locked="1">22</row>
+                <row id="Properties.Items[1].Description">
+                  <native>Remittance Credit</native>
+                  <lang id="zh">汇款信用</lang>
+                  <lang id="ms">Pengiriman Wang kredit</lang>
+                </row>
+                <row id="Properties.Items[1].Value" locked="1">24</row>
                 <row id="Top" state="0">97</row>
                 <row id="Width" state="0">122</row>
               </component>
@@ -2269,40 +2985,176 @@
     </node>
     <node class="TWindowsStringFolder" name="Strings" created="20160411143854" resid="6">
       <node class="TWindowsStringTableNode" name="StringTable" resname="StringTable">
-        <row id="Account Name cannot leave blank" state="0" created="20160425163133">Account Name cannot leave blank</row>
-        <row id="Account No. cannot leave blank" state="0" created="20160425163133">Account No. cannot leave blank</row>
-        <row id="Branch code cannot leave blank" state="0" created="20160425163133">Branch code cannot leave blank</row>
-        <row id="Branch of account cannot leave blank" state="0" created="20160425163133">Branch of account cannot leave blank</row>
-        <row id="Client Code cannot leave blank" state="0" created="20160425163133">Client Code cannot leave blank</row>
-        <row id="Company CIF cannot leave blank" state="0" created="20160425163133">Company CIF cannot leave blank</row>
-        <row id="Company Code cannot leave blank" state="0" created="20160425163133">Company Code cannot leave blank</row>
-        <row id="Company ID cannot leave blank" state="0" created="20160425163133">Company ID cannot leave blank</row>
-        <row id="Connect Customer ID cannot leave blank" state="0" created="20160425163133">Connect Customer ID cannot leave blank</row>
-        <row id="Corporate Code cannot leave blank" state="0" created="20160425163133">Corporate Code cannot leave blank</row>
-        <row id="Corporate ID cannot leave blank" state="0" created="20160425163133">Corporate ID cannot leave blank</row>
-        <row id="Create Bank Instruction File" state="0" created="20160425163133">Create Bank Instruction File</row>
-        <row id="Customer Code cannot leave blank" state="0" created="20160425163133">Customer Code cannot leave blank</row>
-        <row id="Customer ID cannot leave blank" state="0" created="20160425163133">Customer ID cannot leave blank</row>
-        <row id="Debit Account Number cannot leave blank" state="0" created="20160425163133">Debit Account Number cannot leave blank</row>
-        <row id="Existing bank information will be overwritten.#c#lAre you sure want to proceed?" state="0" created="20160425163133">Existing bank information will be overwritten.#c#lAre you sure want to proceed?</row>
-        <row id="Export BIF class (%s) not found" state="0" created="20160425163133">Export BIF class (%s) not found</row>
-        <row id="File %s already exists.#c#lDo you want to overwrite it?" state="0" created="20160425163133">File %s already exists.#c#lDo you want to overwrite it?</row>
-        <row id="File saved successfully" state="0" created="20160425163133">File saved successfully</row>
-        <row id="HSBCnet ID cannot leave blank" state="0" created="20160425163133">HSBCnet ID cannot leave blank</row>
-        <row id="Organisation Code cannot leave blank" state="0" created="20160425163133">Organisation Code cannot leave blank</row>
-        <row id="Originator Account cannot leave blank" state="0" created="20160425163133">Originator Account cannot leave blank</row>
-        <row id="Originator ID cannot leave blank" state="0" created="20160425163133">Originator ID cannot leave blank</row>
-        <row id="Please choose a bank" state="0" created="20160425163133">Please choose a bank</row>
-        <row id="Please contact %s (%s)#c#lfor add-on module - InterBank GIRO" state="0" created="20160425163133">Please contact %s (%s)#c#lfor add-on module - InterBank GIRO</row>
-        <row id="Select Bank" state="0" created="20160425163133">Select Bank</row>
-        <row id="Total records: %d#c#lFailed records: %d" state="0" created="20160425163133">Total records: %d#c#lFailed records: %d</row>
-        <row id="[%s] - OK" state="0" created="20160425163133">[%s] - OK</row>
-        <row id="[%s]: Failed (Currency code not found)" state="0" created="20160425163133">[%s]: Failed (Currency code not found)</row>
-        <row id="[%s]: Failed (IBG bank code not found)" state="0" created="20160425163133">[%s]: Failed (IBG bank code not found)</row>
-        <row id="[%s]: Failed (Internal fund transfer only)" state="0" created="20160425163133">[%s]: Failed (Internal fund transfer only)</row>
-        <row id="[%s]: Failed (Payment currency must be MYR)" state="0" created="20160425163133">[%s]: Failed (Payment currency must be MYR)</row>
-        <row id="[%s]: Failed (Payment currency must be SGD)" state="0" created="20160425163133">[%s]: Failed (Payment currency must be SGD)</row>
-        <row id="[%s]: Failed (Rentas bank code not found)" state="0" created="20160425163133">[%s]: Failed (Rentas bank code not found)</row>
+        <row id="Account Name cannot leave blank" created="20160425163133">
+          <native>Account Name cannot leave blank</native>
+          <lang id="zh">账户名称不能留空</lang>
+          <lang id="ms">Nama akaun tidak boleh biarkan kosong</lang>
+        </row>
+        <row id="Account No. cannot leave blank" created="20160425163133">
+          <native>Account No. cannot leave blank</native>
+          <lang id="zh">账号不能留空</lang>
+          <lang id="ms">Akaun No. tidak boleh biarkan kosong</lang>
+        </row>
+        <row id="Branch code cannot leave blank" created="20160425163133">
+          <native>Branch code cannot leave blank</native>
+          <lang id="zh">分行代码不能留空</lang>
+          <lang id="ms">Kod cawangan tidak boleh biarkan kosong</lang>
+        </row>
+        <row id="Branch of account cannot leave blank" created="20160425163133">
+          <native>Branch of account cannot leave blank</native>
+          <lang id="zh">分支账户不能留空</lang>
+          <lang id="ms">Cawangan akaun tidak boleh biarkan kosong</lang>
+        </row>
+        <row id="Client Code cannot leave blank" created="20160425163133">
+          <native>Client Code cannot leave blank</native>
+          <lang id="zh">客户代码不能留空</lang>
+          <lang id="ms">Kod pelanggan tidak boleh biarkan kosong</lang>
+        </row>
+        <row id="Company CIF cannot leave blank" created="20160425163133">
+          <native>Company CIF cannot leave blank</native>
+          <lang id="zh">公司CIF不能留空</lang>
+          <lang id="ms">Syarikat CIF tidak boleh biarkan kosong</lang>
+        </row>
+        <row id="Company Code cannot leave blank" created="20160425163133">
+          <native>Company Code cannot leave blank</native>
+          <lang id="zh">公司代码不能留空</lang>
+          <lang id="ms">Kod Syarikat tidak boleh biarkan kosong</lang>
+        </row>
+        <row id="Company ID cannot leave blank" created="20160425163133">
+          <native>Company ID cannot leave blank</native>
+          <lang id="zh">公司ID不能留空</lang>
+          <lang id="ms">ID Syarikat tidak boleh biarkan kosong</lang>
+        </row>
+        <row id="Connect Customer ID cannot leave blank" created="20160425163133">
+          <native>Connect Customer ID cannot leave blank</native>
+          <lang id="zh">链接客户ID不能留空</lang>
+          <lang id="ms">Sambung ID pelanggan tidak boleh biarkan kosong</lang>
+        </row>
+        <row id="Corporate Code cannot leave blank" created="20160425163133">
+          <native>Corporate Code cannot leave blank</native>
+          <lang id="zh">企业代码不能留空</lang>
+          <lang id="ms">Kod korporat tidak boleh biarkan kosong</lang>
+        </row>
+        <row id="Corporate ID cannot leave blank" created="20160425163133">
+          <native>Corporate ID cannot leave blank</native>
+          <lang id="zh">企业ID不能留空</lang>
+          <lang id="ms">ID korporat tidak boleh biarkan kosong</lang>
+        </row>
+        <row id="Create Bank Instruction File" created="20160425163133">
+          <native>Create Bank Instruction File</native>
+          <lang id="zh">创建银行指令文件</lang>
+          <lang id="ms">Cipta fail arahan Bank</lang>
+        </row>
+        <row id="Customer Code cannot leave blank" created="20160425163133">
+          <native>Customer Code cannot leave blank</native>
+          <lang id="zh">客户代码不能留空</lang>
+          <lang id="ms">Kod Pelanggan tidak boleh biarkan kosong</lang>
+        </row>
+        <row id="Customer ID cannot leave blank" created="20160425163133">
+          <native>Customer ID cannot leave blank</native>
+          <lang id="zh">客户ID不能留空</lang>
+          <lang id="ms">ID pelanggan tidak boleh biarkan kosong</lang>
+        </row>
+        <row id="Debit Account Number cannot leave blank" created="20160425163133">
+          <native>Debit Account Number cannot leave blank</native>
+          <lang id="zh">借记账号不能留空</lang>
+          <lang id="ms">Nombor akaun debit tidak boleh biarkan kosong</lang>
+        </row>
+        <row id="Existing bank information will be overwritten.#c#lAre you sure want to proceed?" created="20160425163133">
+          <native>Existing bank information will be overwritten.#c#lAre you sure want to proceed?</native>
+          <lang id="zh">当前银行信息将被覆盖.#n您确定要继续吗？?</lang>
+          <lang id="ms">Maklumat bank yang sedia ada akan ditulis ganti.#nAdakah anda pasti ingin meneruskan?</lang>
+        </row>
+        <row id="Export BIF class (%s) not found" created="20160425163133">
+          <native>Export BIF class (%s) not found</native>
+          <lang id="zh">出口BIF类型 （%s）未寻获</lang>
+          <lang id="ms">Eksport BIF kelas (%s) tidak dijumpai</lang>
+        </row>
+        <row id="File %s already exists.#c#lDo you want to overwrite it?" created="20160425163133">
+          <native>File %s already exists.#c#lDo you want to overwrite it?</native>
+          <lang id="zh">%s 文件已存在。#n您需要覆盖它吗？?</lang>
+          <lang id="ms">Fail %s sudah wujud.#nAdakah anda mahu menulis gantinya?</lang>
+        </row>
+        <row id="File saved successfully" created="20160425163133">
+          <native>File saved successfully</native>
+          <lang id="zh">文件保存成功</lang>
+          <lang id="ms">Fail berjaya disimpan</lang>
+        </row>
+        <row id="HSBCnet ID cannot leave blank" created="20160425163133">
+          <native>HSBCnet ID cannot leave blank</native>
+          <lang id="zh">HSBCnet ID 不能留空</lang>
+          <lang id="ms">HSBCnet ID tidak boleh biarkan kosong</lang>
+        </row>
+        <row id="Organisation Code cannot leave blank" created="20160425163133">
+          <native>Organisation Code cannot leave blank</native>
+          <lang id="zh">组织机构代码不能留空</lang>
+          <lang id="ms">Kod organisasi tidak boleh biarkan kosong</lang>
+        </row>
+        <row id="Originator Account cannot leave blank" created="20160425163133">
+          <native>Originator Account cannot leave blank</native>
+          <lang id="zh">发送者账号不能留空</lang>
+          <lang id="ms">Akaun pemilik asal tidak boleh biarkan kosong</lang>
+        </row>
+        <row id="Originator ID cannot leave blank" created="20160425163133">
+          <native>Originator ID cannot leave blank</native>
+          <lang id="zh">发送者ID不能留空</lang>
+          <lang id="ms">ID pemilik asal tidak boleh biarkan kosong</lang>
+        </row>
+        <row id="Please choose a bank" created="20160425163133">
+          <native>Please choose a bank</native>
+          <lang id="zh">请选择一家银行</lang>
+          <lang id="ms">Sila pilih bank</lang>
+        </row>
+        <row id="Please contact %s (%s)#c#lfor add-on module - InterBank GIRO" created="20160425163133">
+          <native>Please contact %s (%s)#c#lfor add-on module - InterBank GIRO</native>
+          <lang id="zh">请联络 %s (%s)#n关于附加模块 - 银行同业自动旋翼机</lang>
+          <lang id="ms">Sila hubungi %s (%s)#nModul tambahan - arahan antara Bank GIRO</lang>
+        </row>
+        <row id="Select Bank" created="20160425163133">
+          <native>Select Bank</native>
+          <lang id="zh">选择银行</lang>
+          <lang id="ms">Pilih Bank</lang>
+        </row>
+        <row id="Total records: %d#c#lFailed records: %d" created="20160425163133">
+          <native>Total records: %d#c#lFailed records: %d</native>
+          <lang id="zh">总记录数: %d#n失败记录: %d</lang>
+          <lang id="ms">Jumlah rekod: %d#nGagal rekod: %d</lang>
+        </row>
+        <row id="[%s] - OK" created="20160425163133">
+          <native>[%s] - OK</native>
+          <lang id="zh">[%s]: - 确定</lang>
+          <lang id="ms">[%s] - OK</lang>
+        </row>
+        <row id="[%s]: Failed (Currency code not found)" created="20160425163133">
+          <native>[%s]: Failed (Currency code not found)</native>
+          <lang id="zh">[%s]: 失败 （货币代码未寻获）</lang>
+          <lang id="ms">%s]: gagal (Kod Mata Wang yang tidak ditemui</lang>
+        </row>
+        <row id="[%s]: Failed (IBG bank code not found)" created="20160425163133">
+          <native>[%s]: Failed (IBG bank code not found)</native>
+          <lang id="zh">[%s]: 失败 （IBG银行代码未寻获）</lang>
+          <lang id="ms">%s]: gagal (Kod IBG bank yang tidak ditemui</lang>
+        </row>
+        <row id="[%s]: Failed (Internal fund transfer only)" created="20160425163133">
+          <native>[%s]: Failed (Internal fund transfer only)</native>
+          <lang id="zh">[%s]: 失败 （只限内部资金转移）</lang>
+          <lang id="ms">%s]: gagal (pemindahan dana dalaman sahaja</lang>
+        </row>
+        <row id="[%s]: Failed (Payment currency must be MYR)" created="20160425163133">
+          <native>[%s]: Failed (Payment currency must be MYR)</native>
+          <lang id="zh">[%s]: 失败 （付款币种必须是马币）</lang>
+          <lang id="ms">%s]: gagal (Mata Wang pembayaran mestilah MYR</lang>
+        </row>
+        <row id="[%s]: Failed (Payment currency must be SGD)" created="20160425163133">
+          <native>[%s]: Failed (Payment currency must be SGD)</native>
+          <lang id="zh">[%s]: 失败 （付款币种必须是新币）</lang>
+          <lang id="ms">%s]: gagal (Mata Wang pembayaran mestilah SGD</lang>
+        </row>
+        <row id="[%s]: Failed (Rentas bank code not found)" created="20160425163133">
+          <native>[%s]: Failed (Rentas bank code not found)</native>
+          <lang id="zh" date="20160426170044" percent="99">[%s]: 失败 （Rentas 银行代码未找到）</lang>
+          <lang id="ms">%s]: gagal (kod bank melalui Rentas yang tidak ditemui</lang>
+        </row>
       </node>
     </node>
   </source>
