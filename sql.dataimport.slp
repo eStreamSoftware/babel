@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document created="20160411090511" version="4.0.359" date="20160426163534" scan="6" scanned="20160411181601">
+<document created="20160411090511" version="4.0.359" date="20160428093945" scan="9" scanned="20160428093752">
   <lang id="zh"/>
   <lang id="ms"/>
   <lang id="vi"/>
-  <source class="TDelphiSource" name="..\SQL.DataImport.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160411095726" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.DataImport.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160428011424" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <resources>
       <disabled id="16"/>
     </resources>
@@ -1583,7 +1583,7 @@
               </row>
             </component>
             <component class="TVisAction" name="actBrowse" type="TAction">
-              <row id="Caption">...</row>
+              <row id="Caption" locked="1">...</row>
             </component>
             <component class="TVisAction" name="actClearList" type="TAction">
               <row id="Caption">
@@ -1640,55 +1640,6 @@
             <row id="Width">403</row>
           </component>
         </form>
-      </node>
-    </node>
-    <node class="TWindowsStringFolder" name="Strings" created="20160411143854" resid="6">
-      <node class="TWindowsStringTableNode" name="StringTable" resname="StringTable">
-        <row id="Data import aborted.">
-          <native>Data import aborted.</native>
-          <lang id="zh">输入数据中止。</lang>
-          <lang id="ms">Import data digugur.</lang>
-        </row>
-        <row id="Do you want to download Microsoft OLE DB Provider for Visual FoxPro 9.0?">
-          <native>Do you want to download Microsoft OLE DB Provider for Visual FoxPro 9.0?</native>
-          <lang id="zh">您想要为 Visual FoxPro 9.0 下载微软 OLE DB 提供程序吗?</lang>
-          <lang id="ms">Adakah anda mahu muat turun Microsoft OLE DB pembekal untuk Visual FoxPro 9.0?</lang>
-        </row>
-        <row id="Error! Invalid UBS Database Folder.">
-          <native>Error! Invalid UBS Database Folder.</native>
-          <lang id="zh">错误！UBS数据库文件夹无效。</lang>
-          <lang id="ms">Ralat! Folder UBS pangkalan data tidak sah.</lang>
-        </row>
-        <row id="Reminder: Have you assign GL accounts for all Stock Group? Click YES if you already have and NO to abort.">
-          <native>Reminder: Have you assign GL accounts for all Stock Group? Click YES if you already have and NO to abort.</native>
-          <lang id="zh">提醒 ︰ 你们已为总账帐户分配至全部库存组别吗？如果是请单击是，如不是请单击不是。</lang>
-          <lang id="ms">Peringatan: Pernahkah anda memperuntukkan akaun GL untuk semua kumpulan stok? Klik YA jika anda sudah mempunyai dan TIDAK untuk menggugurkan.</lang>
-        </row>
-        <row id="Reminder: Have you inserted the activation code? Click YES if you already have and NO to abort.">
-          <native>Reminder: Have you inserted the activation code? Click YES if you already have and NO to abort.</native>
-          <lang id="zh">提醒 ︰ 您已输入激活码？如果是请单击是，如不是请单击不是。</lang>
-          <lang id="ms">Peringatan: Adakah anda telah memasukkan kod pengaktifan? Klik YA jika anda sudah mempunyai dan TIDAK untuk menggugurkan.</lang>
-        </row>
-        <row id="Reminder: Please check in GL | Maintain Account that all Special Type Account are assigned accordingly. E.g. Bank &amp; Cash Account. Click OK to proceed and Cancel to abort.">
-          <native>Reminder: Please check in GL | Maintain Account that all Special Type Account are assigned accordingly. E.g. Bank &amp; Cash Account. Click OK to proceed and Cancel to abort.</native>
-          <lang id="zh">提醒 ︰ 请检查在 总账 |保持所有特殊类型的帐户分配相应的帐户。例如银行与现金账户。单击确定，然后单击取消中止(&amp; )。</lang>
-          <lang id="ms">Peringatan:&amp; Sila semak di GL | Mengekalkan akaun yang semua jenis akaun khas diperuntukkan dengan sewajarnya. Cth: Bank akaun Tunai. Klik OK untuk teruskan dan Batal untuk menggugurkan.</lang>
-        </row>
-        <row id="Reminder: Please go to GST | Start GST Now... if you are GST registered. Click OK to proceed and Cancel to abort.">
-          <native>Reminder: Please go to GST | Start GST Now... if you are GST registered. Click OK to proceed and Cancel to abort.</native>
-          <lang id="zh">提醒 ︰如果你已注册 消费税... 请去 GST |启动 消费税 现在。单击确定，然后单击取消中止。</lang>
-          <lang id="ms">Peringatan: Sila pergi ke GST | Memulakan GST sekarang... Jika anda sudah mendaftar GST, Klik OK untuk teruskan dan Batal untuk menggugurkan.</lang>
-        </row>
-        <row id="Select UBS Account directory">
-          <native>Select UBS Account directory</native>
-          <lang id="zh">选择UBS帐户目录</lang>
-          <lang id="ms">Pilih direktori UBS akaun</lang>
-        </row>
-        <row id="Tips: Disable Unit Price message prompt by going to Tools | Options | Unit Price. For all tabs, under the Option column, change all to blank. Click OK to proceed and Cancel to abort.">
-          <native>Tips: Disable Unit Price message prompt by going to Tools | Options | Unit Price. For all tabs, under the Option column, change all to blank. Click OK to proceed and Cancel to abort.</native>
-          <lang id="zh">提示:提示截止单价信息当通过工具|选项|单价。对于所有的选项卡，在选项列中下, 更改所有为空白。单击确定，然后单击取消中止。</lang>
-          <lang id="ms">Tips: Mematikan prompt mesej Harga Unit dengan pergi ke Alat | Pilihan | Harga unit. Untuk semua tab di bawah lajur Pilihan, menukar semua kepada kosong. Klik OK untuk teruskan dan Batal untuk menggugurkan.</lang>
-        </row>
       </node>
     </node>
   </source>
