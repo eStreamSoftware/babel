@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document created="20120911141512" version="4.0.359" date="20160425142949" scan="104" scanned="20160425124324">
+<document created="20120911141512" version="4.0.359" date="20160429172556" scan="118" scanned="20160429172544">
   <lang id="zh"/>
   <lang id="ms"/>
   <lang id="vi"/>
-  <source class="TDelphiSource" name="..\SQL.app.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160425015800" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.app.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030530" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -44,6 +44,7 @@
       </component>
       <component name="TcxDBImageComboBox" class="TVisComboBox">
         <property name="DataBinding.DataField"/>
+        <property name="Properties.Items.Value"/>
       </component>
       <component name="TcxDBLabel" class="TVisLabel">
         <property name="DataBinding.DataField"/>
@@ -84,6 +85,8 @@
         <property name="DataBinding.FieldName"/>
         <property name="Properties.DisplayChecked"/>
         <property name="Properties.DisplayUnchecked"/>
+        <property name="Properties.Items.Value"/>
+        <property name="Properties.KeyFieldNames"/>
         <property name="Properties.ValueChecked"/>
         <property name="Properties.ValueUnchecked"/>
         <property name="PropertiesClassName"/>
@@ -93,6 +96,8 @@
         <property name="DataController.KeyFieldNames"/>
         <property name="DataController.MasterKeyFieldNames"/>
         <property name="DataController.Summary.DefaultGroupSummaryItems.FieldName"/>
+        <property name="DataController.Summary.FooterSummaryItems.FieldName"/>
+        <property name="DataController.Summary.SummaryGroups.SummaryItems.FieldName"/>
       </component>
       <component name="TcxGridLevel" class="TVisHiddenComponent"/>
       <component name="TcxGridTableView" class="TVisHiddenComponent"/>
@@ -1780,7 +1785,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.application.logon.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160425015742" usebom="1" scaling="vsNone" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.application.logon.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030508" usebom="1" scaling="vsNone" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <resources>
       <disabled name="LCID"/>
     </resources>
@@ -2054,7 +2059,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.diy.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160425015800" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.diy.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030530" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -2096,6 +2101,8 @@
         <property name="DataBinding.FieldName"/>
         <property name="Properties.DisplayChecked"/>
         <property name="Properties.DisplayUnchecked"/>
+        <property name="Properties.Items.Value"/>
+        <property name="Properties.KeyFieldNames"/>
         <property name="Properties.ValueChecked"/>
         <property name="Properties.ValueUnchecked"/>
         <property name="PropertiesClassName"/>
@@ -2105,6 +2112,8 @@
         <property name="DataController.KeyFieldNames"/>
         <property name="DataController.MasterKeyFieldNames"/>
         <property name="DataController.Summary.DefaultGroupSummaryItems.FieldName"/>
+        <property name="DataController.Summary.FooterSummaryItems.FieldName"/>
+        <property name="DataController.Summary.SummaryGroups.SummaryItems.FieldName"/>
       </component>
       <component name="TcxGridLevel" class="TVisHiddenComponent"/>
       <component name="TcxGridTableView" class="TVisHiddenComponent"/>
@@ -2112,9 +2121,13 @@
       <component name="TcxTreeList" class="TVisTreeList"/>
       <component name="TcxTreeListColumn" class="TVisTreeListColumn">
         <property name="DataBinding.ValueType"/>
+        <property name="Properties.KeyFieldNames"/>
+        <property name="Properties.ListColumns.FieldName"/>
       </component>
       <component name="TDataSource" class="TVisHiddenComponent"/>
-      <component name="TDBSyntaxMemo" class="TVisEdit"/>
+      <component name="TDBSyntaxMemo" class="TVisEdit">
+        <property name="DataField"/>
+      </component>
       <component name="TdxLayoutControl" class="TVisPanel"/>
       <component name="TdxLayoutGroup" class="TVisHiddenComponent"/>
       <component name="TLabel" class="TVisLabel" updatebounds="1"/>
@@ -2431,55 +2444,46 @@
                   <lang id="zh">字符串</lang>
                   <lang id="ms">String</lang>
                 </row>
-                <row id="Properties.Items[0].Value" locked="1">STRING</row>
                 <row id="Properties.Items[1].Description">
                   <native>UnicodeString</native>
                   <lang id="zh">统一代码串</lang>
                   <lang id="ms">UnicodeString</lang>
                 </row>
-                <row id="Properties.Items[1].Value" locked="1">UNICODESTRING</row>
                 <row id="Properties.Items[2].Description">
                   <native>Boolean</native>
                   <lang id="zh">布尔值</lang>
                   <lang id="ms">Boolean</lang>
                 </row>
-                <row id="Properties.Items[2].Value" locked="1">BOOLEAN</row>
                 <row id="Properties.Items[3].Description">
                   <native>Integer</native>
                   <lang id="zh">整数</lang>
                   <lang id="ms">Integer</lang>
                 </row>
-                <row id="Properties.Items[3].Value" locked="1">INTEGER</row>
                 <row id="Properties.Items[4].Description">
                   <native>Currency</native>
                   <lang id="zh">货币</lang>
                   <lang id="ms">Mata Wang</lang>
                 </row>
-                <row id="Properties.Items[4].Value" locked="1">CURRENCY</row>
                 <row id="Properties.Items[5].Description">
                   <native>Bcd</native>
                   <lang id="zh">二进制码</lang>
                   <lang id="ms">Bcd</lang>
                 </row>
-                <row id="Properties.Items[5].Value" locked="1">BCD</row>
                 <row id="Properties.Items[6].Description">
                   <native>Date</native>
                   <lang id="zh">日期</lang>
                   <lang id="ms">Tarikh</lang>
                 </row>
-                <row id="Properties.Items[6].Value" locked="1">DATE</row>
                 <row id="Properties.Items[7].Description">
                   <native>Blob</native>
                   <lang id="zh">二进制大事物</lang>
                   <lang id="ms">Blob</lang>
                 </row>
-                <row id="Properties.Items[7].Value" locked="1">BLOB</row>
                 <row id="Properties.Items[8].Description">
                   <native>Memo</native>
                   <lang id="zh">备注</lang>
                   <lang id="ms">Memo</lang>
                 </row>
-                <row id="Properties.Items[8].Value" locked="1">MEMO</row>
               </component>
               <component class="TVisHiddenComponent" name="gvMainSize" type="TcxGridDBColumn">
                 <row id="Caption">
@@ -2652,7 +2656,6 @@
               <row id="Width">75</row>
             </component>
             <component class="TVisEdit" name="edScript_Pascal" type="TDBSyntaxMemo" parentfont="0">
-              <row id="DataField" locked="1">Data</row>
               <row id="Font.Color">clWindowText</row>
               <row id="Font.Name">Courier New</row>
               <row id="Font.Size">10</row>
@@ -2734,7 +2737,6 @@
             <row id="Width">75</row>
           </component>
           <component class="TVisEdit" name="edScript_Pascal" type="TDBSyntaxMemo" parentfont="0">
-            <row id="DataField" locked="1">Data</row>
             <row id="Font.Color">clWindowText</row>
             <row id="Font.Name">Courier New</row>
             <row id="Font.Size">10</row>
@@ -3376,7 +3378,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.dunit.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160425015714" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.dunit.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030440" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -3502,7 +3504,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.oocxgrid.layout.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160425015758" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.oocxgrid.layout.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030530" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -3777,7 +3779,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.oodataimport.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160425015734" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.oodataimport.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030502" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -4310,7 +4312,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.oodevex.skins.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160425015732" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.oodevex.skins.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030500" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -4382,7 +4384,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.oodialog.win32.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160425015718" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.oodialog.win32.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030444" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -5187,7 +5189,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.oomvplookup.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160425015746" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.oomvplookup.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030514" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -5346,7 +5348,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.oopersist.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160425015758" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.oopersist.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030530" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -5387,7 +5389,9 @@
       <component name="TcxGridTableView" class="TVisHiddenComponent"/>
       <component name="TcxLabel" class="TVisLabel"/>
       <component name="TDataSource" class="TVisHiddenComponent"/>
-      <component name="TDBSyntaxMemo" class="TVisEdit"/>
+      <component name="TDBSyntaxMemo" class="TVisEdit">
+        <property name="DataField"/>
+      </component>
       <component name="TMenuItem" class="TVisMenuItem"/>
       <component name="TPanel" class="TVisPanel"/>
       <component name="TPopupMenu" class="TVisPopupMenu"/>
@@ -5552,7 +5556,6 @@
             <row id="Width">89</row>
           </component>
           <component class="TVisEdit" name="edData_XML" type="TDBSyntaxMemo" parentfont="0">
-            <row id="DataField" locked="1">Data</row>
             <row id="Font.Color">clWindowText</row>
             <row id="Font.Name">Courier New</row>
             <row id="Font.Size">10</row>
@@ -5588,7 +5591,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.ooreport.FastReport.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160425015742" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.ooreport.FastReport.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030508" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -5732,7 +5735,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.ooreport.ReportBuilder.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160425015742" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.ooreport.ReportBuilder.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030508" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -5809,7 +5812,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.ooreport.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160425015758" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.ooreport.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030530" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -5854,6 +5857,8 @@
       <component name="TcxTreeList" class="TVisTreeList"/>
       <component name="TcxTreeListColumn" class="TVisTreeListColumn">
         <property name="DataBinding.ValueType"/>
+        <property name="Properties.KeyFieldNames"/>
+        <property name="Properties.ListColumns.FieldName"/>
       </component>
       <component name="TdxBar" class="TVisHiddenComponent">
         <property name="ItemLinks.ItemName"/>
@@ -6676,7 +6681,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.oortl.bpl" original="en-US" outputitems="[oiResource]" date="20160425015714" usebom="1" widestringusage="wsYes" drcfile="oortl.drc">
+  <source class="TDelphiSource" name="..\SQL.oortl.bpl" original="en-US" outputitems="[oiResource]" date="20160429030440" usebom="1" widestringusage="wsYes" drcfile="oortl.drc">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -10493,7 +10498,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.oovaluefunc.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160425015730" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.oovaluefunc.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030458" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -11407,7 +11412,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.oovclie.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160425015718" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.oovclie.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030444" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -11500,7 +11505,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.system.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160425015802" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.system.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030534" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <resources>
       <disabled name="DBX.DRIVER"/>
       <disabled name="DBX.DRIVER.DESCRIPTION"/>
@@ -11547,13 +11552,16 @@
       <component name="TcxDateEdit" class="TVisEdit"/>
       <component name="TcxEditRepository" class="TVisHiddenComponent"/>
       <component name="TcxEditRepositoryCheckBoxItem" class="TVisHiddenComponent">
+        <property name="Properties.DisplayChecked"/>
         <property name="Properties.DisplayUnchecked"/>
         <property name="Properties.ValueChecked"/>
         <property name="Properties.ValueUnchecked"/>
         <property name="TcxEditRepositoryCheckBoxItem" default="Properties.DisplayChecked"/>
       </component>
       <component name="TcxEditRepositoryCheckComboBox" class="TVisHiddenComponent"/>
-      <component name="TcxEditRepositoryImageComboBoxItem" class="TVisHiddenComponent"/>
+      <component name="TcxEditRepositoryImageComboBoxItem" class="TVisHiddenComponent">
+        <property name="Properties.Items.Value"/>
+      </component>
       <component name="TcxEditRepositoryLabel" class="TVisLabel"/>
       <component name="TcxEditRepositoryTextItem" class="TVisHiddenComponent"/>
       <component name="TcxGrid" class="TVisBasicControl"/>
@@ -11590,6 +11598,8 @@
         <property name="DataBinding.FieldName"/>
         <property name="Properties.DisplayChecked"/>
         <property name="Properties.DisplayUnchecked"/>
+        <property name="Properties.Items.Value"/>
+        <property name="Properties.KeyFieldNames"/>
         <property name="Properties.ValueChecked"/>
         <property name="Properties.ValueUnchecked"/>
         <property name="PropertiesClassName"/>
@@ -11599,11 +11609,16 @@
         <property name="DataController.KeyFieldNames"/>
         <property name="DataController.MasterKeyFieldNames"/>
         <property name="DataController.Summary.DefaultGroupSummaryItems.FieldName"/>
+        <property name="DataController.Summary.FooterSummaryItems.FieldName"/>
+        <property name="DataController.Summary.SummaryGroups.SummaryItems.FieldName"/>
       </component>
       <component name="TcxGridLevel" class="TVisHiddenComponent"/>
       <component name="TcxGridTableView" class="TVisHiddenComponent"/>
       <component name="TcxHyperLinkEdit" class="TVisEdit"/>
-      <component name="TcxImageComboBox" class="TVisComboBox"/>
+      <component name="TcxImageComboBox" class="TVisComboBox">
+        <property name="EditValue"/>
+        <property name="Properties.Items.Value"/>
+      </component>
       <component name="TcxLabel" class="TVisLabel"/>
       <component name="TcxListBox" class="TVisListBox"/>
       <component name="TcxMaskEdit" class="TVisEdit">
@@ -11622,6 +11637,8 @@
       <component name="TcxTreeList" class="TVisTreeList"/>
       <component name="TcxTreeListColumn" class="TVisTreeListColumn">
         <property name="DataBinding.ValueType"/>
+        <property name="Properties.KeyFieldNames"/>
+        <property name="Properties.ListColumns.FieldName"/>
       </component>
       <component name="TDataSource" class="TVisHiddenComponent"/>
       <component name="TEdit" class="TVisEdit">
@@ -14953,13 +14970,11 @@
                   <lang id="ms">Mod</lang>
                 </row>
                 <row id="Properties.Items[0].Description" locked="1">-</row>
-                <row id="Properties.Items[0].Value" locked="1">{3F3AC287-E7DB-4CD6-A077-5068AE6ABCB8}</row>
                 <row id="Properties.Items[1].Description">
                   <native>Entry</native>
                   <lang id="zh">输入</lang>
                   <lang id="ms">Kemasukan</lang>
                 </row>
-                <row id="Properties.Items[1].Value" locked="1">{555A072D-B790-4F25-941C-D134414328AB}</row>
               </component>
               <component class="TVisHiddenComponent" name="gvUpdateStatus" type="TcxGridDBColumn">
                 <row id="Caption">
@@ -15031,13 +15046,11 @@
           <component class="TVisHiddenComponent" name="cxEditRepository1" type="TcxEditRepository">
             <component class="TVisHiddenComponent" name="edObjectID" type="TcxEditRepositoryImageComboBoxItem">
               <row id="Properties.Items[0].Description" locked="1">-</row>
-              <row id="Properties.Items[0].Value" locked="1">{3F3AC287-E7DB-4CD6-A077-5068AE6ABCB8}</row>
               <row id="Properties.Items[1].Description">
                 <native>Entry</native>
                 <lang id="zh">输入</lang>
                 <lang id="ms">Kemasukan</lang>
               </row>
-              <row id="Properties.Items[1].Value" locked="1">{555A072D-B790-4F25-941C-D134414328AB}</row>
             </component>
           </component>
         </form>
@@ -17932,7 +17945,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.system.lookup.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160425015758" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.system.lookup.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030530" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>

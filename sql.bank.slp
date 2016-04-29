@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document created="20160411090511" version="4.0.359" date="20160426170256" scan="10" scanned="20160426164817">
+<document created="20160411090511" version="4.0.359" date="20160429172134" scan="35" scanned="20160429172128">
   <lang id="zh"/>
   <lang id="ms"/>
   <lang id="vi"/>
-  <source class="TDelphiSource" name="..\SQL.Bank.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160425015740" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.Bank.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030506" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <resources>
       <disabled name="SQL_BANK"/>
     </resources>
@@ -46,7 +46,10 @@
       </component>
       <component name="TcxGridLevel" class="TVisHiddenComponent"/>
       <component name="TcxGridTableView" class="TVisHiddenComponent"/>
-      <component name="TcxImageComboBox" class="TVisComboBox"/>
+      <component name="TcxImageComboBox" class="TVisComboBox">
+        <property name="EditValue"/>
+        <property name="Properties.Items.Value"/>
+      </component>
       <component name="TcxLabel" class="TVisLabel"/>
       <component name="TcxSpinEdit" class="TVisEdit"/>
       <component name="TcxTextEdit" class="TVisEdit"/>
@@ -654,20 +657,17 @@
             <row id="Width" state="0">121</row>
           </component>
           <component class="TVisComboBox" name="cbTestingIndicator" state="0" type="TcxImageComboBox">
-            <row id="EditValue" locked="1">T</row>
             <row id="Left" state="0">144</row>
             <row id="Properties.Items[0].Description">
               <native>Testing</native>
               <lang id="zh">测试</lang>
               <lang id="ms">Ujian</lang>
             </row>
-            <row id="Properties.Items[0].Value" locked="1">T</row>
             <row id="Properties.Items[1].Description">
               <native>Production</native>
               <lang id="zh">生产</lang>
               <lang id="ms">Pengeluaran</lang>
             </row>
-            <row id="Properties.Items[1].Value" locked="1">P</row>
             <row id="Top" state="0">70</row>
             <row id="Width" state="0">121</row>
           </component>
@@ -801,58 +801,48 @@
             <row id="Width" state="0">121</row>
           </component>
           <component class="TVisComboBox" name="cbTestingFile" state="0" type="TcxImageComboBox">
-            <row id="EditValue" locked="1">L</row>
             <row id="Left" state="0">152</row>
             <row id="Properties.Items[0].Description" locked="1">Live</row>
-            <row id="Properties.Items[0].Value" locked="1">L</row>
             <row id="Properties.Items[1].Description">
               <native>Format &amp; setup testing. No processing by bank's host</native>
               <lang id="zh">格式与安装测试. 没有通过银行主机处理(&amp; )</lang>
               <lang id="ms">Format&amp; ujian persediaan. Tidak ada Pemprosesan oleh bank host</lang>
             </row>
-            <row id="Properties.Items[1].Value" locked="1">F</row>
             <row id="Properties.Items[2].Description">
               <native>Account &amp; IC validation testing</native>
               <lang id="zh">账户与身份证鉴定测试(&amp; )</lang>
               <lang id="ms">Ujian&amp; pengesahan akaun IC</lang>
             </row>
-            <row id="Properties.Items[2].Value" locked="1">A</row>
             <row id="Top" state="0">124</row>
             <row id="Width" state="0">121</row>
           </component>
           <component class="TVisComboBox" name="cbConfidentialFile" state="0" type="TcxImageComboBox">
-            <row id="EditValue" locked="1"> </row>
             <row id="Left" state="0">152</row>
             <row id="Properties.Items[0].Description">
               <native>No</native>
               <lang id="zh">编号</lang>
               <lang id="ms">Tidak</lang>
             </row>
-            <row id="Properties.Items[0].Value" locked="1"> </row>
             <row id="Properties.Items[1].Description">
               <native>Yes</native>
               <lang id="zh">是</lang>
               <lang id="ms">Ya</lang>
             </row>
-            <row id="Properties.Items[1].Value" locked="1">C</row>
             <row id="Top" state="0">151</row>
             <row id="Width" state="0">121</row>
           </component>
           <component class="TVisComboBox" name="cbNonResident" state="0" type="TcxImageComboBox">
-            <row id="EditValue" locked="1"> </row>
             <row id="Left" state="0">152</row>
             <row id="Properties.Items[0].Description">
               <native>No</native>
               <lang id="zh">编号</lang>
               <lang id="ms">Tidak</lang>
             </row>
-            <row id="Properties.Items[0].Value" locked="1"> </row>
             <row id="Properties.Items[1].Description">
               <native>Yes</native>
               <lang id="zh">是</lang>
               <lang id="ms">Ya</lang>
             </row>
-            <row id="Properties.Items[1].Value" locked="1">Y</row>
             <row id="Top" state="0">178</row>
             <row id="Width" state="0">121</row>
           </component>
@@ -1964,56 +1954,47 @@
                 <row id="Width" state="0">121</row>
               </component>
               <component class="TVisComboBox" name="edAuthorizationType" state="0" type="TcxImageComboBox">
-                <row id="EditValue" locked="1">P</row>
                 <row id="Left" state="0">129</row>
                 <row id="Properties.Items[0].Description">
                   <native>Preauthorised</native>
                   <lang id="zh">预授权</lang>
                   <lang id="ms">Pra</lang>
                 </row>
-                <row id="Properties.Items[0].Value" locked="1">A</row>
                 <row id="Properties.Items[1].Description">
                   <native>Instruction level authorisation</native>
                   <lang id="zh">指令级授权</lang>
                   <lang id="ms">Kebenaran Peringkat Arahan</lang>
                 </row>
-                <row id="Properties.Items[1].Value" locked="1">P</row>
                 <row id="Properties.Items[2].Description">
                   <native>File level authorisation (Summary)</native>
                   <lang id="zh">文件级授权(统计)</lang>
                   <lang id="ms">Kebenaran tahap Fail (ringkasan)</lang>
                 </row>
-                <row id="Properties.Items[2].Value" locked="1">F</row>
                 <row id="Properties.Items[3].Description">
                   <native>File level authorisation (Detail)</native>
                   <lang id="zh">文件级授权（详情）</lang>
                   <lang id="ms">Kebenaran tahap Fail (Detail)</lang>
                 </row>
-                <row id="Properties.Items[3].Value" locked="1">V</row>
                 <row id="Top" state="0">116</row>
                 <row id="Width" state="0">121</row>
               </component>
               <component class="TVisComboBox" name="edDetailOfCharge" state="0" type="TcxImageComboBox">
-                <row id="EditValue" locked="1">BEN</row>
                 <row id="Left" state="0">129</row>
                 <row id="Properties.Items[0].Description">
                   <native>Charge to beneficiary</native>
                   <lang id="zh">受益人收费</lang>
                   <lang id="ms">Mengenakan bayaran kepada pewaris</lang>
                 </row>
-                <row id="Properties.Items[0].Value" locked="1">BEN</row>
                 <row id="Properties.Items[1].Description">
                   <native>Charge to debit account</native>
                   <lang id="zh">借记账户收费</lang>
                   <lang id="ms">Caj untuk mendebitkan akaun</lang>
                 </row>
-                <row id="Properties.Items[1].Value" locked="1">OUR</row>
                 <row id="Properties.Items[2].Description">
                   <native>Shared</native>
                   <lang id="zh">共享</lang>
                   <lang id="ms">Berkongsi</lang>
                 </row>
-                <row id="Properties.Items[2].Value" locked="1">SHA</row>
                 <row id="Top" state="0">143</row>
                 <row id="Width" state="0">121</row>
               </component>
@@ -2327,13 +2308,11 @@
                   <lang id="zh">申请人</lang>
                   <lang id="ms">Pemohon</lang>
                 </row>
-                <row id="Properties.Items[0].Value" locked="1">01</row>
                 <row id="Properties.Items[1].Description">
                   <native>Beneficiary</native>
                   <lang id="zh">受益人</lang>
                   <lang id="ms">Pewaris</lang>
                 </row>
-                <row id="Properties.Items[1].Value" locked="1">02</row>
                 <row id="Top" state="0">62</row>
                 <row id="Width" state="0">121</row>
               </component>
@@ -2935,20 +2914,17 @@
                 <row id="Width" state="0">121</row>
               </component>
               <component class="TVisComboBox" name="edTransCode" state="0" type="TcxImageComboBox">
-                <row id="EditValue" locked="1">24</row>
                 <row id="Left" state="0">107</row>
                 <row id="Properties.Items[0].Description">
                   <native>Salary Credit</native>
                   <lang id="zh">薪水信贷</lang>
                   <lang id="ms">Kredit gaji</lang>
                 </row>
-                <row id="Properties.Items[0].Value" locked="1">22</row>
                 <row id="Properties.Items[1].Description">
                   <native>Remittance Credit</native>
                   <lang id="zh">汇款信用</lang>
                   <lang id="ms">Pengiriman Wang kredit</lang>
                 </row>
-                <row id="Properties.Items[1].Value" locked="1">24</row>
                 <row id="Top" state="0">97</row>
                 <row id="Width" state="0">122</row>
               </component>
