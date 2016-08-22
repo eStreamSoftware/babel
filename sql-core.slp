@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document created="20120911141512" version="4.0.359" date="20160429172556" scan="118" scanned="20160429172544">
+<document created="20120911141512" version="4.0.359" date="20160822115012" scan="110" scanned="20160820114550">
   <lang id="zh"/>
   <lang id="ms"/>
   <lang id="vi"/>
-  <source class="TDelphiSource" name="..\SQL.app.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030530" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.app.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160820034954" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -1785,7 +1785,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.application.logon.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030508" usebom="1" scaling="vsNone" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.application.logon.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160820034942" usebom="1" scaling="vsNone" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <resources>
       <disabled name="LCID"/>
     </resources>
@@ -2059,7 +2059,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.diy.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030530" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.diy.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160820034954" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -3378,7 +3378,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.dunit.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030440" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.dunit.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160820034920" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -3504,7 +3504,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.oocxgrid.layout.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030530" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.oocxgrid.layout.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160820034954" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -3607,7 +3607,6 @@
             </row>
             <row id="Left">8</row>
             <row id="Top">187</row>
-            <row id="Width">161</row>
           </component>
           <component class="TVisLabel" name="cxLabel2" type="TcxLabel">
             <row id="Caption">
@@ -3779,7 +3778,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.oodataimport.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030502" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.oodataimport.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160820034936" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -4312,79 +4311,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.oodevex.skins.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030500" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
-    <outputfile dir="." resource="opFmxRootResource"/>
-    <excludeddatatypes>
-      <class>TBinaryData</class>
-      <class>TCardinalData</class>
-      <class>TFontData</class>
-      <class>TPictureData</class>
-      <class>TColorData</class>
-      <class>TFontColorData</class>
-      <class>TFontNameData</class>
-      <class>TFontSizeData</class>
-      <class>TFontStyleData</class>
-      <class>TImeData</class>
-      <class>TReadingOrderData</class>
-    </excludeddatatypes>
-    <mappings>
-      <component name="TFlowPanel" class="TVisWrapPanel"/>
-      <component name="TLabel" class="TVisLabel" updatebounds="1"/>
-      <keyword name="RadioButton" class="TVisRadioButton"/>
-      <keyword name="SpeedButton" class="TVisSpeedButton"/>
-      <keyword name="ListBox" class="TVisListBox"/>
-      <keyword name="ComboBox" class="TVisComboBox"/>
-      <keyword name="CheckBox" class="TVisCheckBox"/>
-      <keyword name="GroupBox" class="TVisGroupBox"/>
-      <keyword name="Label" class="TVisLabel"/>
-      <keyword name="Edit" class="TVisEdit"/>
-      <keyword name="Memo" class="TVisEdit"/>
-      <keyword name="Button" class="TVisButton"/>
-      <keyword name="Panel" class="TVisPanel"/>
-      <keyword name="Grid" class="TVisGrid"/>
-      <keyword name="ImageList" class="TVisImageList"/>
-      <keyword name="Action" class="TVisAction"/>
-      <keyword name="MainMenu" class="TVisHiddenComponent"/>
-      <keyword name="PopupMenu" class="TVisHiddenComponent"/>
-      <keyword name="Field" class="TVisHiddenComponent"/>
-      <keyword name="UpdateSQL" class="TVisHiddenComponent"/>
-      <keyword name="DataSet" class="TVisHiddenComponent"/>
-      <keyword name="DataSource" class="TVisHiddenComponent"/>
-      <keyword name="Query" class="TVisHiddenComponent"/>
-      <keyword name="Table" class="TVisHiddenComponent"/>
-      <keyword name="Database" class="TVisHiddenComponent"/>
-      <property name="DataBinding.ValueType"/>
-      <property name="Functions.Strings"/>
-      <property name="HelpKeyword"/>
-    </mappings>
-    <node class="TVclFormFolder" name="Forms" created="20160411135550" resid="10">
-      <node class="TVclFormNode" name="TFMAPPTHEME" resname="TFMAPPTHEME">
-        <form class="TVclForm" name="fmAppTheme" type="TfmAppTheme" bordericons="[biSystemMenu]" textheight="13">
-          <row id="ClientHeight">428</row>
-          <row id="ClientWidth">577</row>
-          <row id="Font.Color">clWindowText</row>
-          <row id="Font.Name">Tahoma</row>
-          <row id="Font.Size">8</row>
-          <row id="Font.Style">[]</row>
-          <row id="Left">0</row>
-          <row id="Top">0</row>
-          <component class="TVisLabel" name="lbAppTheme" state="0" created="20160422160615" type="TLabel" align="alTop" transparent="1">
-            <row id="Height" state="0">13</row>
-            <row id="Left" state="0">3</row>
-            <row id="Top" state="0">3</row>
-            <row id="Width" state="0">571</row>
-          </component>
-          <component class="TVisWrapPanel" name="FlowPanel1" type="TFlowPanel" align="alClient">
-            <row id="Height">403</row>
-            <row id="Left">3</row>
-            <row id="Top">22</row>
-            <row id="Width">571</row>
-          </component>
-        </form>
-      </node>
-    </node>
-  </source>
-  <source class="TDelphiSource" name="..\SQL.oodialog.win32.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030444" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.oodialog.win32.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160820034924" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -5189,7 +5116,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.oomvplookup.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030514" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.oomvplookup.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160820034946" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -5348,7 +5275,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.oopersist.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030530" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.oopersist.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160820034954" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -5591,7 +5518,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.ooreport.FastReport.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030508" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.ooreport.FastReport.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160820034942" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -5735,7 +5662,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.ooreport.ReportBuilder.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030508" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.ooreport.ReportBuilder.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160820034942" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -5812,7 +5739,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.ooreport.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030530" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.ooreport.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160820034954" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -6681,7 +6608,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.oortl.bpl" original="en-US" outputitems="[oiResource]" date="20160429030440" usebom="1" widestringusage="wsYes" drcfile="oortl.drc">
+  <source class="TDelphiSource" name="..\SQL.oortl.bpl" original="en-US" outputitems="[oiResource]" date="20160820034920" usebom="1" widestringusage="wsYes" drcfile="oortl.drc">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -7085,6 +7012,11 @@
           <native>Cascade</native>
           <lang id="zh">级联</lang>
           <lang id="ms">Lata</lang>
+        </row>
+        <row id="ResStr_rc_CellAutoHeight" created="20160820115016">
+          <native>Cell Auto Height</native>
+          <lang id="zh" date="20160820115258" percent="99">自动调整单元格高度</lang>
+          <lang id="ms" date="20160820115815" percent="99">Sel Auto Tinggi</lang>
         </row>
         <row id="ResStr_rc_ChangeADMINPassword" created="20160411094610">
           <native>Change ADMIN Password</native>
@@ -10498,7 +10430,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.oovaluefunc.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030458" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.oovaluefunc.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160820034934" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -11412,7 +11344,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.oovclie.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030444" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.oovclie.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160820034924" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -11505,7 +11437,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.system.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030534" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.system.gui.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160820034956" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <resources>
       <disabled name="DBX.DRIVER"/>
       <disabled name="DBX.DRIVER.DESCRIPTION"/>
@@ -12755,7 +12687,7 @@
             <row id="Top">102</row>
             <row id="Width">97</row>
           </component>
-          <component class="TVisCheckBox" name="edRemoveTempTables" type="TCheckBox">
+          <component class="TVisCheckBox" name="edRemoveTempTables" type="TCheckBox" checked="1">
             <row id="Caption">
               <native>Remove Temp Tables</native>
               <lang id="zh">删除临时表格</lang>
@@ -17945,7 +17877,7 @@
       </node>
     </node>
   </source>
-  <source class="TDelphiSource" name="..\SQL.system.lookup.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160429030530" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
+  <source class="TDelphiSource" name="..\SQL.system.lookup.bpl" original="en-US" encoding="utf-8" outputitems="[oiResource]" date="20160820034954" usebom="1" widestringusage="wsYes" stringresourcecontext="rcStringValue">
     <outputfile dir="." resource="opFmxRootResource"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
